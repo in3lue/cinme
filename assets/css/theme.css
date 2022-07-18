@@ -810,6 +810,16 @@ ul.menu-list .sub-menu>li.active>a {
 	}
 }
 
+#intro-section2 {
+	min-height: 600px;
+}
+
+/* Intro full height offset (same as mobile header height) */
+@media (max-width: 768px) {
+	#intro-section2.full-height-vh {
+		min-height: calc(100vh - 60px) !important;
+	}
+}
 /* video intro */
 /* .video-intro {
 } */
@@ -960,7 +970,7 @@ ul.menu-list .sub-menu>li.active>a {
 	top: 50%;
 	left: 50%;
 	width: 100% !important;
-	max-width: 800px;
+	max-width: 900px;
 	padding: 0 15px;
 	text-align: center;
 	-moz-transform: translate(-50%, -50%) !important;
