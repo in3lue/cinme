@@ -296,7 +296,7 @@
 			cursoropacitymin: 0, // change opacity when cursor is inactive (scrollabar "hidden" state), range from 1 to 0
 			cursoropacitymax: 1, // change opacity when cursor is active (scrollabar "visible" state), range from 1 to 0
 			cursorwidth: "4px", // cursor width in pixel (you can also write "5px")
-			cursorborder: "0px solid #fff", // css definition for cursor border
+			cursorborder: "0px solid #FFF", // css definition for cursor border
 			cursorborderradius: "5px", // border radius in pixel for cursor
 			zindex: 1, // change z-index for scrollbar div
 
