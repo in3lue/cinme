@@ -1,13 +1,25 @@
 /* ------------------------------------------------------------- *
+ *  Reset
+/* ------------------------------------------------------------- */
+
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+/* ------------------------------------------------------------- *
  *  General
 /* ------------------------------------------------------------- */
 
 html,
 body {
-  padding: 0;
-  margin: 0;
   overflow-x: hidden;
   overflow-y: auto;
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 body {
@@ -824,34 +836,34 @@ ul.menu-list .sub-menu > li.active > a {
  * Intro
 /* --------------------------------------------------- */
 
-#intro-section {
+#intro-nosotros {
   min-height: 600px;
 }
 
 /* Intro full height offset (same as mobile header height) */
 @media (max-width: 768px) {
-  #intro-section.full-height-vh {
+  #intro-nosotros.full-height-vh {
     min-height: calc(100vh - 60px) !important;
   }
 }
 
-#intro-section2 {
+#intro-essentia {
   min-height: 600px;
 }
 
 /* Intro full height offset (same as mobile header height) */
 @media (max-width: 768px) {
-  #intro-section2.full-height-vh {
+  #intro-essentia.full-height-vh {
     min-height: calc(100vh - 60px) !important;
   }
 }
-#intro-section3 {
+#intro-RSE {
   min-height: 600px;
 }
 
 /* Intro full height offset (same as mobile header height) */
 @media (max-width: 768px) {
-  #intro-section3.full-height-vh {
+  #intro-RSE.full-height-vh {
     min-height: calc(100vh - 60px) !important;
   }
 }
@@ -875,17 +887,17 @@ ul.menu-list .sub-menu > li.active > a {
 /* intro title */
 .intro-title {
   margin: 0;
-  font-size: 72px;
+  font-size: 60px;
   text-shadow: 5px 5px rgba(0, 0, 0, 0.1);
 }
 @media (max-width: 992px) {
   .intro-title {
-    font-size: 58px;
+    font-size: 48px;
   }
 }
 @media (max-width: 768px) {
   .intro-title {
-    font-size: 38px;
+    font-size: 36px;
   }
 }
 
@@ -5845,8 +5857,8 @@ body.modal-open {
   padding: 7px 30px;
   font-size: 18px;
   z-index: 9;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
   border-radius: 20px;
   border: 2px solid rgba(0, 0, 0, 0);
   -webkit-transition: all 0.2s ease-in-out;
