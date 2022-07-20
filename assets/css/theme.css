@@ -102,16 +102,10 @@ img {
   }
 }
 
-.icon i {
-  font-size: 60px;
+.card i {
+  font-size: 50px;
   color: #FFF;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 600;
   display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
 }
 
 /* --------------------------------------------------------------------------------------- *

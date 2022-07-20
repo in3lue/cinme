@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'cinmeIcons';
+  src:
+    url('fonts/cinmeIcons.ttf?5abthf') format('truetype'),
+    url('fonts/cinmeIcons.woff?5abthf') format('woff'),
+    url('fonts/cinmeIcons.svg?5abthf#cinmeIcons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.ico {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'cinmeIcons' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: middle;
+  position: relative;
+  top: -2;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ico-research:before {
+  content: "\e900";
+}
+
+.ico-pro:before {
+  content: "\e901";
+}
+
+.ico-quality:before {
+  content: "\e902";
+}
+
+.ico-commit:before {
+  content: "\e903";
+}
+
+.ico-2x {
+  font-size: 2em;
+}
+
+.ico-3x {
+  font-size: 3em;
+}
+
+.ico-4x {
+  font-size: 4em;
+}
+
+.ico-5x {
+  font-size: 5em;
+}
+
+.ico-6x {
+  font-size: 6em;
+}
+
+.ico-7x {
+  font-size: 7em;
+}
+
+.ico-8x {
+  font-size: 8em;
+}
+
+.ico-9x {
+  font-size: 9em;
+}
+
+.ico-10x {
+  font-size: 10em;
+}
