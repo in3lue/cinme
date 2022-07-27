@@ -40,9 +40,16 @@
   <!-- Libs and Plugins CSS -->
   <link rel="stylesheet" href="assets/plugins/animsition/css/animsition.min.css" />
   <!-- Animsition CSS (http://git.blivesta.com/animsition/) -->
+
+  <link rel="stylesheet" href="assets/plugins/animate.min.css" />
+  <!-- Animate libs CSS (http://daneden.me/animate) -->
+
+  <!-- Libs and Plugins CSS -->
+  <link rel="stylesheet" href="assets/plugins/animsition/css/animsition.min.css" />
+  <!-- Animsition CSS (http://git.blivesta.com/animsition/) -->
   <link rel="stylesheet" href="assets/plugins/lightgallery/css/lightgallery.min.css" />
   <!-- lightGallery CSS (http://sachinchoolur.github.io/lightGallery) -->
-  <link rel="stylesheet" href="assets/plugins/owl-carousel/css/owl.carousel.min.css" />
+  <!-- <link rel="stylesheet" href="assets/plugins/owl-carousel/css/owl.carousel.min.css" /> -->
   <!-- Owl Carousel CSS (http://www.owlcarousel.owlgraphic.com) -->
   <link rel="stylesheet" href="assets/plugins/owl-carousel/css/owl.theme.default.min.css" />
   <!-- Owl Carousel CSS (http://www.owlcarousel.owlgraphic.com) -->
@@ -50,6 +57,7 @@
   <!-- YTPlayer CSS (more info: https://github.com/pupunzi/jquery.mb.YTPlayer) -->
   <link rel="stylesheet" href="assets/plugins/animate.min.css" />
   <!-- Animate libs CSS (http://daneden.me/animate) -->
+
 
   <!-- Template master CSS -->
   <link rel="stylesheet" href="assets/css/helper.css" />
@@ -63,173 +71,27 @@
 <!-- ===========
 	///// Body /////
 	================
-	* Add class "temp-uppercase" to enable uppercase letters (eg. headings, menu links).
-	* Add class "temp-letter-spacing" to enable spacing between letters (eg. headings, menu links).
-	* Use class "temp-grayscale" to enable grayscale effect when menu is open (no effect on all browsers!).
-	* Add class "animsition" to enable page transition while page loads.
 	-->
 
-<body class="temp-grayscale animsition">
-  <!-- Page cover (if menu is open) -->
-  <span class="page-cover"></span>
-
-  <!-- ===================
-		///// Begin header /////
-		========================
-		* Add class "header-dark" to enable header dark style.
-		* Use class "header-click", "header-hover" or "header-fixed" to change behavior of the header (one of them is required!).
-		-->
-  <div id="header" class="header-hover">
-    <!-- Header close button -->
-    <div class="header-close" title="Cerrar">×</div>
-
-    <!-- Begin logo small -->
-    <div class="logo-small">
-      <a href="index.html"><img src="assets/img/logo-small.png" title="Inicio" alt="logo" /></a>
-    </div>
-    <!-- End logo small -->
-
-    <!-- Header menu icon -->
-    <span class="header-menu-icon" title="Abrir Menu"><i class="fas fa-bars"></i></span>
-
-    <!-- Header contact icon -->
-    <a href="" class="header-contact-icon" title="Contactanos"><i class="far fa-envelope"></i></a>
-
-    <!-- Begin header inner 
-			======================== -->
-    <div class="header-inner">
-      <!-- Begin header top -->
-      <div class="header-top">
-        <!-- Begin logo big -->
-        <div class="logo-big">
-          <a href="index.html"><img src="assets/img/logo-big.png" title="Inicio" alt="logo" /></a>
-        </div>
-        <!-- End logo big -->
-      </div>
-      <!-- End header top -->
-
-      <!-- Begin header middle -->
-      <div class="header-middle">
-        <!-- Begin menu -->
-        <div id="menu">
-          <ul class="menu-list">
-            <li class="has-children active">
-              <a href="/" class="sub-menu-trigger">Intro</a>
-            </li>
-            <li class="has-children">
-              <a href="#" class="sub-menu-trigger">Nosotros</a>
-            </li>
-            <li class="has-children">
-              <a href="#" class="sub-menu-trigger">Ensayos Clínicos</a>
-              <ul class="sub-menu">
-                <li><a href="#">Especialidades</a></li>
-                <li><a href="#">Alpha Clinical Research </a></li>
-                <li><a href="#">Comité de Ética Independiente </a></li>
-                <li><a href="#">Calidad</a></li>
-              </ul>
-            </li>
-            <li class="has-children">
-              <a href="#" class="sub-menu-trigger">Essentia</a>
-              <ul class="sub-menu">
-                <li><a href="#">Tratamiento de Sobrepeso y Obesidad</a></li>
-                <li><a href="#">Testimonios</a></li>
-              </ul>
-            </li>
-            <li class="has-children">
-              <a href="#" class="sub-menu-trigger">Estudios</a>
-            </li>
-            <li class="has-children">
-              <a href="#" class="sub-menu-trigger">Responsabilidad social</a>
-            </li>
-            <li class="has-children">
-              <a href="#" class="sub-menu-trigger">Contacto</a>
-            </li>
-          </ul>
-          <!-- /.menu-list -->
-        </div>
-        <!-- End menu -->
-      </div>
-      <!-- End header middle -->
-
-      <!-- Begin header bottom -->
-      <div class="header-bottom">
-        <!-- Begin follow me buttons -->
-        <div class="follow-me-buttons">
-          <ul>
-            <li>
-              <a href="https://www.facebook.com/CINMEcentroinvestigacionesmetabolicas/" title="Seguinos en Facebook"
-                target="_blank"><i class="fab fa-facebook-f"></i></a>
-            </li>
-            <li>
-              <a href="https://twitter.com/cinme" title="Seguinos en Twitter" target="_blank"><i
-                  class="fab fa-twitter"></i></a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/cinme.ar/" title="Seguinos en Instagram" target="_blank"><i
-                  class="fab fa-instagram"></i></a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/company/cinme/" title="Seguinos en Linkedin" target="_blank"><i
-                  class="fab fa-linkedin-in"></i></a>
-            </li>
-            <li>
-              <a href="mailto:info@cinme.com.ar" title="Contactanos" target="_blank"><i class="far fa-envelope"></i></a>
-            </li>
-          </ul>
-        </div>
-        <!-- End follow me buttons -->
-
-        <!-- Begin copyright -->
-        <div class="copyright">
-          Copyright © 2022 <br />
-          <a target="_blank" href="https://www.cinme.com.ar">CINME</a>
-        </div>
-        <!-- End copyright -->
-      </div>
-      <!-- End header bottom -->
-    </div>
-    <!-- End header inner -->
-  </div>
-  <!-- End header -->
-
-  <!-- ==========================
-		///// Begin mobile header /////
-		===============================
-		* Add class "m-header-dark" to enable header dark style.
-		-->
-  <div id="mobile-header">
-    <!-- Begin logo small -->
-    <div class="logo-mobile">
-      <a href="index.html"><img src="assets/img/logo-small.png" alt="logo" /></a>
-    </div>
-    <!-- End logo small -->
-
-    <!-- Mobile menu trigger -->
-    <div class="mobile-menu-trigger"><span></span></div>
-  </div>
-  <!-- End mobile header -->
+<body class="animsition">
 
   <!-- *************************************
 		*********** Begin body content *********** 
 		************************************** -->
-  <div id="body-content">
+  <div>
     <!-- ==========================
 			///// Begin Start section /////
 			=========================== -->
-    <section id="intro-start" class="image-intro full-height-vh bg-image" data-aos="fade-up" style="
-          background-image: url(assets/img/01_inicio.jpg);
-          background-position: 50% 50%;
-        ">
+    <section id="intro-start" class="image-intro full-height-vh bg-image"
+      style="background-image: url(assets/img/01_inicio.jpg); background-position: 50% 50%;">
       <!-- Element cover -->
-      <div class="cover bg-transparent-2-dark"></div>
+      <div class="cover bg-transparent-4-dark"></div>
 
       <!-- Begin Start caption 
 				=========================
-				* Use class "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center" or "bottom-right" to set caption position.
 				-->
       <div class="intro-caption center">
         <h2 class="intro-title">CINME. Centro de Investigaciones Metabólicas</h2>
-
         <p class="intro-description">
           Fundado en 2007 por dos hermanos treintañeros que confiaron en
           el país y que habían entendido que en la investigación médica
@@ -257,23 +119,33 @@
 			=========================== -->
     <section id="intro-nosotros" class="video-intro bg-dark overflow-hidden">
       <!-- Element cover -->
-      <div class="cover bg-transparent-3-dark"></div>
+      <div class="cover bg-transparent-2-dark"></div>
 
-
-      <!-- video -->
-      <video loop muted autoplay style="width: 100%; height:100%; overflow:hidden;">
-        <source src="assets/img/02_nosotros.mp4" type="video/mp4">
-      </video>
-
-
+      <!-- Begin YTPlayer (Youtube video background)
+				=============================================== -->
+      <div class="youtube-bg full-cover" data-property="{
+					videoURL: 'https://youtu.be/K3NDOihk_mE',
+					containment: '#intro-nosotros',
+					coverImage: 'assets/img/video-bg/video-bg-1.jpg',
+					startAt: 0,
+					stopAt: 33,
+					autoPlay: true,
+					loop: true,
+					mute: true,
+					showControls: false,
+					showYTLogo: false,
+					realfullscreen: true,
+					addRaster: false,
+					optimizeDisplay: true,
+					stopMovieOnBlur: true
+        }"></div>
+      <!-- End YTPlayer (Youtube video background) -->
 
       <!-- Begin Nosotros caption 
 				=========================
-				* Use class "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center" or "bottom-right" to set caption position.
 				-->
       <div class="intro-caption center">
         <h2 class="intro-title" data-aos="fade-down">Nosotros</h2>
-
         <p class="intro-description hide-from-sm" data-aos="fade-up">
           CINME nació con la misión de mejorar la calidad de vida de las
           personas a través de la investigación y la atención médica
@@ -282,7 +154,6 @@
           de gestión de calidad certificado según la norma internacional ISO
           9001:2015.
         </p>
-
         <div class="margin-top-30">
           <a href="nosotros.html" title="CINME Abstract" class="btn btn-white-bordered margin-top-5"
             data-aos="zoom-in">Ver Más
@@ -296,10 +167,9 @@
     <!-- ==========================
 			///// Begin Ensayos section /////
 			=========================== -->
-    <section id="intro-ensayos" class="image-intro full-height-vh bg-image" style="
-          background-image: url(assets/img/03_ensayos.jpg);
-          background-position: 50% 50%;
-        ">
+
+    <section id="intro-ensayos" class="image-intro full-height-vh bg-image"
+      style="background-image: url(assets/img/03_ensayos.jpg); background-position: 50% 50%;">
       <!-- Element cover -->
       <div class="cover bg-transparent-2-dark"></div>
 
@@ -314,47 +184,50 @@
         <p class="intro-description hide-from-sm" data-aos="fade-up">
           Humanizando la salud persona a persona.
         </p>
-
-        <div class="margin-top-30 row">
-          <div class="col-lg-3 col-md-6 text-center aos-init aos-animate" data-aos="fade-up">
-            <span class="ico ico-research ico-5x"></span>
-            <h4 class="title">
-              <a href="#">Especialidades</a>
-            </h4>
-            <p class="description">
-              Trabajamos con ensayos clínicos en múltiples especialidades.
-            </p>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center aos-init aos-animate" data-aos="fade-up">
-            <span class="ico ico-pro ico-5x"></span>
-            <h4 class="title">
-              <a href="#">Profesionales</a>
-            </h4>
-            <p class="description">
-              Nuestro personal médico se encuentra altamente capacitado tanto en el campo académico como en el ético, de
-              modo de asegurar los mejores y más avanzados tratamientos.
-            </p>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center aos-init aos-animate" data-aos="fade-up">
-            <span class="ico ico-quality ico-5x"></span>
-            <h4 class="title">
-              <a href="#">Calidad</a>
-            </h4>
-            <p class="description">
-              Desarrollamos nuestros propios procedimientos operativos estándar y en 2019 certificamos para las normas
-              ISO 9001:2015 para los procesos de investigación clínica farmacológica, lo que nos convierte en el segundo
-              centro de investigación nacional en lograrlo.
-            </p>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center aos-init aos-animate" data-aos="fade-up">
-            <span class="ico ico-commit ico-5x"></span>
-            <h4 class="title">
-              <a href="#">Comité de Ética</a>
-            </h4>
-            <p class="description">
-              Contamos con un Comité de Ética Independiente que cumple con las Buenas Prácticas Clínicas (GCP) y actúa
-              en cumplimiento de la legislación local e internacional.
-            </p>
+        <div class="container">
+          <div class="margin-top-30 row">
+            <div class="col-lg-3 col-md-6 text-center aos-init aos-animate" data-aos="fade-up">
+              <span class="ico ico-research ico-5x"></span>
+              <h4 class="title">
+                <a href="#">Especialidades</a>
+              </h4>
+              <p>
+                Trabajamos con ensayos clínicos en múltiples especialidades.
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center aos-init aos-animate" data-aos="fade-up">
+              <span class="ico ico-pro ico-5x"></span>
+              <h4 class="title">
+                <a href="#">Profesionales</a>
+              </h4>
+              <p>
+                Nuestro personal médico se encuentra altamente capacitado tanto en el campo académico como en el ético,
+                de
+                modo de asegurar los mejores y más avanzados tratamientos.
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center aos-init aos-animate" data-aos="fade-up">
+              <span class="ico ico-quality ico-5x"></span>
+              <h4 class="title">
+                <a href="#">Calidad</a>
+              </h4>
+              <p>
+                Desarrollamos nuestros propios procedimientos operativos estándar y en 2019 certificamos para las normas
+                ISO 9001:2015 para los procesos de investigación clínica farmacológica, lo que nos convierte en el
+                segundo
+                centro de investigación nacional en lograrlo.
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center aos-init aos-animate" data-aos="fade-up">
+              <span class="ico ico-commit ico-5x"></span>
+              <h4 class="title">
+                <a href="#">Comité de Ética</a>
+              </h4>
+              <p>
+                Contamos con un Comité de Ética Independiente que cumple con las Buenas Prácticas Clínicas (GCP) y actúa
+                en cumplimiento de la legislación local e internacional.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -371,7 +244,7 @@
 
       <!-- Begin YTPlayer (Youtube video background)
 					=============================================== -->
-      <div class="youtube-bg full-cover" data-property="{
+      <div class="youtube-bg full-cover full-height-vh" data-property="{
 						videoURL: 'https://youtu.be/TcI6p3boRNM',
 						containment: '#intro-essentia',
 						coverImage: 'assets/img/video-bg/video-bg-1.jpg',
@@ -391,7 +264,6 @@
 
       <!-- Begin ESSENTIA caption 
 					=========================
-					* Use class "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center" or "bottom-right" to set caption position.
 					-->
       <div class="intro-caption center">
         <h2 class="intro-title">ESSENTIA</h2>
@@ -442,16 +314,13 @@
     <!-- ==========================
 			///// Begin Estudios section /////
 			=========================== -->
-    <section id="intro-estudios" class="image-intro full-height-vh bg-image" style="
-          background-image: url(assets/img/05_estudios.jpg);
-          background-position: 50% 50%;
-        ">
+    <section id="intro-estudios" class="image-intro full-height-vh bg-image"
+      style=" background-image: url(assets/img/05_estudios.jpg); background-position: 50% 50%;">
       <!-- Element cover -->
       <div class="cover bg-transparent-2-dark"></div>
 
       <!-- Begin Estudios caption 
 				=========================
-				* Use class "top-left", "top-center", "top-right", "center-left", "center", "center-right", "bottom-left", "bottom-center" or "bottom-right" to set caption position.
 				-->
       <div class="intro-caption center">
         <h2 class="intro-title">Estudios</h2>
@@ -512,7 +381,7 @@
 
       <!-- Begin YTPlayer (Youtube video background)
 						=============================================== -->
-      <div class="youtube-bg full-cover" data-property="{
+      <div class="youtube-bg full-cover full-height-vh" data-property="{
 							videoURL: 'https://youtu.be/WUb4q_q7vHQ',
 							containment: '#intro-RSE',
 							coverImage: 'assets/img/video-bg/video-bg-1.jpg',
@@ -529,6 +398,7 @@
 							stopMovieOnBlur: true
 						}"></div>
       <!-- End YTPlayer (Youtube video background) -->
+
 
       <!-- Begin Responsabilidad Social caption 
 						=========================
@@ -663,7 +533,7 @@
   <!-- ImagesLoaded JS (https://github.com/desandro/imagesloaded) -->
   <script src="assets/plugins/jquery.nicescroll.min.js"></script>
   <!-- Nicescroll JS (http://areaaperta.com/nicescroll/) -->
-  <script src="assets/plugins/owl-carousel/js/owl.carousel.min.js"></script>
+  <!-- <script src="assets/plugins/owl-carousel/js/owl.carousel.min.js"></script> -->
   <!-- Owl Carousel JS (http://www.owlcarousel.owlgraphic.com) -->
   <script src="assets/plugins/jquery.mousewheel.min.js"></script>
   <!-- A jQuery plugin that adds cross browser mouse wheel support (https://github.com/jquery/jquery-mousewheel) -->
@@ -674,6 +544,7 @@
   <!-- lightGallery JS (http://sachinchoolur.github.io/lightGallery) -->
   <script src="assets/plugins/lightgallery/js/lightgallery-plugins.js"></script>
   <!-- lightGallery Plugins JS (http://sachinchoolur.github.io/lightGallery) -->
+
 
   <!-- Theme master JS -->
   <script src="assets/js/theme.js"></script>

@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 1rem;
 }
 
 /* ------------------------------------------------------------- *
@@ -27,7 +28,6 @@ body {
   background-color: #F1F1F1;
   font-family: "Montserrat", sans-serif;
   line-height: 1.6;
-  font-size: 1rem;
   color: #333;
 }
 
@@ -46,6 +46,7 @@ a:focus {
 }
 
 p {
+  font-size: 1rem;
   margin: 0 0 1em;
 }
 
@@ -122,47 +123,6 @@ img {
 }
 
 /* ------------------------------------------------------------- *
- *  Body content
-/* ------------------------------------------------------------- */
-
-#body-content {
-  position: relative;
-}
-
-@media (min-width: 769px) {
-  #body-content {
-    margin-left: 60px;
-    /* Same as side header width */
-  }
-}
-
-@media (max-width: 769px) {
-  #body-content {
-    margin-top: 60px;
-    /* Same as mobile header height */
-  }
-}
-
-/* if padding classes used in "#body-content" */
-@media (max-width: 769px) {
-  #body-content[class="padding"] {
-    padding: 0 !important;
-  }
-}
-
-/* grayscale everything if menu is open (no effect on all browsers!) */
-body.temp-grayscale .menu-open #body-content {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-/* ------------------------------------------------------------- *
  * Sections
 /* ------------------------------------------------------------- */
 
@@ -214,32 +174,32 @@ h6 {
 
 .h1,
 h1 {
-  font-size: 36px;
+  font-size: 40px;
 }
 
 .h2,
 h2 {
-  font-size: 30px;
+  font-size: 36px;
 }
 
 .h3,
 h3 {
-  font-size: 24px;
+  font-size: 30px;
 }
 
 .h4,
 h4 {
-  font-size: 18px;
+  font-size: 24px;
 }
 
 .h5,
 h5 {
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .h6,
 h6 {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 /* ------------------------------------------------------------- *
@@ -852,6 +812,7 @@ ul.menu-list .sub-menu>li.active>a {
 /* --------------------------------------------------- */
 
 #intro-nosotros {
+  height: 100vh;
   min-height: 600px;
 }
 
@@ -863,6 +824,8 @@ ul.menu-list .sub-menu>li.active>a {
 }
 
 #intro-essentia {
+
+  height: 100vh;
   min-height: 600px;
 }
 
@@ -874,6 +837,7 @@ ul.menu-list .sub-menu>li.active>a {
 }
 
 #intro-RSE {
+  height: 100vh;
   min-height: 600px;
 }
 
@@ -884,19 +848,11 @@ ul.menu-list .sub-menu>li.active>a {
   }
 }
 
-/* video intro */
-/* .video-intro {
-} */
-
-/* image intro */
-/* .image-intro {
-} */
-
 /* Intro caption 
 ================= */
 .intro-caption {
   position: absolute;
-  max-width: 600px;
+  max-width: 90%;
   color: #FFF;
   z-index: 3;
 }
@@ -904,98 +860,18 @@ ul.menu-list .sub-menu>li.active>a {
 /* intro title */
 .intro-title {
   margin: 0;
-  font-size: 60px;
   text-shadow: 5px 5px rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 992px) {
-  .intro-title {
-    font-size: 48px;
-  }
-}
-
-@media (max-width: 768px) {
-  .intro-title {
-    font-size: 36px;
-  }
 }
 
 /* intro subtitle */
 .intro-subtitle {
   margin: 15px 0 0 0;
-  font-size: 30px;
   text-shadow: 3px 3px rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 768px) {
-  .intro-subtitle {
-    font-size: 18px;
-  }
 }
 
 /* intro description */
 .intro-description {
   margin: 25px 0 0 0;
-  font-size: 18px;
-}
-
-/* Intro caption with alter fonts (alter fonts handled by "helper.css" file)
-================================== */
-
-/* intro title with alter fonts */
-.intro-title.font-alter-1 {
-  font-size: 82px !important;
-}
-
-@media (max-width: 992px) {
-  .intro-title.font-alter-1 {
-    font-size: 60px !important;
-  }
-}
-
-@media (max-width: 768px) {
-  .intro-title.font-alter-1 {
-    font-size: 46px !important;
-  }
-}
-
-.intro-title.font-alter-2 {
-  font-size: 120px !important;
-}
-
-@media (max-width: 992px) {
-  .intro-title.font-alter-2 {
-    font-size: 72px !important;
-  }
-}
-
-@media (max-width: 768px) {
-  .intro-title.font-alter-2 {
-    font-size: 56px !important;
-  }
-}
-
-/* intro subtitle with alter fonts */
-.intro-subtitle.font-alter-1 {
-  font-size: 28px !important;
-  font-weight: normal;
-}
-
-@media (max-width: 768px) {
-  .intro-subtitle.font-alter-2 {
-    font-size: 28px !important;
-  }
-}
-
-.intro-subtitle.font-alter-2 {
-  font-size: 24px !important;
-  font-weight: normal;
-}
-
-@media (max-width: 768px) {
-  .intro-subtitle.font-alter-2 {
-    font-size: 21px !important;
-  }
 }
 
 /* Intro caption positions 
