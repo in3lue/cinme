@@ -69,12 +69,22 @@
 <body class="animsition">
 
   <!-- *************************************
+		*********** Begin 'Header' content *********** 
+		************************************** -->
+  <div class="header__logo">
+    <a href="/"><img src="assets/img/logo-big.png" alt="CINME Logo" class="logo__img"></a>
+  </div>
+
+  <div class="btn-menu">
+    <label for="btn-menu" class="icon-menu"><i class="fa-solid fa-bars"></i></label>
+  </div>
+
+  <!-- *************************************
 		*********** Begin 'Body' content *********** 
 		************************************** -->
   <div>
     <!-- ///// Begin 'Inicio' section ///// -->
     <section id="intro-inicio" class="full-height-vh bg-image">
-
       <!-- Element cover -->
       <div class="cover bg-transparent-4-dark"></div>
 
@@ -141,7 +151,6 @@
           de gestión de calidad certificado según la norma internacional ISO
           9001:2015.
         </p>
-
         <div class="margin-top-30 button" data-aos="zoom-in">
           <a href="nosotros.html" title="CINME Abstract">Ver Más
           </a>
@@ -154,16 +163,13 @@
 
     <!-- ///// Begin 'Ensayos' section ///// -->
 
-    <section id="intro-ensayos" class="full-height-vh bg-image"
-      style="background-image: url(assets/img/03_ensayos.jpg); background-position: 50% 50%;">
+    <section id="intro-ensayos" class="full-height-vh bg-image">
       <!-- Element cover -->
       <div class="cover bg-transparent-2-dark"></div>
 
       <!-- Begin 'Ensayos' caption -->
       <div class="intro-caption center">
-
         <h2 class="intro-title" data-aos="fade-down">Ensayos Clínicos</h2>
-
         <p class="intro-description" data-aos="fade-up">
           Humanizando la salud persona a persona.
         </p>
@@ -275,24 +281,25 @@
       <p class="intro-description">
         Nutrir el alma y cuidar el cuerpo, eso es <b>Essentia</b>.
       </p>
-
       <div class="margin-top-30 row">
-        <div class="col-lg-6 col-md-6 text-center aos-init aos-animate" data-aos="fade-up">
+        <div class="col-lg-6 col-md-6 text-center tag aos-init aos-animate" data-aos="fade-up">
           <div class="icon"><i class="icofont-test-tube"></i></div>
           <h4 class="title">
             <a href="investigacion.html">Sobrepeso y Obesidad</a>
           </h4>
           <p class="description">
-            Trabajamos con ensayos clínicos en múltiples especialidades.
+            La ingesta de alimentos no es sólo una conducta dirigida a conseguir energía para poder vivir. Al comer se
+            ponen en juego sistemas para mantener el balance de energía, así como aspectos hedónicos -o de placer- y
+            emocionales.
           </p>
         </div>
-        <div class="col-lg-6 col-md-6 text-center aos-init aos-animate" data-aos="fade-up">
+        <div class="col-lg-6 col-md-6 text-center tag aos-init aos-animate" data-aos="fade-up">
           <div class="icon"><i class="icofont-test-tube"></i></div>
           <h4 class="title">
             <a href="investigacion.html">Testimonios</a>
           </h4>
           <p class="description">
-            Trabajamos con ensayos clínicos en múltiples especialidades.
+            Nuestros pacientes nos dejaron sus testimonios. Conocelos.
           </p>
         </div>
       </div>
@@ -302,19 +309,16 @@
   <!-- End 'ESSENTIA' section -->
 
   <!-- ///// Begin 'Estudios' section ///// -->
-  <section id="intro-estudios" class="full-height-vh bg-image"
-    style=" background-image: url(assets/img/05_estudios.jpg); background-position: 50% 50%;">
+  <section id="intro-estudios" class="full-height-vh bg-image">
     <!-- Element cover -->
     <div class="cover bg-transparent-2-dark"></div>
 
     <!-- Begin 'Estudios' caption -->
     <div class="intro-caption center">
       <h2 class="intro-title">Estudios</h2>
-
       <p class="intro-description">
         Humanizando la salud persona a persona.
       </p>
-
       <div class="margin-top-30 row">
         <div class="col-lg-3 col-md-6 text-center aos-init aos-animate" data-aos="fade-up">
           <div class="icon"><i class="icofont-test-tube"></i></div>
@@ -438,7 +442,7 @@
     <div class="intro-caption center">
       <h2 class="intro-title">CINME. Contacto</h2>
       <p class="intro-description">
-        CINME S.A.
+        Todos nuestros medios para poder contactarnos
       </p>
       <div class="container">
         <div class="margin-top-30 row">
@@ -493,10 +497,34 @@
     <!-- End 'Contacto' caption -->
   </section>
   <!-- ///// End 'Contacto' section ///// -->
-  </div>
+
   <!-- =================
 	///// End 'Body' /////
 	================== -->
+  <!-- input -->
+  <input type="checkbox" name="" id="btn-menu">
+  <div class="container-menu">
+    <div class="cont-menu">
+      <nav>
+        <ul class="main-menu">
+          <li class="main-menu__item"><a href="/" class="main-menu__link">Inicio</a></li>
+          <li class="main-menu__item"><a href="#intro-nosotros" class="main-menu__link">Nosotros</a></li>
+          <li class="main-menu__item"><a href="#intro-ensayos" class="main-menu__link">Ensayos
+              Clínicos</a></li>
+          <li class="main-menu__item"><a href="#intro-essentia" class="main-menu__link">ESSENTIA</a></li>
+          <li class="main-menu__item"><a href="#intro-estudios" class="main-menu__link">Estudios Médicos</a></li>
+          <li class="main-menu__item"><a href="#intro-rse" class="main-menu__link">Responsabilidad Social</a></li>
+          <li class="main-menu__item"><a href="#intro-contacto" class="main-menu__link">Contacto</a></li>
+        </ul>
+      </nav>
+      <label for="btn-menu" class="icon-close"><i class="fa-solid fa-xmark"></i></i></label>
+    </div>
+  </div>
+
+  </div>
+
+
+
 
   <!-- =====================
 		///// Scripts below /////
