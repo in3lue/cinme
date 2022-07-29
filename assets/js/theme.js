@@ -1,3 +1,7 @@
+function abrirMenu() {
+
+}
+
 (function ($) {
 	'use strict';
 
@@ -447,8 +451,23 @@
 	$(window).scroll(function () {
 		if ($(this).scrollTop() > 500) {
 			$('.scrolltotop').fadeIn();
+			sMenuClose.classList.remove("off");
+			console.log("down there...");
+			if (sMenuOn.checked) {
+				sMenuOn.checked = false;
+				sMenuBtn.classList.remove("off");
+			}
+
+
 		} else {
 			$('.scrolltotop').fadeOut();
+			sMenuClose.classList.add("off");
+			console.log("on top!");
+			if (!sMenuOn.checked) {
+				sMenuOn.checked = true;
+				sMenuBtn.classList.add("off");
+			}
+
 		}
 	});
 
@@ -469,5 +488,20 @@
 		html: true
 	});
 
+	// hide menu
+	const sMenuBtn = document.getElementById("burguer");
+	const sMenuOn = document.getElementById("btn-menu");
+	const sMenuClose = document.querySelector(".cont-menu .icon-close");
+
+	sMenuBtn.addEventListener('click', () => {
+		sMenuBtn.classList.add("off");
+	});
+
+	document.getElementById("equis").addEventListener('click', () => {
+		sMenuBtn.classList.remove("off");
+	});
+
+	sMenuClose.classList.add("off");
+	sMenuBtn.classList.add("off");
 
 })(jQuery); 
