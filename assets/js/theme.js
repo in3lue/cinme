@@ -1,5 +1,9 @@
-function abrirMenu() {
+function on() {
+	document.getElementById("Estudios").style.display = "block";
+}
 
+function off() {
+	document.getElementById("Estudios").style.display = "none";
 }
 
 (function ($) {
