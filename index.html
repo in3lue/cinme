@@ -43,19 +43,17 @@
   <link rel="stylesheet" href="assets/plugins/animsition/css/animsition.min.css" />
 
   <!-- Animate libs CSS (http://daneden.me/animate) -->
-  <link rel="stylesheet" href="assets/plugins/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
   <!-- YTPlayer CSS (more info: https://github.com/pupunzi/jquery.mb.YTPlayer) -->
   <link rel="stylesheet" href="assets/plugins/ytplayer/css/jquery.mb.YTPlayer.min.css" />
 
-  <!-- Animate libs CSS (http://daneden.me/animate) -->
-  <link rel="stylesheet" href="assets/plugins/animate.min.css" />
-
   <!-- Template master CSS -->
   <!-- <link rel="stylesheet" href="assets/css/helper.css" />
   <link rel="stylesheet" href="assets/css/theme.css" /> -->
-  <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="assets/plugins/cinmeIcons/style.css" />
+  <link rel="stylesheet" href="assets/css/helper.css">
+  <link rel="stylesheet" href="assets/css/style.css" />
 
   <!-- Font Icons CSS (https://fontawesome.com/) -->
   <script src="https://kit.fontawesome.com/1985c105cd.js" crossorigin="anonymous"></script>
@@ -71,7 +69,7 @@
   <!-- *************************************
 		*********** Begin 'Header' content *********** 
 		************************************** -->
-  <div class="header__logo">
+  <div class="header__logo slide-in-top">
     <a href="/"><img src="assets/img/logo-big.png" alt="CINME Logo" class="logo__img"></a>
   </div>
 
@@ -90,8 +88,11 @@
 
       <!-- Begin 'Inicio' Caption -->
       <div class="intro-caption center">
-        <h2 class="intro-title">CINME. Centro de Investigaciones Metabólicas</h2>
-        <p class="intro-description">
+        <h2 class="intro-title animate__animated animate__fadeInDown animate__delay-1s" data-aos="fade-down">CINME.
+          Centro de Investigaciones
+          Metabólicas
+        </h2>
+        <p class="intro-description animate__animated animate__fadeInUp animate__delay-1s" data-aos="fade-up">
           Fundado en 2007 por dos hermanos treintañeros que confiaron en
           el país y que habían entendido que en la investigación médica
           había esperanza. La idea original era empezar a estudiar el
@@ -104,7 +105,7 @@
           sí lo tenían.
         </p>
 
-        <div class="margin-top-30 button" data-aos="zoom-in">
+        <div class="margin-top-30 button  animate__animated animate__zoomIn animate__delay-2s" data-aos="zoom-in">
           <a href="https://www.youtube.com/watch?v=LIRXEMvpe2o" target="_blank"
             title="Hitos de la historia de CINME">¿Querés saber cómo
             sigue la historia?
@@ -173,8 +174,8 @@
         <p class="intro-description" data-aos="fade-up">
           Humanizando la salud persona a persona.
         </p>
-        <div class="margin-top-5 row">
-          <div class="col-lg-3 col-md-6">
+        <div class="margin-top-50 row">
+          <div class="col-lg-3 col-md-6 01" data-aos="flip-right" data-aos-duration="500">
             <div class="tag">
               <div class="ico ico-research ico-3x"></div>
               <h4>
@@ -185,7 +186,7 @@
               </p>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6 02" data-aos="flip-left" data-aos-duration="750">
             <div class="tag">
               <div class="ico ico-pro ico-3x"></div>
               <h4>
@@ -199,7 +200,7 @@
               </p>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6 03" data-aos="flip-right" data-aos-duration="1000">
             <div class="tag">
               <div class="ico ico-quality ico-3x"></div>
               <h4>
@@ -215,7 +216,7 @@
               </p>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6 04" data-aos="flip-left" data-aos-duration="1250">
             <div class="tag">
               <div class="ico ico-commit ico-3x"></div>
               <h4>
@@ -262,27 +263,27 @@
 
     <!-- Begin 'ESSENTIA' caption -->
     <div class="intro-caption center">
-      <h2 class="intro-title">ESSENTIA</h2>
-      <p class="intro-description">
+      <h2 class="intro-title" data-aos="fade-down">ESSENTIA</h2>
+      <p class="intro-description" data-aos="fade-up">
         El espíritu de <b><i>Essentia</i></b> es vivir en <b>armonía</b> y
         en paz.
       </p>
-      <p class="intro-description">
+      <p class="intro-description" data-aos="fade-up">
         Reconstruimos el concepto de <b>salud</b> como un estado de
         bienestar físico, emocional, social y <b>espiritual</b> en un
         trabajo constante de adaptación y <b>equilibrio</b> sostenible en el
         tiempo.
       </p>
-      <p class="intro-description">
+      <p class="intro-description" data-aos="fade-up">
         Para ello es necesario reconectarnos con nuestra esencia, retomar la
         unión entre cuerpo y espíritu y tomar conciencia de que somos
         <b>seres integrales</b>.
       </p>
-      <p class="intro-description">
+      <p class="intro-description" data-aos="fade-up">
         Nutrir el alma y cuidar el cuerpo, eso es <b>Essentia</b>.
       </p>
       <div class="margin-top-30 row">
-        <div class="col-lg-6 col-md-6 text-center" data-aos="fade-up">
+        <div class="col-lg-6 col-md-6 text-center" data-aos="flip-right" data-aos-duration="1000">
           <div class=" tag aos-init aos-animate">
             <div class="icon"><i class="icofont-test-tube"></i></div>
             <h4 class="title">
@@ -295,7 +296,7 @@
             </p>
           </div>
         </div>
-        <div class="col-lg-6 col-md-6 text-center" data-aos="fade-up">
+        <div class="col-lg-6 col-md-6 text-center" data-aos="flip-left" data-aos-duration="1000">
           <div class=" tag aos-init aos-animate">
             <div class="icon"><i class="icofont-test-tube"></i></div>
             <h4 class="title">
@@ -319,8 +320,8 @@
 
     <!-- Begin 'Estudios' caption -->
     <div class="intro-caption center">
-      <h2 class="intro-title">Estudios</h2>
-      <p class="intro-description">
+      <h2 class="intro-title" data-aos="fade-down">Estudios</h2>
+      <p class="intro-description" data-aos="fade-up">
         Humanizando la salud persona a persona.
       </p>
       <div class="margin-top-30 row" onclick="on();">
@@ -395,23 +396,23 @@
 
     <!-- Begin 'Responsabilidad Social' caption -->
     <div class="intro-caption center">
-      <h2 class="intro-title">Responsabilidad Social</h2>
-      <p class="intro-description">
+      <h2 class="intro-title" data-aos="fade-down">Responsabilidad Social</h2>
+      <p class="intro-description" data-aos="fade-up">
         El espíritu de <b><i>Essentia</i></b> es vivir en <b>armonía</b> y
         en paz.
       </p>
-      <p class="intro-description">
+      <p class="intro-description" data-aos="fade-up">
         Reconstruimos el concepto de <b>salud</b> como un estado de
         bienestar físico, emocional, social y <b>espiritual</b> en un
         trabajo constante de adaptación y <b>equilibrio</b> sostenible en el
         tiempo.
       </p>
-      <p class="intro-description">
+      <p class="intro-description" data-aos="fade-up">
         Para ello es necesario reconectarnos con nuestra esencia, retomar la
         unión entre cuerpo y espíritu y tomar conciencia de que somos
         <b>seres integrales</b>.
       </p>
-      <p class="intro-description">
+      <p class="intro-description" data-aos="fade-up">
         Nutrir el alma y cuidar el cuerpo, eso es <b>Essentia</b>.
       </p>
 
@@ -447,13 +448,14 @@
 
     <!-- Begin 'Contacto' caption -->
     <div class="intro-caption center">
-      <h2 class="intro-title">CINME. Contacto</h2>
-      <p class="intro-description">
-        Todos nuestros medios para poder contactarnos
+      <h2 class="intro-title" data-aos="fade-down">CINME. Contacto</h2>
+      <p class="intro-description" data-aos="fade-up">
+        Nuestros medios para poder contactarnos
       </p>
       <div class="container">
         <div class="margin-top-30 row">
-          <div class="col-lg-8 col-md-6 text-left aos-init aos-animate" data-aos="fade-up">
+          <div class="col-lg-8 col-md-6 text-left aos-init aos-animate" data-aos="fade-up-right"
+            data-aos-easing="linear" data-aos-duration="500">
             <h4>CINME S.A.</h4>
             <div class="address">
               <p><i class="fa-solid fa-location-dot"></i>Viamonte 2213, C1056 ABJ, Buenos Aires</p>
@@ -462,7 +464,8 @@
               <p><i class="fa-solid fa-envelope-open"></i>Nuestro email: info@cinme.com.ar</p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 text-left aos-init aos-animate" data-aos="fade-up">
+          <div class="col-lg-4 col-md-6 text-left aos-init aos-animate" data-aos="fade-up-left" data-aos-easing="linear"
+            data-aos-duration="500">
             <h4>Seguinos</h4>
             <ul class="link-list">
               <div class="link-item">
@@ -514,7 +517,7 @@
     <div class="cont-menu">
       <nav>
         <ul class="main-menu">
-          <li class="main-menu__item"><a href="/" class="main-menu__link">Inicio</a></li>
+          <li class="main-menu__item"><a href="#intro-inicio" class="main-menu__link">Inicio</a></li>
           <li class="main-menu__item"><a href="#intro-nosotros" class="main-menu__link">Nosotros</a></li>
           <li class="main-menu__item"><a href="#intro-ensayos" class="main-menu__link">Ensayos
               Clínicos</a></li>

@@ -1,0 +1,542 @@
+/* ------------------------------------------------------------- *
+ * Headings
+/* ------------------------------------------------------------- */
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+}
+
+.h1,
+.h2,
+.h3,
+h1,
+h2,
+h3 {
+    line-height: 1.1;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.h4,
+.h5,
+.h6,
+h4,
+h5,
+h6 {
+    line-height: 1.4;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.h1,
+h1 {
+    font-size: 40px;
+}
+
+.h2,
+h2 {
+    font-size: 36px;
+}
+
+.h3,
+h3 {
+    font-size: 30px;
+}
+
+.h4,
+h4 {
+    font-size: 24px;
+}
+
+.h5,
+h5 {
+    font-size: 18px;
+}
+
+.h6,
+h6 {
+    font-size: 14px;
+}
+
+/* text aligns */
+.text-center {
+    text-align: center !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+/* text transform */
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+
+.text-lowercase {
+    text-transform: lowercase !important;
+}
+
+.text-normal {
+    text-transform: none !important;
+}
+
+/* ------------------------------------------------------------- *
+ *  Height classes
+/* ------------------------------------------------------------- */
+
+.full-height {
+    height: 100% !important;
+}
+
+.full-height-vh {
+    min-height: 100vh !important;
+}
+
+/* ------------------------------------------------------------- *
+ *  Width classes
+/* ------------------------------------------------------------- */
+
+/* Width auto */
+.width-auto {
+    width: auto !important;
+}
+
+/* Full width */
+.full-width {
+    width: 100% !important;
+}
+
+/* ------------------------------------------------------------- *
+ *  Background classes
+/* ------------------------------------------------------------- */
+
+.no-bg-image {
+    background: none !important;
+}
+
+.bg-image {
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+/* full cover (parent element must contain "position: relative;") */
+.full-cover {
+    position: absolute !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+}
+
+/* ------------------------------------------------------------- *
+ *  Background transparent color classes
+/* ------------------------------------------------------------- */
+
+/* 100% transparent */
+.bg-transparent {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+/* Background dark transparent classes (opacity 1 to 9.5) */
+.bg-transparent-1-dark {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.bg-transparent-1-5-dark {
+    background-color: rgba(0, 0, 0, 0.15) !important;
+}
+
+.bg-transparent-2-dark {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+.bg-transparent-2-5-dark {
+    background-color: rgba(0, 0, 0, 0.25) !important;
+}
+
+.bg-transparent-3-dark {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.bg-transparent-3-5-dark {
+    background-color: rgba(0, 0, 0, 0.35) !important;
+}
+
+.bg-transparent-4-dark {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+.bg-transparent-4-5-dark {
+    background-color: rgba(0, 0, 0, 0.45) !important;
+}
+
+.bg-transparent-5-dark {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.bg-transparent-5-5-dark {
+    background-color: rgba(0, 0, 0, 0.55) !important;
+}
+
+.bg-transparent-6-dark {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.bg-transparent-6-5-dark {
+    background-color: rgba(0, 0, 0, 0.65) !important;
+}
+
+.bg-transparent-7-dark {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.bg-transparent-7-5-dark {
+    background-color: rgba(0, 0, 0, 0.75) !important;
+}
+
+.bg-transparent-8-dark {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.bg-transparent-8-5-dark {
+    background-color: rgba(0, 0, 0, 0.85) !important;
+}
+
+.bg-transparent-9-dark {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.bg-transparent-9-5-dark {
+    background-color: rgba(0, 0, 0, 0.95) !important;
+}
+
+/* Background white transparent classes (opacity 1 to 9.5) */
+.bg-transparent-1-white {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.bg-transparent-1-5-white {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+.bg-transparent-2-white {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.bg-transparent-2-5-white {
+    background-color: rgba(255, 255, 255, 0.25) !important;
+}
+
+.bg-transparent-3-white {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.bg-transparent-3-5-white {
+    background-color: rgba(255, 255, 255, 0.35) !important;
+}
+
+.bg-transparent-4-white {
+    background-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.bg-transparent-4-5-white {
+    background-color: rgba(255, 255, 255, 0.45) !important;
+}
+
+.bg-transparent-5-white {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.bg-transparent-5-5-white {
+    background-color: rgba(255, 255, 255, 0.55) !important;
+}
+
+.bg-transparent-6-white {
+    background-color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.bg-transparent-6-5-white {
+    background-color: rgba(255, 255, 255, 0.65) !important;
+}
+
+.bg-transparent-7-white {
+    background-color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.bg-transparent-7-5-white {
+    background-color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.bg-transparent-8-white {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.bg-transparent-8-5-white {
+    background-color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.bg-transparent-9-white {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.bg-transparent-9-5-white {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+}
+
+/* ------------------------------------------------------------- *
+ *  Background color classes
+/* ------------------------------------------------------------- */
+
+.bg-main {
+    background-color: #1D71B8 !important;
+}
+
+/* Template main color */
+.bg-white {
+    background-color: #FFF !important;
+}
+
+.bg-gray {
+    background-color: #999 !important;
+}
+
+.bg-gray-2 {
+    background-color: #EEE !important;
+}
+
+.bg-gray-3 {
+    background-color: #F1F1F1 !important;
+}
+
+.bg-dark {
+    background-color: #000 !important;
+}
+
+.bg-dark-2 {
+    background-color: #111 !important;
+}
+
+.bg-dark-3 {
+    background-color: #222 !important;
+}
+
+/* overflow */
+.overflow-hidden {
+    overflow: hidden !important;
+}
+
+.overflow-y-hidden {
+    overflow-y: hidden !important;
+}
+
+.overflow-x-hidden {
+    overflow-x: hidden !important;
+}
+
+.overflow-auto {
+    overflow: auto !important;
+}
+
+.overflow-y-auto {
+    overflow-y: auto !important;
+}
+
+.overflow-x-auto {
+    overflow-x: auto !important;
+}
+
+.overflow-scroll {
+    overflow: scroll !important;
+}
+
+.overflow-y-scroll {
+    overflow-y: scroll !important;
+}
+
+.overflow-x-scroll {
+    overflow-x: scroll !important;
+}
+
+/* ------------------------------------------------------------- *
+ *  Margin classes
+/* ------------------------------------------------------------- */
+/* margin top */
+.margin-top-5 {
+    margin-top: 5px !important;
+}
+
+.margin-top-10 {
+    margin-top: 10px !important;
+}
+
+.margin-top-15 {
+    margin-top: 15px !important;
+}
+
+.margin-top-20 {
+    margin-top: 20px !important;
+}
+
+.margin-top-25 {
+    margin-top: 25px !important;
+}
+
+.margin-top-30 {
+    margin-top: 30px !important;
+}
+
+.margin-top-35 {
+    margin-top: 35px !important;
+}
+
+.margin-top-40 {
+    margin-top: 40px !important;
+}
+
+.margin-top-45 {
+    margin-top: 45px !important;
+}
+
+.margin-top-50 {
+    margin-top: 50px !important;
+}
+
+.margin-top-55 {
+    margin-top: 55px !important;
+}
+
+.margin-top-60 {
+    margin-top: 60px !important;
+}
+
+.margin-top-65 {
+    margin-top: 65px !important;
+}
+
+.margin-top-70 {
+    margin-top: 70px !important;
+}
+
+.margin-top-75 {
+    margin-top: 75px !important;
+}
+
+.margin-top-80 {
+    margin-top: 80px !important;
+}
+
+.margin-top-85 {
+    margin-top: 85px !important;
+}
+
+.margin-top-90 {
+    margin-top: 90px !important;
+}
+
+.margin-top-95 {
+    margin-top: 95px !important;
+}
+
+.margin-top-100 {
+    margin-top: 100px !important;
+}
+
+/* ------------------------------------------------------------- *
+ * YTP Player: https://github.com/pupunzi/jquery.mb.YTPlayer;
+/* ------------------------------------------------------------- */
+
+.youtube-bg {
+    position: relative;
+}
+
+.YTPOverlay {
+    background-color: transparent;
+}
+
+.YTPOverlay.raster {
+    background: url("../plugins/ytplayer/images/raster.png");
+    /* "raster.png" or "raster_dot.png" */
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.youtube-bg.YTPFullscreen .YTPOverlay,
+.youtube-bg.YTPFullscreen .YTPOverlay.raster,
+.youtube-bg.YTPFullscreen .cover {
+    display: none;
+}
+
+/* Video control bar */
+.mb_YTPBar,
+.mb_YTPBar.visible {
+    opacity: 0.1;
+    z-index: 9;
+}
+
+.mb_YTPBar .buttonBar {
+    top: -40px;
+    height: 40px;
+    padding: 10px 10px 0px 10px;
+}
+
+.mb_YTPBar,
+.mb_YTPBar .mb_YTPProgress,
+.mb_YTPBar .mb_YTPLoaded,
+.mb_YTPBar .mb_YTPseekbar {
+    height: 4px;
+    padding: 0;
+}
+
+.mb_YTPBar .mb_YTPProgress,
+.mb_YTPBar .mb_YTPLoaded {
+    cursor: pointer;
+}
+
+.mb_YTPBar .mb_YTPseekbar {
+    background: #f20000;
+    cursor: pointer;
+}
+
+/* Video control elements */
+.mb_YTPBar span.mb_OnlyYT {
+    left: 250px;
+    top: 10px;
+    right: auto;
+}
+
+@media (min-width: 480px) {
+    .mb_YTPBar span.mb_OnlyYT {
+        left: 330px;
+    }
+}

@@ -453,10 +453,9 @@ function off() {
 
 	// Check to see if the window is top if not then display button
 	$(window).scroll(function () {
-		if ($(this).scrollTop() > 500) {
+		if ($(this).scrollTop() > 10) {
 			$('.scrolltotop').fadeIn();
 			sMenuClose.classList.remove("off");
-			console.log("down there...");
 			if (sMenuOn.checked) {
 				sMenuOn.checked = false;
 				sMenuBtn.classList.remove("off");
@@ -466,7 +465,6 @@ function off() {
 		} else {
 			$('.scrolltotop').fadeOut();
 			sMenuClose.classList.add("off");
-			console.log("on top!");
 			if (!sMenuOn.checked) {
 				sMenuOn.checked = true;
 				sMenuBtn.classList.add("off");
@@ -492,7 +490,9 @@ function off() {
 		html: true
 	});
 
-	// hide menu
+	// ===============
+	// Menu
+	// ===============
 	const sMenuBtn = document.getElementById("burguer");
 	const sMenuOn = document.getElementById("btn-menu");
 	const sMenuClose = document.querySelector(".cont-menu .icon-close");
