@@ -453,7 +453,7 @@ function off() {
 
 	// Check to see if the window is top if not then display button
 	$(window).scroll(function () {
-		if ($(this).scrollTop() > 10) {
+		if ($(this).scrollTop() > 5) {
 			$('.scrolltotop').fadeIn();
 			sMenuClose.classList.remove("off");
 			if (sMenuOn.checked) {
