@@ -458,13 +458,14 @@ function nosotros() {
 	// Check to see if the window is top if not then display button
 	$(window).scroll(function () {
 
-		if ($(this).scrollTop() > 5) {
+		if ($(this).scrollTop() > 10) {
 			$('.scrolltotop').fadeIn();
 			sMenuClose.classList.remove("off");
 			if (sMenuOn.checked) {
 				sMenuOn.checked = false;
 				sMenuBtn.classList.remove("off");
 			}
+			if (elNosotros) elNosotros.classList.add("semi");
 
 
 		} else {
@@ -474,7 +475,7 @@ function nosotros() {
 				sMenuOn.checked = true;
 				sMenuBtn.classList.add("off");
 			}
-
+			if (elNosotros) elNosotros.classList.remove("semi");
 		}
 	});
 
@@ -501,6 +502,7 @@ function nosotros() {
 	const sMenuBtn = document.getElementById("burguer");
 	const sMenuOn = document.getElementById("btn-menu");
 	const sMenuClose = document.querySelector(".cont-menu .icon-close");
+	const elNosotros = document.getElementById("nosotros");
 
 	sMenuBtn.addEventListener('click', () => {
 		sMenuBtn.classList.add("off");
