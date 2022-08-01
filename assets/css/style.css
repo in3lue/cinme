@@ -236,10 +236,6 @@ section {
     background-image: url(../img/05_estudios.jpg);
 }
 
-#nosotros {
-    background-image: url(../img/img-bg.png);
-}
-
 /* ------------------------------------------------------------- *
  *  Texts
 /* ------------------------------------------------------------- */
@@ -250,13 +246,6 @@ section {
     position: absolute;
     color: #FFF;
     z-index: 3;
-}
-
-.intro-internal-caption {
-    position: relative;
-    color: #FFF;
-    z-index: 3;
-    text-align: center;
 }
 
 .intro-caption.center {
@@ -271,6 +260,7 @@ section {
     -webkit-transform: translate(-50%, -50%) !important;
     transform: translate(-50%, -50%) !important;
 }
+
 
 /* intro title */
 .intro-title {
@@ -381,6 +371,20 @@ section {
     margin-top: 0;
 }
 
+/** Overlays **/
+
+#Estudios {
+    display: none;
+    /* Hidden by default */
+    background-color: rgba(29, 113, 184, 0.90);
+    /* Black background with opacity */
+    z-index: 900;
+    /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer;
+    /* Add a pointer on hover */
+    margin: 10px;
+}
+
 /* ------------------------------------------------------------- *
    *  Tags
 /* ------------------------------------------------------------- */
@@ -426,30 +430,10 @@ section {
 }
 
 /* ------------------------------------------------------------- *
- * Overlays
-/* ------------------------------------------------------------- */
-
-#Estudios {
-    display: none;
-    /* Hidden by default */
-    background-color: rgba(29, 113, 184, 0.90);
-    /* Black background with opacity */
-    z-index: 900;
-    /* Specify a stack order in case you're using a different order for other elements */
-    cursor: pointer;
-    /* Add a pointer on hover */
-    margin: 10px;
-}
-
-/* ------------------------------------------------------------- *
  * Animations
 /* ------------------------------------------------------------- */
 
-/*
- * ----------------------------------------
- * animation slide-in-top
- * ----------------------------------------
- */
+/** animation slide-in-top **/
 
 .slide-in-top {
     -webkit-animation: slide-in-top 1s 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -482,4 +466,54 @@ section {
         transform: translateY(0);
         opacity: 1;
     }
+}
+
+/* ------------------------------------------------------------- *
+ * Internals
+/* ------------------------------------------------------------- */
+
+/** Backgrounds **/
+#nosotros {
+    background-image: url(../img/img-bg.png);
+}
+
+/** accordion **/
+
+.accordion {
+    width: 100%;
+    margin: 20px auto 60px;
+    --bs-accordion-btn-focus-border-color: #1D71B8;
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(29, 113, 184, 0.25);
+    --bs-accordion-active-color: #1D71B8;
+    --bs-accordion-active-bg: #d9eeff;
+}
+
+/** texts **/
+
+.internal-caption {
+    position: relative;
+    color: #1D71B8;
+    z-index: 3;
+    text-align: center;
+}
+
+.internal-caption.center {
+    margin: auto;
+    width: 100% !important;
+    max-width: 900px;
+    padding: 15px;
+    text-align: center;
+}
+
+.internal-title {
+
+    color: #1D71B8;
+    margin: 0;
+    text-shadow: none;
+    padding: 40px 0px;
+}
+
+.internal-subtitle {
+    margin: 15px 0 0 0;
+    text-shadow: none;
 }

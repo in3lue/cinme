@@ -52,7 +52,6 @@
     <link rel="stylesheet" href="assets/plugins/cinmeIcons/style.css" />
     <link rel="stylesheet" href="assets/css/helper.css">
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/sass/styles.sass">
 
     <!-- Font Icons CSS (https://fontawesome.com/) -->
     <script src="https://kit.fontawesome.com/1985c105cd.js" crossorigin="anonymous"></script>
@@ -72,133 +71,149 @@
         <a href="/"><img src="assets/img/logo-big.png" alt="CINME Logo" class="logo__img"></a>
     </div>
 
-    <div class="btn-menu" id="burguer">
+    <div class="btn-menu secondary" id="burguer">
         <label for="btn-menu" class="icon-menu"><i class="fa-solid fa-bars"></i></label>
     </div>
 
     <!-- *************************************
 		*********** Begin 'Body' content *********** 
 		************************************** -->
-    <!-- ///// Begin 'Nosotros' section ///// -->
+    <div>
+        <!-- ///// Begin 'Nosotros' section ///// -->
+        <section id="nosotros" class="full-height-vh">
+        </section>
+        <!-- ///// End 'Nosotros' section ///// -->
 
-    <section id="nosotros" class="full-height-vh bg-image">
-        <!-- Begin 'Nosotros' caption -->
-    </section>
-    <section>
-        <div class="container">
-            <div class="intro-internal-caption center">
-                <h2 class="intro-title">Nosotros</h2>
-            </div>
-        </div>
-    </section>
-    <section class="container">
-        <div class="accordion" id="accordionExample">
+        <!-- ///// Begin 'Ensayos' section ///// -->
 
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Misión
-                    </button>
+        <section class="full-height-vh">
+            <!-- Element cover -->
+
+            <!-- Begin 'Nosotros' Caption -->
+            <div class="intro-caption center">
+                <h2 class="internal-title animate__animated animate__fadeInDown animate__delay-1s" data-aos="fade-down">
+                    CINME. Nosotros
                 </h2>
-                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        Mejorar la salud de las personas a través del cuidado integral, personalizado, humano y
-                        de calidad en las áreas terapéuticas que desarrollamos, arraigados en la ética y en
-                        valores humanos.
+                <div class="accordion" id="accordionCINME">
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Misión
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionCINME">
+                            <div class="accordion-body">
+                                Mejorar la salud de las personas a través del cuidado integral, personalizado, humano y
+                                de calidad en las áreas terapéuticas que desarrollamos, arraigados en la ética y en
+                                valores humanos.
+                            </div>
+                        </div>
                     </div>
+
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Visión
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionCINME">
+                            <div class="accordion-body">
+                                Ser un centro de referencia a nivel mundial conformado por un equipo de excelente
+                                calidad humana y profesional, que promueve el talento y la pasión por la innovación y
+                                educa a la comunidad.
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Valores
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionCINME">
+                            <div class="accordion-body">
+                                Nuestros valores se fundan en el respeto por la vida y la información de nuestros
+                                pacientes, el profesionalismo médico (que implica una ética médica, calidad en los
+                                procesos y confiabilidad legal) y el trabajo en equipo.
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Propósito
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#accordionCINME">
+                            <div class="accordion-body">
+                                Mejorar la calidad de vida de las personas.
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
+            <!-- End 'Nosotros' caption -->
+        </section>
+        <!-- ///// End 'Ensayos' section ///// -->
 
 
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Visión
-                    </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        Ser un centro de referencia a nivel mundial conformado por un equipo de excelente
-                        calidad humana y profesional, que promueve el talento y la pasión por la innovación y
-                        educa a la comunidad.
-                    </div>
-                </div>
-            </div>
 
 
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Valores
-                    </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        Nuestros valores se fundan en el respeto por la vida y la información de nuestros
-                        pacientes, el profesionalismo médico (que implica una ética médica, calidad en los
-                        procesos y confiabilidad legal) y el trabajo en equipo.
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFour">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        Propósito
-                    </button>
-                </h2>
-                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        Mejorar la calidad de vida de las personas.
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-    </section>
-    <!-- End 'Ensayos' caption -->
-
-
-    <!-- =================
+        <!-- =================
 	///// End 'Body' /////
 	================== -->
-    <!-- input -->
-    <input type="checkbox" id="btn-menu" checked="checked">
-    <div class="container-menu">
-        <div class="cont-menu">
-            <nav>
-                <ul class="main-menu">
-                    <li class="main-menu__item"><a href="index.html#intro-inicio" class="main-menu__link">Inicio</a>
-                    </li>
-                    <li class="main-menu__item"><a href="index.html#intro-nosotros" class="main-menu__link">Nosotros</a>
-                    </li>
-                    <li class="main-menu__item"><a href="index.html#intro-ensayos" class="main-menu__link">Ensayos
-                            Clínicos</a></li>
-                    <li class="main-menu__item"><a href="index.html#intro-essentia" class="main-menu__link">ESSENTIA</a>
-                    </li>
-                    <li class="main-menu__item"><a href="index.html#intro-estudios" class="main-menu__link">Estudios
-                            Médicos</a></li>
-                    <li class="main-menu__item"><a href="index.html#intro-RSE" class="main-menu__link">Responsabilidad
-                            Social</a></li>
-                    <li class="main-menu__item"><a href="index.html#intro-contacto" class="main-menu__link">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
-            <label for="btn-menu" class="icon-close" id="equis"><i class="fa-solid fa-xmark"></i></i></label>
+        <!-- input -->
+        <input type="checkbox" id="btn-menu" checked="checked">
+        <div class="container-menu">
+            <div class="cont-menu">
+                <nav>
+                    <ul class="main-menu">
+                        <li class="main-menu__item"><a href="index.html#intro-inicio" class="main-menu__link">Inicio</a>
+                        </li>
+                        <li class="main-menu__item"><a href="index.html#intro-nosotros"
+                                class="main-menu__link">Nosotros</a>
+                        </li>
+                        <li class="main-menu__item"><a href="index.html#intro-ensayos" class="main-menu__link">Ensayos
+                                Clínicos</a></li>
+                        <li class="main-menu__item"><a href="index.html#intro-essentia"
+                                class="main-menu__link">ESSENTIA</a>
+                        </li>
+                        <li class="main-menu__item"><a href="index.html#intro-estudios" class="main-menu__link">Estudios
+                                Médicos</a>
+                        </li>
+                        <li class="main-menu__item"><a href="index.html#intro-RSE"
+                                class="main-menu__link">Responsabilidad
+                                Social</a>
+                        </li>
+                        <li class="main-menu__item"><a href="index.html#intro-contacto"
+                                class="main-menu__link">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+                <label for="btn-menu" class="icon-close" id="equis"><i class="fa-solid fa-xmark"></i></i></label>
+            </div>
         </div>
-    </div>
 
     </div>
+
+
+
 
     <!-- =====================
 		///// Scripts below /////
@@ -213,26 +228,28 @@
     <!-- bootstrap JS (http://getbootstrap.com) -->
 
     <!-- Libs and Plugins JS -->
-    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- AOS Library (https://michalsnik.github.io/aos/) -->
     <script src="assets/plugins/animsition/js/animsition.min.js"></script>
     <!-- Animsition JS (http://git.blivesta.com/animsition/) -->
     <script src="assets/plugins/jquery.easing.min.js"></script>
     <!-- Easing JS (http://gsgd.co.uk/sandbox/jquery/easing/) -->
-    <!-- <script src="assets/plugins/isotope.pkgd.min.js"></script> -->
+    <script src="assets/plugins/isotope.pkgd.min.js"></script>
     <!-- Isotope JS (http://isotope.metafizzy.co) -->
-    <!-- <script src="assets/plugins/imagesloaded.pkgd.min.js"></script> -->
+    <script src="assets/plugins/imagesloaded.pkgd.min.js"></script>
     <!-- ImagesLoaded JS (https://github.com/desandro/imagesloaded) -->
-    <!-- <script src="assets/plugins/jquery.nicescroll.min.js"></script> -->
+    <script src="assets/plugins/jquery.nicescroll.min.js"></script>
     <!-- Nicescroll JS (http://areaaperta.com/nicescroll/) -->
-    <!-- <script src="assets/plugins/jquery.mousewheel.min.js"></script> -->
+    <!-- <script src="assets/plugins/owl-carousel/js/owl.carousel.min.js"></script> -->
+    <!-- Owl Carousel JS (http://www.owlcarousel.owlgraphic.com) -->
+    <script src="assets/plugins/jquery.mousewheel.min.js"></script>
     <!-- A jQuery plugin that adds cross browser mouse wheel support (https://github.com/jquery/jquery-mousewheel) -->
-    <!-- <script src="assets/plugins/ytplayer/js/jquery.mb.YTPlayer.min.js"></script> -->
+    <script src="assets/plugins/ytplayer/js/jquery.mb.YTPlayer.min.js"></script>
     <!-- YTPlayer JS (more info: https://github.com/pupunzi/jquery.mb.YTPlayer) -->
 
-    <!-- <script src="assets/plugins/lightgallery/js/lightgallery.min.js"></script> -->
+    <script src="assets/plugins/lightgallery/js/lightgallery.min.js"></script>
     <!-- lightGallery JS (http://sachinchoolur.github.io/lightGallery) -->
-    <!-- <script src="assets/plugins/lightgallery/js/lightgallery-plugins.js"></script> -->
+    <script src="assets/plugins/lightgallery/js/lightgallery-plugins.js"></script>
     <!-- lightGallery Plugins JS (http://sachinchoolur.github.io/lightGallery) -->
 
 

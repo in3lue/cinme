@@ -105,6 +105,23 @@ h6 {
 
 .full-height-vh {
     min-height: 100vh !important;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    transform: all 500ms scale();
+}
+
+.full-semiheight-vh {
+    min-height: 50vh !important;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    top: 20px;
+    width: 50%;
+    margin: auto;
+    transform: all 500ms scale()
 }
 
 /* ------------------------------------------------------------- *

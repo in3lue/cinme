@@ -9,7 +9,6 @@ function off() {
 (function ($) {
 	'use strict';
 
-
 	// ===============================================
 	// Page transitions / preloader (Animsition)
 	// More info: http://git.blivesta.com/animsition/
@@ -397,17 +396,17 @@ function off() {
 	// Fade out element with page scroll
 	// ==================================
 
-	// $(window).scroll(function () {
-	// 	console.log('Fade out element with page scroll');
-	// 	$(".fade-out-scroll-1").css("opacity", 1 - $(window).scrollTop() / 150);
-	// 	$(".fade-out-scroll-2").css("opacity", 1 - $(window).scrollTop() / 250);
-	// 	$(".fade-out-scroll-3").css("opacity", 1 - $(window).scrollTop() / 350);
-	// 	$(".fade-out-scroll-4").css("opacity", 1 - $(window).scrollTop() / 450);
-	// 	$(".fade-out-scroll-5").css("opacity", 1 - $(window).scrollTop() / 550);
-	// 	$(".fade-out-scroll-6").css("opacity", 1 - $(window).scrollTop() / 650);
-	// 	$(".fade-out-scroll-7").css("opacity", 1 - $(window).scrollTop() / 750);
-	// 	$(".fade-out-scroll-8").css("opacity", 1 - $(window).scrollTop() / 850);
-	// });
+	$(window).scroll(function () {
+		console.log('Fade out element with page scroll');
+		$(".fade-out-scroll-1").css("opacity", 1 - $(window).scrollTop() / 150);
+		$(".fade-out-scroll-2").css("opacity", 1 - $(window).scrollTop() / 250);
+		$(".fade-out-scroll-3").css("opacity", 1 - $(window).scrollTop() / 350);
+		$(".fade-out-scroll-4").css("opacity", 1 - $(window).scrollTop() / 450);
+		$(".fade-out-scroll-5").css("opacity", 1 - $(window).scrollTop() / 550);
+		$(".fade-out-scroll-6").css("opacity", 1 - $(window).scrollTop() / 650);
+		$(".fade-out-scroll-7").css("opacity", 1 - $(window).scrollTop() / 750);
+		$(".fade-out-scroll-8").css("opacity", 1 - $(window).scrollTop() / 850);
+	});
 
 
 
