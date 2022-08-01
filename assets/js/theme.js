@@ -336,7 +336,7 @@ function off() {
 	// Source: https://github.com/pupunzi/jquery.mb.YTPlayer
 	// =======================================================
 
-	// $(".youtube-bg").mb_YTPlayer();
+	$(".youtube-bg").mb_YTPlayer();
 
 
 
