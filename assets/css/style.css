@@ -115,10 +115,6 @@ a:focus {
     z-index: 30;
 }
 
-#secundary .icon-menu {
-    color: #1D71B8;
-}
-
 .icon-menu i {
     font-size: 30px;
 }
@@ -130,10 +126,6 @@ a:focus {
     top: 0px;
     color: #FFF;
     cursor: pointer;
-}
-
-#secundary .icon-close {
-    color: #1D71B8;
 }
 
 .icon-close i {
@@ -220,20 +212,6 @@ a:focus {
     transition: all 400ms ease;
 }
 
-.secondary .main-menu__link {
-    color: #1D71B8;
-    display: block;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: all 400ms ease;
-}
-
-.secondary .main-menu__link:hover {
-    color: #1D71B8;
-    transition: all 400ms ease;
-}
-
-
 /* ------------------------------------------------------------- *
  * Sections
 /* ------------------------------------------------------------- */
@@ -274,8 +252,11 @@ section {
     z-index: 3;
 }
 
-.secondary .intro-caption {
-    color: #1D71B8;
+.intro-internal-caption {
+    position: relative;
+    color: #FFF;
+    z-index: 3;
+    text-align: center;
 }
 
 .intro-caption.center {

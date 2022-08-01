@@ -3,7 +3,7 @@
 
 <head>
     <!-- Title -->
-    <title>CINME. Nosotroa</title>
+    <title>CINME. Nosotros</title>
 
     <!-- Meta -->
     <meta charset="utf-8" />
@@ -52,6 +52,7 @@
     <link rel="stylesheet" href="assets/plugins/cinmeIcons/style.css" />
     <link rel="stylesheet" href="assets/css/helper.css">
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/sass/styles.sass">
 
     <!-- Font Icons CSS (https://fontawesome.com/) -->
     <script src="https://kit.fontawesome.com/1985c105cd.js" crossorigin="anonymous"></script>
@@ -78,59 +79,93 @@
     <!-- *************************************
 		*********** Begin 'Body' content *********** 
 		************************************** -->
-    <div>
-        <!-- ///// Begin 'Nosotros' section ///// -->
+    <!-- ///// Begin 'Nosotros' section ///// -->
 
-        <section id="nosotros" class="full-height-vh bg-image">
-
-            <!-- Begin 'Nosotros' caption -->
-            <div class="intro-caption center">
-                <h2 class="intro-title" data-aos="fade-down">Nosotros</h2>
-                <p class="intro-description" data-aos="fade-up">
-                    Humanizando la salud persona a persona.
-                </p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A modi laborum id eius ex assumenda dolor
-                    quas reprehenderit officiis dignissimos. Sequi nihil nostrum dolore sint nisi incidunt ex labore
-                    ullam enim voluptate architecto neque odio voluptates dolores sit ratione possimus, sunt esse
-                    cumque. Est architecto, atque similique odit excepturi nihil quasi aperiam sunt eius vero rerum
-                    reprehenderit nulla? Ratione exercitationem harum suscipit maxime accusamus quis odit? Libero earum
-                    quod quia incidunt. Saepe iusto dolorem illum dicta! Assumenda nulla adipisci non quia, natus
-                    aperiam harum excepturi aspernatur, quo ipsam, rerum laudantium fuga vel laborum iste similique?
-                    Necessitatibus nihil totam quaerat aspernatur libero itaque ea et, cumque doloremque voluptas
-                    dignissimos, veniam quibusdam mollitia incidunt omnis aliquid reiciendis? Voluptate, et aliquid qui
-                    necessitatibus quos voluptates totam molestiae laborum nemo cumque labore, provident non! Nam omnis
-                    cumque voluptatum et provident ex facilis eum voluptatibus illo illum voluptates, dolores
-                    accusantium laudantium similique minus velit id optio est ab non tempore odit. Magni aperiam porro,
-                    saepe culpa est rerum deserunt dolorum officiis harum in quos quae officia dolor id similique
-                    quisquam aliquid quas ipsum blanditiis tempora aspernatur consequatur. In nihil dicta quidem
-                    aspernatur earum et provident ipsam, nisi est, itaque optio atque illo repudiandae soluta?
-                    Distinctio unde alias at corporis enim repudiandae eveniet ab! Ea deleniti iste consequuntur dolorum
-                    natus nam atque repellat facere necessitatibus voluptatum beatae, autem placeat magni impedit
-                    provident? Ipsum aut architecto delectus illum voluptate, cum corrupti voluptas, eos velit quo hic
-                    ratione. Pariatur, eveniet omnis, eius quae molestias atque recusandae quod illo harum obcaecati
-                    velit facilis vero aperiam aliquid, quia eum laborum distinctio? Tempore, quos. Amet quasi vel et
-                    iusto, repellendus hic nobis odit aspernatur rerum repudiandae quis excepturi corporis earum quo
-                    iure aliquid similique quod odio cupiditate doloribus velit quam distinctio a? Quisquam animi
-                    tenetur, blanditiis soluta excepturi distinctio magnam illo fugit hic suscipit iure! Neque, dolores
-                    pariatur quisquam, ipsum tenetur voluptatem dolorum, repellendus velit sint magnam quae possimus.
-                    Nobis sed nesciunt, veritatis vitae reiciendis nihil! Quas, dolore harum aut animi beatae aspernatur
-                    nam, natus fuga voluptate eligendi officia culpa nihil pariatur, magnam rerum veritatis laboriosam
-                    minus amet ab. Nostrum esse consequatur mollitia modi suscipit nemo vero magnam et? Maxime fugiat
-                    vero quaerat id animi nobis reprehenderit tenetur, a excepturi voluptatibus, est sit ducimus! Quidem
-                    amet non illum atque porro iste eligendi quaerat ipsa provident pariatur, repudiandae velit nisi
-                    itaque. Nulla assumenda, perspiciatis libero, dicta hic obcaecati sapiente, rem reprehenderit quasi
-                    ea ducimus quod odit. Explicabo ut ullam neque voluptatem, voluptates quos excepturi repellendus
-                    odio fugit maiores perferendis assumenda reprehenderit! Tempora libero praesentium, autem eius
-                    ducimus dolores sunt iusto ipsa vitae corrupti distinctio aperiam voluptate cupiditate accusamus
-                    aut. Fugit eos facere excepturi commodi delectus, minima reprehenderit dolorem quasi eaque vel
-                    magnam architecto officia explicabo tempore inventore sint distinctio beatae perferendis possimus at
-                    laboriosam facilis. Voluptate consectetur voluptas asperiores magnam recusandae. Exercitationem enim
-                    accusantium, earum dicta in nisi consequatur minima ab vel facilis. Recusandae est, facere atque non
-                    voluptas exercitationem, cum vel cumque soluta repellendus vitae nobis eaque. Laudantium animi
-                    repellat earum?</p>
+    <section id="nosotros" class="full-height-vh bg-image">
+        <!-- Begin 'Nosotros' caption -->
+    </section>
+    <section>
+        <div class="container">
+            <div class="intro-internal-caption center">
+                <h2 class="intro-title">Nosotros</h2>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="accordion" id="accordionExample">
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Misión
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Mejorar la salud de las personas a través del cuidado integral, personalizado, humano y
+                        de calidad en las áreas terapéuticas que desarrollamos, arraigados en la ética y en
+                        valores humanos.
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Visión
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Ser un centro de referencia a nivel mundial conformado por un equipo de excelente
+                        calidad humana y profesional, que promueve el talento y la pasión por la innovación y
+                        educa a la comunidad.
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Valores
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Nuestros valores se fundan en el respeto por la vida y la información de nuestros
+                        pacientes, el profesionalismo médico (que implica una ética médica, calidad en los
+                        procesos y confiabilidad legal) y el trabajo en equipo.
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Propósito
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Mejorar la calidad de vida de las personas.
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
     <!-- End 'Ensayos' caption -->
 
 
@@ -172,30 +207,32 @@
     <!-- Core JS -->
     <script src="assets/plugins/jquery/jquery.min.js"></script>
     <!-- jquery JS (https://jquery.com) -->
-    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
     <!-- bootstrap JS (http://getbootstrap.com) -->
 
     <!-- Libs and Plugins JS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
     <!-- AOS Library (https://michalsnik.github.io/aos/) -->
     <script src="assets/plugins/animsition/js/animsition.min.js"></script>
     <!-- Animsition JS (http://git.blivesta.com/animsition/) -->
     <script src="assets/plugins/jquery.easing.min.js"></script>
     <!-- Easing JS (http://gsgd.co.uk/sandbox/jquery/easing/) -->
-    <script src="assets/plugins/isotope.pkgd.min.js"></script>
+    <!-- <script src="assets/plugins/isotope.pkgd.min.js"></script> -->
     <!-- Isotope JS (http://isotope.metafizzy.co) -->
-    <script src="assets/plugins/imagesloaded.pkgd.min.js"></script>
+    <!-- <script src="assets/plugins/imagesloaded.pkgd.min.js"></script> -->
     <!-- ImagesLoaded JS (https://github.com/desandro/imagesloaded) -->
-    <script src="assets/plugins/jquery.nicescroll.min.js"></script>
+    <!-- <script src="assets/plugins/jquery.nicescroll.min.js"></script> -->
     <!-- Nicescroll JS (http://areaaperta.com/nicescroll/) -->
-    <script src="assets/plugins/jquery.mousewheel.min.js"></script>
+    <!-- <script src="assets/plugins/jquery.mousewheel.min.js"></script> -->
     <!-- A jQuery plugin that adds cross browser mouse wheel support (https://github.com/jquery/jquery-mousewheel) -->
-    <script src="assets/plugins/ytplayer/js/jquery.mb.YTPlayer.min.js"></script>
+    <!-- <script src="assets/plugins/ytplayer/js/jquery.mb.YTPlayer.min.js"></script> -->
     <!-- YTPlayer JS (more info: https://github.com/pupunzi/jquery.mb.YTPlayer) -->
 
-    <script src="assets/plugins/lightgallery/js/lightgallery.min.js"></script>
+    <!-- <script src="assets/plugins/lightgallery/js/lightgallery.min.js"></script> -->
     <!-- lightGallery JS (http://sachinchoolur.github.io/lightGallery) -->
-    <script src="assets/plugins/lightgallery/js/lightgallery-plugins.js"></script>
+    <!-- <script src="assets/plugins/lightgallery/js/lightgallery-plugins.js"></script> -->
     <!-- lightGallery Plugins JS (http://sachinchoolur.github.io/lightGallery) -->
 
 
