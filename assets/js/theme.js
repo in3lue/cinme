@@ -6,6 +6,9 @@ function off() {
 	document.getElementById("Estudios").style.display = "none";
 }
 
+function nosotros() {
+	location.href = "nosotros.html";
+}
 (function ($) {
 	'use strict';
 
