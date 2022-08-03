@@ -1,14 +1,19 @@
 function on() {
-	document.getElementById("Estudios").style.display = "block";
+	document.getElementById("Especialidades").style.display = "block";
 }
 
 function off() {
-	document.getElementById("Estudios").style.display = "none";
+	document.getElementById("Especialidades").style.display = "none";
 }
 
 function nosotros() {
 	location.href = "nosotros.html";
 }
+
+function especialidades() {
+	location.href = "especialidades.html";
+}
+
 (function ($) {
 	'use strict';
 
@@ -466,6 +471,7 @@ function nosotros() {
 				sMenuBtn.classList.remove("off");
 			}
 			if (elNosotros) elNosotros.classList.add("semi");
+			if (elEspecialidades) elEspecialidades.classList.add("semi");
 
 
 		} else {
@@ -476,6 +482,7 @@ function nosotros() {
 				sMenuBtn.classList.add("off");
 			}
 			if (elNosotros) elNosotros.classList.remove("semi");
+			if (elEspecialidades) elEspecialidades.classList.remove("semi");
 		}
 	});
 
@@ -503,6 +510,7 @@ function nosotros() {
 	const sMenuOn = document.getElementById("btn-menu");
 	const sMenuClose = document.querySelector(".cont-menu .icon-close");
 	const elNosotros = document.getElementById("nosotros");
+	const elEspecialidades = document.getElementById("especialidades");
 
 	sMenuBtn.addEventListener('click', () => {
 		sMenuBtn.classList.add("off");
