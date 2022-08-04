@@ -100,7 +100,7 @@ a:focus {
 }
 
 .logo__img {
-    width: 11rem;
+    width: 9rem;
     margin: 1rem;
     z-index: 560;
 
@@ -310,7 +310,7 @@ section {
     outline: none;
     color: #FFF;
     border-color: #FFF;
-    background-color: rgba(255, 255, 255, 0.2);
+    /* background-color: rgba(255, 255, 255, 0.2); */
 }
 
 .button a {
@@ -539,8 +539,8 @@ details[open] summary::after {
 /** animation slide-in-top **/
 
 .slide-in-top {
-    -webkit-animation: slide-in-top 1s 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slide-in-top 1s 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: slide-in-top 0.4s 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-top 0.4s 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 @-webkit-keyframes slide-in-top {
@@ -618,39 +618,92 @@ details[open] summary::after {
 
 /** Backgrounds **/
 #nosotros {
-    background-image: url(../img/img-bg.png);
+    background-image: url(../img/nosotros.jpg);
 }
 
 #especialidades {
-    background-image: url(../img/investigacion3.jpg);
+    background-image: url(../img/investigacion.jpg);
 }
 
 /** accordion **/
 
-.accordion {
-    width: 100%;
-    max-width: 700px;
-    margin: 20px auto 60px;
-    --bs-accordion-btn-focus-border-color: #1D71B8;
-    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(29, 113, 184, 0.25);
-    --bs-accordion-active-color: #1D71B8;
-    --bs-accordion-active-bg: #d9eeff;
+.accordionContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.accordion-header button {
+.wrapperAcc {
+    max-width: 800px;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.wrapperAcc .parent-tab {
+    margin-bottom: 8px;
+}
+
+.wrapperAcc .parent-tab label {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
     color: #1D71B8;
-    font-weight: bold;
-    text-transform: uppercase;
+    position: relative;
+    z-index: 99;
+    border-bottom: 1px solid #1D71B8;
 }
 
-.accordion-body {
-    text-align: left;
+.wrapperAcc label span {
+    font-size: 1.1rem;
+}
+
+.wrapperAcc label .icon {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    color: #1D71B8;
+    display: block;
+    border-radius: 50%;
+}
+
+.wrapperAcc .parent-tab input:checked~label .icon i:before {
+    content: " \f178";
+    padding-left: 16px;
+    transition: padding-left translateX(16px);
+}
+
+.wrapperAcc label .icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wrapperAcc .parent-tab .content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.8s ease;
+}
+
+.parent-tab input:checked~.content {
+    max-height: 100vh;
+}
+
+.wrapperAcc .parent-tab .content p {
     font-size: 1rem;
+    padding: 15px 20px;
+    color: #333;
+    text-align: left;
 }
 
-.accordion-body b {
-    color: #1D71B8;
+.wrapperAcc input {
+    display: none;
 }
+
 
 /** texts **/
 
