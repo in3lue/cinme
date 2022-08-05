@@ -15,7 +15,7 @@
    *  Intervals
   /* ------------------------------------------------------------- */
 :root {
-    --interval: 0.2s;
+    --interval: 0.25s;
 }
 
 .o1 {
@@ -353,6 +353,7 @@ section {
 }
 
 .link-item i {
+    color: #FFF;
     transition: all 500ms ease-in-out;
     opacity: 0;
     margin-left: -20px;
@@ -571,6 +572,7 @@ details[open] summary::after {
     }
 }
 
+/** animation ZoomOut **/
 .zoomOut {
     -webkit-animation-name: zoomOut;
     animation-name: zoomOut;
@@ -612,6 +614,120 @@ details[open] summary::after {
     }
 }
 
+/** animation slideInDown  **/
+.slideInDown {
+    -webkit-animation-name: slideInDown;
+    animation-name: slideInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes slideInDown {
+    0% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInDown {
+    0% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+/** animation fadeInDown  **/
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+/** animation fadeInUp  **/
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+}
+
+@-webkit-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+×
 /* ------------------------------------------------------------- *
  * Internals
 /* ------------------------------------------------------------- */
@@ -624,6 +740,12 @@ details[open] summary::after {
 #especialidades {
     background-image: url(../img/investigacion.jpg);
 }
+
+#headEspecialidades {
+    background-image: url(../img/banner.jpg);
+    top: 100px;
+}
+
 
 /** accordion **/
 
@@ -744,53 +866,126 @@ details[open] summary::after {
 /* ------------------------------------------------------------- */
 .combo {
     display: flex;
-    flex-direction: column;
-    background-color: #FFF;
-    border: 1px rgba(255, 255, 255, 0.5) solid;
+    position: relative;
+    background-color: rgb(255, 255, 255);
     border-radius: 0.5rem;
     overflow: hidden;
-    margin: 10px;
-    padding: 10px;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-    transition: all 400ms ease;
-    min-width: 200px;
-    min-height: 200px;
-    cursor: pointer;
-    justify-content: center;
-    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 10px;
+    transition: all 400ms ease 0s;
+    width: 250px;
+    height: 300px;
+    margin: 15px 20px;
+    flex-direction: column;
+    justify-content: space-between;
     align-content: center;
-    row-gap: 20px;
+    align-items: center;
 }
 
 .combo:hover {
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
     transform: translateY(-3%);
 }
 
-.combo div {
-    color: #1D71B8;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    margin-top: 10px;
-    padding-top: 5px;
+.combo .head {
+    height: 125px;
+    width: 100%;
+    position: relative;
 }
 
-.combo h4 {
+.combo .head .circle {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: #1D71B8;
+    bottom: 0;
+}
+
+.combo .head .img {
+    position: absolute;
+    background: #FFF;
+    padding: 5px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    bottom: -30%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.combo .head .img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.combo .description {
+    height: 120px;
+    padding: 60px 10px 10px 10px;
+    object-fit: cover;
+    text-align: center;
+}
+
+.combo .description h3 {
+    color: #00539A;
     font-size: 1rem;
-    text-shadow: none;
-    margin: 10px 0;
+    margin-bottom: 0px;
 }
 
-.combo p {
-    border-top: 2px solid #2097f8;
-    font-size: 12px;
-    text-align: left;
+.combo .description h4 {
+    color: #3F3F3F;
+    font-size: 0.9rem;
+    margin-top: 0px;
+}
+
+.combo .contact {
+    width: 100%;
+    height: 50px;
     color: #FFF;
-    padding: 10px 0;
+    background: #1D71B8;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+    font-size: 1rem;
 }
 
-.combo i {
-    font-size: 30px;
+.combo .contact a {
+    padding: 0px 20px;
+    border-radius: .5rem;
+    transition: .3s;
 }
+
+.combo .contact:hover {
+    background: #00539A;
+}
+
+
+.combo .contact i {
+    color: #FFF;
+    transition: margin-left .3s ease-in-out;
+    opacity: 1;
+    margin-left: -10px;
+
+}
+
+.combo .contact:hover i {
+    opacity: 1;
+    margin-left: 5px;
+}
+
+.swf {
+    margin: 0 10px 0 -30px;
+}
+
+.address i {
+    width: 24px;
+    margin-top: 0;
+}
+
 
 /* ------------------------------------------------------------- *
    *  Element Styles
@@ -801,8 +996,8 @@ details[open] summary::after {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    padding-bottom: 100px;
+    align-content: flex-start;
+    padding-bottom: 10px;
 }
 
 .element {
