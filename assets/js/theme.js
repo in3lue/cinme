@@ -14,6 +14,18 @@ function especialidades() {
 	location.href = "especialidades.html";
 }
 
+function hci() {
+	location.href = "especialidades.html#alpha";
+}
+
+function calidad() {
+	location.href = "especialidades.html#calidad";
+}
+
+function comite() {
+	location.href = "especialidades.html#comite";
+}
+
 (function ($) {
 	'use strict';
 

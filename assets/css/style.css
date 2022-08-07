@@ -15,7 +15,7 @@
    *  Intervals
   /* ------------------------------------------------------------- */
 :root {
-    --interval: 0.25s;
+    --interval: 0.5s;
 }
 
 .o1 {
@@ -46,6 +46,11 @@
 .o6 {
     -webkit-animation-delay: calc(var(--interval) * 6);
     animation-delay: calc(var(--interval) * 6);
+}
+
+.o7 {
+    -webkit-animation-delay: calc(var(--interval) * 7);
+    animation-delay: calc(var(--interval) * 7);
 }
 
 /* ------------------------------------------------------------- *
@@ -81,6 +86,10 @@ a:focus {
 
 a:focus {
     outline: none;
+}
+
+hr.dotted {
+    border-top: 3px dotted #bbb;
 }
 
 /* --------------------------------------------------------------------------------------- *
@@ -265,20 +274,6 @@ section {
     overflow: hidden;
 }
 
-/* .intro-caption.center {
-    bottom: 50px;
-    left: 50px;
-    width: 100% !important;
-    max-width: 1200px;
-    padding: 0 15px;
-    text-align: left;
-    -moz-transform: translate(-50%, -50%) !important;
-    -ms-transform: translate(-50%, -50%) !important;
-    -webkit-transform: translate(-50%, -50%) !important;
-    transform: translate(50px, 50px) !important;
-} */
-
-
 /* intro title */
 .intro-title {
     margin: 0;
@@ -387,6 +382,52 @@ section {
 .address i {
     width: 1.5rem;
     margin-top: 0;
+}
+
+/* ------------------------------------------------------------- *
+ *  blue anchors
+/* ------------------------------------------------------------- */
+.blue-list {
+
+    color: #1D71B8;
+    display: block;
+    margin-left: 0;
+    list-style: none;
+}
+
+.blue-item {
+    color: #1D71B8;
+    font-size: 1rem;
+    text-align: left;
+    text-decoration: none;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.blue-item i {
+    color: #1D71B8;
+    transition: all 500ms ease-in-out;
+    opacity: 0;
+    margin-left: -1.25rem;
+
+}
+
+.blue-item:hover i {
+    opacity: 1;
+    margin-left: 0.625rem;
+}
+
+.blue-link {
+    color: #1D71B8;
+    font-weight: bold;
+}
+
+.blue-link:hover {
+    color: #1D71B8;
+    font-weight: bold;
 }
 
 /** Overlays **/
@@ -712,7 +753,6 @@ details[open] summary::after {
     animation-duration: 1s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
-    animation-delay: 1s;
 }
 
 @-webkit-keyframes fadeInUp {
@@ -851,6 +891,7 @@ details[open] summary::after {
     text-align: center;
 }
 
+
 .internal-caption.center {
     margin: 100px auto;
     width: 100% !important;
@@ -860,7 +901,6 @@ details[open] summary::after {
 }
 
 .internal-title {
-
     color: #1D71B8;
     margin: 0;
     text-shadow: none;
@@ -868,8 +908,34 @@ details[open] summary::after {
 }
 
 .internal-subtitle {
-    margin: 15px 0 0 0;
+    margin: 5px 0 0 0;
     text-shadow: none;
+}
+
+.line-title {
+    color: #1D71B8;
+    text-shadow: none;
+    padding-right: 1rem;
+    width: 30%;
+}
+
+.line-subtitle {
+    margin: 5px 0 0 0;
+    text-shadow: none;
+}
+
+.line-description {
+    width: 70%;
+}
+
+.line-description img {
+    padding: 0 0 1rem 0;
+    max-width: 300px;
+}
+
+.line {
+    display: flex;
+    flex-direction: row;
 }
 
 #secondary {
@@ -888,7 +954,7 @@ details[open] summary::after {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 10px;
     transition: all 400ms ease 0s;
     width: 250px;
-    height: 300px;
+    height: 320px;
     margin: 15px 20px;
     flex-direction: column;
     justify-content: space-between;
@@ -923,7 +989,7 @@ details[open] summary::after {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    bottom: -30%;
+    bottom: -40%;
     left: 50%;
     transform: translate(-50%);
 }
@@ -936,8 +1002,8 @@ details[open] summary::after {
 }
 
 .combo .description {
-    height: 120px;
-    padding: 60px 10px 10px 10px;
+    height: 135px;
+    padding: 65px 10px 10px 10px;
     object-fit: cover;
     text-align: center;
 }
@@ -945,7 +1011,8 @@ details[open] summary::after {
 .combo .description h3 {
     color: #00539A;
     font-size: 1rem;
-    margin-bottom: 0px;
+    line-height: 1rem;
+    margin-bottom: 4px;
 }
 
 .combo .description h4 {

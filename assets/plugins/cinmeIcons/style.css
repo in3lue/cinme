@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'cinmeIcons';
   src:
-    url('fonts/cinmeIcons.ttf?5abthf') format('truetype'),
-    url('fonts/cinmeIcons.woff?5abthf') format('woff'),
-    url('fonts/cinmeIcons.svg?5abthf#cinmeIcons') format('svg');
+    url('fonts/cinmeIcons.ttf?xw2ijz') format('truetype'),
+    url('fonts/cinmeIcons.woff?xw2ijz') format('woff'),
+    url('fonts/cinmeIcons.svg?xw2ijz#cinmeIcons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -20,26 +20,41 @@
   vertical-align: middle;
   position: relative;
   top: -2;
-
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.ico-research:before {
+.ico-commit:before {
   content: "\e900";
 }
 
-.ico-pro:before {
+.ico-committe:before {
   content: "\e901";
 }
 
-.ico-quality:before {
+.ico-hci:before {
   content: "\e902";
 }
 
-.ico-commit:before {
+.ico-fat:before {
   content: "\e903";
+}
+
+.ico-pro:before {
+  content: "\e904";
+}
+
+.ico-quality:before {
+  content: "\e905";
+}
+
+.ico-specialties:before {
+  content: "\e906";
+}
+
+.ico-testimonials:before {
+  content: "\e907";
 }
 
 .ico-2x {
