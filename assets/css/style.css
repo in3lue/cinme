@@ -430,6 +430,11 @@ section {
     font-weight: bold;
 }
 
+.blue-link:focus {
+    color: #1D71B8;
+    font-weight: bold;
+}
+
 /** Overlays **/
 
 #Especialidades {
@@ -488,7 +493,6 @@ details {
     list-style: none;
     width: 100%;
     cursor: pointer;
-
     margin-bottom: 0.625rem;
 }
 
@@ -926,11 +930,14 @@ details[open] summary::after {
 
 .line-description {
     width: 70%;
+    text-align: left;
+    color: #3F3F3F;
 }
 
 .line-description img {
     padding: 0 0 1rem 0;
-    max-width: 300px;
+    max-width: 50%;
+
 }
 
 .line {
@@ -945,6 +952,46 @@ details[open] summary::after {
 /* ------------------------------------------------------------- *
    *  cards
 /* ------------------------------------------------------------- */
+
+.contentCards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 10px;
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+}
+
+.ceiCard {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 10px;
+    transition: all 400ms ease 0s;
+    max-width: 350px;
+    height: 200px;
+    width: 100%;
+    padding: 15px;
+
+}
+
+.ceiCard h4 {
+    text-shadow: none;
+    margin: 0.625rem 0;
+    text-align: left;
+    font-weight: normal;
+}
+
+.ceiCard p {
+    border-top: 0.125rem solid #2097f8;
+    font-size: 0.9rem;
+    text-align: left;
+    color: #3F3F3F;
+    padding: 0.625rem 0 0 0;
+}
+
 .combo {
     display: flex;
     position: relative;

@@ -15,15 +15,15 @@ function especialidades() {
 }
 
 function hci() {
-	location.href = "especialidades.html#alpha";
+	location.href = "research.html";
 }
 
 function calidad() {
-	location.href = "especialidades.html#calidad";
+	location.href = "calidad.html";
 }
 
 function comite() {
-	location.href = "especialidades.html#comite";
+	location.href = "comiteEtica.html";
 }
 
 (function ($) {
