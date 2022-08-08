@@ -24,7 +24,7 @@
 
     <!-- Google fonts (https://www.google.com/fonts) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet" />
 
     <!-- Bootstrap CSS (http://getbootstrap.com) -->
@@ -58,26 +58,22 @@
 
 </head>
 
-<!-- =============
-    ///// 'Body' /////
-    ================ -->
+<!-- ============= ///// 'Body' ///// ================ -->
 
 <body>
 
-    <!-- *************************************
-        *********** Begin 'Header' content *********** 
-        ************************************** -->
+    <!-- ************************************* *********** Begin 'Header' content *********** ************************************** -->
     <div class="header__logo slide-in-top">
         <a href="/"><img src="assets/img/logo-big.png" alt="CINME Logo" class="logo__img"></a>
     </div>
 
     <div class="btn-menu secondary" id="burguer">
-        <label for="btn-menu" class="icon-menu"><i class="fa-solid fa-bars" id="secondary"></i></label>
+        <label for="btn-menu" class="icon-menu">
+            <i class="fa-solid fa-bars" id="secondary"></i>
+        </label>
     </div>
 
-    <!-- *************************************
-        *********** Begin 'Body' content *********** 
-        ************************************** -->
+    <!-- ************************************* *********** Begin 'Body' content *********** ************************************** -->
     <div>
         <!-- ///// Begin 'Calidad' section ///// -->
         <section id="headEspecialidades" class="banner">
@@ -101,10 +97,11 @@
                             <h5 class="line-subtitle">Normas ISO</h5>
                             <p>
                                 CINME presenta un sistema de Gestión de Calidad certificado según la norma internacional
-                                ISO 9001:2015
-                                para los procesos de investigación clínica farmacológica, lo que nos convierte en el
-                                <b><em>segundo centro
-                                        de investigación del país en lograrlo</em></b>.
+                                ISO 9001:2015 para los procesos de investigación clínica farmacológica, lo que nos
+                                convierte en el
+                                <b>
+                                    <em>segundo centro de investigación del país en lograrlo</em>
+                                </b>.
                             </p>
                             <div class="line">
                                 <img src="assets/img/about_calidad.jpg" alt="iram">
@@ -124,17 +121,14 @@
                             <h5 class="line-subtitle">Centro Inspire</h5>
                             <p>
                                 El laboratorio Pfizer recertificó a CINME como centro Inspire a nivel mundial. Esta
-                                categorización, que se
-                                renueva cada año, certifica que CINME es considerado como centro modelo en investigación
-                                clínica,
-                                categoría
-                                que solo alcanzan 4 centros médicos del país y 215 centros de todo el mundo.
+                                categorización, que se renueva cada año, certifica que CINME es considerado como centro
+                                modelo en investigación clínica, categoría que solo alcanzan 4 centros médicos del país
+                                y 215 centros de todo el mundo.
                             </p>
                             <ul class="blue-list">
                                 <li class="blue-item">
                                     <a href="assets/Certificate_approval-v2021-Signed.pdf" target="_blank"
-                                        class="blue-link">Certificado
-                                        Pfizer · Inspire</a>
+                                        class="blue-link">Certificado Pfizer · Inspire</a>
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </li>
                             </ul>
@@ -147,56 +141,49 @@
     <!-- End 'Calidad' caption -->
     </section>
     <!-- ///// End 'Calidad Content' section ///// -->
+    <footer>
+        <p>©2022 · <b>CINME S.A.</b> Todos los derechos reservados.</p>
+    </footer>
 
-
-
-
-    <!-- =================
-    ///// End 'Body' /////
-    ================== -->
+    <!-- ================= ///// End 'Body' ///// ================== -->
     <!-- input -->
     <input type="checkbox" id="btn-menu" checked="checked">
     <div class="container-menu">
         <div class="cont-menu">
             <nav>
                 <ul class="main-menu">
-                    <li class="main-menu__item"><a href="index.html#intro-inicio" class="main-menu__link"
-                            id="secondary">Inicio</a>
+                    <li class="main-menu__item">
+                        <a href="index.html#intro-inicio" class="main-menu__link" id="secondary">Inicio</a>
                     </li>
-                    <li class="main-menu__item"><a href="index.html#intro-nosotros" class="main-menu__link"
-                            id="secondary">Nosotros</a>
+                    <li class="main-menu__item">
+                        <a href="index.html#intro-nosotros" class="main-menu__link" id="secondary">Nosotros</a>
                     </li>
-                    <li class="main-menu__item"><a href="index.html#intro-ensayos" class="main-menu__link"
-                            id="secondary">Ensayos
-                            Clínicos</a></li>
-                    <li class="main-menu__item"><a href="index.html#intro-essentia" class="main-menu__link"
-                            id="secondary">ESSENTIA</a>
+                    <li class="main-menu__item">
+                        <a href="index.html#intro-ensayos" class="main-menu__link" id="secondary">Ensayos Clínicos</a>
                     </li>
-                    <li class="main-menu__item"><a href="index.html#intro-estudios" class="main-menu__link"
-                            id="secondary">Estudios
-                            Médicos</a>
+                    <li class="main-menu__item">
+                        <a href="index.html#intro-essentia" class="main-menu__link" id="secondary">ESSENTIA</a>
                     </li>
-                    <li class="main-menu__item"><a href="index.html#intro-RSE" class="main-menu__link"
-                            id="secondary">Responsabilidad
-                            Social</a>
+                    <li class="main-menu__item">
+                        <a href="index.html#intro-estudios" class="main-menu__link" id="secondary">Estudios Médicos</a>
                     </li>
-                    <li class="main-menu__item"><a href="index.html#intro-contacto" class="main-menu__link"
-                            id="secondary">Contacto</a>
+                    <li class="main-menu__item">
+                        <a href="index.html#intro-RSE" class="main-menu__link" id="secondary">Responsabilidad Social</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="index.html#intro-contacto" class="main-menu__link" id="secondary">Contacto</a>
                     </li>
                 </ul>
             </nav>
-            <label for="btn-menu" class="icon-close" id="equis"><i class="fa-solid fa-xmark" id="secondary"></i></label>
+            <label for="btn-menu" class="icon-close" id="equis">
+                <i class="fa-solid fa-xmark" id="secondary"></i>
+            </label>
         </div>
     </div>
 
     </div>
 
-
-
-
-    <!-- =====================
-        ///// Scripts below /////
-        ===================== -->
+    <!-- ===================== ///// Scripts below ///// ===================== -->
 
     <!-- Core JS -->
     <script src="assets/plugins/jquery/jquery.min.js"></script>
@@ -230,7 +217,6 @@
     <!-- lightGallery JS (http://sachinchoolur.github.io/lightGallery) -->
     <script src="assets/plugins/lightgallery/js/lightgallery-plugins.js"></script>
     <!-- lightGallery Plugins JS (http://sachinchoolur.github.io/lightGallery) -->
-
 
     <!-- Theme master JS -->
     <script src="assets/js/theme.js"></script>
