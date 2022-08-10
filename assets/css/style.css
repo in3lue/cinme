@@ -450,8 +450,8 @@ section {
  *  overlay links [ov]
 /* ------------------------------------------------------------- */
 .ov-container {
-    width: 50%;
-    min-width: 400px;
+    width: 100%;
+    min-width: 500px;
     display: inline-block;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6rem;
@@ -481,8 +481,7 @@ section {
 }
 
 .ov-item:hover ul {
-    height: 20vh;
-
+    height: 100%;
 }
 
 .ov-container .ov-item i {
@@ -500,7 +499,7 @@ section {
 .ov-container .ov-list .ov-item ul li {
     list-style: none;
     color: #FFF;
-    padding: 0rem 1rem;
+    padding: 0rem 3rem;
     border-left: #FFF 1px solid;
 }
 
@@ -552,7 +551,11 @@ section {
     flex-wrap: nowrap;
     top: 2.5rem;
     padding-left: 10rem;
+    height: 90%;
+    justify-content: space-between;
 }
+
+
 
 .overlay-caption {
     position: absolute;
