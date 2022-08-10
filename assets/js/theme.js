@@ -7,7 +7,13 @@ function estudiosOn() {
 function estudiosOff() {
 	document.getElementById("overlay-estudios").style.display = "none";
 }
+function consultoriosOn() {
+	document.getElementById("overlay-consultorios").style.display = "block";
+}
 
+function consultoriosOff() {
+	document.getElementById("overlay-consultorios").style.display = "none";
+}
 function nosotros() {
 	location.href = "nosotros.html";
 }

@@ -308,20 +308,20 @@
       <!-- Begin 'Estudios' caption -->
       <div class="intro-caption">
         <h2 class="intro-title" data-aos="fade-down">Estudios Médicos</h2>
-        <p class="intro-description" data-aos="fade-up">Brindamos atención médica en consultorios externos de las
-          siguientes especialidades y realizamos variados
+        <p class="intro-description" data-aos="fade-up">Brindamos atención médica en consultorios externos y realizamos
+          variados
           estudios clínicos con coberturas de obras sociales, así como también consultas privadas.</p>
-        <ul class="link-list padding-top-30">
+        <ul class="link-list padding-top-30" data-aos="fade-up">
           <li class="link-item" onclick="estudiosOn()">
-            <a href="#intro-estudios">Estudios Médicos</a>
+            <a href="" class="disabled">Estudios Médicos</a>
             <i class="fa-solid fa-arrow-right" onclick="estudiosOn()"></i>
           </li>
-          <li class="link-item">
-            <a href="#intro-estudios">Consultorios Externos</a>
-            <i class="fa-solid fa-arrow-right"></i>
+          <li class="link-item" onclick="consultoriosOn()">
+            <a href="" class="disabled">Consultorios Externos</a>
+            <i class="fa-solid fa-arrow-right" onclick="consultoriosOn()"></i>
           </li>
           <li class="link-item">
-            <a href=" #intro-estudios">Obras Sociales</a>
+            <a href="" class="disabled">Obras Sociales</a>
             <i class="fa-solid fa-arrow-right"></i>
           </li>
         </ul>
@@ -331,10 +331,10 @@
           <label class="btn-close"><i class="fa-solid fa-xmark" onclick="estudiosOff()"></i></label>
         </div>
         <div class="overlay-estudios">
-          <h2 class="overlay-title animate__animated animate__fadeInDown animate__delay-1s">Estudios Médicos</h2>
-          <div class="ov-container">
+          <h2 class="overlay-title animate__animated animate__fadeInDown">Estudios Médicos</h2>
+          <div class="ov-container animate__animated animate__fadeInUp animate__delay-0.5s">
             <ul class="ov-list">
-              <li class="ov-item"><a href="">Cardiología</a>
+              <li class="ov-item"><a href="" class="disabled">Cardiología</a>
                 <i class="fa-solid fa-arrow-right"></i>
                 <ul class="ov-subList">
                   <li>Consulta Médica</li>
@@ -344,7 +344,7 @@
                   <li>Presurometría</li>
                 </ul>
               </li>
-              <li class="ov-item"><a href="">Diabetología</a>
+              <li class="ov-item"><a href="" class="disabled">Diabetología</a>
                 <i class="fa-solid fa-arrow-right"></i>
                 <ul class="ov-subList">
                   <li>Consulta Médica Nutricional</li>
@@ -357,7 +357,7 @@
                   <li>Examen del Apoyo del Pie Diabético</li>
                 </ul>
               </li>
-              <li class="ov-item"><a href="">Neumonología</a>
+              <li class="ov-item"><a href="" class="disabled">Neumonología</a>
                 <i class="fa-solid fa-arrow-right"></i>
                 <ul class="ov-subList">
                   <li>Consulta médica neumonológica</li>
@@ -368,11 +368,56 @@
                   <li>Test de marcha 6 minutos</li>
                 </ul>
               </li>
-              <li class="ov-item"><a href="">Nutrición</a>
+              <li class="ov-item"><a href="" class="disabled">Nutrición</a>
                 <i class="fa-solid fa-arrow-right"></i>
                 <ul class="ov-subList">
                   <li>Consulta médica Nutricional</li>
                 </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="overlay-consultorios" class="full-cover overlay-caption">
+        <div class="close">
+          <label class="btn-close"><i class="fa-solid fa-xmark" onclick="consultoriosOff()"></i></label>
+        </div>
+        <div class="overlay-estudios">
+          <h2 class="overlay-title animate__animated animate__fadeInDown">Consultorios Externos</h2>
+          <p class="animate__animated animate__fadeInUp animate__delay-0.5s">Brindamos atención médica en consultorios
+            externos de las siguientes especialidades y realizamos variados
+            estudios clínicos con coberturas de obras sociales.</p>
+          <div class=" ov-container">
+            <ul class="ov-list animate__animated animate__fadeInUp animate__delay-1s">
+              <li class="ov-item">
+                <a href="" class="disabled">Diabetología</a>
+                <i class="fa-solid fa-arrow-right"></i>
+              </li>
+              <li class="ov-item">
+                <a href="" class="disabled">Nutrición</a>
+                <i class="fa-solid fa-arrow-right"></i>
+              </li>
+              <li class="ov-item">
+                <a href="" class="disabled">Cardiología</a>
+                <i class="fa-solid fa-arrow-right"></i>
+              </li>
+              <li class="ov-item">
+                <a href="" class="disabled">Neumonología</a>
+                <i class="fa-solid fa-arrow-right"></i>
+              </li>
+              <li class="ov-item">
+                <a href="" class="disabled">Neurología</a>
+                <i class="fa-solid fa-arrow-right"></i>
+              </li>
+              <li class="ov-item">
+                <a href="" class="disabled">Dermatología</a>
+                <i class="fa-solid fa-arrow-right"></i>
+              </li>
+              <li class="ov-item">
+                <a href="" class="disabled">Hepatología</a>
+                <i class="fa-solid fa-arrow-right"></i>
               </li>
             </ul>
           </div>
@@ -429,26 +474,6 @@
           Nutrir el alma y cuidar el cuerpo, eso es <b>Essentia</b>.
         </p>
 
-        <div class="margin-top-30 row">
-          <div class="col-lg-6 col-md-6 text-center aos-init aos-animate" data-aos="fade-up">
-            <div class="icon"><i class="icofont-test-tube"></i></div>
-            <h4 class="title">
-              <a href="investigacion.html">Sobrepeso y Obesidad</a>
-            </h4>
-            <p class="description">
-              Trabajamos con ensayos clínicos en múltiples especialidades.
-            </p>
-          </div>
-          <div class="col-lg-6 col-md-6 text-center aos-init aos-animate" data-aos="fade-up">
-            <div class="icon"><i class="icofont-test-tube"></i></div>
-            <h4 class="title">
-              <a href="investigacion.html">Testimonios</a>
-            </h4>
-            <p class="description">
-              Trabajamos con ensayos clínicos en múltiples especialidades.
-            </p>
-          </div>
-        </div>
       </div>
       <!-- End 'Responsabilidad Social' caption -->
     </section>
