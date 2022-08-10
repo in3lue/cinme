@@ -103,9 +103,9 @@ hr.dotted {
 
 /* circle loader */
 .animsition-loading {
-  border-top: 0.1875rem solid rgba(130, 130, 130, 0.3);
-  border-right: 0.1875rem solid rgba(130, 130, 130, 0.3);
-  border-bottom: 0.1875rem solid rgba(130, 130, 130, 0.3);
+  border-top: 0.1875rem solid rgba(88, 89, 91, 0.3);
+  border-right: 0.1875rem solid rgba(88, 89, 91, 0.3);
+  border-bottom: 0.1875rem solid rgba(88, 89, 91, 0.3);
   border-left: 0.1875rem solid #1D71B8;
 }
 
@@ -1049,7 +1049,7 @@ details[open] summary::after {
 .wrapperAcc .parent-tab .content p {
   font-size: 1rem;
   padding: 1rem 1.25rem;
-  color: #333;
+  color: #58595B;
   text-align: left;
 }
 
@@ -1106,7 +1106,7 @@ details[open] summary::after {
 .line-description {
   width: 70%;
   text-align: left;
-  color: #3F3F3F;
+  color: #58595B;
 }
 
 .line-description img {
@@ -1159,7 +1159,7 @@ details[open] summary::after {
   border-top: 0.125rem solid #2097f8;
   font-size: 0.9rem;
   text-align: left;
-  color: #3F3F3F;
+  color: #58595B;
   padding: 0.625rem 0 0 0;
 }
 
@@ -1234,7 +1234,7 @@ details[open] summary::after {
 }
 
 .combo .description h4 {
-  color: #3F3F3F;
+  color: #58595B;
   font-size: 0.9rem;
   margin-top: 0px;
 }
