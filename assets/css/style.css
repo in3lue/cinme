@@ -70,7 +70,7 @@ body {
     position: relative;
     background-color: #F1F1F1;
     font-family: "Montserrat", sans-serif;
-    line-height: 1.6;
+    line-height: 1.6rem;
 }
 
 a {
@@ -363,6 +363,7 @@ section {
     display: block;
     margin-left: 0;
     list-style: none;
+    width: 50%;
 }
 
 .link-item {
@@ -371,10 +372,6 @@ section {
     text-align: left;
     text-decoration: none;
     padding-bottom: 1rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
 }
 
 .link-item i {
@@ -382,7 +379,6 @@ section {
     transition: all 500ms ease-in-out;
     opacity: 0;
     margin-left: -1.25rem;
-
 }
 
 .link-item:hover i {
@@ -450,9 +446,68 @@ section {
     font-weight: bold;
 }
 
+/* ------------------------------------------------------------- *
+ *  overlay links [ov]
+/* ------------------------------------------------------------- */
+.ov-container {
+    width: 50%;
+    min-width: 400px;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6rem;
+}
+
+.ov-container ul {
+    text-decoration: none;
+}
+
+.ov-container .ov-list {
+    width: 100%;
+}
+
+.ov-container .ov-item {
+    list-style: none;
+    color: #FFF;
+    font-size: 1rem;
+    text-align: left;
+    text-decoration: none;
+    padding-bottom: 1rem;
+}
+
+.ov-item ul {
+    height: 0;
+    overflow: hidden;
+    transition: all 500ms ease-in-out;
+}
+
+.ov-item:hover ul {
+    height: 20vh;
+
+}
+
+.ov-container .ov-item i {
+    color: #FFF;
+    transition: all 500ms ease-in-out;
+    opacity: 0;
+    margin-left: -1.25rem;
+}
+
+.ov-container .ov-item:hover i {
+    opacity: 1;
+    margin-left: 0.625rem;
+}
+
+.ov-container .ov-list .ov-item ul li {
+    list-style: none;
+    color: #FFF;
+    padding: 0rem 1rem;
+    border-left: #FFF 1px solid;
+}
+
+
 /** Overlays **/
 
-#Especialidades {
+#overlay-estudios {
     display: none;
     /* Hidden by default */
     background-color: rgba(29, 113, 184, 0.90);
@@ -464,12 +519,18 @@ section {
     margin: 0.625rem;
 }
 
+.close {
+    z-index: 1500;
+}
+
 .btn-close {
     position: absolute;
     right: 2.5rem;
     top: 1.875rem;
     cursor: pointer;
     z-index: 800;
+    background: none;
+    opacity: 1;
 }
 
 .btn-close i {
@@ -484,18 +545,24 @@ section {
     z-index: 800;
 }
 
+.overlay-estudios {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    top: 2.5rem;
+    padding-left: 10rem;
+}
 
 .overlay-caption {
     position: absolute;
     color: #FFF;
     z-index: 3;
-    top: 2.5rem;
-    padding: 2.5rem 1rem;
 }
 
 .overlay-title {
-    margin-left: 3.125rem;
-    font-size: 1.875rem;
+    padding: 3.5rem 0rem;
+    font-size: 2rem;
 }
 
 .overlay-container {
@@ -822,7 +889,7 @@ details[open] summary::after {
 }
 
 #metabolismo {
-    background-image: url(../img/img-bg.png);
+    background-image: url(../img/essentia.jpg);
 }
 
 /** accordion **/
@@ -1246,4 +1313,9 @@ footer {
     color: #FFF;
     flex-wrap: nowrap;
     justify-content: center;
+}
+
+video {
+    width: 100%;
+    object-fit: contain;
 }

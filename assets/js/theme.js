@@ -1,9 +1,11 @@
-function on() {
-	document.getElementById("Especialidades").style.display = "block";
+
+
+function estudiosOn() {
+	document.getElementById("overlay-estudios").style.display = "block";
 }
 
-function off() {
-	document.getElementById("Especialidades").style.display = "none";
+function estudiosOff() {
+	document.getElementById("overlay-estudios").style.display = "none";
 }
 
 function nosotros() {
