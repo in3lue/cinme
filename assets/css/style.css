@@ -1401,6 +1401,6 @@ footer {
 }
 
 video {
-  width: 100%;
+  width: 600px;
   object-fit: contain;
 }
