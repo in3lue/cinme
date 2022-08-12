@@ -1033,7 +1033,7 @@ details[open] summary::after {
   background-image: url(../img/essentia.jpg);
 }
 
-/** accordion **/
+/** accordion blue**/
 
 .accordionContent {
   display: flex;
@@ -1110,6 +1110,14 @@ details[open] summary::after {
 
 .wrapperAcc input {
   display: none;
+}
+
+#accWhite {
+  color: #FFF;
+}
+
+#accWhite label {
+  border-bottom: 1px solid #FFF;
 }
 
 
