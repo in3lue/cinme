@@ -103,13 +103,28 @@
           sí lo tenían.
         </p>
 
-        <div class="margin-top-30 button  animate__animated animate__zoomIn animate__delay-2s" data-aos="zoom-in">
-          <a href="https://www.youtube.com/watch?v=LIRXEMvpe2o" target="_blank"
+        <div class="margin-top-30 button  animate__animated animate__zoomIn animate__delay-2s" data-aos="zoom-in"
+          onclick="historiaOn()">
+          <a href="https://www.youtube.com/watch?v=LIRXEMvpe2o" target="_blank" class="disabled"
             title="Hitos de la historia de CINME">¿Querés saber cómo
             sigue la historia?
           </a>
           <i class="fa-solid fa-arrow-right"></i>
         </div>
+      </div>
+      <div id="overlay-historia" class="full-cover">
+        <div class="close">
+          <label class="btn-close"><i class="fa-solid fa-xmark" onclick="historiaOff()"></i></label>
+        </div>
+        <div class="overlay-historia" onclick="historiaOff()">
+          <div class="animate__animated animate__fadeInUp animate__delay-0.5s videoContainer">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LIRXEMvpe2o?autoplay=1"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              class="ytVideo" allowfullscreen></iframe>
+          </div>
+        </div>
+
       </div>
       <!-- End 'Inicio' caption -->
     </section>
@@ -300,6 +315,134 @@
     </section>
     <!-- End 'ESSENTIA' section -->
 
+    <!-- ///// Begin 'Consultorios Externos' section ///// -->
+    <section id="intro-consultorios" class="full-height-vh bg-image">
+      <!-- Element cover -->
+      <div class="cover bg-transparent-2-dark"></div>
+
+      <!-- Begin 'Consultorios Externos' caption -->
+      <div class="intro-caption">
+        <h2 class="intro-title" data-aos="fade-down">Consultorios Externos</h2>
+        <p class="intro-description" data-aos="fade-up">Brindamos atención médica en consultorios externos y realizamos
+          variados
+          estudios clínicos con coberturas de obras sociales, así como también consultas privadas.</p>
+        <ul class="link-list padding-top-30" data-aos="fade-up">
+          <li class="link-item" onclick="estudiosOn()">
+            <a href="" class="disabled">Estudios Médicos</a>
+            <i class="fa-solid fa-arrow-right" onclick="estudiosOn()"></i>
+          </li>
+          <li class="link-item" onclick="consultoriosOn()">
+            <a href="" class="disabled">Consultorios Externos</a>
+            <i class="fa-solid fa-arrow-right" onclick="consultoriosOn()"></i>
+          </li>
+          <li class="link-item">
+            <a href="" class="disabled">Obras Sociales</a>
+            <i class="fa-solid fa-arrow-right"></i>
+          </li>
+        </ul>
+      </div>
+      <div id="overlay-estudios" class="full-cover overlay-caption">
+        <div class="close">
+          <label class="btn-close"><i class="fa-solid fa-xmark" onclick="estudiosOff()"></i></label>
+        </div>
+        <div class="overlay-estudios">
+          <h2 class="overlay-title animate__animated animate__fadeInDown">Estudios Médicos</h2>
+          <div class="ov-container animate__animated animate__fadeInUp animate__delay-0.5s">
+            <ul class="ov-list">
+              <li class="ov-item"><a href="" class="disabled">Cardiología</a>
+                <i class="fa-solid fa-arrow-right"></i>
+                <ul class="ov-subList">
+                  <li>Consulta Médica</li>
+                  <li>Electrocardiograma</li>
+                  <li>Test de ergometría digital</li>
+                  <li>Holter 24 Hs. 3 canales</li>
+                  <li>Presurometría</li>
+                </ul>
+              </li>
+              <li class="ov-item"><a href="" class="disabled">Diabetología</a>
+                <i class="fa-solid fa-arrow-right"></i>
+                <ul class="ov-subList">
+                  <li>Consulta Médica Nutricional</li>
+                  <li>Práctica Dietoterápica</li>
+                  <li>Impedanciometría</li>
+                  <li>Medición HbA1C (Hemoglobina Glicosilada A1C)</li>
+                  <li>Estudios de Pie Diabético</li>
+                  <li>Examen Vascular de Pie Diabético</li>
+                  <li>Examen Neurológico de Pie Diabético</li>
+                  <li>Examen del Apoyo del Pie Diabético</li>
+                </ul>
+              </li>
+              <li class="ov-item"><a href="" class="disabled">Neumonología</a>
+                <i class="fa-solid fa-arrow-right"></i>
+                <ul class="ov-subList">
+                  <li>Consulta médica neumonológica</li>
+                  <li>Espirometría computarizada</li>
+                  <li>Curva de flujo Volumen</li>
+                  <li>Capacidad vital lenta (SVC)</li>
+                  <li>Oximetría de pulso</li>
+                  <li>Test de marcha 6 minutos</li>
+                </ul>
+              </li>
+              <li class="ov-item"><a href="" class="disabled">Nutrición</a>
+                <i class="fa-solid fa-arrow-right"></i>
+                <ul class="ov-subList">
+                  <li>Consulta médica Nutricional</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="overlay-consultorios" class="full-cover overlay-caption">
+        <div class="close">
+          <label class="btn-close"><i class="fa-solid fa-xmark" onclick="consultoriosOff()"></i></label>
+        </div>
+        <div class="overlay-estudios">
+          <h2 class="overlay-title animate__animated animate__fadeInDown">Consultorios Externos</h2>
+          <p class="animate__animated animate__fadeInUp animate__delay-0.5s">Brindamos atención médica en consultorios
+            externos de las siguientes especialidades y realizamos variados
+            estudios clínicos con coberturas de obras sociales.</p>
+          <div class=" ov-container">
+            <ul class="ov-list animate__animated animate__fadeInUp animate__delay-1s">
+              <li class="ov-item">
+                <a href="" class="disabled">Diabetología</a>
+                <i class="fa-solid fa-arrow-right"></i>
+              </li>
+              <li class="ov-item">
+                <a href="" class="disabled">Nutrición</a>
+                <i class="fa-solid fa-arrow-right"></i>
+              </li>
+              <li class="ov-item">
+                <a href="" class="disabled">Cardiología</a>
+                <i class="fa-solid fa-arrow-right"></i>
+              </li>
+              <li class="ov-item">
+                <a href="" class="disabled">Neumonología</a>
+                <i class="fa-solid fa-arrow-right"></i>
+              </li>
+              <li class="ov-item">
+                <a href="" class="disabled">Neurología</a>
+                <i class="fa-solid fa-arrow-right"></i>
+              </li>
+              <li class="ov-item">
+                <a href="" class="disabled">Dermatología</a>
+                <i class="fa-solid fa-arrow-right"></i>
+              </li>
+              <li class="ov-item">
+                <a href="" class="disabled">Hepatología</a>
+                <i class="fa-solid fa-arrow-right"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+      <!-- End 'Consultorios Externos' caption -->
+    </section>
+    <!-- ///// End 'Consultorios Externos' section ///// -->
+
     <!-- ///// Begin 'Estudios' section ///// -->
     <section id="intro-estudios" class="full-height-vh bg-image">
       <!-- Element cover -->
@@ -486,7 +629,7 @@
 
       <!-- Begin 'Contacto' caption -->
       <div class="intro-caption">
-        <h2 class="intro-title" data-aos="fade-down">CINME · Contacto</h2>
+        <h2 class="intro-title" data-aos="fade-down">Contacto</h2>
         <p class="intro-description" data-aos="fade-up">
           Nuestros medios para poder contactarnos
         </p>
@@ -519,11 +662,6 @@
                 <div class="link-item">
                   <swf class="fa-brands fa-facebook-f swf"></swf>
                   <a href="https://www.facebook.com/CINMEcentroinvestigacionesmetabolicas/" target="_blank">Facebook</a>
-                  <i class="fa-solid fa-arrow-right"></i>
-                </div>
-                <div class="link-item">
-                  <swf class="fa-brands fa-twitter swf"></swf>
-                  <a href="https://twitter.com/cinme" target="_blank">Twitter</a>
                   <i class="fa-solid fa-arrow-right"></i>
                 </div>
                 <div class="link-item">
@@ -563,9 +701,10 @@
           <ul class="main-menu">
             <li class="main-menu__item"><a href="#intro-inicio" class="main-menu__link">Inicio</a></li>
             <li class="main-menu__item"><a href="#intro-nosotros" class="main-menu__link">Nosotros</a></li>
-            <li class="main-menu__item"><a href="#intro-ensayos" class="main-menu__link">Ensayos
-                Clínicos</a></li>
+            <li class="main-menu__item"><a href="#intro-ensayos" class="main-menu__link">Ensayos Clínicos</a></li>
             <li class="main-menu__item"><a href="#intro-essentia" class="main-menu__link">ESSENTIA</a></li>
+            <li class="main-menu__item"><a href="#intro-consultorios" class="main-menu__link">Consultorios Externos</a>
+            </li>
             <li class="main-menu__item"><a href="#intro-estudios" class="main-menu__link">Estudios Médicos</a></li>
             <li class="main-menu__item"><a href="#intro-RSE" class="main-menu__link">Responsabilidad Social</a></li>
             <li class="main-menu__item"><a href="#intro-contacto" class="main-menu__link">Contacto</a></li>

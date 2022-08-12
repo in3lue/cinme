@@ -1,5 +1,11 @@
 
+function historiaOn() {
+	document.getElementById("overlay-historia").style.display = "block";
+}
 
+function historiaOff() {
+	document.getElementById("overlay-historia").style.display = "none";
+}
 function estudiosOn() {
 	document.getElementById("overlay-estudios").style.display = "block";
 }
