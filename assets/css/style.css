@@ -259,19 +259,23 @@ section {
 /* ------------------------------------------------------------- */
 
 #intro-inicio {
-  background-image: url(../img/01_inicio.jpg);
+  background-image: url(../img/bg_inicio.jpg);
 }
 
 #intro-ensayos {
-  background-image: url(../img/03_ensayos.jpg);
-}
-
-#intro-estudios {
-  background-image: url(../img/05_estudios.jpg);
+  background-image: url(../img/bg_ensayos.jpg);
 }
 
 #intro-consultorios {
-  background-image: url(../img/05_estudios.jpg);
+  background-image: url(../img/bg_consultorios.jpg);
+}
+
+#intro-estudios {
+  background-image: url(../img/bg_estudios.jpg);
+}
+
+#intro-RSE {
+  background-image: url(../img/bg_responsabilidad.jpg);
 }
 
 /* ------------------------------------------------------------- *
@@ -576,6 +580,18 @@ section {
   margin: 0;
 }
 
+#overlay-alianzas {
+  display: none;
+  /* Hidden by default */
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Black background with opacity */
+  z-index: 770;
+  /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer;
+  /* Add a pointer on hover */
+  margin: 0;
+}
+
 .close {
   z-index: 1500;
 }
@@ -674,6 +690,16 @@ section {
   max-height: 563px;
 }
 
+.igVideo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 360px;
+  height: 100%;
+  max-height: 640px;
+}
 
 /* End: Video Responsive */
 
@@ -885,7 +911,7 @@ section {
 }
 
 #headEspecialidades {
-  background-image: url(../img/banner.jpg);
+  background-image: url(../img/int_banner.jpg);
   top: 100px;
   overflow: hidden;
 }

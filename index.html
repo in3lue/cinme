@@ -639,7 +639,7 @@
         </ul>
       </div>
 
-      <!-- /// OVERLAYS /// -->
+      <!-- /// OVERLAY /// -->
 
       <div id="overlay-consultorios" class="full-cover overlay-caption">
         <div class="close">
@@ -711,6 +711,8 @@
           </li>
         </ul>
       </div>
+
+      <!-- /// OVERLAY /// -->
       <div id="overlay-estudios" class="full-cover overlay-caption">
         <div class="close">
           <label class="btn-close"><i class="fa-solid fa-xmark" onclick="estudiosOff()"></i></label>
@@ -764,35 +766,14 @@
         </div>
 
       </div>
-
-
       <!-- End 'Estudios' caption -->
     </section>
     <!-- ///// End 'Estudios' section ///// -->
 
     <!--  ///// Begin 'Responsabilidad Social' section ///// -->
-    <section id="intro-RSE" class="full-height-vh bg-dark-3">
+    <section id="intro-RSE" class="full-height-vh bg-image">
       <!-- Element cover -->
-      <div class="cover bg-transparent-3-dark"></div>
-
-      <!-- Begin YTPlayer (Youtube video background) -->
-      <div class="youtube-bg full-cover full-height-vh" data-property="{
-							videoURL: 'https://youtu.be/WUb4q_q7vHQ',
-							containment: '#intro-RSE',
-							coverImage: 'assets/img/video-bg/video-bg-1.jpg',
-							startAt: 0,
-							stopAt: 12,
-							autoPlay: true,
-							loop: true,
-							mute: true,
-							showControls: false,
-							showYTLogo: false,
-							realfullscreen: true,
-							addRaster: false,
-							optimizeDisplay: true,
-							stopMovieOnBlur: true
-						}"></div>
-      <!-- End YTPlayer (Youtube video background) -->
+      <div class="cover bg-transparent-2-dark"></div>
       <!-- Begin 'Responsabilidad Social' caption -->
       <div class="intro-caption">
         <h2 class="intro-title" data-aos="fade-down">Responsabilidad Social</h2>
@@ -812,7 +793,7 @@
                     que
                     apoyamos </p>
                   <div class="text-right">
-                    <div class="button" onclick="especialidadesOn()">
+                    <div class="button" onclick="alianzasOn()">
                       <a href="#" class="disabled" title="Alianzas Solidarias">Ver Testimonios</a>
                       <i class="fa-solid fa-arrow-right"></i>
                     </div>
@@ -846,7 +827,9 @@
                     y otros recursos podés seguirnos en Instagram</p>
                   <div class="text-right">
                     <div class="button">
-                      <a href="#" class="disabled" title="+QueDiabetes">Ver Instagram</a>
+                      <a href="https://www.instagram.com/stories/highlights/17952750421829473/" target="_blank"
+                        title="+QueDiabetes">Ver
+                        Instagram</a>
                       <i class="fa-solid fa-arrow-right"></i>
                     </div>
                   </div>
@@ -865,13 +848,28 @@
                   </p>
                   <div class="text-right">
                     <div class="button">
-                      <a href="#" class="disabled" title="CINME Abstract">Ver YouTube</a>
+                      <a href="https://www.youtube.com/channel/UCY1Nj0i2H4ck4zjYgDp2AFQ" target="_blank"
+                        title="CINME YouTube">Ver YouTube</a>
                       <i class="fa-solid fa-arrow-right"></i>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="overlay-alianzas" class="full-cover">
+        <div class="close">
+          <label class="btn-close"><i class="fa-solid fa-xmark" onclick="alianzasOff()"></i></label>
+        </div>
+        <div class="overlay-video" onclick="alianzasOff()">
+          <div class="animate__animated animate__fadeInUp animate__delay-0.5s videoContainer">
+            <video muted autoplay controls class="igVideo" id="video">
+              <source src="/assets/img/cinmeTestimonials2.mp4" type="video/mp4">
+              <code>Tu navegador no soporta la reproducción de video.</code>
+            </video>
           </div>
         </div>
       </div>
@@ -927,7 +925,7 @@
                 </div>
                 <div class="link-item">
                   <swf class="fa-brands fa-youtube swf"></swf>
-                  <a href="https://www.youtube.com/channel/UCY1Nj0i2H4ck4zjYgDp2AFQ" target="_blank">Youtube</a>
+                  <a href="https://www.youtube.com/channel/UCY1Nj0i2H4ck4zjYgDp2AFQ" target="_blank">YouTube</a>
                   <i class="fa-solid fa-arrow-right"></i>
                 </div>
                 <div class="link-item">

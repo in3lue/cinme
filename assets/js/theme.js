@@ -1,10 +1,6 @@
-function especialidadesOn() {
-	document.getElementById("overlay-especialidades").style.display = "block";
-}
+// OVERLAYS
 
-function especialidadesOff() {
-	document.getElementById("overlay-especialidades").style.display = "none";
-}
+//Video Overlays
 
 function historiaOn() {
 	document.getElementById("overlay-historia").style.display = "block";
@@ -13,6 +9,26 @@ function historiaOn() {
 function historiaOff() {
 	document.getElementById("overlay-historia").style.display = "none";
 }
+
+function alianzasOn() {
+	document.getElementById("overlay-alianzas").style.display = "block";
+}
+
+function alianzasOff() {
+	document.getElementById("overlay-alianzas").style.display = "none";
+	video.pause();
+	video.currentTime = 0;
+}
+
+//Blue Overlays
+function especialidadesOn() {
+	document.getElementById("overlay-especialidades").style.display = "block";
+}
+
+function especialidadesOff() {
+	document.getElementById("overlay-especialidades").style.display = "none";
+}
+
 function estudiosOn() {
 	document.getElementById("overlay-estudios").style.display = "block";
 }
@@ -26,10 +42,11 @@ function consultoriosOn() {
 function consultoriosOff() {
 	document.getElementById("overlay-consultorios").style.display = "none";
 }
+
+// LINKS
 function nosotros() {
 	location.href = "nosotros.html";
 }
-
 function especialidades() {
 	location.href = "especialidades.html";
 }
@@ -164,6 +181,7 @@ function comite() {
 	const elNosotros = document.getElementById("nosotros");
 	const elEspecialidades = document.getElementById("especialidades");
 	const elMetabolismo = document.getElementById("metabolismo");
+	const video = document.querySelector("#video");
 
 	sMenuBtn.addEventListener('click', () => {
 		sMenuBtn.classList.add("off");
