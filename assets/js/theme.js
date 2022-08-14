@@ -1,3 +1,10 @@
+function especialidadesOn() {
+	document.getElementById("overlay-especialidades").style.display = "block";
+}
+
+function especialidadesOff() {
+	document.getElementById("overlay-especialidades").style.display = "none";
+}
 
 function historiaOn() {
 	document.getElementById("overlay-historia").style.display = "block";
@@ -16,7 +23,6 @@ function estudiosOff() {
 function consultoriosOn() {
 	document.getElementById("overlay-consultorios").style.display = "block";
 }
-
 function consultoriosOff() {
 	document.getElementById("overlay-consultorios").style.display = "none";
 }

@@ -321,10 +321,10 @@ section {
   align-items: center;
   justify-content: center;
   color: #FFF;
-  font-size: 0.9rem;
+  font-size: 1rem;
   z-index: 900;
   cursor: pointer;
-  margin: 0.5rem 0;
+  /* margin: 0.5rem 0; */
   padding: 0.5rem 1.875rem;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -342,7 +342,6 @@ section {
   outline: none;
   color: #FFF;
   border-color: #FFF;
-  /* background-color: rgba(255, 255, 255, 0.2); */
 }
 
 .button a {
@@ -482,6 +481,20 @@ section {
 }
 
 .ov-item ul {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+  height: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+}
+
+.ov-item:hover ul {
+  height: auto;
+  transform: scaleY(1);
+}
+
+
+/* .ov-item ul {
   height: 0;
   overflow: hidden;
   transition: all 500ms ease-in-out;
@@ -490,7 +503,7 @@ section {
 .ov-item:hover ul {
   height: 100%;
   transition: all 500ms ease-in-out;
-}
+} */
 
 .ov-container .ov-item i {
   color: #FFF;
@@ -512,6 +525,7 @@ section {
 }
 
 
+
 /** Overlays **/
 
 #overlay-estudios {
@@ -527,6 +541,18 @@ section {
 }
 
 #overlay-consultorios {
+  display: none;
+  /* Hidden by default */
+  background-color: rgba(29, 113, 184, 0.90);
+  /* Black background with opacity */
+  z-index: 700;
+  /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer;
+  /* Add a pointer on hover */
+  margin: 0.625rem;
+}
+
+#overlay-especialidades {
   display: none;
   /* Hidden by default */
   background-color: rgba(29, 113, 184, 0.90);
@@ -664,19 +690,18 @@ details[open] summary::after {
 }
 
 .name {
-  font-size: 0.875rem;
+  font-size: 1rem;
   padding: 0rem;
   margin: 0rem;
 
 }
 
 .charge {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   font-weight: 200;
   padding: 0px;
-  margin: -0.125rem 0rem 0.5rem 0rem;
-
+  margin: -1.5rem 0rem 0rem 0rem;
 }
 
 /* Start: Video Responsive */
@@ -1100,7 +1125,7 @@ details[open] summary::after {
 
 .wrapperAcc .parent-tab .content p {
   font-size: 1rem;
-  padding: 1rem 1.25rem;
+  padding: 1rem 1.25rem 0rem 1.25rem;
   color: #58595B;
   text-align: left;
 }
@@ -1177,8 +1202,14 @@ details[open] summary::after {
 .line {
   display: flex;
   flex-direction: row;
+  align-items: flex-end;
 }
 
+.lineStart {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
 
 /* ------------------------------------------------------------- *
    *  cards
@@ -1289,7 +1320,7 @@ details[open] summary::after {
 .combo .description h3 {
   color: #00539A;
   font-size: 1rem;
-  line-height: 1rem;
+  line-height: 1.6rem;
   margin-bottom: 4px;
 }
 

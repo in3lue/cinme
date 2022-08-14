@@ -3,7 +3,7 @@
 
 <head>
     <!-- Title -->
-    <title>Comité de Ética Independiente</title>
+    <title>Especialidades</title>
 
     <!-- Meta -->
     <meta charset="utf-8" />
@@ -24,7 +24,7 @@
 
     <!-- Google fonts (https://www.google.com/fonts) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet" />
 
     <!-- Bootstrap CSS (http://getbootstrap.com) -->
@@ -58,157 +58,197 @@
 
 </head>
 
-<!-- ============= ///// 'Body' ///// ================ -->
+<!-- =============
+    ///// 'Body' /////
+    ================ -->
 
-<body>
+<body class="animsition">
 
-    <!-- ************************************* *********** Begin 'Header' content *********** ************************************** -->
+    <!-- *************************************
+        *********** Begin 'Header' content *********** 
+        ************************************** -->
     <div class="header__logo slide-in-top">
         <a href="/"><img src="assets/img/logo-big.png" alt="CINME Logo" class="logo__img"></a>
     </div>
 
     <div class="btn-menu secondary" id="burguer">
-        <label for="btn-menu" class="icon-menu">
-            <i class="fa-solid fa-bars" id="secondary"></i>
-        </label>
+        <label for="btn-menu" class="icon-menu"><i class="fa-solid fa-bars" id="secondary"></i></label>
     </div>
 
-    <!-- ************************************* *********** Begin 'Body' content *********** ************************************** -->
-    <div>
-        <!-- ///// Begin 'Calidad' section ///// -->
-        <section id="headEspecialidades" class="banner">
-            <h2 class="internal-title fadeInDown o2">
-                Comité de Ética Independiente
-            </h2>
-        </section>
-        <!-- ///// End 'Calidad' section ///// -->
+    <!-- *************************************
+        *********** Begin 'Body' content *********** 
+        ************************************** -->
+    <!-- ///// Begin 'Calidad' section ///// -->
+    <section id="especialidades" class="full-height-vh">
+    </section>
+    <!-- ///// End 'Calidad' section ///// -->
 
-        <!-- ///// Begin 'Calidad Content' section ///// -->
+    <!-- ///// Begin 'Calidad' section ///// -->
 
-        <section>
-            <!-- Begin 'Calidad' Caption -->
-            <div class="internal-caption fadeInUp o3">
-                <div class="container padding-bottom-100">
-                    <div class="padding-top-200 line">
-                        <h4 class="line-title">
-                            Comité de Ética Independiente
-                        </h4>
-                        <div class="line-description">
-                            <p>Cumple con las Buenas Prácticas Clínicas (GCP) y actúa en consonancia con la legislación
-                                local e internacional.
-                            </p>
-                        </div>
+    <section class="full-height-vh">
+
+        <!-- Begin 'Calidad' Caption -->
+        <div class="internal-caption fadeInUp o3">
+            <div class="container padding-bottom-100">
+                <div class="padding-top-200 lineStart">
+                    <h4 class="line-title">
+                        Comité de Ética Independiente
+                    </h4>
+                    <div class="line-description">
+                        <p>Cumple con las Buenas Prácticas Clínicas (GCP) y actúa en consonancia con la legislación
+                            local e internacional.
+                        </p>
                     </div>
                 </div>
-                <div class="contentCards padding-bottom-100 container fadeInUp o4">
-                    <div class="ceiCard">
-                        <div col-lg-4="col-lg-4" col-md-6="col-md-6">
-                            <h4>Objetivo</h4>
+            </div>
+            <div class="accordionContent fadeInUp o4 padding-bottom-100">
+                <div class="wrapperAcc">
+                    <!-- Objetivo -->
+                    <div class="parent-tab">
+                        <input type="radio" name="tab" id="tab-1">
+                        <label for="tab-1">
+                            <span>Objetivo</span>
+                            <div class="icon"><i class="fa-solid fa-arrow-right-long"></i></i></div>
+                        </label>
+                        <div class="content">
                             <p>Velar por la seguridad de las personas que participan de los ensayos clínicos.</p>
                         </div>
                     </div>
-                    <div class="ceiCard">
-                        <div col-lg-4="col-lg-4" col-md-6="col-md-6">
-                            <h4>Aprobación ágil</h4>
-                            <p>El CEI funciona con tiempos ágiles y esto facilita el acceso al inicio de protocolos.</p>
-                        </div>
-                    </div>
-                    <div class="ceiCard">
-                        <div col-lg-4="col-lg-4" col-md-6="col-md-6">
-                            <h4>Miembros</h4>
-                            <p>Posee nueve miembros de diferentes profesiones y sus cargos se renuevan cada tres años.
+                    <!-- Aprobación ágil -->
+                    <div class="parent-tab">
+                        <input type="radio" name="tab" id="tab-2">
+                        <label for="tab-2">
+                            <span>Aprobación ágil</span>
+                            <div class="icon"><i class="fa-solid fa-arrow-right-long"></i></i></div>
+                        </label>
+                        <div class="content">
+                            <p>El CEI funciona con tiempos ágiles y esto facilita el acceso al inicio de protocolos.
                             </p>
                         </div>
                     </div>
-                    <div class="ceiCard">
-                        <div col-lg-4="col-lg-4" col-md-6="col-md-6">
-                            <h4>Procedimientos</h4>
-                            <p>El CEI trabaja con sus propios procedimientos operativos estándar que les permite a los
-                                sponsors informarse acerca de los requisitos para la aprobación de los estudios
-                                clínicos.</p>
+                    <!-- Miembros -->
+                    <div class="parent-tab">
+                        <input type="radio" name="tab" id="tab-3">
+                        <label for="tab-3">
+                            <span>Miembros</span>
+                            <div class="icon"><i class="fa-solid fa-arrow-right-long"></i></i></div>
+                        </label>
+                        <div class="content">
+                            <p>Posee nueve miembros de diferentes profesiones y sus cargos se renuevan cada tres
+                                años.</p>
                         </div>
                     </div>
-                    <div class="ceiCard">
-                        <div col-lg-4="col-lg-4" col-md-6="col-md-6">
-                            <h4>Requerimientos</h4>
-                            <p>El CEI se encuentra acreditado ante el Comité de Ética Central del Gobierno de la Ciudad
-                                de Buenos Aires.</p>
-                            <span style="margin-top:0px;" class="blue-item">
+                    <!-- Procedimientos -->
+                    <div class="parent-tab">
+                        <input type="radio" name="tab" id="tab-4">
+                        <label for="tab-4">
+                            <span>Procedimientos</span>
+                            <div class="icon"><i class="fa-solid fa-arrow-right-long"></i></i></div>
+                        </label>
+                        <div class="content">
+                            <p>El CEI trabaja con sus propios procedimientos operativos estándar que les permite a
+                                los sponsors
+                                informarse acerca de los requisitos para la aprobación de los estudios clínicos.</p>
+                        </div>
+                    </div>
+                    <!-- Requerimientos -->
+                    <div class="parent-tab">
+                        <input type="radio" name="tab" id="tab-5">
+                        <label for="tab-5">
+                            <span>Requerimientos</span>
+                            <div class="icon"><i class="fa-solid fa-arrow-right-long"></i></i></div>
+                        </label>
+                        <div class="content">
+                            <p>El CEI se encuentra acreditado ante el Comité de Ética Central del Gobierno de la
+                                Ciudad de Buenos
+                                Aires.
+                            </p>
+                            <span style="margin-top:0px; padding-left: 30px ;" class="blue-item">
                                 <a href="assets/Acreditacion_CEI_GOB_BA.pdf" target="_blank" class="blue-link">Ver
                                     certificado</a>
                                 <i class="fa-solid fa-arrow-right"></i>
                             </span>
                         </div>
                     </div>
-                    <div class="ceiCard">
-                        <div col-lg-4="col-lg-4" col-md-6="col-md-6">
-                            <h4>Dirección</h4>
+                    <!-- Dirección -->
+                    <div class="parent-tab">
+                        <input type="radio" name="tab" id="tab-6">
+                        <label for="tab-6">
+                            <span>Dirección</span>
+                            <div class="icon"><i class="fa-solid fa-arrow-right-long"></i></i></div>
+                        </label>
+                        <div class="content">
                             <p>Uriburu 754, Piso 3, Oficina 12<br>
                                 C.A.B.A. Argentina<br>
-                                ceidelcinme@gmail.com</p>
+                                ceidelcinme@gmail.com
+                            </p>
                         </div>
                     </div>
 
                 </div>
-
             </div>
 
-            <!-- End 'Calidad' caption -->
-        </section>
-        <!-- ///// End 'Calidad Content' section ///// -->
-        <footer>
-            <p>©2022 ·
-                <b>CINME S.A.</b>
-                Todos los derechos reservados.
-            </p>
-        </footer>
-
-        <!-- ================= ///// End 'Body' ///// ================== -->
-        <!-- input -->
-        <input type="checkbox" id="btn-menu" checked="checked">
-        <div class="container-menu">
-            <div class="cont-menu">
-                <nav>
-                    <ul class="main-menu">
-                        <li class="main-menu__item">
-                            <a href="index.html#intro-inicio" class="main-menu__link" id="secondary">Inicio</a>
-                        </li>
-                        <li class="main-menu__item">
-                            <a href="index.html#intro-nosotros" class="main-menu__link" id="secondary">Nosotros</a>
-                        </li>
-                        <li class="main-menu__item">
-                            <a href="index.html#intro-ensayos" class="main-menu__link" id="secondary">Ensayos
-                                Clínicos</a>
-                        </li>
-                        <li class="main-menu__item">
-                            <a href="index.html#intro-essentia" class="main-menu__link"
-                                id="secondary"><i>ESSENTIA</i></a>
-                        </li>
-                        <li class="main-menu__item">
-                            <a href="#intro-consultorios" class="main-menu__link" id="secondary">Consultorios
-                                Externos</a>
-                        </li>
-                        <li class="main-menu__item">
-                            <a href="#intro-estudios" class="main-menu__link" id="secondary">Estudios Médicos</a>
-                        </li>
-                        <li class="main-menu__item">
-                            <a href="index.html#intro-RSE" class="main-menu__link" id="secondary">Responsabilidad
-                                Social</a>
-                        </li>
-                        <li class="main-menu__item">
-                            <a href="index.html#intro-contacto" class="main-menu__link" id="secondary">Contacto</a>
-                        </li>
-                    </ul>
-                </nav>
-                <label for="btn-menu" class="icon-close" id="equis">
-                    <i class="fa-solid fa-xmark" id="secondary"></i>
-                </label>
-            </div>
         </div>
+
+        <!-- End 'Calidad' caption -->
+    </section>
+    <!-- ///// End 'Calidad Content' section ///// -->
+    <footer>
+        <p>©2022 ·
+            <b>CINME S.A.</b>
+            Todos los derechos reservados.
+        </p>
+    </footer>
+
+
+
+    <!-- =================
+    ///// End 'Body' /////
+    ================== -->
+    <!-- input -->
+    <input type="checkbox" id="btn-menu" checked="checked">
+    <div class="container-menu" id="secondary">
+        <div class="cont-menu">
+            <nav>
+                <ul class="main-menu">
+                    <li class="main-menu__item">
+                        <a href="index.html#intro-inicio" class="main-menu__link" id="secondary">Inicio</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="index.html#intro-nosotros" class="main-menu__link" id="secondary">Nosotros</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="index.html#intro-ensayos" class="main-menu__link" id="secondary">Ensayos Clínicos</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="index.html#intro-essentia" class="main-menu__link" id="secondary"><i>ESSENTIA</i></a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="#intro-consultorios" class="main-menu__link" id="secondary">Consultorios Externos</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="#intro-estudios" class="main-menu__link" id="secondary">Estudios Médicos</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="index.html#intro-RSE" class="main-menu__link" id="secondary">Responsabilidad Social</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="index.html#intro-contacto" class="main-menu__link" id="secondary">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+            <label for="btn-menu" class="icon-close" id="equis"><i class="fa-solid fa-xmark" id="secondary"></i></label>
+        </div>
+    </div>
 
     </div>
 
-    <!-- ===================== ///// Scripts below ///// ===================== -->
+
+
+
+    <!-- =====================
+        ///// Scripts below /////
+        ===================== -->
 
     <!-- Core JS -->
     <script src="assets/plugins/jquery/jquery.min.js"></script>
@@ -238,16 +278,17 @@
     <script src="assets/plugins/ytplayer/js/jquery.mb.YTPlayer.min.js"></script>
     <!-- YTPlayer JS (more info: https://github.com/pupunzi/jquery.mb.YTPlayer) -->
 
-    <script src="assets/plugins/lightgallery/js/lightgallery.min.js"></script>
+    <!-- <script src="assets/plugins/lightgallery/js/lightgallery.min.js"></script> -->
     <!-- lightGallery JS (http://sachinchoolur.github.io/lightGallery) -->
-    <script src="assets/plugins/lightgallery/js/lightgallery-plugins.js"></script>
+    <!-- <script src="assets/plugins/lightgallery/js/lightgallery-plugins.js"></script> -->
     <!-- lightGallery Plugins JS (http://sachinchoolur.github.io/lightGallery) -->
+
 
     <!-- Theme master JS -->
     <script src="assets/js/theme.js"></script>
 
     <script>
-        AOS.init();
+    AOS.init();
     </script>
 </body>
 
