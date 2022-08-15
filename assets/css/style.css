@@ -373,10 +373,11 @@ section {
   display: block;
   margin-left: 0;
   list-style: none;
-  width: 50%;
+  width: 100%;
 }
 
 .link-item {
+  display: block;
   color: #FFF;
   font-size: 1rem;
   text-align: left;
@@ -700,6 +701,11 @@ section {
   height: 100%;
   max-height: 640px;
 }
+
+/* video {
+  width: 600px;
+  object-fit: contain;
+} */
 
 /* End: Video Responsive */
 
@@ -1142,9 +1148,4 @@ footer {
   color: #FFF;
   flex-wrap: nowrap;
   justify-content: center;
-}
-
-video {
-  width: 600px;
-  object-fit: contain;
 }
