@@ -105,8 +105,7 @@
 
         <div class="margin-top-30 button  animate__animated animate__zoomIn animate__delay-2s" data-aos="zoom-in"
           onclick="historiaOn()">
-          <a href="https://www.youtube.com/watch?v=LIRXEMvpe2o" target="_blank" class="disabled"
-            title="Hitos de la historia de CINME">¿Querés saber cómo
+          <a href="" target="_blank" class="disabled" title="Hitos de la historia de CINME">¿Querés saber cómo
             sigue la historia?
           </a>
           <i class="fa-solid fa-arrow-right"></i>
@@ -118,10 +117,10 @@
         </div>
         <div class="overlay-video" onclick="historiaOff()">
           <div class="animate__animated animate__fadeInUp animate__delay-0.5s videoContainer">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/LIRXEMvpe2o?autoplay=1"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              class="ytVideo" allowfullscreen></iframe>
+            <video muted autoplay controls class="ytVideo" id="videoHistoria">
+              <source src="/assets/media/historiaCINME.mp4" type="video/mp4">
+              <code>Tu navegador no soporta la reproducción de video.</code>
+            </video>
           </div>
         </div>
 

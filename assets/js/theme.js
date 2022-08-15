@@ -8,6 +8,8 @@ function historiaOn() {
 
 function historiaOff() {
 	document.getElementById("overlay-historia").style.display = "none";
+	videoHistoria.pause();
+	videoHistoria.currentTime = 0;
 }
 
 function alianzasOn() {
@@ -182,6 +184,7 @@ function comite() {
 	const elEspecialidades = document.getElementById("especialidades");
 	const elMetabolismo = document.getElementById("metabolismo");
 	const video = document.querySelector("#video");
+	const videoHistoria = document.querySelector("#videoHistoria");
 
 	sMenuBtn.addEventListener('click', () => {
 		sMenuBtn.classList.add("off");
