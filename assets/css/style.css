@@ -259,23 +259,23 @@ section {
 /* ------------------------------------------------------------- */
 
 #intro-inicio {
-  background-image: url(../img/bg_inicio.jpg);
+  background-image: url(../media/bg_inicio.jpg);
 }
 
 #intro-ensayos {
-  background-image: url(../img/bg_ensayos.jpg);
+  background-image: url(../media/bg_ensayos.jpg);
 }
 
 #intro-consultorios {
-  background-image: url(../img/bg_consultorios.jpg);
+  background-image: url(../media/bg_consultorios.jpg);
 }
 
 #intro-estudios {
-  background-image: url(../img/bg_estudios.jpg);
+  background-image: url(../media/bg_estudios.jpg);
 }
 
 #intro-RSE {
-  background-image: url(../img/bg_responsabilidad.jpg);
+  background-image: url(../media/bg_responsabilidad.jpg);
 }
 
 /* ------------------------------------------------------------- *
@@ -909,21 +909,21 @@ section {
 
 /** Backgrounds **/
 #nosotros {
-  background-image: url(../img/nosotros.jpg);
+  background-image: url(../media/nosotros.jpg);
 }
 
 #especialidades {
-  background-image: url(../img/investigacion.jpg);
+  background-image: url(../media/investigacion.jpg);
 }
 
 #headEspecialidades {
-  background-image: url(../img/int_banner.jpg);
+  background-image: url(../media/int_banner.jpg);
   top: 100px;
   overflow: hidden;
 }
 
 #metabolismo {
-  background-image: url(../img/essentia.png);
+  background-image: url(../media/essentia.png);
 }
 
 /** accordion blue**/

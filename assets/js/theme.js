@@ -81,7 +81,7 @@ function comite() {
 		loading: true,
 		loadingParentElement: 'html', //animsition wrapper element
 		loadingClass: 'animsition-loading',
-		loadingInner: '', // e.g '<img src="assets/img/loading.svg" />'
+		loadingInner: '', // e.g '<img src="assets/media/loading.svg" />'
 		timeout: true,
 		timeoutCountdown: 4000,
 		onLoadEvent: true,
