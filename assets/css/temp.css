@@ -21,3 +21,51 @@
 
   /* For iPhone 6 and 6 plus Portrait or Landscape View */
   @media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) {}
+
+
+
+  /* ------------------------------------------------------------- *
+ *  Buttons
+/* ------------------------------------------------------------- */
+  .button {
+    font-size: 16px;
+    padding: 6px 20px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1px solid #FFF;
+  }
+
+  .button a {
+    font-size: 12px;
+  }
+
+  .button i {
+    display: none;
+
+  }
+
+  .button:hover i {
+    display: none;
+  }
+
+  /* ------------------------------------------------------------- */
+  .button {
+    font-size: 16px;
+    padding: 8px 30px;
+    border-radius: 25px;
+    background-color: transparent;
+    border: 0.0625rem solid #FFF;
+  }
+
+  .button a {
+    font-size: 14px;
+  }
+
+  .button i {
+    margin-left: -14px;
+
+  }
+
+  .button:hover i {
+    margin-left: 14px;
+  }

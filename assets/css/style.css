@@ -537,7 +537,7 @@ section {
 #overlay-estudios {
   display: none;
   /* Hidden by default */
-  background-color: rgba(29, 113, 184, 0.90);
+  background-color: rgb(29, 113, 184);
   /* Black background with opacity */
   z-index: 700;
   /* Specify a stack order in case you're using a different order for other elements */
@@ -549,7 +549,7 @@ section {
 #overlay-consultorios {
   display: none;
   /* Hidden by default */
-  background-color: rgba(29, 113, 184, 0.90);
+  background-color: rgb(29, 113, 184);
   /* Black background with opacity */
   z-index: 700;
   /* Specify a stack order in case you're using a different order for other elements */
@@ -561,7 +561,7 @@ section {
 #overlay-especialidades {
   display: none;
   /* Hidden by default */
-  background-color: rgba(29, 113, 184, 0.90);
+  background-color: rgb(29, 113, 184);
   /* Black background with opacity */
   z-index: 700;
   /* Specify a stack order in case you're using a different order for other elements */
@@ -1237,6 +1237,26 @@ footer {
     margin: 15px 0 0 0;
   }
 
+  .button {
+    font-size: 16px;
+    padding: 5px 15px;
+    border-radius: 15px;
+    background-color: transparent;
+    border: 1px solid #FFF;
+  }
+
+  .button a {
+    font-size: 10px;
+  }
+
+  .button i {
+    display: none;
+
+  }
+
+  .button:hover i {
+    display: none;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 567px and up) */
@@ -1319,6 +1339,26 @@ footer {
 
   .intro-description {
     margin: 15px 0 0 0;
+  }
+
+  .button {
+    font-size: 16px;
+    padding: 5px 15px;
+    border-radius: 15px;
+    background-color: transparent;
+    border: 1px solid #FFF;
+  }
+
+  .button a {
+    font-size: 10px;
+  }
+
+  .button i {
+    display: none;
+  }
+
+  .button:hover i {
+    display: none;
   }
 }
 
@@ -1403,6 +1443,27 @@ footer {
 
   .intro-description {
     margin: 20px 0 0 0;
+  }
+
+  .button {
+    font-size: 16px;
+    padding: 6px 20px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1px solid #FFF;
+  }
+
+  .button a {
+    font-size: 12px;
+  }
+
+  .button i {
+    margin-left: -14px;
+
+  }
+
+  .button:hover i {
+    margin-left: 14px;
   }
 }
 
@@ -1489,8 +1550,25 @@ footer {
   .intro-description {
     margin: 20px 0 0 0;
   }
+
+  .button {
+    font-size: 16px;
+    padding: 7px 24px;
+    border-radius: 24px;
+    background-color: transparent;
+    border: 1px solid #FFF;
+  }
+
+  .button a {
+    font-size: 14px;
+  }
+
+  .button i {
+    margin-left: -14px;
+
+  }
+
+  .button:hover i {
+    margin-left: 14px;
+  }
 }
-
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media screen and (min-width: 1201px) {}
