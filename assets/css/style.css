@@ -69,7 +69,7 @@ body {
   position: relative;
   background-color: #F1F1F1;
   font-family: "Montserrat", sans-serif;
-  line-height: 1.6rem;
+  line-height: 1.5;
 }
 
 a {
@@ -120,7 +120,6 @@ hr.dotted {
   width: 9rem;
   margin: 1rem;
   z-index: 5;
-
 }
 
 /* Menu */
@@ -1148,4 +1147,19 @@ footer {
   color: #FFF;
   flex-wrap: nowrap;
   justify-content: center;
+}
+
+
+
+.header__logo {
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
+  z-index: 5;
+}
+
+.logo__img {
+  width: 9rem;
+  margin: 1rem;
+  z-index: 5;
 }
