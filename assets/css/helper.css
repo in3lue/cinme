@@ -271,7 +271,7 @@ p {
 /* Small devices */
 @media screen and (max-width: 576px) {
     h2 {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
     }
 
     h3 {
@@ -321,7 +321,7 @@ p {
 /* Small devices (portrait tablets and large phones, 567px and up) */
 @media screen and (min-width: 577px) and (max-width: 768px) {
     h2 {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 
     h3 {

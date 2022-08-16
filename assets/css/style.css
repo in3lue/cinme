@@ -286,7 +286,7 @@ section {
 /* Intro caption
 ================= */
 .intro-caption {
-  max-width: 1200px;
+  max-width: 1120px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -296,8 +296,8 @@ section {
   flex-wrap: nowrap;
   justify-content: flex-end;
   align-items: flex-start;
-  padding-left: 10rem;
-  bottom: 5rem;
+  padding-left: 13rem;
+  bottom: 7rem;
   overflow: hidden;
 }
 
@@ -1176,90 +1176,6 @@ footer {
 
 
   .icon-close {
-    right: 24px;
-    top: 24px;
-  }
-
-  .icon-close i {
-    font-size: 24px;
-  }
-
-  #btn-menu {
-    display: none;
-  }
-
-  .container-menu {
-    top: 24px;
-  }
-
-  .cont-menu {
-    width: 100%;
-    background-color: #1D71B8;
-  }
-
-  .btn-menu {
-    top: 24px;
-    width: 20px;
-  }
-
-  .btn-menu.off {
-    right: -60px;
-  }
-
-  .cont-menu nav {
-    transform: translateY(15%);
-  }
-
-  #btn-menu:checked~.container-menu .cont-menu {
-    transform: translateX(0%);
-  }
-
-  .main-menu__item {
-    list-style: none;
-    padding: 24px 24px;
-  }
-
-  .main-menu__link {
-    font-size: 16px;
-  }
-
-  .intro-caption {
-    max-width: 400px;
-    padding-left: 15px;
-    top: 80px;
-  }
-
-  .intro-subtitle {
-    margin: 4x 0 0 0;
-  }
-
-  .intro-description {
-    margin: 15px 0 0 0;
-  }
-
-}
-
-/* Small devices (portrait tablets and large phones, 567px and up) */
-@media screen and (min-width: 577px) and (max-width: 768px) {
-  .header__logo {
-    left: 0.75rem;
-    top: 0.75rem;
-  }
-
-  .logo__img {
-    width: 6rem;
-    margin: 0.75rem;
-  }
-
-  .icon-menu {
-    right: 24px;
-  }
-
-  .icon-menu i {
-    font-size: 22px;
-  }
-
-  .icon-close {
     right: 260px;
     top: 24px;
   }
@@ -1304,13 +1220,97 @@ footer {
   }
 
   .main-menu__link {
-    font-size: 16px;
+    font-size: 10px;
   }
 
   .intro-caption {
-    max-width: 400px;
-    padding-left: 15px;
-    top: 80px;
+    max-width: 500px;
+    padding-left: 1rem;
+    bottom: 1rem;
+  }
+
+  .intro-subtitle {
+    margin: 4x 0 0 0;
+  }
+
+  .intro-description {
+    margin: 15px 0 0 0;
+  }
+
+}
+
+/* Small devices (portrait tablets and large phones, 567px and up) */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .header__logo {
+    left: 0.75rem;
+    top: 0.75rem;
+  }
+
+  .logo__img {
+    width: 6rem;
+    margin: 0.75rem;
+  }
+
+  .icon-menu {
+    right: 24px;
+  }
+
+  .icon-menu i {
+    font-size: 24px;
+  }
+
+  .icon-close {
+    right: 260px;
+    top: 24px;
+  }
+
+  .icon-close i {
+    font-size: 26px;
+  }
+
+  #btn-menu {
+    display: none;
+  }
+
+  .container-menu {
+    top: 24px;
+  }
+
+  .cont-menu {
+    width: 100%;
+    background-color: #1D71B8;
+  }
+
+  .btn-menu {
+    top: 24px;
+    width: 20px;
+  }
+
+  .btn-menu.off {
+    right: -60px;
+  }
+
+  .cont-menu nav {
+    transform: translateY(15%);
+  }
+
+  #btn-menu:checked~.container-menu .cont-menu {
+    transform: translateX(0%);
+  }
+
+  .main-menu__item {
+    list-style: none;
+    padding: 10px 24px;
+  }
+
+  .main-menu__link {
+    font-size: 14px;
+  }
+
+  .intro-caption {
+    max-width: 650px;
+    padding-left: 24px;
+    bottom: 24px;
   }
 
   .intro-subtitle {
@@ -1323,7 +1323,7 @@ footer {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   .header__logo {
     left: 0.85rem;
     top: 0.85rem;
@@ -1339,7 +1339,7 @@ footer {
   }
 
   .icon-menu i {
-    font-size: 22px;
+    font-size: 28px;
   }
 
 
@@ -1349,7 +1349,7 @@ footer {
   }
 
   .icon-close i {
-    font-size: 24px;
+    font-size: 30px;
   }
 
   #btn-menu {
@@ -1392,9 +1392,9 @@ footer {
   }
 
   .intro-caption {
-    max-width: 700px;
-    padding-left: 25px;
-    top: 80px;
+    max-width: 750px;
+    padding-left: 3rem;
+    bottom: 3rem;
   }
 
   .intro-subtitle {
@@ -1408,7 +1408,7 @@ footer {
 
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media screen and (min-width: 993px) and (max-width: 1200px) {
+@media screen and (min-width: 992px) and (max-width: 1200px) {
   .header__logo {
     left: 0.95rem;
     top: 0.95rem;
@@ -1424,7 +1424,7 @@ footer {
   }
 
   .icon-menu i {
-    font-size: 22px;
+    font-size: 30px;
   }
 
 
@@ -1434,7 +1434,7 @@ footer {
   }
 
   .icon-close i {
-    font-size: 24px;
+    font-size: 32px;
   }
 
   #btn-menu {
@@ -1477,9 +1477,9 @@ footer {
   }
 
   .intro-caption {
-    max-width: 700px;
-    padding-left: 30px;
-    top: 100px;
+    max-width: 1000px;
+    padding-left: 2.5rem;
+    bottom: 2.5rem;
   }
 
   .intro-subtitle {
