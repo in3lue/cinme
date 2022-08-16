@@ -1076,12 +1076,14 @@ section {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
+  gap: 1rem;
 }
 
 .lineStart {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  gap: 1rem;
 }
 
 /* ------------------------------------------------------------- *
@@ -1289,6 +1291,10 @@ footer {
     font-size: 10px;
     padding: 14px 10px 0px 10px;
   }
+
+  .link-item {
+    font-size: 0.75rem;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 567px and up) */
@@ -1424,6 +1430,11 @@ footer {
     font-size: 10px;
     padding: 14px 10px 0px 10px;
   }
+
+  .link-item {
+    font-size: 0.75rem;
+  }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -1560,6 +1571,10 @@ footer {
   .wrapperAcc .parent-tab .content p {
     font-size: 12px;
     padding: 12px 16px 0px 16px;
+  }
+
+  .link-item {
+    font-size: 0.875rem;
   }
 }
 
@@ -1698,5 +1713,9 @@ footer {
   .wrapperAcc .parent-tab .content p {
     font-size: 14px;
     padding: 14px 18px 0px 18px;
+  }
+
+  .link-item {
+    font-size: 0.95rem;
   }
 }
