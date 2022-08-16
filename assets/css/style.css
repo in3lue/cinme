@@ -937,7 +937,7 @@ section {
 }
 
 .wrapperAcc {
-  max-width: 50rem;
+  max-width: 800px;
   padding: 0 1.25rem;
   overflow: hidden;
 }
@@ -1257,6 +1257,38 @@ footer {
   .button:hover i {
     display: none;
   }
+
+  .wrapperAcc {
+    max-width: 400px;
+    padding: 0 10px;
+  }
+
+  .wrapperAcc .parent-tab {
+    margin-bottom: 5px;
+  }
+
+  .wrapperAcc .parent-tab label {
+    padding: 5px 10px;
+  }
+
+  .wrapperAcc label span {
+    font-size: 14px;
+  }
+
+  .wrapperAcc label .icon {
+    height: 15px;
+    width: 15px;
+  }
+
+  .wrapperAcc .parent-tab input:checked~label .icon i:before {
+    padding-left: 14px;
+    transition: padding-left translateX(14px);
+  }
+
+  .wrapperAcc .parent-tab .content p {
+    font-size: 10px;
+    padding: 14px 10px 0px 10px;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 567px and up) */
@@ -1359,6 +1391,38 @@ footer {
 
   .button:hover i {
     display: none;
+  }
+
+  .wrapperAcc {
+    max-width: 500px;
+    padding: 0 10px;
+  }
+
+  .wrapperAcc .parent-tab {
+    margin-bottom: 5px;
+  }
+
+  .wrapperAcc .parent-tab label {
+    padding: 5px 10px;
+  }
+
+  .wrapperAcc label span {
+    font-size: 14px;
+  }
+
+  .wrapperAcc label .icon {
+    height: 15px;
+    width: 15px;
+  }
+
+  .wrapperAcc .parent-tab input:checked~label .icon i:before {
+    padding-left: 14px;
+    transition: padding-left translateX(14px);
+  }
+
+  .wrapperAcc .parent-tab .content p {
+    font-size: 10px;
+    padding: 14px 10px 0px 10px;
   }
 }
 
@@ -1465,6 +1529,38 @@ footer {
   .button:hover i {
     margin-left: 14px;
   }
+
+  .wrapperAcc {
+    max-width: 650px;
+    padding: 0 10px;
+  }
+
+  .wrapperAcc .parent-tab {
+    margin-bottom: 7px;
+  }
+
+  .wrapperAcc .parent-tab label {
+    padding: 7px 15px;
+  }
+
+  .wrapperAcc label span {
+    font-size: 14px;
+  }
+
+  .wrapperAcc label .icon {
+    height: 16px;
+    width: 16px;
+  }
+
+  .wrapperAcc .parent-tab input:checked~label .icon i:before {
+    padding-left: 16px;
+    transition: padding-left translateX(16px);
+  }
+
+  .wrapperAcc .parent-tab .content p {
+    font-size: 12px;
+    padding: 12px 16px 0px 16px;
+  }
 }
 
 
@@ -1570,5 +1666,37 @@ footer {
 
   .button:hover i {
     margin-left: 14px;
+  }
+
+  .wrapperAcc {
+    max-width: 7200px;
+    padding: 0 15px;
+  }
+
+  .wrapperAcc .parent-tab {
+    margin-bottom: 8px;
+  }
+
+  .wrapperAcc .parent-tab label {
+    padding: 8px 18px;
+  }
+
+  .wrapperAcc label span {
+    font-size: 16px;
+  }
+
+  .wrapperAcc label .icon {
+    height: 24px;
+    width: 24px;
+  }
+
+  .wrapperAcc .parent-tab input:checked~label .icon i:before {
+    padding-left: 16px;
+    transition: padding-left translateX(16px);
+  }
+
+  .wrapperAcc .parent-tab .content p {
+    font-size: 14px;
+    padding: 14px 18px 0px 18px;
   }
 }
