@@ -150,11 +150,11 @@ function comite() {
 
 		if ($(this).scrollTop() > 10) {
 			$('.scrolltotop').fadeIn();
-			sMenuClose.classList.remove("off");
-			if (sMenuOn.checked) {
-				sMenuOn.checked = false;
-				sMenuBtn.classList.remove("off");
-			}
+			// sMenuClose.classList.remove("off");
+			// if (sMenuOn.checked) {
+			// 	sMenuOn.checked = false;
+			// 	sMenuBtn.classList.remove("off");
+			// }
 			if (elNosotros) elNosotros.classList.add("semi");
 			if (elEspecialidades) elEspecialidades.classList.add("semi");
 			if (elMetabolismo) elMetabolismo.classList.add("semi");
@@ -162,11 +162,11 @@ function comite() {
 
 		} else {
 			$('.scrolltotop').fadeOut();
-			sMenuClose.classList.add("off");
-			if (!sMenuOn.checked) {
-				sMenuOn.checked = true;
-				sMenuBtn.classList.add("off");
-			}
+			// sMenuClose.classList.add("off");
+			// if (!sMenuOn.checked) {
+			// 	sMenuOn.checked = true;
+			// 	sMenuBtn.classList.add("off");
+			// }
 			if (elNosotros) elNosotros.classList.remove("semi");
 			if (elEspecialidades) elEspecialidades.classList.remove("semi");
 			if (elMetabolismo) elMetabolismo.classList.remove("semi");
@@ -188,6 +188,8 @@ function comite() {
 
 	sMenuBtn.addEventListener('click', () => {
 		sMenuBtn.classList.add("off");
+		sMenuClose.classList.remove("off");
+
 	});
 
 	document.getElementById("equis").addEventListener('click', () => {
@@ -195,6 +197,8 @@ function comite() {
 	});
 
 	sMenuClose.classList.add("off");
-	sMenuBtn.classList.add("off");
+	sMenuBtn.classList.add("on");
+	sMenuOn.checked = false;
+
 
 })(jQuery); 
