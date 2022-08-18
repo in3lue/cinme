@@ -660,6 +660,10 @@ section {
   background-image: url(../media/essentia.jpg);
 }
 
+#calidad {
+  background-image: url(../media/calidad.jpg);
+}
+
 /** accordion blue**/
 
 .accordionContent {
