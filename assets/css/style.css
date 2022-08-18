@@ -56,22 +56,20 @@ hr.dotted {
 /*-------HEADER-------*/
 .header__logo {
   position: fixed;
-  left: 1rem;
-  top: 1rem;
+  left: 32px;
+  top: 32px;
   z-index: 5;
 }
 
 .logo__img {
-  width: 9rem;
-  margin: 1rem;
-  z-index: 5;
+  width: 60%;
 }
 
 /* Menu */
 
 .icon-menu {
   position: absolute;
-  right: 1.875rem;
+  right: 32px;
   top: 0;
   color: #FFF;
   cursor: pointer;
@@ -79,20 +77,20 @@ hr.dotted {
 }
 
 .icon-menu i {
-  font-size: 2rem;
+  font-size: 30px;
 }
 
 
 .icon-close {
   position: absolute;
-  right: 1.875rem;
-  top: 1.875rem;
+  right: 32px;
+  top: 32px;
   color: #FFF;
   cursor: pointer;
 }
 
 .icon-close i {
-  font-size: 2.125rem;
+  font-size: 34px;
 }
 
 #btn-menu {
@@ -103,7 +101,7 @@ hr.dotted {
   position: absolute;
   height: 100vh;
   width: 100%;
-  top: 1.875rem;
+  top: 32px;
   right: 0;
   transition: all 500ms ease;
   opacity: 0;
@@ -124,8 +122,7 @@ hr.dotted {
   top: 0;
   height: 100vh;
   text-align: right;
-  max-width: 300px;
-  width: 100%;
+  width: 20%;
   transition: all 500ms ease;
   transform: translateX(100%);
   background-color: transparent;
@@ -139,14 +136,14 @@ hr.dotted {
 .btn-menu {
   position: fixed;
   right: 0;
-  top: 1.875rem;
-  width: 1.875rem;
+  top: 32px;
+  width: 30px;
   z-index: 500;
   transition: all 500ms ease;
 }
 
 .btn-menu.off {
-  right: -3.75rem;
+  right: -60px;
 }
 
 .cont-menu nav {
@@ -163,7 +160,7 @@ hr.dotted {
 
 .main-menu__item {
   list-style: none;
-  padding: 1.5rem 1.875rem;
+  padding: 24px;
 }
 
 .main-menu__link {
@@ -231,7 +228,7 @@ section {
 /* Intro caption
 ================= */
 .intro-caption {
-  max-width: 1120px;
+  max-width: 70%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -241,49 +238,48 @@ section {
   flex-wrap: nowrap;
   justify-content: flex-end;
   align-items: flex-start;
-  padding-left: 13rem;
-  bottom: 7rem;
+  left: 10%;
+  bottom: 10%;
   overflow: hidden;
 }
 
 /* intro title */
 .intro-title {
   margin: 0;
-  text-shadow: 0.3125rem 0.3125rem rgba(0, 0, 0, 0.1);
+  text-shadow: 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* intro subtitle */
 .intro-subtitle {
-  margin: 0.9375rem 0 0 0;
-  text-shadow: 0.1875rem 0.1875rem rgba(0, 0, 0, 0.1);
+  margin: 15px 0 0 0;
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.1);
 }
 
 /* intro description */
 .intro-description {
-  margin: 1.5625rem 0 0 0;
+  margin: 25px 0 0 0;
 }
 
 /* ------------------------------------------------------------- *
  *  Buttons
 /* ------------------------------------------------------------- */
+
 .button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   color: #FFF;
-  font-size: 1rem;
   z-index: 900;
   cursor: pointer;
-  /* margin: 0.5rem 0; */
-  padding: 0.5rem 1.875rem;
+  padding: 8px 30px;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  border-radius: 1.5625rem;
+  border-radius: 25px;
   background-color: transparent;
-  border: 0.125rem solid #FFF;
+  border: 2px solid #FFF;
 }
 
 .button:hover {
@@ -296,20 +292,18 @@ section {
 
 .button a {
   color: #FFF;
-  font-size: 0.875rem;
   text-decoration: none;
 }
 
 .button i {
   transition: all 500ms ease-in-out;
   opacity: 0;
-  margin-left: -0.875rem;
-
+  margin-left: -14px;
 }
 
 .button:hover i {
   opacity: 1;
-  margin-left: 0.875rem;
+  margin-left: 14px;
 }
 
 /* ------------------------------------------------------------- *
@@ -325,10 +319,10 @@ section {
 .link-item {
   display: block;
   color: #FFF;
-  font-size: 1rem;
+  font-size: 14.4px;
   text-align: left;
   text-decoration: none;
-  padding-bottom: 1rem;
+  padding-bottom: 16px;
   cursor: pointer;
 }
 
@@ -336,20 +330,20 @@ section {
   color: #FFF;
   transition: all 500ms ease-in-out;
   opacity: 0;
-  margin-left: -1.25rem;
+  margin-left: -20px;
 }
 
 .link-item:hover i {
   opacity: 1;
-  margin-left: 0.625rem;
+  margin-left: 10px;
 }
 
 .swf {
-  margin: 0 0.625rem 0 -1.875rem;
+  margin: 0 10px 0 -30px;
 }
 
 .address i {
-  width: 1.5rem;
+  width: 24px;
   margin-top: 0;
 }
 
@@ -357,7 +351,6 @@ section {
  *  blue anchors
 /* ------------------------------------------------------------- */
 .blue-list {
-
   color: #1D71B8;
   display: block;
   margin-left: 0;
@@ -366,10 +359,10 @@ section {
 
 .blue-item {
   color: #1D71B8;
-  font-size: 1rem;
+  font-size: 14.4px;
   text-align: left;
   text-decoration: none;
-  padding-bottom: 1rem;
+  padding-bottom: 16px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -380,13 +373,12 @@ section {
   color: #1D71B8;
   transition: all 500ms ease-in-out;
   opacity: 0;
-  margin-left: -1.25rem;
-
+  margin-left: -20px;
 }
 
 .blue-item:hover i {
   opacity: 1;
-  margin-left: 0.625rem;
+  margin-left: 10px;
 }
 
 .blue-link {
@@ -407,6 +399,7 @@ section {
 /* ------------------------------------------------------------- *
  *  overlay links [ov]
 /* ------------------------------------------------------------- */
+
 .ov-container {
   width: 100%;
   display: inline-block;
@@ -421,11 +414,11 @@ section {
   width: auto;
 }
 
-.ov-container .ov-item {
+.ov-container .ov-item a {
   list-style: none;
   color: #FFF;
   font-size: 1.35rem;
-  line-height: 2.5rem;
+  line-height: 2.5;
   text-align: left;
   text-decoration: none;
   padding: 1.5rem 0rem;
@@ -435,49 +428,52 @@ section {
   overflow: hidden;
   transition: transform 0.3s ease-out;
   height: 0;
+  font-size: 1.35rem;
   transform: scaleY(0);
   transform-origin: top;
 }
 
 .ov-item:hover ul {
   height: auto;
+  font-size: 1.35rem;
   transform: scaleY(1);
 }
-
-
-/* .ov-item ul {
-  height: 0;
-  overflow: hidden;
-  transition: all 500ms ease-in-out;
-}
-
-.ov-item:hover ul {
-  height: 100%;
-  transition: all 500ms ease-in-out;
-} */
 
 .ov-container .ov-item i {
   color: #FFF;
   transition: all 500ms ease-in-out;
   opacity: 0;
-  margin-left: -1.25rem;
+  margin-left: -20px;
 }
 
 .ov-container .ov-item:hover i {
   opacity: 1;
-  margin-left: 0.625rem;
+  margin-left: 10px;
 }
 
 .ov-container .ov-list .ov-item ul li {
   list-style: none;
   color: #FFF;
-  padding: 0rem 3rem;
+  padding: 0rem 48px;
   border-left: #FFF 1px solid;
 }
 
-
-
 /** Overlays **/
+.overlayContainer {
+  display: none;
+  background-color: rgb(29, 113, 184);
+  z-index: 700;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.overlayVideoContainer {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 700;
+  cursor: pointer;
+  margin: 0;
+}
 
 #overlay-estudios {
   display: none;
@@ -545,8 +541,8 @@ section {
 
 .btn-close {
   position: absolute;
-  right: 2.5rem;
-  top: 1.875rem;
+  right: 40px;
+  top: 40px;
   cursor: pointer;
   z-index: 800;
   background: none;
@@ -554,15 +550,8 @@ section {
 }
 
 .btn-close i {
-  font-size: 2.25rem;
+  font-size: 36px;
   color: #FFF;
-  z-index: 800;
-}
-
-.btn-close i:hover {
-  font-size: 2.25rem;
-  color: #FFF;
-  z-index: 800;
 }
 
 .overlay {
@@ -570,11 +559,12 @@ section {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  padding: 3rem 10rem;
+  padding: 18px 110px 40px 110px;
   height: 100%;
   justify-content: space-between;
   width: 100%;
   overflow: hidden;
+  z-index: 600;
 }
 
 .overlay-video {
@@ -589,6 +579,7 @@ section {
   left: 0;
   height: 100%;
   width: 100%;
+  z-index: 600;
 }
 
 .overlay-caption {
@@ -598,23 +589,21 @@ section {
 }
 
 .overlay-title {
-  padding: 1rem 0rem;
-  font-size: 2rem;
+  padding: 16px 0px;
 }
 
 .name {
-  font-size: 1rem;
-  padding: 0rem;
-  margin: 0rem;
-
+  font-size: 16px;
+  padding: 0px;
+  margin: 0px;
 }
 
 .charge {
-  font-size: 0.8rem;
+  font-size: 12.8px;
   text-transform: uppercase;
   font-weight: 200;
   padding: 0px;
-  margin: -1.5rem 0rem 0rem 0rem;
+  margin: -5px 0px 0px 0px;
 }
 
 /* Start: Video Responsive */
@@ -682,16 +671,16 @@ section {
 
 .wrapperAcc {
   max-width: 800px;
-  padding: 0 1.25rem;
+  padding: 0 20px;
   overflow: hidden;
 }
 
 .wrapperAcc .parent-tab {
-  margin-bottom: 0.5rem;
+  margin-bottom: 8px;
 }
 
 .wrapperAcc .parent-tab label {
-  padding: 0.625rem 1.25rem;
+  padding: 10px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -710,8 +699,8 @@ section {
 
 .wrapperAcc label .icon {
   position: relative;
-  height: 1.875rem;
-  width: 1.875rem;
+  height: 30px;
+  width: 30px;
   color: #1D71B8;
   display: block;
   border-radius: 50%;
@@ -719,8 +708,8 @@ section {
 
 .wrapperAcc .parent-tab input:checked~label .icon i:before {
   content: " \f178";
-  padding-left: 1rem;
-  transition: padding-left translateX(1rem);
+  padding-left: 16px;
+  transition: padding-left translateX(16px);
 }
 
 .wrapperAcc label .icon i {
@@ -742,7 +731,7 @@ section {
 
 .wrapperAcc .parent-tab .content p {
   font-size: 1rem;
-  padding: 1rem 1.25rem 0rem 1.25rem;
+  padding: 16px 20px 0px 20px;
   color: #58595B;
   text-align: left;
 }
@@ -770,15 +759,6 @@ section {
   overflow: hidden;
 }
 
-
-.internal-caption.center {
-  margin: 100px auto;
-  width: 100% !important;
-  max-width: 1200px;
-  text-align: center;
-  top: 100px;
-}
-
 .internal-title {
   color: #1D71B8;
   margin: 0;
@@ -789,6 +769,20 @@ section {
 .internal-subtitle {
   margin: 5px 0 0 0;
   text-shadow: none;
+}
+
+.line {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.lineStart {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1rem;
 }
 
 .line-title {
@@ -814,20 +808,6 @@ section {
 .line-description img {
   padding: 0 0 1rem 0;
   max-width: 50%;
-}
-
-.line {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  gap: 1rem;
-}
-
-.lineStart {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 1rem;
 }
 
 /* ------------------------------------------------------------- *
@@ -888,7 +868,7 @@ footer {
   flex-direction: row;
   align-items: center;
   align-content: center;
-  padding: 2rem 0;
+  padding: 1.5rem 0;
   bottom: 0;
   background-color: #5C768D;
   width: 100%;
@@ -900,536 +880,621 @@ footer {
 /* ------------------------------------------------------------- *
    *  Media Queries
 /* ------------------------------------------------------------- */
+
 /* Small devices */
 @media screen and (max-width: 576px) {
   .header__logo {
-    left: 0.625rem;
-    top: 0.625rem;
+    left: 20px;
+    top: 20px;
   }
 
   .logo__img {
-    width: 6rem;
-    margin: 0.625rem;
+    width: 50%;
   }
 
   .icon-menu {
-    right: 24px;
+    right: 20px;
   }
 
   .icon-menu i {
-    font-size: 22px;
+    font-size: 1.25rem;
   }
 
-
   .icon-close {
-    right: 260px;
-    top: 24px;
+    right: 20px;
+    top: 20px;
   }
 
   .icon-close i {
-    font-size: 24px;
-  }
-
-  #btn-menu {
-    display: none;
+    font-size: 1.5rem;
   }
 
   .container-menu {
-    top: 24px;
+    top: 20px;
   }
 
   .cont-menu {
     width: 100%;
-    background-color: #1D71B8;
   }
 
   .btn-menu {
-    top: 24px;
+    top: 20px;
     width: 20px;
   }
 
-  .btn-menu.off {
-    right: -60px;
-  }
-
-  .cont-menu nav {
-    transform: translateY(15%);
-  }
-
-  #btn-menu:checked~.container-menu .cont-menu {
-    transform: translateX(0%);
-  }
-
   .main-menu__item {
-    list-style: none;
-    padding: 10px 24px;
+    padding: 18px;
   }
 
   .main-menu__link {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .intro-caption {
-    max-width: 500px;
-    padding-left: 1rem;
-    bottom: 1rem;
-  }
-
-  .intro-subtitle {
-    margin: 4x 0 0 0;
-  }
-
-  .intro-description {
-    margin: 15px 0 0 0;
+    max-width: 70%;
+    left: 10%;
+    bottom: 10%;
   }
 
   .button {
-    font-size: 16px;
-    padding: 5px 15px;
-    border-radius: 15px;
-    background-color: transparent;
+    padding: 4px 20px;
+    border-radius: 20px;
     border: 1px solid #FFF;
   }
 
-  .button a {
-    font-size: 10px;
-  }
-
   .button i {
-    display: none;
-
+    margin-left: -10px;
   }
 
   .button:hover i {
-    display: none;
-  }
-
-  .wrapperAcc {
-    max-width: 400px;
-    padding: 0 10px;
-  }
-
-  .wrapperAcc .parent-tab {
-    margin-bottom: 5px;
-  }
-
-  .wrapperAcc .parent-tab label {
-    padding: 5px 10px;
-  }
-
-  .wrapperAcc label span {
-    font-size: 14px;
-  }
-
-  .wrapperAcc label .icon {
-    height: 15px;
-    width: 15px;
-  }
-
-  .wrapperAcc .parent-tab input:checked~label .icon i:before {
-    padding-left: 14px;
-    transition: padding-left translateX(14px);
-  }
-
-  .wrapperAcc .parent-tab .content p {
-    font-size: 10px;
-    padding: 14px 10px 0px 10px;
+    margin-left: 10px;
   }
 
   .link-item {
+    font-size: 10px;
+    padding-bottom: 10px;
+  }
+
+  .link-item i {
+    margin-left: -14px;
+  }
+
+  .link-item:hover i {
+    margin-left: 8px;
+  }
+
+  .swf {
+    margin: 0 8px 0 -12px;
+  }
+
+  .address i {
+    width: 16px;
+  }
+
+  .blue-item {
+    font-size: 10px;
+    padding-bottom: 10px;
+  }
+
+  .blue-item i {
+    margin-left: -14px;
+  }
+
+  .blue-item:hover i {
+    margin-left: 8px;
+  }
+
+  .ov-container .ov-item {
+    font-size: 14px;
+    padding: 16px 0;
+  }
+
+  .ov-container .ov-item i {
+    margin-left: -14px;
+  }
+
+  .ov-container .ov-item:hover i {
+    margin-left: 10px;
+  }
+
+  .ov-container .ov-list .ov-item ul li {
+    padding: 0px 36px;
+  }
+
+  .overlayContainer {
+    margin: 10px;
+  }
+
+  .btn-close {
+    right: 14px;
+    top: 14px;
+  }
+
+  .btn-close i {
+    font-size: 26px;
+  }
+
+  .overlay {
+    padding: 15px 50px 20px 50px;
+  }
+
+  .overlay-title {
+    padding: 10px 0px;
+  }
+
+  .name {
+    font-size: 10px;
+  }
+
+  .charge {
+    font-size: 9px;
+    margin: -5px 0px 0px 0px;
+  }
+
+  .ytVideo {
+    max-width: 693px;
+    max-height: 390px;
+  }
+
+  .igVideo {
+    max-width: 250px;
+    max-height: 440px;
+  }
+
+  #headEspecialidades {
+    top: 60px;
+  }
+
+  .wrapperAcc {
+    padding: 0 14px;
+  }
+
+  .wrapperAcc .parent-tab {
+    margin-bottom: 6px;
+  }
+
+  .wrapperAcc .parent-tab label {
+    padding: 4px 14px;
     font-size: 0.75rem;
+  }
+
+  .wrapperAcc label span {
+    font-size: 0.75rem;
+  }
+
+  .wrapperAcc label .icon {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+  }
+
+  .wrapperAcc .parent-tab input:checked~label .icon i:before {
+    padding-left: 10px;
+    transition: padding-left translateX(10px);
+  }
+
+  .wrapperAcc .parent-tab .content p {
+    font-size: 0.75rem;
+    padding: 10px 10px 0px 10px;
+  }
+
+  .internal-title {
+    padding: 30px 0px;
+  }
+
+  .line {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+  }
+
+  .lineStart {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .line-title {
+    padding-right: 0.75rem;
+  }
+
+  footer {
+    padding: 1rem 0;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 576px and up) */
 @media screen and (min-width: 576px) and (max-width: 768px) {
   .header__logo {
-    left: 0.75rem;
-    top: 0.75rem;
+    left: 26px;
+    top: 26px;
   }
 
   .logo__img {
-    width: 6rem;
-    margin: 0.75rem;
+    width: 52%;
   }
 
   .icon-menu {
-    right: 24px;
+    right: 26px;
   }
 
   .icon-menu i {
-    font-size: 24px;
-  }
-
-  .icon-close {
-    right: 260px;
-    top: 24px;
-  }
-
-  .icon-close i {
     font-size: 26px;
   }
 
-  #btn-menu {
-    display: none;
+  .icon-close {
+    right: 26px;
+    top: 26px;
+  }
+
+  .icon-close i {
+    font-size: 1.625rem;
   }
 
   .container-menu {
-    top: 24px;
+    top: 26px;
   }
 
   .cont-menu {
     width: 100%;
-    background-color: #1D71B8;
   }
 
   .btn-menu {
-    top: 24px;
-    width: 20px;
-  }
-
-  .btn-menu.off {
-    right: -60px;
-  }
-
-  .cont-menu nav {
-    transform: translateY(15%);
-  }
-
-  #btn-menu:checked~.container-menu .cont-menu {
-    transform: translateX(0%);
+    top: 26px;
+    width: 26px;
   }
 
   .main-menu__item {
-    list-style: none;
-    padding: 10px 24px;
+    padding: 20px;
   }
 
   .main-menu__link {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .intro-caption {
-    max-width: 650px;
-    padding-left: 24px;
-    bottom: 24px;
-  }
-
-  .intro-subtitle {
-    margin: 4x 0 0 0;
-  }
-
-  .intro-description {
-    margin: 15px 0 0 0;
+    max-width: 70%;
+    left: 10%;
+    bottom: 10%;
   }
 
   .button {
-    font-size: 16px;
-    padding: 5px 15px;
-    border-radius: 15px;
-    background-color: transparent;
+    padding: 4px 24px;
+    border-radius: 22px;
     border: 1px solid #FFF;
   }
 
-  .button a {
-    font-size: 10px;
-  }
-
   .button i {
-    display: none;
+    margin-left: -10px;
   }
 
   .button:hover i {
-    display: none;
-  }
-
-  .wrapperAcc {
-    max-width: 500px;
-    padding: 0 10px;
-  }
-
-  .wrapperAcc .parent-tab {
-    margin-bottom: 5px;
-  }
-
-  .wrapperAcc .parent-tab label {
-    padding: 5px 10px;
-  }
-
-  .wrapperAcc label span {
-    font-size: 14px;
-  }
-
-  .wrapperAcc label .icon {
-    height: 15px;
-    width: 15px;
-  }
-
-  .wrapperAcc .parent-tab input:checked~label .icon i:before {
-    padding-left: 14px;
-    transition: padding-left translateX(14px);
-  }
-
-  .wrapperAcc .parent-tab .content p {
-    font-size: 10px;
-    padding: 14px 10px 0px 10px;
+    margin-left: 10px;
   }
 
   .link-item {
-    font-size: 0.75rem;
+    font-size: 12px;
+    padding-bottom: 12px;
   }
 
+  .link-item i {
+    margin-left: -16px;
+  }
+
+  .link-item:hover i {
+    margin-left: 8px;
+  }
+
+  .swf {
+    margin: 0 8px 0 -12px;
+  }
+
+  .address i {
+    width: 18px;
+  }
+
+  .blue-item {
+    font-size: 12px;
+    padding-bottom: 14px;
+  }
+
+  .blue-item i {
+    margin-left: -16px;
+  }
+
+  .blue-item:hover i {
+    margin-left: 8px;
+  }
+
+  .ov-container .ov-item {
+    font-size: 16px;
+    padding: 18px 0;
+  }
+
+  .ov-container .ov-item i {
+    margin-left: -16px;
+  }
+
+  .ov-container .ov-item:hover i {
+    margin-left: 10px;
+  }
+
+  .ov-container .ov-list .ov-item ul li {
+    padding: 0px 38px;
+  }
+
+  .overlayContainer {
+    margin: 10px;
+  }
+
+  .btn-close {
+    right: 16px;
+    top: 16px;
+  }
+
+  .btn-close i {
+    font-size: 30px;
+  }
+
+  .overlay {
+    padding: 20px 60px 30px 60px;
+  }
+
+  .overlay-title {
+    padding: 12px 0px;
+  }
+
+  .name {
+    font-size: 12px;
+  }
+
+  .charge {
+    font-size: 10px;
+    margin: -5px 0px 0px 0px;
+  }
+
+  .ytVideo {
+    max-width: 770px;
+    max-height: 434px;
+  }
+
+  .igVideo {
+    max-width: 277px;
+    max-height: 490px;
+  }
+
+  #headEspecialidades {
+    top: 80px;
+  }
+
+  .wrapperAcc {
+    padding: 0 16px;
+  }
+
+  .wrapperAcc .parent-tab {
+    margin-bottom: 8px;
+  }
+
+  .wrapperAcc .parent-tab label {
+    padding: 6px 16px;
+    font-size: 0.8rem;
+  }
+
+  .wrapperAcc label span {
+    font-size: 0.8rem;
+  }
+
+  .wrapperAcc label .icon {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+  }
+
+  .wrapperAcc .parent-tab input:checked~label .icon i:before {
+    padding-left: 12px;
+    transition: padding-left translateX(12px);
+  }
+
+  .wrapperAcc .parent-tab .content p {
+    font-size: 0.8rem;
+    padding: 12px 16px 0px 16px;
+  }
+
+  .internal-title {
+    padding: 34px 0px;
+  }
+
+  .line {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+  }
+
+  .lineStart {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .line-title {
+    padding-right: 0.8rem;
+  }
+
+  footer {
+    padding: 1.2rem 0;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .header__logo {
-    left: 0.85rem;
-    top: 0.85rem;
+    left: 28px;
+    top: 28px;
   }
 
   .logo__img {
-    width: 7rem;
-    margin: 0.85rem;
+    width: 55%;
   }
 
   .icon-menu {
-    right: 24px;
+    right: 28px;
   }
 
   .icon-menu i {
     font-size: 28px;
   }
 
-
   .icon-close {
-    right: 260px;
-    top: 24px;
+    right: 28px;
+    top: 28px;
   }
 
   .icon-close i {
-    font-size: 30px;
-  }
-
-  #btn-menu {
-    display: none;
+    font-size: 1.8rem;
   }
 
   .container-menu {
-    top: 24px;
+    top: 28px;
   }
 
   .cont-menu {
-    width: 100%;
-    background-color: #1D71B8;
+    width: 300px;
   }
 
   .btn-menu {
-    top: 24px;
-    width: 20px;
-  }
-
-  .btn-menu.off {
-    right: -60px;
-  }
-
-  .cont-menu nav {
-    transform: translateY(15%);
-  }
-
-  #btn-menu:checked~.container-menu .cont-menu {
-    transform: translateX(0%);
+    top: 28px;
+    width: 28px;
   }
 
   .main-menu__item {
-    list-style: none;
-    padding: 16px 24px;
+    padding: 21px;
   }
 
   .main-menu__link {
-    font-size: 16px;
-  }
-
-  .intro-caption {
-    max-width: 750px;
-    padding-left: 3rem;
-    bottom: 3rem;
-  }
-
-  .intro-subtitle {
-    margin: 6x 0 0 0;
-  }
-
-  .intro-description {
-    margin: 20px 0 0 0;
-  }
-
-  .button {
-    font-size: 16px;
-    padding: 6px 20px;
-    border-radius: 20px;
-    background-color: transparent;
-    border: 1px solid #FFF;
-  }
-
-  .button a {
-    font-size: 12px;
-  }
-
-  .button i {
-    margin-left: -14px;
-
-  }
-
-  .button:hover i {
-    margin-left: 14px;
-  }
-
-  .wrapperAcc {
-    max-width: 650px;
-    padding: 0 10px;
-  }
-
-  .wrapperAcc .parent-tab {
-    margin-bottom: 7px;
-  }
-
-  .wrapperAcc .parent-tab label {
-    padding: 7px 15px;
-  }
-
-  .wrapperAcc label span {
     font-size: 14px;
   }
 
-  .wrapperAcc label .icon {
-    height: 16px;
-    width: 16px;
+  .intro-caption {
+    max-width: 70%;
+    left: 10%;
+    bottom: 10%;
   }
 
-  .wrapperAcc .parent-tab input:checked~label .icon i:before {
-    padding-left: 16px;
-    transition: padding-left translateX(16px);
+  .button {
+    padding: 5px 26px;
+    border-radius: 23px;
+    border: 1px solid #FFF;
   }
 
-  .wrapperAcc .parent-tab .content p {
-    font-size: 12px;
-    padding: 12px 16px 0px 16px;
+  .button i {
+    margin-left: -12px;
+  }
+
+  .button:hover i {
+    margin-left: 12px;
   }
 
   .link-item {
-    font-size: 0.875rem;
-  }
-}
-
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-  .header__logo {
-    left: 0.95rem;
-    top: 0.95rem;
+    font-size: 13px;
+    padding-bottom: 14px;
   }
 
-  .logo__img {
-    width: 8rem;
-    margin: 0.95rem;
+  .link-item i {
+    margin-left: -17px;
   }
 
-  .icon-menu {
-    right: 24px;
+  .link-item:hover i {
+    margin-left: 9px;
   }
 
-  .icon-menu i {
-    font-size: 30px;
+  .swf {
+    margin: 0 9px 0 -14px;
   }
 
-
-  .icon-close {
-    right: 260px;
-    top: 24px;
-  }
-
-  .icon-close i {
-    font-size: 32px;
-  }
-
-  #btn-menu {
-    display: none;
-  }
-
-  .container-menu {
-    top: 24px;
-  }
-
-  .cont-menu {
-    width: 100%;
-    background-color: #1D71B8;
-  }
-
-  .btn-menu {
-    top: 24px;
+  .address i {
     width: 20px;
   }
 
-  .btn-menu.off {
-    right: -60px;
+  .blue-item {
+    font-size: 13px;
+    padding-bottom: 15px;
   }
 
-  .cont-menu nav {
-    transform: translateY(15%);
+  .blue-item i {
+    margin-left: -17px;
   }
 
-  #btn-menu:checked~.container-menu .cont-menu {
-    transform: translateX(0%);
+  .blue-item:hover i {
+    margin-left: 8px;
   }
 
-  .main-menu__item {
-    list-style: none;
-    padding: 24px 24px;
+  .ov-container .ov-item {
+    font-size: 18px;
+    padding: 20px 0;
   }
 
-  .main-menu__link {
-    font-size: 16px;
+  .ov-container .ov-item i {
+    margin-left: -17px;
   }
 
-  .intro-caption {
-    max-width: 1000px;
-    padding-left: 2.5rem;
-    bottom: 2.5rem;
+  .ov-container .ov-item:hover i {
+    margin-left: 10px;
   }
 
-  .intro-subtitle {
-    margin: 6x 0 0 0;
+  .ov-container .ov-list .ov-item ul li {
+    padding: 0px 42px;
   }
 
-  .intro-description {
-    margin: 20px 0 0 0;
+  .overlayContainer {
+    margin: 10px;
   }
 
-  .button {
-    font-size: 16px;
-    padding: 7px 24px;
-    border-radius: 24px;
-    background-color: transparent;
-    border: 1px solid #FFF;
+  .btn-close {
+    right: 18px;
+    top: 18px;
   }
 
-  .button a {
-    font-size: 14px;
+  .btn-close i {
+    font-size: 32px;
   }
 
-  .button i {
-    margin-left: -14px;
-
+  .overlay {
+    padding: 25px 70px 30px 70px;
   }
 
-  .button:hover i {
-    margin-left: 14px;
+  .overlay-title {
+    padding: 14px 0px;
+  }
+
+  .name {
+    font-size: 13px;
+  }
+
+  .charge {
+    font-size: 10px;
+    margin: -5px 0px 0px 0px;
+  }
+
+  .ytVideo {
+    max-width: 855px;
+    max-height: 482px;
+  }
+
+  .igVideo {
+    max-width: 308px;
+    max-height: 547px;
+  }
+
+  #headEspecialidades {
+    top: 90px;
   }
 
   .wrapperAcc {
-    max-width: 7200px;
-    padding: 0 15px;
+    padding: 0 18px;
   }
 
   .wrapperAcc .parent-tab {
@@ -1438,28 +1503,248 @@ footer {
 
   .wrapperAcc .parent-tab label {
     padding: 8px 18px;
+    font-size: 0.9rem;
   }
 
   .wrapperAcc label span {
-    font-size: 16px;
+    font-size: 0.9rem;
   }
 
   .wrapperAcc label .icon {
-    height: 24px;
-    width: 24px;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
   }
 
   .wrapperAcc .parent-tab input:checked~label .icon i:before {
-    padding-left: 16px;
-    transition: padding-left translateX(16px);
+    padding-left: 13px;
+    transition: padding-left translateX(13px);
   }
 
   .wrapperAcc .parent-tab .content p {
-    font-size: 14px;
+    font-size: .9rem;
     padding: 14px 18px 0px 18px;
   }
 
+  .internal-title {
+    padding: 36px 0px;
+  }
+
+  .line-title {
+    padding-right: 0.9rem;
+  }
+
+  footer {
+    padding: 1.3rem 0;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .header__logo {
+    left: 29px;
+    top: 29px;
+  }
+
+  .logo__img {
+    width: 58%;
+  }
+
+  .icon-menu {
+    right: 29px;
+  }
+
+  .icon-menu i {
+    font-size: 28.8px;
+  }
+
+  .icon-close {
+    right: 29px;
+    top: 29px;
+  }
+
+  .icon-close i {
+    font-size: 2rem;
+  }
+
+  .container-menu {
+    top: 29px;
+  }
+
+  .cont-menu {
+    max-width: 300px;
+  }
+
+  .btn-menu {
+    top: 29px;
+    width: 29px;
+  }
+
+  .main-menu__item {
+    padding: 22px;
+  }
+
+  .main-menu__link {
+    font-size: 15px;
+  }
+
+  .intro-caption {
+    max-width: 70%;
+    left: 10%;
+    bottom: 10%;
+  }
+
+  .button {
+    padding: 6px 28px;
+    border-radius: 23px;
+    border: 2px solid #FFF;
+  }
+
+  .button i {
+    margin-left: -13px;
+  }
+
+  .button:hover i {
+    margin-left: 13px;
+  }
+
   .link-item {
-    font-size: 0.95rem;
+    font-size: 14px;
+    padding-bottom: 15px;
+  }
+
+  .link-item i {
+    margin-left: -18px;
+  }
+
+  .link-item:hover i {
+    margin-left: 9px;
+  }
+
+  .swf {
+    margin: 0 10px 0 -20px;
+  }
+
+  .address i {
+    width: 22px;
+  }
+
+  .blue-item {
+    font-size: 14px;
+    padding-bottom: 16px;
+  }
+
+  .blue-item i {
+    margin-left: -18px;
+  }
+
+  .blue-item:hover i {
+    margin-left: 9px;
+  }
+
+  .ov-container .ov-item {
+    font-size: 19px;
+    padding: 22px 0;
+  }
+
+  .ov-container .ov-item i {
+    margin-left: -19px;
+  }
+
+  .ov-container .ov-item:hover i {
+    margin-left: 10px;
+  }
+
+  .ov-container .ov-list .ov-item ul li {
+    padding: 0px 44px;
+  }
+
+  .overlayContainer {
+    margin: 10px;
+  }
+
+  .btn-close {
+    right: 19px;
+    top: 19px;
+  }
+
+  .btn-close i {
+    font-size: 34px;
+  }
+
+  .overlay {
+    padding: 30px 100px 35px 100px;
+  }
+
+  .overlay-title {
+    padding: 15px 0px;
+  }
+
+  .name {
+    font-size: 15px;
+  }
+
+  .charge {
+    font-size: 12px;
+    margin: -5px 0px 0px 0px;
+  }
+
+  .ytVideo {
+    max-width: 950px;
+    max-height: 535px;
+  }
+
+  .igVideo {
+    max-width: 342px;
+    max-height: 608px;
+  }
+
+  #headEspecialidades {
+    top: 95px;
+  }
+
+  .wrapperAcc {
+    padding: 0 19px;
+  }
+
+  .wrapperAcc .parent-tab {
+    margin-bottom: 8px;
+  }
+
+  .wrapperAcc .parent-tab label {
+    padding: 9px 19px;
+    font-size: 1rem;
+  }
+
+  .wrapperAcc label span {
+    font-size: 1rem;
+  }
+
+  .wrapperAcc label .icon {
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+  }
+
+  .wrapperAcc .parent-tab input:checked~label .icon i:before {
+    padding-left: 15px;
+    transition: padding-left translateX(15px);
+  }
+
+  .wrapperAcc .parent-tab .content p {
+    font-size: .9rem;
+    padding: 15px 19px 0px 19px;
+  }
+
+  .internal-title {
+    padding: 38px 0px;
+  }
+
+  .line-title {
+    padding-right: 1rem;
+  }
+
+  footer {
+    padding: 1.35rem 0;
   }
 }

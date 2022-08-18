@@ -2,6 +2,7 @@
  * Headings
 /* ------------------------------------------------------------- */
 
+
 h2,
 h3,
 h4,
@@ -39,6 +40,12 @@ h5 {
 p {
     font-size: 1rem;
 }
+
+a {
+    font-size: 0.875rem;
+}
+
+
 
 /* text aligns */
 .text-left {
@@ -166,15 +173,15 @@ p {
 /* ------------------------------------------------------------- */
 /* margin top */
 .margin-top-30 {
-    margin-top: 30px !important;
+    margin-top: 2% !important;
 }
 
 .margin-top-50 {
-    margin-top: 50px !important;
+    margin-top: 4% !important;
 }
 
 .margin-top-200 {
-    margin-top: 200px !important;
+    margin-top: 15% !important;
 }
 
 /* ------------------------------------------------------------- *
@@ -182,20 +189,20 @@ p {
 /* ------------------------------------------------------------- */
 /* padding bottom */
 .padding-bottom-100 {
-    padding-bottom: 100px !important;
+    padding-bottom: 3% !important;
 }
 
 /* padding top */
 .padding-top-30 {
-    padding-top: 30px !important;
+    padding-top: 2% !important;
 }
 
 .padding-top-100 {
-    padding-top: 100px !important;
+    padding-top: 8% !important;
 }
 
 .padding-top-200 {
-    padding-top: 200px !important;
+    padding-top: 15% !important;
 }
 
 /* ------------------------------------------------------------- *
@@ -271,7 +278,7 @@ p {
 /* Small devices */
 @media screen and (max-width: 576px) {
     h2 {
-        font-size: 1.1rem;
+        font-size: 1.25rem;
     }
 
     h3 {
@@ -283,21 +290,21 @@ p {
     }
 
     h5 {
-        font-size: 0.75rem;
+        font-size: 0.875rem;
     }
 
     p {
         font-size: 0.75rem;
     }
 
-    .row {
-        --bs-gutter-x: 1rem;
+    a {
+        font-size: 0.625rem;
     }
 
     .full-height-vh.semi {
         min-height: 50vh !important;
         width: 100%;
-        top: 8rem;
+        top: 2rem;
         transition: all 200ms ease-in-out;
     }
 
@@ -319,25 +326,29 @@ p {
 }
 
 /* Small devices (portrait tablets and large phones, 567px and up) */
-@media screen and (min-width: 577px) and (max-width: 768px) {
+@media screen and (min-width: 576px) and (max-width: 768px) {
     h2 {
-        font-size: 1.25rem;
+        font-size: 1.4rem;
     }
 
     h3 {
-        font-size: 1.125rem;
+        font-size: 1.25rem;
     }
 
     h4 {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     h5 {
-        font-size: 0.75rem;
+        font-size: 0.9rem;
     }
 
     p {
-        font-size: 0.75rem;
+        font-size: 0.8rem;
+    }
+
+    a {
+        font-size: 0.7rem;
     }
 
     .row {
@@ -347,7 +358,7 @@ p {
     .full-height-vh.semi {
         min-height: 50vh !important;
         width: 80%;
-        top: 8rem;
+        top: 5rem;
         transition: all 200ms ease-in-out;
     }
 
@@ -369,13 +380,13 @@ p {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
     h2 {
-        font-size: 1.75rem;
+        font-size: 1.625rem;
     }
 
     h3 {
-        font-size: 1.375rem;
+        font-size: 1.3rem;
     }
 
     h4 {
@@ -383,11 +394,15 @@ p {
     }
 
     h5 {
-        font-size: 0.875rem;
+        font-size: 0.9rem;
     }
 
     p {
         font-size: 0.875rem;
+    }
+
+    a {
+        font-size: 0.75rem;
     }
 
     .row {
@@ -397,7 +412,7 @@ p {
     .full-height-vh.semi {
         min-height: 50vh !important;
         width: 80%;
-        top: 8rem;
+        top: 6rem;
         transition: all 200ms ease-in-out;
     }
 
@@ -419,25 +434,45 @@ p {
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media screen and (min-width: 993px) and (max-width: 1200px) {
+@media screen and (min-width: 992px) and (max-width: 1200px) {
     h2 {
-        font-size: 1.75rem;
+        font-size: 1.8rem;
     }
 
     h3 {
-        font-size: 1.65rem;
+        font-size: 1.35rem;
     }
 
     h4 {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     h5 {
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
 
     p {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
+    }
+
+    a {
+        font-size: 0.8rem;
+    }
+
+    ul {
+        font-size: 0.9rem;
+    }
+
+    li {
+        font-size: 0.85rem;
+    }
+
+    ul li ul {
+        font-size: 0.85rem;
+    }
+
+    ul li ul li {
+        font-size: 0.8rem;
     }
 
     .row {
@@ -447,7 +482,7 @@ p {
     .full-height-vh.semi {
         min-height: 50vh !important;
         width: 60%;
-        top: 8rem;
+        top: 7rem;
         transition: all 200ms ease-in-out;
     }
 
@@ -465,28 +500,5 @@ p {
 
     .margin-top-200 {
         margin-top: 150px !important;
-    }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media screen and (min-width: 1201px) {
-    h2 {
-        font-size: 2rem;
-    }
-
-    h3 {
-        font-size: 1.5rem;
-    }
-
-    h4 {
-        font-size: 1.25rem;
-    }
-
-    h5 {
-        font-size: 1rem;
-    }
-
-    p {
-        font-size: 1rem;
     }
 }
