@@ -108,7 +108,6 @@ hr.dotted {
   visibility: hidden;
   overflow: hidden;
   z-index: 30;
-
 }
 
 #btn-menu:checked~.container-menu {
@@ -122,10 +121,11 @@ hr.dotted {
   top: 0;
   height: 100vh;
   text-align: right;
-  width: 20%;
+  width: auto;
   transition: all 500ms ease;
   transform: translateX(100%);
   background-color: transparent;
+  overflow-y: auto;
 }
 
 .cont-menu .icon-close.off {
@@ -569,7 +569,7 @@ section {
   width: 100%;
   overflow: hidden;
   z-index: 600;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .overlay-video {
@@ -872,7 +872,7 @@ section {
 }
 
 footer {
-  position: relative;
+  position: absolute;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -884,6 +884,10 @@ footer {
   color: #FFF;
   flex-wrap: nowrap;
   justify-content: center;
+}
+
+footer p {
+  margin-bottom: 0;
 }
 
 /* ------------------------------------------------------------- *
@@ -923,7 +927,17 @@ footer {
   }
 
   .cont-menu {
-    width: 100%;
+    width: auto;
+    background-color: #1D71B8;
+    overflow-y: auto;
+  }
+
+  #secondary {
+    color: #FFF;
+  }
+
+  #secondary .cont-menu {
+    background: #1D71B8;
   }
 
   .btn-menu {
@@ -1025,6 +1039,7 @@ footer {
 
   .overlay {
     padding: 15px 50px 20px 50px;
+    overflow-y: auto;
   }
 
   .overlay-title {
@@ -1048,6 +1063,11 @@ footer {
   .igVideo {
     max-width: 250px;
     max-height: 440px;
+  }
+
+  .videoInt {
+    width: 350px;
+    object-fit: contain;
   }
 
   #headEspecialidades {
@@ -1112,6 +1132,7 @@ footer {
   footer {
     padding: 1rem 0;
   }
+
 }
 
 /* Small devices (portrait tablets and large phones, 576px and up) */
@@ -1147,7 +1168,17 @@ footer {
   }
 
   .cont-menu {
-    width: 100%;
+    width: auto;
+    background-color: #1D71B8;
+    overflow-y: auto;
+  }
+
+  #secondary {
+    color: #FFF;
+  }
+
+  #secondary .cont-menu {
+    background: #1D71B8;
   }
 
   .btn-menu {
@@ -1249,6 +1280,7 @@ footer {
 
   .overlay {
     padding: 20px 60px 30px 60px;
+    overflow-y: auto;
   }
 
   .overlay-title {
@@ -1272,6 +1304,11 @@ footer {
   .igVideo {
     max-width: 277px;
     max-height: 490px;
+  }
+
+  .videoInt {
+    max-width: 400px;
+    object-fit: contain;
   }
 
   #headEspecialidades {
@@ -1371,7 +1408,17 @@ footer {
   }
 
   .cont-menu {
-    width: 300px;
+    width: auto;
+    background-color: #1D71B8;
+    overflow-y: auto;
+  }
+
+  #secondary {
+    color: #FFF;
+  }
+
+  #secondary .cont-menu {
+    background: #1D71B8;
   }
 
   .btn-menu {
@@ -1473,6 +1520,7 @@ footer {
 
   .overlay {
     padding: 25px 70px 30px 70px;
+    overflow-y: auto;
   }
 
   .overlay-title {
@@ -1496,6 +1544,11 @@ footer {
   .igVideo {
     max-width: 308px;
     max-height: 547px;
+  }
+
+  .videoInt {
+    max-width: 450px;
+    object-fit: contain;
   }
 
   #headEspecialidades {
@@ -1581,7 +1634,16 @@ footer {
   }
 
   .cont-menu {
-    max-width: 300px;
+    max-width: auto;
+    overflow-y: auto;
+  }
+
+  #secondary {
+    color: #FFF;
+  }
+
+  #secondary .cont-menu {
+    background: #1D71B8;
   }
 
   .btn-menu {
@@ -1706,6 +1768,11 @@ footer {
   .igVideo {
     max-width: 342px;
     max-height: 608px;
+  }
+
+  .videoInt {
+    max-width: 500px;
+    object-fit: contain;
   }
 
   #headEspecialidades {
