@@ -563,7 +563,7 @@ section {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  padding: 18px 110px 40px 110px;
+  padding: 100px;
   height: 100%;
   justify-content: space-between;
   width: 100%;
@@ -1038,7 +1038,7 @@ footer p {
   }
 
   .overlay {
-    padding: 15px 50px 20px 50px;
+    padding: 50px;
     overflow-y: auto;
   }
 
@@ -1279,7 +1279,7 @@ footer p {
   }
 
   .overlay {
-    padding: 20px 60px 30px 60px;
+    padding: 60px;
     overflow-y: auto;
   }
 
@@ -1519,7 +1519,7 @@ footer p {
   }
 
   .overlay {
-    padding: 25px 70px 30px 70px;
+    padding: 70px;
     overflow-y: auto;
   }
 
@@ -1744,7 +1744,7 @@ footer p {
   }
 
   .overlay {
-    padding: 30px 100px 35px 100px;
+    padding: 95px;
   }
 
   .overlay-title {
