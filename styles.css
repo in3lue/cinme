@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap');
+
+/* ------------------------------------------------------------- *
+ *  Reset
+/* ------------------------------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  background-color: #BBBBBB;
+  font-family: "Montserrat", sans-serif;
+}
+
+.ov-container {
+  width: 100%;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  padding-left: 10px;
+}
+
+.ov-container .ov-item a {
+  list-style: none;
+  color: #FFF;
+  font-size: 1.35rem;
+  line-height: 2.5;
+  text-align: left;
+  text-decoration: none;
+  margin-bottom: -0.625rem;
+  padding: 0rem;
+  display: inline-block;
+}
+
+.ov-container .ov-item i {
+  color: #FFF;
+  transition: all 500ms ease-in-out;
+  opacity: 0;
+  margin-left: -1.25rem;
+}
+
+.ov-container .ov-item:hover i {
+  opacity: 1;
+  margin-left: 0.625rem;
+}
+
+.ov-item {
+  list-style: none;
+  overflow: hidden;
+}
+
+.ov-item:target .smenu {
+  max-height: 10em;
+}
+
+.btn {
+  display: block;
+  position: relative;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+}
+
+.smenu {
+  overflow: hidden;
+  transition: max-height 0.3s;
+  max-height: 0;
+}
+
+.smenu li {
+  display: block;
+  position: relative;
+  border-left: 1px solid #FFF;
+  height: 100%;
+  margin-left: .5rem;
+  padding-left: 40px;
+}
+
+.smenu li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.smenu li:hover::before {
+  opacity: 1;
+}
+
+.name {
+  color: #FFF;
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.charge {
+  color: #FFF;
+  font-size: 12.8px;
+  text-transform: uppercase;
+  font-weight: 200;
+  margin: 0;
+  padding: 0 0 .5rem 0;
+}

@@ -12,6 +12,16 @@ function historiaOff() {
 	videoHistoria.currentTime = 0;
 }
 
+function testimoniosOn() {
+	document.getElementById("overlay-testimonios").style.display = "block";
+}
+
+function testimoniosOff() {
+	document.getElementById("overlay-testimonios").style.display = "none";
+	videoHistoria.pause();
+	videoHistoria.currentTime = 0;
+}
+
 function alianzasOn() {
 	document.getElementById("overlay-alianzas").style.display = "block";
 }
@@ -38,9 +48,11 @@ function estudiosOn() {
 function estudiosOff() {
 	document.getElementById("overlay-estudios").style.display = "none";
 }
+
 function consultoriosOn() {
 	document.getElementById("overlay-consultorios").style.display = "block";
 }
+
 function consultoriosOff() {
 	document.getElementById("overlay-consultorios").style.display = "none";
 }
@@ -48,13 +60,6 @@ function consultoriosOff() {
 // LINKS
 function nosotros() {
 	location.href = "nosotros.html";
-}
-function especialidades() {
-	location.href = "especialidades.html";
-}
-
-function hci() {
-	location.href = "research.html";
 }
 
 function calidad() {
@@ -66,9 +71,9 @@ function comite() {
 }
 
 (function ($) {
-	'use strict';
 
 	// ===============================================
+	//'use strict';
 	// Page transitions / preloader (Animsition)
 	// More info: http://git.blivesta.com/animsition/
 	// ===============================================
@@ -186,13 +191,14 @@ function comite() {
 	const elEspecialidades = document.getElementById("especialidades");
 	const elMetabolismo = document.getElementById("metabolismo");
 	const elCalidad = document.getElementById("calidad");
-	const video = document.querySelector("#video");
-	const videoHistoria = document.querySelector("#videoHistoria");
+
+	// const video = document.querySelector("#video");
+	// const videoHistoria = document.querySelector("#videoHistoria");
+	// const videoTestimonios = document.querySelector("#videoTestimonios");
 
 	sMenuBtn.addEventListener('click', () => {
 		sMenuBtn.classList.add("off");
 		sMenuClose.classList.remove("off");
-
 	});
 
 	document.getElementById("equis").addEventListener('click', () => {
@@ -202,6 +208,25 @@ function comite() {
 	sMenuClose.classList.add("off");
 	sMenuBtn.classList.add("on");
 	sMenuOn.checked = false;
+
+	//////
+	// menu overlay
+
+	document.querySelectorAll('.ov-item.expand').forEach(el => {
+		const a = el.querySelector('a');
+		const ul = el.querySelector('ul');
+		console.log('trapped> ', el);
+		a.addEventListener('click', (evnt) => {
+			console.log('clicked> ', el);
+			evnt.preventDefault();
+
+			document.querySelectorAll('.ov-item.expand>ul.show').forEach(_ => {
+				_.classList.remove('show');
+			})
+			ul.classList.add('show');
+		});
+	})
+	document.getElementById("equis").addEventListener('click', () => { });
 
 
 })(jQuery); 
