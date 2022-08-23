@@ -27,6 +27,7 @@ body {
   position: relative;
   background-color: #F1F1F1;
   font-family: "Montserrat", sans-serif;
+  font-size: 16px;
   line-height: 1.5;
 }
 
@@ -405,7 +406,6 @@ section {
 .ov-container {
   width: 100%;
   display: inline-block;
-  font-family: 'Montserrat', sans-serif;
   padding-left: 10px;
 }
 
@@ -901,11 +901,6 @@ section {
   margin-right: 6px;
 }
 
-.contactBox {
-  display: flex;
-  flex-direction: column;
-}
-
 .addressContainer {
   display: flex;
   flex-direction: column;
@@ -1114,13 +1109,17 @@ footer p {
     margin-left: 8px;
   }
 
+  .ov-container {
+    padding-left: 6px;
+  }
+
   .ov-container .ov-item a {
-    font-size: 14px;
+    font-size: 0.875rem;
     padding: 16px 0;
   }
 
   .ov-container .ov-item i {
-    margin-left: -14px;
+    margin-left: -0.875rem;
   }
 
   .ov-container .ov-item:hover i {
@@ -1355,8 +1354,12 @@ footer p {
     margin-left: 8px;
   }
 
+  .ov-container {
+    padding-left: 6px;
+  }
+
   .ov-container .ov-item a {
-    font-size: 16px;
+    font-size: 1rem;
     padding: 18px 0;
   }
 
@@ -1595,6 +1598,10 @@ footer p {
     margin-left: 8px;
   }
 
+  .ov-container {
+    padding-left: 7px;
+  }
+
   .ov-container .ov-item a {
     font-size: 18px;
     padding: 20px 0;
@@ -1819,6 +1826,10 @@ footer p {
 
   .blue-item:hover i {
     margin-left: 9px;
+  }
+
+  .ov-container {
+    padding-left: 8px;
   }
 
   .ov-container .ov-item a {
