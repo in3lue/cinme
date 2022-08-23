@@ -57,6 +57,22 @@ function consultoriosOff() {
 	document.getElementById("overlay-consultorios").style.display = "none";
 }
 
+function oossOn() {
+	document.getElementById("overlay-ooss").style.display = "block";
+}
+
+function oossOff() {
+	document.getElementById("overlay-ooss").style.display = "none";
+}
+
+function obrasSocialesOn() {
+	document.getElementById("overlay-obrasSociales").style.display = "block";
+}
+
+function obrasSocialesOff() {
+	document.getElementById("overlay-obrasSociales").style.display = "none";
+}
+
 // LINKS
 function nosotros() {
 	location.href = "nosotros.html";

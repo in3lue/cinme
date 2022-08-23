@@ -537,7 +537,31 @@ section {
   margin: 0.625rem;
 }
 
+#overlay-ooss {
+  display: none;
+  /* Hidden by default */
+  background-color: rgb(29, 113, 184);
+  /* Black background with opacity */
+  z-index: 700;
+  /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer;
+  /* Add a pointer on hover */
+  margin: 0.625rem;
+}
+
 #overlay-consultorios {
+  display: none;
+  /* Hidden by default */
+  background-color: rgb(29, 113, 184);
+  /* Black background with opacity */
+  z-index: 700;
+  /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer;
+  /* Add a pointer on hover */
+  margin: 0.625rem;
+}
+
+#overlay-obrasSociales {
   display: none;
   /* Hidden by default */
   background-color: rgb(29, 113, 184);
