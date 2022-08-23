@@ -884,57 +884,92 @@ section {
   max-width: 50%;
 }
 
-/* ------------------------------------------------------------- *
-   *  cards
-/* ------------------------------------------------------------- */
+/* .address {
+  text-align: left;
+} */
 
-.contentCards {
+.address i {
+  width: 24px;
+  margin-top: 0;
+  margin-right: 6px;
+}
+
+.contactBox {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding-bottom: 10px;
-  gap: 10px;
-  justify-content: center;
-  align-content: center;
+  flex-direction: column;
+}
+
+.addressContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: start;
+  padding-left: 40%;
+}
+
+.social {
+  display: flex;
   flex-direction: row;
+  width: auto;
+  margin: auto;
 }
 
-.ceiCard {
+.social .icon {
   position: relative;
-  background-color: rgb(255, 255, 255);
-  overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 10px;
-  transition: all 400ms ease 0s;
-  max-width: 350px;
-  height: 200px;
-  width: 100%;
-  padding: 15px;
-
+  margin: 2rem 2rem 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+  cursor: pointer;
 }
 
-.ceiCard h4 {
-  text-shadow: none;
-  margin: 0.625rem 0;
-  text-align: left;
-  font-weight: normal;
+.social .icon span {
+  position: relative;
+  text-align: center;
+  z-index: 4;
 }
 
-.ceiCard p {
-  border-top: 0.125rem solid #2097f8;
-  font-size: 0.9rem;
-  text-align: left;
-  color: #58595B;
-  padding: 0.625rem 0 0 0;
+.social .icon span i {
+  font-size: 2rem;
+}
+
+.social .icon .bubble {
+  position: absolute;
+  background: #1D71B8;
+  color: #FFF;
+  padding: 10px 18px;
+  font-size: 0.75rem;
+  border-radius: 25px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  top: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.social .icon:hover .bubble {
+  top: -50px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.social .icon .bubble::before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  background: #1D71B8;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
 }
 
 .swf {
   margin: 0 10px 0 -30px;
 }
 
-.address i {
-  width: 24px;
-  margin-top: 0;
-}
 
 footer {
   position: absolute;
