@@ -45,10 +45,6 @@ a:focus {
   outline: none;
 }
 
-hr.dotted {
-  border-top: 3px dotted #bbb;
-}
-
 .disabled {
   pointer-events: none;
 }
@@ -79,7 +75,6 @@ hr.dotted {
 .icon-menu i {
   font-size: 30px;
 }
-
 
 .icon-close {
   position: absolute;
@@ -443,11 +438,6 @@ section {
   overflow: hidden;
 }
 
-
-/* .ov-item:target .smenu {
-  max-height: 25em;
-} */
-
 .btnLi {
   display: block;
   position: relative;
@@ -456,8 +446,6 @@ section {
 .btnLi::before {
   content: "";
   position: absolute;
-  /* width: 14px;
-  height: 14px; */
 }
 
 .smenu {
@@ -608,7 +596,6 @@ section {
   /* Add a pointer on hover */
   margin: 0;
 }
-
 
 #overlay-alianzas {
   display: none;
@@ -907,10 +894,6 @@ section {
   padding: 0 0 1rem 0;
   max-width: 50%;
 }
-
-/* .address {
-  text-align: left;
-} */
 
 .address i {
   width: 24px;
