@@ -208,7 +208,7 @@ function comite() {
 	const elMetabolismo = document.getElementById("metabolismo");
 	const elCalidad = document.getElementById("calidad");
 
-	// const video = document.querySelector("#video");
+	// const video = document.querySelector("#videoAlianzas");
 	// const videoHistoria = document.querySelector("#videoHistoria");
 	// const videoTestimonios = document.querySelector("#videoTestimonios");
 

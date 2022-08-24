@@ -284,6 +284,7 @@ section {
   border-radius: 25px;
   background-color: transparent;
   border: 2px solid #FFF;
+  z-index: 2000;
 }
 
 .button:hover {
@@ -715,25 +716,25 @@ section {
 
 /** Backgrounds **/
 #nosotros {
-  background-image: url(../media/nosotros.jpg);
+  background-image: url(../media/int_nosotros.jpg);
 }
 
 #especialidades {
-  background-image: url(../media/investigacion.jpg);
+  background-image: url(../media/int_investigacion.jpg);
 }
 
-#headEspecialidades {
+/* #headEspecialidades {
   background-image: url(../media/int_banner.jpg);
   top: 100px;
   overflow: hidden;
-}
+} */
 
 #metabolismo {
-  background-image: url(../media/essentia2.jpg);
+  background-image: url(../media/int_essentia.jpg);
 }
 
 #calidad {
-  background-image: url(../media/calidad.jpg);
+  background-image: url(../media/int_calidad.jpg);
 }
 
 /** accordion blue**/
