@@ -115,16 +115,17 @@
                                             <b><em>segundo centro de investigación del país en lograrlo</em></b>.
                                         </p>
                                         <ul class="blue-list">
-                                            <li class="blue-item">
-                                                <a href="assets/docs/CINME_9001.pdf" target="_blank"
-                                                    class="blue-link">Certificado de Calidad</a>
-                                                <i class="fa-solid fa-arrow-right"></i>
+                                            <li class="blue-item" onclick="certificadoOn()">
+                                                <a href="" target="_blank" class="blue-link disabled"
+                                                    title="Certificado de Calidad" onclick="certificadoOn()">Certificado
+                                                    de Calidad</a>
+                                                <i class="fa-solid fa-arrow-right" onclick="certificadoOn()"></i>
                                             </li>
-                                            <li class="blue-item">
-                                                <a href="assets/docs/Politica_calidad.pdf" target="_blank"
-                                                    class="blue-link">
+                                            <li class="blue-item" onclick="politicaOn()">
+                                                <a href="" target="_blank" class="blue-link disabled"
+                                                    title="Políticas de Calidad" onclick="politicaOn()">
                                                     Políticas de Calidad</a>
-                                                <i class="fa-solid fa-arrow-right"></i>
+                                                <i class="fa-solid fa-arrow-right" onclick="politicaOn()"></i>
                                             </li>
                                         </ul>
                                     </div>
@@ -145,10 +146,11 @@
                                             centros médicos del país y 215 centros de todo el mundo.
                                         </p>
                                         <ul class="blue-list">
-                                            <li class="blue-item">
-                                                <a href="assets/docs/inspirePfizer.pdf" target="_blank"
-                                                    class="blue-link">Certificado Pfizer · Inspire</a>
-                                                <i class="fa-solid fa-arrow-right"></i>
+                                            <li class="blue-item" onclick="pfizerOn()">
+                                                <a href="" target="_blank" class="blue-link disabled"
+                                                    title="Certificado Pfizer · Inspire"
+                                                    onclick="pfizerOn()">Certificado Pfizer · Inspire</a>
+                                                <i class="fa-solid fa-arrow-right" onclick="pfizerOn()"></i>
                                             </li>
                                         </ul>
                                     </div>
@@ -158,9 +160,45 @@
                     </div>
                 </div>
             </div>
+            <!-- End 'Calidad' caption -->
+        </section>
+
+        <!-- Overlay Certificado de Calidad -->
+        <div id="overlay-certificado" class="overlayImgContainer full-cover">
+            <div class="close">
+                <label class="btn-close"><i class="fa-solid fa-xmark" onclick="certificadoOff()"></i></label>
+            </div>
+            <div class="overlay-img imgInt" onclick="certificadoOff()">
+                <div class="animate__animated animate__fadeInUp animate__delay-0.5s">
+                    <img src="assets/media/doc.CINME9001.jpg" alt="Certificado de Calidad">
+                </div>
+            </div>
+        </div>
+
+        <!-- Overlay Políticas de Calidad -->
+        <div id="overlay-politica" class="overlayImgContainer full-cover">
+            <div class="close">
+                <label class="btn-close"><i class="fa-solid fa-xmark" onclick="politicaOff()"></i></label>
+            </div>
+            <div class="overlay-img imgInt" onclick="politicaOff()">
+                <div class="animate__animated animate__fadeInUp animate__delay-0.5s">
+                    <img src="assets/media/doc.politicaCalidad.jpg" alt="Políticas de Calidad">
+                </div>
+            </div>
+        </div>
+
+        <!-- Overlay Certificado Pfizer · Inspire -->
+        <div id="overlay-pfizer" class="overlayImgContainer full-cover">
+            <div class="close">
+                <label class="btn-close"><i class="fa-solid fa-xmark" onclick="pfizerOff()"></i></label>
+            </div>
+            <div class="overlay-img imgInt" onclick="pfizerOff()">
+                <div class="animate__animated animate__fadeInUp animate__delay-0.5s">
+                    <img src="assets/media/doc.inspirePfizer.jpg" alt="Certificado Pfizer · Inspire">
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- End 'Calidad' caption -->
-    </section>
     <!-- ///// End 'Calidad Content' section ///// -->
     <footer>
         <p>©2022 · <b>CINME S.A.</b> Todos los derechos reservados.</p>

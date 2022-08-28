@@ -40,6 +40,30 @@ function equipoOff() {
 	document.getElementById("overlay-equipo").style.display = "none";
 }
 
+function certificadoOn() {
+	document.getElementById("overlay-certificado").style.display = "block";
+}
+
+function certificadoOff() {
+	document.getElementById("overlay-certificado").style.display = "none";
+}
+
+function politicaOn() {
+	document.getElementById("overlay-politica").style.display = "block";
+}
+
+function politicaOff() {
+	document.getElementById("overlay-politica").style.display = "none";
+}
+
+function pfizerOn() {
+	document.getElementById("overlay-pfizer").style.display = "block";
+}
+
+function pfizerOff() {
+	document.getElementById("overlay-pfizer").style.display = "none";
+}
+
 //Blue Overlays
 function especialidadesOn() {
 	document.getElementById("overlay-especialidades").style.display = "block";
