@@ -181,9 +181,9 @@
       <!-- Begin 'Ensayos' caption -->
       <div class="intro-caption">
         <h2 data-aos="fade-down" class="intro-title animate__animated animate__fadeInDown animate__delay-1s">Ensayos
-          Clínicos</h2>
+          clínicos</h2>
         <p data-aos="fade-up" class="intro-description">
-          Humanizando la salud persona a persona.
+          Humanizando la salud persona a persona
         </p>
         <div class="margin-top-50 row">
           <div class="accordionContent fadeInUp o4">
@@ -235,7 +235,7 @@
                   <p id="accWhite">Desarrollamos nuestros propios procedimientos operativos estándar y en 2019
                     certificamos
                     para las normas
-                    ISO 9001:2015 para los procesos de investigación clínica farmacológica, lo que nos
+                    ISO 9001:2015 en los procesos de investigación clínica farmacológica, lo que nos
                     convierte
                     en el segundo
                     centro de investigación nacional en lograrlo.</p>
@@ -606,11 +606,15 @@
         </div>
         <div class="containerBTN">
           <div class="margin-top-30 button">
-            <a href="metabolismo.html">Manejo de Sobrepeso y Obesidad</a>
+            <a href="metabolismo.html">Manejo de sobrepeso y obesidad</a>
             <i class="fa-solid fa-arrow-right"></i>
           </div>
           <div class="margin-top-30 button" onclick="testimoniosOn()">
             <a href="" target="_blank" class="disabled" title="Testimonios">Testimonios</a>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+          <div class="margin-top-30 button" onclick="equipoOn()">
+            <a href="" target="_blank" class="disabled" title="Testimonios">Equipo</a>
             <i class="fa-solid fa-arrow-right"></i>
           </div>
         </div>
@@ -627,27 +631,37 @@
             </video>
           </div>
         </div>
-
       </div>
+      <div id="overlay-equipo" class="overlayImgContainer full-cover">
+        <div class="close">
+          <label class="btn-close"><i class="fa-solid fa-xmark" onclick="equipoOff()"></i></label>
+        </div>
+        <div class="overlay-img imgInt" onclick="equipoOff()">
+          <div class="animate__animated animate__fadeInUp animate__delay-0.5s">
+            <img src="assets/media/int_equipoEssentia.jpg" alt="Equipo Essentia">
+          </div>
+        </div>
+      </div>
+
       <!-- End 'ESSENTIA' caption -->
     </section>
     <!-- End 'ESSENTIA' section -->
 
-    <!-- ///// Begin 'Consultorios Externos' section ///// -->
+    <!-- ///// Begin 'Consultorios externos' section ///// -->
     <section id="intro-consultorios" class="full-height-vh bg-image">
       <!-- Element cover -->
       <div class="cover bg-transparent-2-dark"></div>
 
-      <!-- Begin 'Consultorios Externos' caption -->
+      <!-- Begin 'Consultorios externos' caption -->
       <div class="intro-caption">
         <h2 class="intro-title animate__animated animate__fadeInDown animate__delay-1s" data-aos="fade-down">
-          Consultorios Externos</h2>
+          Consultorios externos</h2>
         <p class="intro-description">Brindamos
           atención médica en consultorios externos y realizamos
           variados estudios clínicos con coberturas de obras sociales, así como también consultas privadas.</p>
         <ul class="link-list padding-top-30">
           <li class="link-item" onclick="consultoriosOn()">
-            <a href="" class="disabled">Consultorios Externos</a>
+            <a href="" class="disabled">Consultorios externos</a>
             <i class="fa-solid fa-arrow-right" onclick="consultoriosOn()"></i>
           </li>
           <li class="link-item" onclick="obrasSocialesOn()"></i>
@@ -664,7 +678,7 @@
           <label class="btn-close"><i class="fa-solid fa-xmark" onclick="consultoriosOff()"></i></label>
         </div>
         <div class="overlay">
-          <h2 class="overlay-title animate__animated animate__fadeInDown">Consultorios Externos</h2>
+          <h2 class="overlay-title animate__animated animate__fadeInDown">Consultorios externos</h2>
           <div class="line">
             <div class="ov-container animate__animated animate__fadeInUp o2">
               <li class="ov-item expand">
@@ -680,7 +694,7 @@
                   <li>OSTECF</li>
                 </ul>
               </li>
-              <li class="ov-item expand">
+              <!-- <li class="ov-item expand">
                 <a href="#" class="btnLi mnu_title">Dermatología</a>
                 <i class="fa-solid fa-arrow-right"></i>
                 <ul class="smenu">
@@ -690,7 +704,7 @@
                   <li>OSPATRONES</li>
                   <li>OSTECF</li>
                 </ul>
-              </li>
+              </li> -->
               <li class="ov-item expand">
                 <a href="#" class="btnLi">Diabetología</a>
                 <i class="fa-solid fa-arrow-right"></i>
@@ -709,9 +723,9 @@
                   <li>OSTECF</li>
                 </ul>
               </li>
-            </div>
-            <div class="ov-container animate__animated animate__fadeInUp o3">
-              <li class="ov-item expand">
+              <!-- </div>
+            <div class="ov-container animate__animated animate__fadeInUp o3"> -->
+              <!-- <li class="ov-item expand">
                 <a href="#" class="btnLi">Hepatología</a>
                 <i class="fa-solid fa-arrow-right"></i>
                 <ul class="smenu">
@@ -721,7 +735,7 @@
                   <li>OSPATRONES</li>
                   <li>OSTECF</li>
                 </ul>
-              </li>
+              </li> -->
               <li class="ov-item expand">
                 <a href="#" class="btnLi">Neumonología</a>
                 <i class="fa-solid fa-arrow-right"></i>
@@ -958,9 +972,9 @@
         </div>
 
       </div>
-      <!-- End 'Consultorios Externos' caption -->
+      <!-- End 'Consultorios externos' caption -->
     </section>
-    <!-- ///// End 'Consultorios Externos' section ///// -->
+    <!-- ///// End 'Consultorios externos' section ///// -->
 
     <!-- ///// Begin 'Estudios' section ///// -->
     <section id="intro-estudios" class="full-height-vh bg-dark">
@@ -989,14 +1003,12 @@
       <!-- Begin 'Estudios' caption -->
       <div class="intro-caption">
         <h2 class="intro-title animate__animated animate__fadeInDown animate__delay-1s" data-aos="fade-down">Estudios
-          Médicos</h2>
-        <p class="intro-description">Brindamos
-          atención médica en consultorios externos y realizamos
-          variados
-          estudios clínicos con coberturas de obras sociales, así como también consultas privadas.</p>
+          médicos</h2>
+        <p class="intro-description">Realizamos estudios clínicos con coberturas de obras sociales o de modo privado.
+        </p>
         <ul class="link-list padding-top-30">
           <li class="link-item" onclick="estudiosOn()">
-            <a href="" class="disabled">Estudios Médicos</a>
+            <a href="" class="disabled">Estudios médicos</a>
             <i class="fa-solid fa-arrow-right" onclick="estudiosOn()"></i>
           </li>
           <li class="link-item" onclick="oossOn()"></i>
@@ -1012,7 +1024,7 @@
           <label class="btn-close"><i class="fa-solid fa-xmark" onclick="estudiosOff()"></i></label>
         </div>
         <div class="overlay">
-          <h2 class="overlay-title animate__animated animate__fadeInDown">Estudios Médicos</h2>
+          <h2 class="overlay-title animate__animated animate__fadeInDown">Estudios médicos</h2>
           <div class="line">
             <div class="ov-container animate__animated animate__fadeInUp o2">
               <li class="ov-item expand">
@@ -1281,21 +1293,21 @@
         <div class="margin-top-50 row">
           <div class="accordionContent fadeInUp o4">
             <div class="wrapperAcc">
-              <!-- Alianzas Solidarias -->
+              <!-- Alianzas solidarias -->
               <div class="parent-tab" id="accWhite">
                 <input type="radio" name="tab" id="tab-5">
                 <label for="tab-5" id="accWhite">
-                  <span>Alianzas Solidarias</span>
+                  <span>Alianzas solidarias</span>
                   <div class="icon" id="accWhite"><i class="fa-solid fa-arrow-right-long"></i></div>
                 </label>
                 <div class="content">
-                  <p id="accWhite">CINME apoya y financia proyectos de emprendedores y ONGs que, al igual que nosotros,
+                  <p id="accWhite">CINME apoya y financia proyectos de ONGs que, al igual que nosotros,
                     trabajan por un mundo mejor.<br>Estos son algunos de los testimonios de los líderes de las entidades
                     que
                     apoyamos </p>
                   <div class="text-right">
                     <div class="button" onclick="alianzasOn()">
-                      <a href="#" class="disabled" title="Alianzas Solidarias">Ver Testimonios</a>
+                      <a href="#" class="disabled" title="Alianzas solidarias">Ver Testimonios</a>
                       <i class="fa-solid fa-arrow-right"></i>
                     </div>
                   </div>
@@ -1305,7 +1317,7 @@
               <div class="parent-tab" id="accWhite">
                 <input type="radio" name="tab" id="tab-6">
                 <label for="tab-6" id="accWhite">
-                  <span>Educación a la Comunidad</span>
+                  <span>Educación a la comunidad</span>
                   <div class="icon" id="accWhite"><i class="fa-solid fa-arrow-right-long"></i></div>
                 </label>
                 <div class="content">
@@ -1324,33 +1336,13 @@
                   <p id="accWhite">+QueDiabetes es un proyecto de CINME para fortalecer la educación en diabetes a
                     través
                     de nuestras plataformas digitales. <br> Para escuchar VIVOS con especialistas en esta patología, ver
-                    reels
-                    y otros recursos podés seguirnos en Instagram</p>
+                    <i>reels</i> y otros recursos podés seguirnos en Instagram
+                  </p>
                   <div class="text-right">
                     <div class="button">
                       <a href="https://www.instagram.com/stories/highlights/17952750421829473/" target="_blank"
                         title="+QueDiabetes">Ver
                         Instagram</a>
-                      <i class="fa-solid fa-arrow-right"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Medios -->
-              <div class="parent-tab" id="accWhite">
-                <input type="radio" name="tab" id="tab-8">
-                <label for="tab-8" id="accWhite">
-                  <span>Medios</span>
-                  <div class="icon" id="accWhite"><i class="fa-solid fa-arrow-right-long"></i></div>
-                </label>
-                <div class="content">
-                  <p id="accWhite">Visitá nuestro canal de Youtube donde podés encontrar entrevistas a nuestros
-                    profesionales relacionadas con la prevención de ciertas patologías y nuevos tratamientos.
-                  </p>
-                  <div class="text-right">
-                    <div class="button">
-                      <a href="https://www.youtube.com/channel/UCY1Nj0i2H4ck4zjYgDp2AFQ" target="_blank"
-                        title="CINME YouTube">Ver YouTube</a>
                       <i class="fa-solid fa-arrow-right"></i>
                     </div>
                   </div>
@@ -1467,16 +1459,16 @@
               <a href="#intro-nosotros" class="main-menu__link">Nosotros</a>
             </li>
             <li class="main-menu__item">
-              <a href="#intro-ensayos" class="main-menu__link">Ensayos Clínicos</a>
+              <a href="#intro-ensayos" class="main-menu__link">Ensayos clínicos</a>
             </li>
             <li class="main-menu__item">
-              <a href="#intro-essentia" class="main-menu__link"><i>ESSENTIA</i></a>
+              <a href="#intro-essentia" class="main-menu__link"><i>Essentia</i></a>
             </li>
             <li class="main-menu__item">
-              <a href="#intro-consultorios" class="main-menu__link">Consultorios Externos</a>
+              <a href="#intro-consultorios" class="main-menu__link">Consultorios externos</a>
             </li>
             <li class="main-menu__item">
-              <a href="#intro-estudios" class="main-menu__link">Estudios Médicos</a>
+              <a href="#intro-estudios" class="main-menu__link">Estudios médicos</a>
             </li>
             <li class="main-menu__item">
               <a href="#intro-RSE" class="main-menu__link">Responsabilidad Social</a>

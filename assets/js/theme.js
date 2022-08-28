@@ -32,6 +32,14 @@ function alianzasOff() {
 	video.currentTime = 0;
 }
 
+function equipoOn() {
+	document.getElementById("overlay-equipo").style.display = "block";
+}
+
+function equipoOff() {
+	document.getElementById("overlay-equipo").style.display = "none";
+}
+
 //Blue Overlays
 function especialidadesOn() {
 	document.getElementById("overlay-especialidades").style.display = "block";

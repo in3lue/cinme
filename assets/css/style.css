@@ -529,6 +529,14 @@ section {
   margin: 0;
 }
 
+.overlayImgContainer {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 700;
+  cursor: pointer;
+  margin: 0.625rem;
+}
+
 #overlay-estudios {
   display: none;
   /* Hidden by default */
@@ -625,6 +633,18 @@ section {
   margin: 0;
 }
 
+#overlay-equipo {
+  display: none;
+  /* Hidden by default */
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Black background with opacity */
+  z-index: 770;
+  /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer;
+  /* Add a pointer on hover */
+  margin: 0;
+}
+
 .close {
   z-index: 1500;
 }
@@ -655,6 +675,21 @@ section {
   width: 100%;
   overflow: hidden;
   z-index: 600;
+}
+
+.overlay-img {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  z-index: 600;
+}
+
+.overlay-img img {
+  height: 90%;
+  width: 90%;
 }
 
 .overlay-video {
@@ -689,6 +724,15 @@ section {
   width: 100%;
   height: 0;
   padding-bottom: 56.25%;
+}
+
+.imgInt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: auto;
 }
 
 .ytVideo {
