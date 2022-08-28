@@ -682,6 +682,18 @@ section {
   margin: 0;
 }
 
+#overlay-gbaCEI {
+  display: none;
+  /* Hidden by default */
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Black background with opacity */
+  z-index: 770;
+  /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer;
+  /* Add a pointer on hover */
+  margin: 0;
+}
+
 .close {
   z-index: 1500;
 }

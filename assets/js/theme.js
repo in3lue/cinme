@@ -64,6 +64,14 @@ function pfizerOff() {
 	document.getElementById("overlay-pfizer").style.display = "none";
 }
 
+function gbaCEIOn() {
+	document.getElementById("overlay-gbaCEI").style.display = "block";
+}
+
+function gbaCEIOff() {
+	document.getElementById("overlay-gbaCEI").style.display = "none";
+}
+
 //Blue Overlays
 function especialidadesOn() {
 	document.getElementById("overlay-especialidades").style.display = "block";
