@@ -853,6 +853,10 @@ section {
   background-image: url(../media/int_calidad.jpg);
 }
 
+#essentia {
+  background-image: url(../media/int_equipoEssentia.jpg);
+}
+
 /** accordion blue**/
 
 .accordionContent {

@@ -220,6 +220,7 @@ function comite() {
 			if (elEspecialidades) elEspecialidades.classList.add("semi");
 			if (elMetabolismo) elMetabolismo.classList.add("semi");
 			if (elCalidad) elCalidad.classList.add("semi");
+			if (elEssentia) elEssentia.classList.add("semi");
 
 
 		} else {
@@ -233,6 +234,7 @@ function comite() {
 			if (elEspecialidades) elEspecialidades.classList.remove("semi");
 			if (elMetabolismo) elMetabolismo.classList.remove("semi");
 			if (elCalidad) elCalidad.classList.remove("semi");
+			if (elEssentia) elEssentia.classList.remove("semi");
 		}
 	});
 
@@ -247,6 +249,7 @@ function comite() {
 	const elEspecialidades = document.getElementById("especialidades");
 	const elMetabolismo = document.getElementById("metabolismo");
 	const elCalidad = document.getElementById("calidad");
+	const elEssentia = document.getElementById("essentia");
 
 	// const video = document.querySelector("#videoAlianzas");
 	// const videoHistoria = document.querySelector("#videoHistoria");
