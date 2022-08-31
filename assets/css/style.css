@@ -389,14 +389,19 @@ section {
   cursor: pointer;
 }
 
-.blue-item i {
+.blue-item .fa-brands {
+  color: #1D71B8;
+  margin-right: 8px;
+}
+
+.blue-item .fa-solid {
   color: #1D71B8;
   transition: all 500ms ease-in-out;
   opacity: 0;
   margin-left: -20px;
 }
 
-.blue-item:hover i {
+.blue-item:hover .fa-solid {
   opacity: 1;
   margin-left: 10px;
 }
