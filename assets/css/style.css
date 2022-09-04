@@ -325,6 +325,13 @@ section {
   align-items: flex-start;
 }
 
+.containerEssentia {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 /* ------------------------------------------------------------- *
  *  anchors
 /* ------------------------------------------------------------- */
@@ -561,7 +568,7 @@ section {
 
 .charge {
   color: #FFF;
-  font-size: 12.8px;
+  font-size: 0.8rem;
   text-transform: uppercase;
   font-weight: 200;
   margin: 0;
@@ -1084,6 +1091,7 @@ section {
   gap: 1rem;
   align-items: start;
   padding-left: 40%;
+  align-content: center;
 }
 
 .social {
@@ -1233,8 +1241,8 @@ footer p {
   }
 
   .intro-caption {
-    max-width: 70%;
-    left: 10%;
+    max-width: 80%;
+    left: 5%;
     bottom: 10%;
   }
 
@@ -1276,6 +1284,11 @@ footer p {
     gap: 0.5rem;
   }
 
+  .containerEssentia {
+    padding: 10px;
+    flex-direction: column;
+  }
+
   .link-item {
     font-size: 10px;
     padding-bottom: 10px;
@@ -1297,6 +1310,22 @@ footer p {
     width: 16px;
   }
 
+  .addressContainer {
+    padding-left: 15%;
+  }
+
+  .social .icon {
+    margin: 1rem 1rem 1rem 0;
+  }
+
+  .social .icon span i {
+    font-size: 1.5rem;
+  }
+
+  .social .icon .bubble {
+    display: none;
+  }
+
   .blue-item {
     font-size: 10px;
     padding-bottom: 10px;
@@ -1308,6 +1337,41 @@ footer p {
 
   .blue-item:hover i {
     margin-left: 8px;
+  }
+
+  .network-item {
+    font-size: 10px;
+    padding-bottom: 10px;
+    width: 31%;
+    margin: -10px auto 30px;
+  }
+
+  .network-item .fa-brands {
+    margin-right: 8px;
+    font-size: 1rem;
+  }
+
+  .network-item .fa-solid {
+    opacity: 0;
+    margin-left: -20px;
+  }
+
+  .network-item:hover .fa-solid {
+    opacity: 1;
+    margin-left: 10px;
+  }
+
+  .ess-name {
+    font-size: 0.625rem;
+  }
+
+  .ess-charge {
+    font-size: 0.625rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0;
+    padding: 0 0 0.625rem 0;
+    margin-left: 2px;
   }
 
   .ov-container {
@@ -1537,12 +1601,17 @@ footer p {
   }
 
   .containerBTN {
-    padding-top: 30px;
+    padding-top: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
     gap: 0.5rem;
+  }
+
+  .containerEssentia {
+    padding: 15px;
+    flex-direction: column;
   }
 
   .link-item {
@@ -1566,6 +1635,22 @@ footer p {
     width: 18px;
   }
 
+  .addressContainer {
+    padding-left: 25%;
+  }
+
+  .social .icon {
+    margin: 1rem 1rem 1rem 0;
+  }
+
+  .social .icon span i {
+    font-size: 1.6rem;
+  }
+
+  .social .icon .bubble {
+    display: none;
+  }
+
   .blue-item {
     font-size: 12px;
     padding-bottom: 14px;
@@ -1577,6 +1662,40 @@ footer p {
 
   .blue-item:hover i {
     margin-left: 8px;
+  }
+
+  .network-item {
+    font-size: 12px;
+    padding-bottom: 14px;
+    width: 25%;
+  }
+
+  .network-item .fa-brands {
+    margin-right: 8px;
+    font-size: 1rem;
+  }
+
+  .network-item .fa-solid {
+    opacity: 0;
+    margin-left: -20px;
+  }
+
+  .network-item:hover .fa-solid {
+    opacity: 1;
+    margin-left: 10px;
+  }
+
+  .ess-name {
+    font-size: 11px;
+  }
+
+  .ess-charge {
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0;
+    padding: 0 0 10px 0;
+    margin-left: 2px;
   }
 
   .ov-container {
@@ -1805,12 +1924,17 @@ footer p {
   }
 
   .containerBTN {
-    padding-top: 5px;
+    padding-top: 20px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 1rem;
+  }
+
+  .containerEssentia {
+    padding: 20px;
+    flex-direction: column;
   }
 
   .link-item {
@@ -1834,6 +1958,22 @@ footer p {
     width: 20px;
   }
 
+  .addressContainer {
+    padding-left: 30%;
+  }
+
+  .social .icon {
+    margin: 1rem 1rem 1rem 0;
+  }
+
+  .social .icon span i {
+    font-size: 1.75rem;
+  }
+
+  .social .icon .bubble {
+    display: none;
+  }
+
   .blue-item {
     font-size: 13px;
     padding-bottom: 15px;
@@ -1845,6 +1985,40 @@ footer p {
 
   .blue-item:hover i {
     margin-left: 8px;
+  }
+
+  .network-item {
+    font-size: 13px;
+    padding-bottom: 15px;
+    width: 25%;
+  }
+
+  .network-item .fa-brands {
+    margin-right: 8px;
+    font-size: 1rem;
+  }
+
+  .network-item .fa-solid {
+    opacity: 0;
+    margin-left: -20px;
+  }
+
+  .network-item:hover .fa-solid {
+    opacity: 1;
+    margin-left: 10px;
+  }
+
+  .ess-name {
+    font-size: 12px;
+  }
+
+  .ess-charge {
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0;
+    padding: 0 0 10px 0;
+    margin-left: 2px;
   }
 
   .ov-container {
@@ -2079,6 +2253,22 @@ footer p {
     width: 22px;
   }
 
+  .addressContainer {
+    padding-left: 35%;
+  }
+
+  .social .icon {
+    margin: 1rem 1rem 1rem 0;
+  }
+
+  .social .icon span i {
+    font-size: 1.9rem;
+  }
+
+  .social .icon .bubble {
+    display: none;
+  }
+
   .blue-item {
     font-size: 14px;
     padding-bottom: 16px;
@@ -2091,6 +2281,41 @@ footer p {
   .blue-item:hover i {
     margin-left: 9px;
   }
+
+  .network-item {
+    font-size: 14px;
+    padding-bottom: 16px;
+    width: 16%;
+  }
+
+  .network-item .fa-brands {
+    margin-right: 8px;
+    font-size: 1rem;
+  }
+
+  .network-item .fa-solid {
+    opacity: 0;
+    margin-left: -20px;
+  }
+
+  .network-item:hover .fa-solid {
+    opacity: 1;
+    margin-left: 10px;
+  }
+
+  .ess-name {
+    font-size: 13px;
+  }
+
+  .ess-charge {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0;
+    padding: 0 0 10px 0;
+    margin-left: 2px;
+  }
+
 
   .ov-container {
     padding-left: 8px;
