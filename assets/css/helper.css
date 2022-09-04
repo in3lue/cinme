@@ -201,8 +201,12 @@ a {
 /* ------------------------------------------------------------- */
 /* padding bottom */
 
+.padding-bottom-0 {
+    padding-bottom: 0 !important;
+}
+
 .padding-bottom-30 {
-    padding-top: 2% !important;
+    padding-bottom: 2% !important;
 }
 
 .padding-bottom-100 {
