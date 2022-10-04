@@ -64,7 +64,7 @@ a:focus {
 
 /*-------WHATTSAPP-------*/
 .whatsapp__logo {
-  max-width: 64px;
+  max-width: 80px;
   position: fixed;
   left: 32px;
   bottom: 32px;
@@ -1202,7 +1202,7 @@ footer p {
   }
 
   .whatsapp__logo {
-    max-width: 32px;
+    max-width: 40px;
     left: 20px;
     bottom: 20px;
   }
@@ -1534,7 +1534,7 @@ footer p {
   }
 
   .whatsapp__logo {
-    max-width: 40px;
+    max-width: 50px;
     left: 26px;
     bottom: 26px;
   }
@@ -1863,7 +1863,7 @@ footer p {
   }
 
   .whatsapp__logo {
-    max-width: 54px;
+    max-width: 60px;
     left: 28px;
     bottom: 28px;
   }
@@ -2179,7 +2179,7 @@ footer p {
   }
 
   .whatsapp__logo {
-    max-width: 60px;
+    max-width: 70px;
     left: 29px;
     bottom: 29px;
   }
