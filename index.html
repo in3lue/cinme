@@ -59,6 +59,18 @@
   <!-- Font Icons CSS (https://fontawesome.com/) -->
   <script src="https://kit.fontawesome.com/1985c105cd.js" crossorigin="anonymous"></script>
 
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18806108-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-18806108-1');
+  </script>
+
 </head>
 
 <!-- =============
@@ -72,6 +84,11 @@
 		************************************** -->
   <div class="header__logo slide-in-top">
     <a href="/"><img src="assets/media/logo-cinme.png" alt="CINME Logo" class="logo__img"></a>
+  </div>
+
+  <div class="whatsapp__logo fadeInUp o2">
+    <a href="http://api.whatsapp.com/send?phone=5491170163745&text=Info%20CINME" target="_blank"><img
+        src="assets/media/whatsapp.png" alt="WhatsApp" class="logo__img"></a>
   </div>
 
   <div class="btn-menu" id="burguer">
@@ -97,7 +114,7 @@
           El Centro de Investigaciones Metabólicas (CINME) fue fundado en 2007 por el Dr. Federico Pérez Manghi, un
           médico que confió en el país y que había entendido que en la investigación médica había esperanza. La idea
           original era empezar a estudiar el metabolismo de las personas y, desde ahí, mejorar la calidad de vida. En
-          aquel entonces fundar un centro médico en la Argentina no era fácil, como tampoco lo es hoy, por él confiaba
+          aquel entonces fundar un centro médico en la Argentina no era fácil, como tampoco lo es hoy, pero él confiaba
           en que a través del talento de los médicos argentinos se podían abrir caminos nuevos para enfermedades que aún
           no tenían cura o mejorar el tratamiento para las que sí lo tenían.
         </p>
@@ -247,6 +264,8 @@
                   </div>
                 </div>
               </div>
+
+
               <!-- Comité de Ética -->
               <div class="parent-tab" id="accWhite">
                 <input type="radio" name="tab" id="tab-4">
@@ -268,6 +287,26 @@
                   </div>
                 </div>
               </div>
+
+              <!-- Sponsors -->
+              <div class="parent-tab" id="accWhite">
+                <input type="radio" name="tab" id="tab-9">
+                <label for="tab-9" id="accWhite">
+                  <span>Nuestros sponsors</span>
+                  <div class="icon" id="accWhite"><i class="fa-solid fa-arrow-right-long"></i></div>
+                </label>
+                <div class="content">
+                  <p id="accWhite">Actualmente se encuentran activos 60 protocolos en curso.
+                  </p>
+                  <div class="text-right">
+                    <div class="button">
+                      <a href="https://www.cinme.com.ar/sponsors.html" title="sponsors">Ver</a>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
@@ -645,7 +684,8 @@
       <div class="intro-caption">
         <h2 class="intro-title animate__animated animate__fadeInDown animate__delay-1s" data-aos="fade-down">
           Consultorios externos</h2>
-        <p class="intro-description">Brindamos atención médica en consultorios externos a través de obras sociales y consultas
+        <p class="intro-description">Brindamos atención médica en consultorios externos a través de obras sociales y
+          consultas
           privadas.</p>
         <ul class="link-list padding-top-30">
           <li class="link-item" onclick="consultoriosOn()">
@@ -676,23 +716,20 @@
                   <li>DOSUBA</li>
                   <li>ETICA+</li>
                   <li>MEDICALS</li>
+                  <li>OMINT</li>
                   <li>OSPATRONES</li>
                   <li>OSPSIP</li>
                   <li>OSRJA</li>
                   <li>OSTECF</li>
                 </ul>
               </li>
-              <!-- <li class="ov-item expand">
-                <a href="#" class="btnLi mnu_title">Dermatología</a>
+              <li class="ov-item expand">
+                <a href="#" class="btnLi mnu_title">Endocrinología</a>
                 <i class="fa-solid fa-arrow-right"></i>
                 <ul class="smenu">
-                  <li>ETICA+</li>
-                  <li>MEDICALS</li>
-                  <li>OSETYA</li>
-                  <li>OSPATRONES</li>
-                  <li>OSTECF</li>
+                  <li>OMINT</li>
                 </ul>
-              </li> -->
+              </li>
               <li class="ov-item expand">
                 <a href="#" class="btnLi">Diabetología</a>
                 <i class="fa-solid fa-arrow-right"></i>
@@ -701,6 +738,7 @@
                   <li>DOSUBA</li>
                   <li>ETICA+</li>
                   <li>MEDICALS</li>
+                  <li>OMINT</li>
                   <li>OSETYA</li>
                   <li>OSFE</li>
                   <li>OSPATRONES</li>
@@ -732,6 +770,7 @@
                   <li>DOSUBA</li>
                   <li>ETICA+</li>
                   <li>MEDICALS</li>
+                  <li>OMINT</li>
                   <li>OSPATRONES</li>
                   <li>OSPSIP</li>
                   <li>OSTECF</li>
@@ -745,6 +784,7 @@
                   <li>DOSUBA</li>
                   <li>ETICA+</li>
                   <li>MEDICALS</li>
+                  <li>OMINT</li>
                   <li>OSETYA</li>
                   <li>OSFE</li>
                   <li>OSPATRONES</li>
@@ -844,6 +884,17 @@
               </li>
             </div>
             <div class="ov-container animate__animated animate__fadeInUp o3">
+              <li class="ov-item expand">
+                <a href="#" class="btnLi">OMINT</a>
+                <i class="fa-solid fa-arrow-right"></i>
+                <ul class="smenu">
+                  <li>Cardiología</li>
+                  <li>Diabetología</li>
+                  <li>Endocrinología</li>
+                  <li>Neumonología</li>
+                  <li>Nutrición</li>
+                </ul>
+              </li>
               <li class="ov-item expand">
                 <a href="#" class="btnLi">OSETYA</a>
                 <i class="fa-solid fa-arrow-right"></i>
@@ -1151,6 +1202,18 @@
             </div>
             <div class="ov-container animate__animated animate__fadeInUp o3">
               <li class="ov-item expand">
+                <a href="#" class="btnLi">OMINT</a>
+                <i class="fa-solid fa-arrow-right"></i>
+                <ul class="smenu">
+                  <li>Monitoreo Ambulatorio de TA</li>
+                  <li>Electrocardiograma en Consultorio</li>
+                  <li>Exrgometría de 12 Derivaciones</li>
+                  <li>E.C.G. Holter</li>
+                  <li>Ecocardiograma de stress físico y/o farmacológico</li>
+                  <li>Ecodoppler periférico color</li>
+                </ul>
+              </li>
+              <li class="ov-item expand">
                 <a href="#" class="btnLi">OSETYA</a>
                 <i class="fa-solid fa-arrow-right"></i>
                 <ul class="smenu">
@@ -1369,12 +1432,13 @@
       <!-- Begin 'Contacto' caption -->
       <div class="intro-caption">
         <div class="margin-top-30 addressContainer">
-          <div class="aos-init aos-animate fadeInDown" data-aos="fade-up-right" data-aos-easing="linear" data-aos-duration="500">
+          <div class="aos-init aos-animate fadeInDown" data-aos="fade-up-right" data-aos-easing="linear"
+            data-aos-duration="500">
             <h4>CINME S.A.</h4>
             <div class="address">
               <p><i class="fa-solid fa-location-dot"></i>Viamonte 2213, C1056 ABJ, Buenos Aires</p>
               <p><i class="fa-solid fa-mobile-screen"></i>Llamanos al 0800-345-0697</p>
-              <p><i class="fa-brands fa-whatsapp"></i>Escribinos al WhatsApp +54 911 791-63745</p>
+              <p><i class="fa-brands fa-whatsapp"></i>Escribinos al WhatsApp +54 911 7916-3745</p>
               <p><i class="fa-solid fa-envelope-open"></i>Nuestro email: info@cinme.com.ar</p>
             </div>
           </div>

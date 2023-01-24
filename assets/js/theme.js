@@ -218,6 +218,7 @@ function comite() {
 			// }
 			if (elNosotros) elNosotros.classList.add("semi");
 			if (elEspecialidades) elEspecialidades.classList.add("semi");
+			if (elSponsors) elSponsors.classList.add("semi");
 			if (elMetabolismo) elMetabolismo.classList.add("semi");
 			if (elCalidad) elCalidad.classList.add("semi");
 			if (elEssentia) elEssentia.classList.add("semi");
@@ -232,6 +233,7 @@ function comite() {
 			// }
 			if (elNosotros) elNosotros.classList.remove("semi");
 			if (elEspecialidades) elEspecialidades.classList.remove("semi");
+			if (elSponsors) elSponsors.classList.remove("semi");
 			if (elMetabolismo) elMetabolismo.classList.remove("semi");
 			if (elCalidad) elCalidad.classList.remove("semi");
 			if (elEssentia) elEssentia.classList.remove("semi");
@@ -247,6 +249,7 @@ function comite() {
 	const sMenuClose = document.querySelector(".cont-menu .icon-close");
 	const elNosotros = document.getElementById("nosotros");
 	const elEspecialidades = document.getElementById("especialidades");
+	const elSponsors = document.getElementById("sponsors");
 	const elMetabolismo = document.getElementById("metabolismo");
 	const elCalidad = document.getElementById("calidad");
 	const elEssentia = document.getElementById("essentia");
