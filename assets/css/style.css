@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap');
-
 /* ------------------------------------------------------------- *
  *  Reset
 /* ------------------------------------------------------------- */
@@ -234,6 +233,24 @@ section {
  *  Texts
 /* ------------------------------------------------------------- */
 
+/* Intro Main
+================= */
+.intro-main {
+  max-width: 75%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  color: #FFF;
+  z-index: 3;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+  left: 10%;
+  bottom: 10%;
+  overflow: hidden;
+}
+
 /* Intro caption
 ================= */
 .intro-caption {
@@ -266,13 +283,13 @@ section {
 
 /* intro description */
 .intro-description {
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.5;
 }
 
 /* intro large */
 .large-description {
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.5;
   margin-bottom: auto;
 }
@@ -1603,8 +1620,6 @@ footer p {
 
 footer {
   padding: 1rem 0;
-}
-
 }
 
 /* Small devices (portrait tablets and large phones, 576px and up) */
