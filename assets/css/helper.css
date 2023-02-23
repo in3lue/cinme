@@ -180,6 +180,10 @@ a {
  *  Margin classes
 /* ------------------------------------------------------------- */
 /* margin top */
+.margin-top-20 {
+    margin-top: 1% !important;
+}
+
 .margin-top-30 {
     margin-top: 2% !important;
 }
