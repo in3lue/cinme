@@ -217,6 +217,13 @@ a {
     padding-bottom: 8% !important;
 }
 
+/* padding left */
+
+.padding-left-30 {
+    padding-left: 2% !important;
+}
+
+
 /* padding top */
 .padding-top-30 {
     padding-top: 2% !important;
