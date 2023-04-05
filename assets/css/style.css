@@ -321,7 +321,6 @@ section {
   border-radius: 25px;
   background-color: transparent;
   border: 2px solid #FFF;
-  z-index: 2000;
 }
 
 .button:hover {
