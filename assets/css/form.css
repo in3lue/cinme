@@ -17,7 +17,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   padding: 0.25rem;
-  font-size: 0.9em;
+  font-size: 0.8rem;
   color: #58595B;
   align-items: flex-start;
   justify-content: space-around;
@@ -38,7 +38,7 @@
   flex-direction: row;
   flex-wrap: nowrap;
   padding: 0.25rem;
-  font-size: 0.9em;
+  font-size: 0.8rem;
   color: #58595B;
   align-items: center;
   justify-content: space-between;
@@ -53,7 +53,7 @@
 }
 
 .form__legend {
-  font-size: 1em;
+  font-size: 1rem;
   padding: 5px 10px;
   line-height: 1.2;
   color: #58595B;
@@ -70,46 +70,49 @@
   margin: 0.25rem;
   width: 50%;
   color: #58595B;
-  font-size: 0.9em;
+  font-size: 0.8rem;
 }
+
+.form__input:focus {
+  outline: none;
+}
+
 
 .form__search {
   display: inline-flex;
   align-items: center;
   justify-content: flex-start;
   color: #58595B;
-  padding: 5px 40px;
+  padding: 0.25rem 2rem 0.25rem 1rem;
   border: 1px solid #58595B;
-  border-radius: 25px;
-  background: transparent url(/assets/media/search.svg) no-repeat 5px;
+  border-radius: 1.25rem;
+  background: transparent url(/assets/media/search.svg) no-repeat right;
   border: 1px solid #58595B;
   width: 50%;
 }
 
 .form__search:focus {
   outline: none;
-  color: #58595B;
+
 }
 
 label {
-  font-size: 0.9em;
+  font-size: 0.8rem;
   color: #58595B;
 }
 
 .formButton {
   display: inline-flex;
   align-items: center;
-  justify-content: flex-end;
   color: #1D71B8;
   font-weight: bold;
-  cursor: pointer;
-  padding: 8px 30px;
+  padding: 0.25rem 1.5rem;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   background-color: transparent;
   border: 2px solid #1D71B8;
 }
