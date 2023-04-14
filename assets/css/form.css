@@ -13,7 +13,7 @@
 
 .form__legend {
   font-size: 1rem;
-  padding: 5px 10px;
+  padding: 0.3125rem 0.625rem;
   line-height: 1.2;
   color: #58595B;
 }
@@ -21,7 +21,7 @@
 .form__container {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
   color: #58595B;
 }
 
@@ -111,10 +111,118 @@ label {
 .formButton i {
   transition: all 500ms ease-in-out;
   opacity: 0;
-  margin-left: -14px;
+  margin-left: -0.875rem;
 }
 
 .formButton:hover i {
   opacity: 1;
-  margin-left: 14px;
+  margin-left: 0.875rem;
+}
+
+@media screen and (max-width: 575px) {
+
+  .form__wrapper {
+    gap: .6rem;
+    padding: .5rem;
+  }
+
+  .form__fieldset {
+    flex-flow: wrap row;
+    width: 100%;
+  }
+
+  .form__legend {
+    font-size: .8rem;
+    padding: 0.1875rem 0.3125rem;
+    line-height: 1;
+  }
+
+  .form__container {
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  }
+
+  .form__div {
+    padding: 0.1rem;
+    font-size: 0.625rem;
+  }
+
+  label {
+    font-size: 0.6875rem;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .form__fieldset {
+    flex-flow: wrap row;
+    width: 100%;
+  }
+
+  .form__legend {
+    font-size: .8rem;
+    padding: 0.3125rem 0.625rem;
+    line-height: 1;
+  }
+
+  .form__container {
+    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  }
+
+  .form__div {
+    padding: 0.15rem;
+    font-size: 0.7rem;
+  }
+
+  label {
+    font-size: 0.6875rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .form__fieldset {
+    width: 80%;
+  }
+
+  .form__legend {
+    font-size: .9rem;
+    padding: 0.3125rem 0.625rem;
+    line-height: 1;
+  }
+
+  .form__container {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+
+  .form__div {
+    padding: 0.20rem;
+    font-size: 0.8rem;
+  }
+
+  label {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .form__fieldset {
+    width: 80%;
+  }
+
+  .form__legend {
+    font-size: 1rem;
+    padding: 0.3125rem 0.625rem;
+    line-height: 1.1;
+  }
+
+  .form__container {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+
+  .form__div {
+    padding: 0.20rem;
+    font-size: 0.8rem;
+  }
+
+  label {
+    font-size: 0.8rem;
+  }
 }
