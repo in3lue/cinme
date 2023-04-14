@@ -1,55 +1,14 @@
 .form__wrapper {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  flex-flow: wrap column;
   align-items: center;
   gap: 1rem;
   padding: 2rem;
 }
 
 .form__fieldset {
-  flex-direction: row;
-  flex-wrap: nowrap;
-}
-
-.form__radio {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding: 0.25rem;
-  font-size: 0.8rem;
-  color: #58595B;
-  align-items: flex-start;
-  justify-content: space-around;
-}
-
-.form__container {
-  width: 100%;
-  display: flex;
-  padding-left: 30px;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  color: #58595B;
-  align-items: flex-start;
-}
-
-.form__div {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  padding: 0.25rem;
-  font-size: 0.8rem;
-  color: #58595B;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.form__button {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: flex-end;
-  justify-content: flex-end;
+  flex-flow: nowrap row;
+  width: 60%;
 }
 
 .form__legend {
@@ -57,6 +16,17 @@
   padding: 5px 10px;
   line-height: 1.2;
   color: #58595B;
+}
+
+.form__container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  color: #58595B;
+}
+
+.form__item {
+  text-align: left;
 }
 
 .form__input {
@@ -77,6 +47,16 @@
   outline: none;
 }
 
+.form__div {
+  display: flex;
+  flex-flow: nowrap row;
+  padding: 0.25rem;
+  font-size: 0.8rem;
+  color: #58595B;
+  align-items: center;
+  justify-content: space-between;
+
+}
 
 .form__search {
   display: inline-flex;
@@ -118,8 +98,6 @@ label {
 }
 
 .formButton:hover {
-  -webkit-box-shadow: none;
-  box-shadow: none;
   outline: none;
   color: #1D71B8;
   border-color: #1D71B8;
