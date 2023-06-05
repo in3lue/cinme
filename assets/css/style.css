@@ -558,6 +558,7 @@ section {
 
 .smenu {
   overflow: hidden;
+  overflow-y: auto;
   transition: max-height 0.3s;
   max-height: 0;
 }
