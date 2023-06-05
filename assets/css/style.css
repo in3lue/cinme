@@ -321,7 +321,6 @@ section {
   border-radius: 25px;
   background-color: transparent;
   border: 2px solid #FFF;
-  z-index: 2000;
 }
 
 .button:hover {
@@ -941,6 +940,10 @@ section {
 
 #especialidades {
   background-image: url(../media/int_investigacion.jpg);
+}
+
+#ensayos {
+  background-image: url(../media/int_ensayos.jpg);
 }
 
 /* #headEspecialidades {

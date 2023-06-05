@@ -200,6 +200,12 @@ a {
     margin-top: 15% !important;
 }
 
+/* margin bottom */
+
+.margin-bottom-50 {
+    margin-bottom: 4% !important;
+}
+
 /* ------------------------------------------------------------- *
  *  padding classes
 /* ------------------------------------------------------------- */
