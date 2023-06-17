@@ -217,6 +217,10 @@ section {
   background-image: url(../media/bg_ensayos.jpg);
 }
 
+#intro-participar {
+  background-image: url(../media/int_ensayos.jpg);
+}
+
 #intro-consultorios {
   background-image: url(../media/bg_consultorios.jpg);
 }
