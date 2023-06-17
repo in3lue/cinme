@@ -126,6 +126,10 @@ function comite() {
 	location.href = "comiteEtica.html";
 }
 
+function ensayos() {
+	location.href = "ensayos.html";
+}
+
 (function ($) {
 
 	// ===============================================
@@ -223,6 +227,7 @@ function comite() {
 			if (elMetabolismo) elMetabolismo.classList.add("semi");
 			if (elCalidad) elCalidad.classList.add("semi");
 			if (elEssentia) elEssentia.classList.add("semi");
+			if (elEnsayos) elEnsayos.classList.add("semi");
 
 
 		} else {
@@ -239,6 +244,7 @@ function comite() {
 			if (elMetabolismo) elMetabolismo.classList.remove("semi");
 			if (elCalidad) elCalidad.classList.remove("semi");
 			if (elEssentia) elEssentia.classList.remove("semi");
+			if (elEnsayos) elEnsayos.classList.remove("semi");
 		}
 	});
 
@@ -256,6 +262,7 @@ function comite() {
 	const elMetabolismo = document.getElementById("metabolismo");
 	const elCalidad = document.getElementById("calidad");
 	const elEssentia = document.getElementById("essentia");
+	const elEnsayos = document.getElementById("ensayos");
 
 	// const video = document.querySelector("#videoAlianzas");
 	// const videoHistoria = document.querySelector("#videoHistoria");

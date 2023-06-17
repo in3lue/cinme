@@ -321,7 +321,6 @@ section {
   border-radius: 25px;
   background-color: transparent;
   border: 2px solid #FFF;
-  z-index: 2000;
 }
 
 .button:hover {
@@ -559,6 +558,7 @@ section {
 
 .smenu {
   overflow: hidden;
+  overflow-y: auto;
   transition: max-height 0.3s;
   max-height: 0;
 }
@@ -943,6 +943,10 @@ section {
   background-image: url(../media/int_investigacion.jpg);
 }
 
+#ensayos {
+  background-image: url(../media/int_ensayos.jpg);
+}
+
 /* #headEspecialidades {
   background-image: url(../media/int_banner.jpg);
   top: 100px;
@@ -1227,6 +1231,72 @@ footer p {
   margin-bottom: 0;
 }
 
+
+
+#headsponsors {
+  top: 60px;
+}
+
+.wrapperAcc {
+  padding: 0 14px;
+}
+
+.wrapperAcc .parent-tab {
+  margin-bottom: 6px;
+}
+
+.wrapperAcc .parent-tab label {
+  padding: 4px 14px;
+  font-size: 0.75rem;
+}
+
+.wrapperAcc label span {
+  font-size: 0.75rem;
+}
+
+.wrapperAcc label .icon {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+
+.wrapperAcc .parent-tab input:checked~label .icon i:before {
+  padding-left: 10px;
+  transition: padding-left translateX(10px);
+}
+
+.wrapperAcc .parent-tab .content p {
+  font-size: 0.75rem;
+  padding: 10px 10px 0px 10px;
+}
+
+.internal-title {
+  padding: 30px 0px;
+}
+
+.line {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.lineStart {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.line-title {
+  padding-right: 0.75rem;
+}
+
+footer {
+  padding: 1rem 0;
+}
+
+
 /* ------------------------------------------------------------- *
    *  Media Queries
 /* ------------------------------------------------------------- */
@@ -1243,7 +1313,6 @@ footer p {
     left: 20px;
     bottom: 20px;
   }
-
 
   .logo__img {
     width: 50%;
@@ -1452,6 +1521,16 @@ footer p {
     padding: 0px 36px;
   }
 
+  .smenu li {
+    display: block;
+    position: relative;
+    border-left: 1px solid #FFF;
+    height: 100%;
+    margin-left: -1rem;
+    padding-left: 10px;
+    font-size: 0.75rem;
+  }
+
   .overlayContainer {
     margin: 10px;
   }
@@ -1466,7 +1545,7 @@ footer p {
   }
 
   .overlay {
-    padding: 50px;
+    padding: 25px;
     overflow-y: auto;
   }
 
@@ -1541,9 +1620,9 @@ footer p {
 
   .line {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-end;
-    gap: 1rem;
+    gap: 0rem;
   }
 
   .lineStart {
@@ -1561,69 +1640,6 @@ footer p {
     padding: 1rem 0;
   }
 
-}
-
-#headsponsors {
-  top: 60px;
-}
-
-.wrapperAcc {
-  padding: 0 14px;
-}
-
-.wrapperAcc .parent-tab {
-  margin-bottom: 6px;
-}
-
-.wrapperAcc .parent-tab label {
-  padding: 4px 14px;
-  font-size: 0.75rem;
-}
-
-.wrapperAcc label span {
-  font-size: 0.75rem;
-}
-
-.wrapperAcc label .icon {
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-}
-
-.wrapperAcc .parent-tab input:checked~label .icon i:before {
-  padding-left: 10px;
-  transition: padding-left translateX(10px);
-}
-
-.wrapperAcc .parent-tab .content p {
-  font-size: 0.75rem;
-  padding: 10px 10px 0px 10px;
-}
-
-.internal-title {
-  padding: 30px 0px;
-}
-
-.line {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  gap: 1rem;
-}
-
-.lineStart {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1rem;
-}
-
-.line-title {
-  padding-right: 0.75rem;
-}
-
-footer {
-  padding: 1rem 0;
 }
 
 /* Small devices (portrait tablets and large phones, 576px and up) */
