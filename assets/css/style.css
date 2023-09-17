@@ -258,7 +258,7 @@ section {
 /* Intro caption
 ================= */
 .intro-caption {
-  max-width: 70%;
+  max-width: 80%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -268,15 +268,15 @@ section {
   flex-wrap: nowrap;
   justify-content: flex-end;
   align-items: flex-start;
-  left: 10%;
-  bottom: 10%;
+  left: 8%;
+  bottom: 5%;
   overflow: hidden;
 }
 
 /* intro title */
 .intro-title {
   margin: 0;
-  text-shadow: 5px 5px rgba(0, 0, 0, 0.25);
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.25);
 }
 
 /* intro subtitle */
@@ -987,8 +987,8 @@ section {
 }
 
 .wrapperAcc {
-  max-width: 800px;
-  padding: 0 20px;
+  max-width: 90%;
+  padding: 0px;
   overflow: hidden;
 }
 
@@ -1045,8 +1045,8 @@ section {
 }
 
 .wrapperAcc .parent-tab .content p {
-  font-size: 1rem;
-  padding: 16px 20px 0px 20px;
+  font-size: 0.9rem;
+  padding: 5px 5px 0px 5px;
   color: #58595B;
   text-align: left;
 }
@@ -1237,7 +1237,7 @@ footer p {
   top: 60px;
 }
 
-.wrapperAcc {
+/* .wrapperAcc {
   padding: 0 14px;
 }
 
@@ -1268,7 +1268,7 @@ footer p {
 .wrapperAcc .parent-tab .content p {
   font-size: 0.75rem;
   padding: 10px 10px 0px 10px;
-}
+} */
 
 .internal-title {
   padding: 30px 0px;
@@ -1304,19 +1304,23 @@ footer {
 /* Small devices */
 @media screen and (max-width: 576px) {
   .header__logo {
-    left: 20px;
-    top: 20px;
+    left: 15px;
+    top: 15px;
+  }
+
+  .logo__img {
+    width: 40%;
   }
 
   .whatsapp__logo {
     max-width: 40px;
-    left: 20px;
-    bottom: 20px;
+    left: 15px;
+    bottom: 15px;
   }
 
-  .logo__img {
-    width: 50%;
-  }
+  /* .logo__img {
+    width: 40%;
+  } */
 
   .icon-menu {
     right: 20px;
@@ -1367,9 +1371,9 @@ footer {
   }
 
   .intro-caption {
-    max-width: 80%;
+    max-width: 90%;
     left: 5%;
-    bottom: 10%;
+    bottom: 10px;
   }
 
   .intro-description {
@@ -1582,7 +1586,7 @@ footer {
   }
 
   .wrapperAcc {
-    padding: 0 14px;
+    padding: 0px;
   }
 
   .wrapperAcc .parent-tab {
@@ -1610,8 +1614,8 @@ footer {
   }
 
   .wrapperAcc .parent-tab .content p {
-    font-size: 0.75rem;
-    padding: 10px 10px 0px 10px;
+    font-size: 0.65rem;
+    padding: 0px;
   }
 
   .internal-title {
@@ -1912,7 +1916,7 @@ footer {
   }
 
   .wrapperAcc {
-    padding: 0 16px;
+    padding: 0 10px;
   }
 
   .wrapperAcc .parent-tab {
@@ -2242,7 +2246,7 @@ footer {
   }
 
   .wrapperAcc {
-    padding: 0 18px;
+    padding: 0 16px;
   }
 
   .wrapperAcc .parent-tab {
@@ -2543,7 +2547,7 @@ footer {
   }
 
   .wrapperAcc {
-    padding: 0 19px;
+    padding: 0 20px;
   }
 
   .wrapperAcc .parent-tab {
