@@ -1003,7 +1003,6 @@ section {
   justify-content: space-between;
   font-size: 1.1rem;
   font-weight: 600;
-  cursor: pointer;
   color: #1D71B8;
   position: relative;
   z-index: 99;
@@ -1037,8 +1036,7 @@ section {
 }
 
 .wrapperAcc .parent-tab .content {
-  max-height: 0;
-  overflow: hidden;
+  max-height: 100vh;
   transition: all 0.8s ease;
 }
 
@@ -1234,8 +1232,6 @@ footer {
 footer p {
   margin-bottom: 0;
 }
-
-
 
 #headsponsors {
   top: 60px;
