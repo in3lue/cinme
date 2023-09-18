@@ -987,7 +987,7 @@ section {
 }
 
 .wrapperAcc {
-  max-width: 90%;
+  max-width: 100%;
   padding: 0px;
   overflow: hidden;
 }
@@ -997,7 +997,7 @@ section {
 }
 
 .wrapperAcc .parent-tab label {
-  padding: 10px 20px;
+  padding: 0px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1023,7 +1023,7 @@ section {
 }
 
 .wrapperAcc .parent-tab input:checked~label .icon i:before {
-  content: " \f178";
+  content: " \f107";
   padding-left: 16px;
   transition: padding-left translateX(16px);
 }
@@ -1594,7 +1594,7 @@ footer {
   }
 
   .wrapperAcc .parent-tab label {
-    padding: 4px 14px;
+    padding: 0px;
     font-size: 0.75rem;
   }
 
@@ -1924,7 +1924,7 @@ footer {
   }
 
   .wrapperAcc .parent-tab label {
-    padding: 6px 16px;
+    padding: 0px;
     font-size: 0.8rem;
   }
 
@@ -2254,7 +2254,7 @@ footer {
   }
 
   .wrapperAcc .parent-tab label {
-    padding: 8px 18px;
+    padding: 0px;
     font-size: 0.9rem;
   }
 
@@ -2555,7 +2555,7 @@ footer {
   }
 
   .wrapperAcc .parent-tab label {
-    padding: 9px 19px;
+    padding: 0px;
     font-size: 1rem;
   }
 
