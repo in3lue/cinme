@@ -20,14 +20,13 @@ body {
 
 html {
   scroll-behavior: smooth;
-  font-size: 16px;
+  font-size: 0.9rem;
 }
 
 body {
   position: relative;
   background-color: #F1F1F1;
   font-family: "Montserrat", sans-serif;
-  line-height: 1.5;
 }
 
 a {
@@ -176,7 +175,6 @@ a:focus {
   font-weight: normal;
   display: block;
   text-decoration: none;
-  font-size: 1rem;
   transition: all 400ms ease;
 }
 
@@ -275,33 +273,6 @@ section {
 
 /* intro title */
 .intro-title {
-  margin: 0;
-  text-shadow: 3px 3px rgba(0, 0, 0, 0.25);
-}
-
-/* intro subtitle */
-.intro-subtitle {
-  margin: 15px 0 0 0;
-  text-shadow: 3px 3px rgba(0, 0, 0, 0.25);
-}
-
-/* intro description */
-.intro-description {
-  font-size: 0.9rem;
-  line-height: 1.5;
-}
-
-/* intro large */
-.large-description {
-  font-size: 0.9rem;
-  line-height: 1.5;
-  margin-bottom: auto;
-}
-
-/* subtitle2 */
-.subtitle {
-  margin-bottom: 0;
-  padding-bottom: 5px;
   text-shadow: 3px 3px rgba(0, 0, 0, 0.25);
 }
 
@@ -352,14 +323,6 @@ section {
 }
 
 .containerBTN {
-  padding-top: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.containerEssentia {
-  padding: 30px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -378,7 +341,6 @@ section {
 .link-item {
   display: block;
   color: #FFF;
-  font-size: 14.4px;
   text-align: left;
   text-decoration: none;
   padding-bottom: 16px;
@@ -418,7 +380,6 @@ section {
 
 .blue-item {
   color: #1D71B8;
-  font-size: 14.4px;
   text-align: left;
   text-decoration: none;
   padding-bottom: 16px;
@@ -463,7 +424,6 @@ section {
 
 .network-item {
   color: #1D71B8;
-  font-size: 14.4px;
   text-align: left;
   text-decoration: none;
   padding-bottom: 16px;
@@ -503,7 +463,6 @@ section {
 
 .ess-charge {
   color: #1D71B8;
-  font-size: 0.75rem;
   text-transform: uppercase;
   font-weight: 400;
   margin: 0;
@@ -595,7 +554,6 @@ section {
 
 .name {
   color: #FFF;
-  font-size: 1rem;
   padding: 0;
   margin: 0;
 }
@@ -817,7 +775,7 @@ section {
 }
 
 .btn-close i {
-  font-size: 36px;
+  font-size: 2.25rem;
   color: #FFF;
 }
 
