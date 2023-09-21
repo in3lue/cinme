@@ -287,13 +287,13 @@ section {
   color: #FFF;
   z-index: 900;
   cursor: pointer;
-  padding: 8px 30px;
+  padding: 4px 20px;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  border-radius: 25px;
+  border-radius: 20px;
   background-color: transparent;
   border: 2px solid #FFF;
 }

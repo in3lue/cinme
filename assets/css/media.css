@@ -88,17 +88,13 @@
   }
 
   .button {
-    padding: 5px;
-    border-radius: 20px;
+    padding: 2px 10px;
+    border-radius: 10px;
     border: 1px solid #FFF;
   }
 
   .button i {
-    margin-left: -10px;
-  }
-
-  .button:hover i {
-    margin-left: 10px;
+    display: none;
   }
 
   .containerBTN {
@@ -116,10 +112,12 @@
 
   .link-item i {
     margin-left: -14px;
+    display: none;
   }
 
   .link-item:hover i {
     margin-left: 8px;
+    display: none;
   }
 
   .swf {
