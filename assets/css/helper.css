@@ -3,46 +3,37 @@
 /* ------------------------------------------------------------- */
 
 
-h2,
-h3,
-h4,
-h5 {
-    font-weight: bold;
-}
-
-h1,
-h2,
-h3 {
-    line-height: 1;
-}
-
-h4,
-h5 {
-    line-height: 1.2;
-}
-
 h2 {
     font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 1.2;
 }
 
 h3 {
     font-size: 1.15rem;
+    font-weight: bold;
+    line-height: 1.2;
 }
 
 h4 {
     font-size: 1.10rem;
+    font-weight: bold;
+    line-height: 1.2;
 }
 
 h5 {
     font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.2;
 }
 
 p {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
+    line-height: 1;
 }
 
 a {
-    font-size: 0.70rem;
+    font-size: 0.85rem;
 }
 
 
@@ -215,8 +206,16 @@ a {
     padding-bottom: 0 !important;
 }
 
-.padding-bottom-30 {
+.padding-bottom-20 {
     padding-bottom: 2% !important;
+}
+
+.padding-bottom-30 {
+    padding-bottom: 3% !important;
+}
+
+.padding-bottom-50 {
+    padding-bottom: 4% !important;
 }
 
 .padding-bottom-100 {
@@ -231,8 +230,20 @@ a {
 
 
 /* padding top */
-.padding-top-30 {
+.padding-top-0 {
+    padding-top: 0 !important;
+}
+
+.padding-top-10 {
+    padding-top: 1% !important;
+}
+
+.padding-top-20 {
     padding-top: 2% !important;
+}
+
+.padding-top-30 {
+    padding-top: 3% !important;
 }
 
 .padding-top-100 {
@@ -315,8 +326,12 @@ a {
 /* ------------------------------------------------------------- */
 /* Small devices */
 @media screen and (max-width: 576px) {
+    html {
+        font-size: 0.75rem;
+    }
+
     h2 {
-        font-size: 1.05rem;
+        font-size: 1.1rem;
     }
 
     h3 {
@@ -324,7 +339,7 @@ a {
     }
 
     h4 {
-        font-size: .9rem;
+        font-size: 0.9rem;
     }
 
     h5 {
@@ -336,7 +351,7 @@ a {
     }
 
     a {
-        font-size: 0.625rem;
+        font-size: 0.7rem;
     }
 
     .full-height-vh.semi {
@@ -350,17 +365,6 @@ a {
         min-height: 200px;
     }
 
-    .margin-top-30 {
-        margin-top: 10px !important;
-    }
-
-    .margin-top-50 {
-        margin-top: 20px !important;
-    }
-
-    .margin-top-200 {
-        margin-top: 100px !important;
-    }
 }
 
 /* Small devices (portrait tablets and large phones, 567px and up) */
@@ -404,17 +408,6 @@ a {
         min-height: 250px;
     }
 
-    .margin-top-30 {
-        margin-top: 12px !important;
-    }
-
-    .margin-top-50 {
-        margin-top: 24px !important;
-    }
-
-    .margin-top-200 {
-        margin-top: 100px !important;
-    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -458,17 +451,6 @@ a {
         min-height: 280px;
     }
 
-    .margin-top-30 {
-        margin-top: 15px !important;
-    }
-
-    .margin-top-50 {
-        margin-top: 26px !important;
-    }
-
-    .margin-top-200 {
-        margin-top: 120px !important;
-    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -528,15 +510,4 @@ a {
         min-height: 300px;
     }
 
-    .margin-top-30 {
-        margin-top: 18px !important;
-    }
-
-    .margin-top-50 {
-        margin-top: 30px !important;
-    }
-
-    .margin-top-200 {
-        margin-top: 150px !important;
-    }
 }
