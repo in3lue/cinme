@@ -4,8 +4,13 @@
 
 /* Small devices */
 @media screen and (max-width: 576px) {
+
+  body {
+    overflow: hidden;
+  }
+
   .header__logo {
-    left: 12px;
+    left: 15px;
     top: 14px;
   }
 
@@ -73,11 +78,6 @@
     bottom: 5%;
   }
 
-  .intro-main {
-    max-width: 90%;
-    left: 5%;
-  }
-
   /* intro title */
   .intro-title {
     text-shadow: 1px 1px rgba(0, 0, 0, 0.25);
@@ -89,6 +89,7 @@
 
   .button {
     padding: 2px 10px;
+    margin: 2px;
     border-radius: 10px;
     border: 1px solid #FFF;
   }
@@ -100,9 +101,7 @@
   .containerBTN {
     width: 100%;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
   }
 
   .link-item {
@@ -192,24 +191,24 @@
     margin-left: 2px;
   }
 
-  .ov-container {
+  .srfc-container {
     padding-left: 6px;
   }
 
-  .ov-container .ov-item a {
+  .srfc-container .srfc-item a {
     font-size: 0.875rem;
     padding: 16px 0;
   }
 
-  .ov-container .ov-item i {
+  .srfc-container .srfc-item i {
     margin-left: -0.875rem;
   }
 
-  .ov-container .ov-item:hover i {
+  .srfc-container .srfc-item:hover i {
     margin-left: 10px;
   }
 
-  .ov-container .ov-list .ov-item ul li {
+  .srfc-container .ov-list .srfc-item ul li {
     padding: 0px 36px;
   }
 
@@ -333,3 +332,6 @@
   }
 
 }
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media screen and (min-width: 576px) and (max-width: 768px) {}

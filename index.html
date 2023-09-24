@@ -111,21 +111,22 @@
       <div class="cover bg-transparent-4-dark"></div>
 
       <!-- Begin 'Inicio' Caption -->
-      <div class="intro-main">
-        <h3 class="animate__animated animate__fadeInDown animate__delay-1s">16 años de experiencia
+      <div class="intro-caption">
+        <h3 class="aos-init aos-animate animate__animated animate__fadeInDown animate__delay-1s" data-aos="fade-down">16
+          años de experiencia
         </h3>
-        <h2 class="intro-title animate__animated animate__fadeInDown animate__delay-1s">CINME.
+        <h2 class="intro-title aos-init aos-animate animate__animated animate__fadeInDown animate__delay-1s"
+          data-aos="fade-down">CINME.
           Centro de Investigaciones
           Metabólicas
         </h2>
-        <div class="intro-description animate__animated animate__fadeInUp animate__delay-2s margin-top-20"
+        <div class="aos-init aos-animate animate__animated animate__fadeInUp animate__delay-2s margin-top-20"
           data-aos="fade-up">
           <p><b>Certificamos en calidad en normas ISO 9001:2015 en investigación clínica</b><br>
             Fundado en 2007 por el Dr. Federico Pérez Manghi, un médico que confió en el país y sabía que en la
             investigación médica había esperanza.<br>16 años después inaugura un edificio de 11 pisos, 48 consultorios y
             2700 metros cuadrados.</p>
         </div>
-
 
         <div class="margin-top-20 button zoomIn o2" onclick="historiaOn()">
           <a href="" target="_blank" class="disabled" title="Edificio">¿Querés conocerlo?
@@ -197,7 +198,6 @@
             <li><img src="./assets/sponsors/insmed.png" alt=""></li>
             <li><img src="./assets/sponsors/intarcia.png" alt=""></li>
             <li><img src="./assets/sponsors/iqvia.png" alt=""></li>
-
           </ul>
         </div>
 
@@ -246,9 +246,10 @@
 
       <!-- Begin 'Nosotros' caption -->
       <div class="intro-caption">
-        <h2 class="intro-title animate__animated animate__fadeInDown animate__delay-1s">Nosotros
+        <h2 class="intro-title aos-init aos-animate animate__animated animate__fadeInDown animate__delay-1s"
+          data-aos="fade-down">Nosotros
         </h2>
-        <p class="intro-description animate__animated animate__fadeInUp animate__delay-1.5s" data-aos="fade-up">
+        <p class="aos-init aos-animate animate__animated animate__fadeInUp animate__delay-1.5s" data-aos="fade-up">
           CINME nació con la misión de mejorar la calidad de vida de las
           personas a través de la investigación y la atención médica
           asistencial, humana e integral. Hoy es un centro de referencia que
@@ -273,13 +274,15 @@
 
       <!-- Begin 'Ensayos' caption -->
       <div class="intro-caption">
-        <h2 data-aos="fade-down" class="intro-title animate__animated animate__fadeInDown animate__delay-1s">Ensayos
+        <h2 class="intro-title aos-init aos-animate animate__animated animate__fadeInUp animate__delay-1s"
+          data-aos="fade-up">Ensayos
           clínicos</h2>
-        <p data-aos="fade-up" class="intro-description animate__animated animate__fadeInDown animate__delay-1.5s">
+        <p class="aos-init aos-animate animate__animated animate__fadeInDown animate__delay-1s" data-aos="fade-down">
           Humanizando la salud persona a persona
         </p>
         <div class="margin-top-20 row">
-          <div class="accordionContent animate__animated animate__fadeInUp animate__delay-2s">
+          <div class="accordionContent aos-init aos-animate animate__animated animate__fadeInUp animate__delay-2s"
+            data-aos="fade-up">
             <div class="wrapperAcc">
               <!-- Especialidades -->
               <div class="parent-tab" id="accWhite">
@@ -293,8 +296,8 @@
                     está formado tanto en el campo académico como en el ético, de modo de asegurar los mejores y más
                     avanzados tratamientos. </p>
                   <div class="text-right">
-                    <div class="button" onclick="especialidadesOn()">
-                      <a href="#" class="disabled" title="CINME Abstract">Ver Especialiidades</a>
+                    <div class="button" onclick="especialidades()">
+                      <a href="especialidades.html" class="disabled" title="CINME Abstract">Ver Especialiidades</a>
                       <i class="fa-solid fa-arrow-right"></i>
                     </div>
                   </div>
@@ -335,14 +338,12 @@
                     centro de investigación nacional en lograrlo.</p>
                   <div class="text-right">
                     <div class="button" onclick="calidad()">
-                      <a href="#" class="disabled" title="CINME Abstract">Ver</a>
+                      <a href="calidad.html" class="disabled" title="Gestión de Calidad">Ver</a>
                       <i class="fa-solid fa-arrow-right"></i>
                     </div>
                   </div>
                 </div>
               </div>
-
-
               <!-- Comité de Ética -->
               <div class="parent-tab" id="accWhite">
                 <input type="radio" name="tab" id="tab-4">
@@ -358,13 +359,12 @@
                   </p>
                   <div class="text-right">
                     <div class="button" onclick="comite()">
-                      <a href="#" class="disabled" title="CINME Abstract">Ver</a>
+                      <a href="comiteEtica.html" class="disabled" title="CINME Abstract">Ver</a>
                       <i class="fa-solid fa-arrow-right"></i>
                     </div>
                   </div>
                 </div>
               </div>
-
               <!-- Testimonio -->
               <div class="parent-tab" id="accWhite">
                 <input type="radio" name="tab" id="tab-9">
@@ -376,272 +376,18 @@
                   <p id="accWhite">Nuestros pacientes nos cuentan sobre su experiencia en la Clínica CINME
                   </p>
                   <div class="text-right">
-                    <div class="button">
+                    <div class="button" onclick="testimoniopp()">
                       <a href="testimonio.html" title="testimonio">Ver</a>
                       <i class="fa-solid fa-arrow-right"></i>
                     </div>
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
       </div>
       <!-- End 'Ensayos' caption -->
-
-      <!-- /// OVERLAYS /// -->
-
-      <!-- *** especialidades *** -->
-
-      <div id="overlay-especialidades" class="full-cover overlayContainer overlay-caption">
-        <div class="close">
-          <label class="btn-close"><i class="fa-solid fa-xmark" onclick="especialidadesOff()"></i></label>
-        </div>
-        <div class="overlay">
-          <div>
-            <h2 class="overlay-title animate__animated animate__fadeInDown">Especialidades</h2>
-          </div>
-          <div class="line">
-            <div class="ov-container animate__animated animate__fadeInUp o2">
-              <li class="ov-item expand">
-                <a href="#" class="btnLi mnu_title">Cardiología</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                <ul class="smenu">
-                  <li>
-                    <p class="name">Dra. Ángela Romero</p>
-                    <p class="charge">Investigadora Principal</p>
-                  </li>
-                  <li>
-                    <p class="name">Dr. Josué Yañez</p>
-                    <p class="charge">Subinvestigador</p>
-                  </li>
-                  <li>
-                    <p class="name">Dr. Juan Jurado</p>
-                    <p class="charge">Subinvestigador</p>
-                  </li>
-                  <li>
-                    <p class="name">Dra. Cecilia Reyna</p>
-                    <p class="charge">Subinvestigadora</p>
-                  </li>
-                  <li>
-                    <p class="name">Dra. Romina Giménez</p>
-                    <p class="charge">Subinvestigadora</p>
-                  </li>
-                </ul>
-              </li>
-              <li class="ov-item expand">
-                <a href="#" class="btnLi mnu_title">Dermatología</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                <ul class="smenu">
-                  <li>
-                    <p class="name">Dr. Ricardo Galimberti</p>
-                    <p class="charge">Investigador Principal</p>
-                  </li>
-                  <li>
-                    <p class="name">Dra. María Laura Galimberti</p>
-                    <p class="charge">Investigadora Principal</p>
-                  </li>
-                  <li>
-                    <p class="name">Dra. Ianinna Massimo</p>
-                    <p class="charge">Investigadora Principal</p>
-                  </li>
-                  <li>
-                    <p class="name">Dr. Daniel Galimberti</p>
-                    <p class="charge">Subinvestigador</p>
-                  </li>
-                  <li>
-                    <p class="name">Dra. Marisa Zocca</p>
-                    <p class="charge">Subinvestigadora</p>
-                  </li>
-                  <li>
-                    <p class="name">Dra. Alejandra Rodríguez</p>
-                    <p class="charge">Subinvestigadora</p>
-                  </li>
-                </ul>
-              </li>
-              <li class="ov-item expand">
-                <a href="#" class="btnLi">Diabetes y Obesidad</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                <ul class="smenu">
-                  <li>
-                    <p class="name">Dr. Federico Pérez Manghi</p>
-                    <p class="charge">Investigador Principal</p>
-                  </li>
-                  <li>
-                    <p class="name">Dra. Ma. Cristina Grossman</p>
-                    <p class="charge">Investigadora Principal</p>
-                  </li>
-                  <li>
-                    <p class="name">Dra. Alejandra Romeo</p>
-                    <p class="charge">Investigadora Principal</p>
-                  </li>
-                  <li>
-                    <p class="name">Dr. Gustavo Lo Giudice</p>
-                    <p class="charge">Subinvestigador</p>
-                  </li>
-                  <li>
-                    <p class="name">Dr. Aldo Cuneo</p>
-                    <p class="charge">Subinvestigador</p>
-                  </li>
-                  <li>
-                    <p class="name">Dra. Andrea Jokiel</p>
-                    <p class="charge">Subinvestigadora</p>
-                  </li>
-                  <li>
-                    <p class="name">Dra. Paola Langini</p>
-                    <p class="charge">Subinvestigadora</p>
-                  </li>
-                </ul>
-              </li>
-              <li class="ov-item expand">
-                <a href="#" class="btnLi">Gastroenterología</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                <ul class="smenu">
-                  <li>
-                    <p class="name">Dra. Raquel González</h3>
-                    <p class="charge">Investigadora Principal</h4>
-                  </li>
-                  <li>
-                    <p class="name">Dr. Federico Bentolila</h3>
-                    <p class="charge">Subinvestigador</h4>
-                  </li>
-                  <li>
-                    <p class="name">Dra. Astrid Smolarczuk</h3>
-                    <p class="charge">Subinvestigadora</h4>
-                  </li>
-                </ul>
-              </li>
-            </div>
-            <div class="ov-container animate__animated animate__fadeInUp o3">
-              <li class="ov-item expand">
-                <a href="#" class="btnLi">Hepatología</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                <ul class="smenu">
-                  <li>
-                    <p class="name">Dra. Margarita Anders</h3>
-                    <p class="charge">Investigadora Principal</h4>
-                  </li>
-                  <li>
-                    <p class="name">Dr. Jhonier Alberto Ocampo Salazar</h3>
-                    <p class="charge">Subinvestigador</h4>
-                  </li>
-                  <li>
-                    <p class="name">Dra. Julia Brutti</h3>
-                    <p class="charge">Subinvestigadora</h4>
-                  </li>
-                </ul>
-              </li>
-              <li class="ov-item expand">
-                <a href="#" class="btnLi">Infectología</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                <ul class="smenu">
-                  <li>
-                    <p class="name">Dr. Carlos Zala</h3>
-                    <p class="charge">Investigador Principal</h4>
-                  </li>
-                  <li>
-                    <p class="name">Dra. Claudia Ochoa</h3>
-                    <p class="charge">Subinvestigadora</h4>
-                  </li>
-                  <li>
-                    <p class="name">Dra. Laura Figueras</h3>
-                    <p class="charge">Subinvestigadora</h4>
-                  </li>
-                </ul>
-              </li>
-              <li class="ov-item expand">
-                <a href="#" class="btnLi">Nefrología</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                <ul class="smenu">
-                  <li>
-                    <p class="name">Dr. Fernando Halac</p>
-                    <p class="charge">Investigador Principal</p>
-                  </li>
-                  <li>
-                    <p class="name">Dra. Pamela Delgado</p>
-                    <p class="charge">Subinvestigadora</p>
-                  </li>
-                </ul>
-              </li>
-              <li class="ov-item expand">
-                <a href="#" class="btnLi">Neumonología</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                <ul class="smenu">
-                  <li>
-                    <p class="name">Dra. María Otaola</p>
-                    <p class="charge">Investigadora Principal</p>
-                  </li>
-                  <li>
-                    <p class="name">Dr. Gonzalo Sáenz</p>
-                    <p class="charge">Investigador Principal</p>
-                  </li>
-                  <li>
-                    <p class="name">Dra. Florencia Patturlane</p>
-                    <p class="charge">Subinvestigadora</p>
-                  </li>
-                  <li>
-                    <p class="name">Dr. Alberto Casey</p>
-                    <p class="charge">Subinvestigador</p>
-                  </li>
-                  <li>
-                    <p class="name">Dra. Ana Freuler</p>
-                    <p class="charge">Subinvestigadora</p>
-                  </li>
-                  <li>
-                    <p class="name">Dra. Carolina Virgilio</p>
-                    <p class="charge">Subinvestigadora</p>
-                  </li>
-                </ul>
-              </li>
-            </div>
-            <div class="ov-container animate__animated animate__fadeInUp o4">
-              <li class="ov-item expand">
-                <a href="#" class="btnLi">Neurología</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                <ul class="smenu">
-                  <li>
-                    <p class="name">Dra. María Lourdes Figuerola</p>
-                    <p class="charge">Investigadora Principal</p>
-                  </li>
-                </ul>
-              </li>
-              <li class="ov-item expand">
-                <a href="#" class="btnLi">Neuropsiquiatría</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                <ul class="smenu">
-                  <li>
-                    <p class="name">Dra. Griselda Russo</p>
-                    <p class="charge">Investigadora Principal</p>
-                  </li>
-                  <li>
-                    <p class="name">Dr. Marcos Fernández Suarez</p>
-                    <p class="charge">Subinvestigador</p>
-                  </li>
-                </ul>
-              </li>
-              <li class="ov-item expand">
-                <a href="#" class="btnLi">Oncología</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                <ul class="smenu">
-                  <li>
-                    <p class="name">Dra. Mónica Rondinon</h3>
-                    <p class="charge">Investigadora Principal</h4>
-                  </li>
-                  <li>
-                    <p class="name">Dra. Mariana Abal</h3>
-                    <p class="charge">Subinvestigadora</h4>
-                  </li>
-                  <li>
-                    <p class="name">Dra. Liliana González</h3>
-                    <p class="charge">Subinvestigadora</h4>
-                  </li>
-                </ul>
-              </li>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
     <!-- ///// End 'Ensayos' section ///// -->
 
@@ -652,14 +398,18 @@
 
       <!-- Begin 'Participar' caption -->
       <div class="intro-caption">
-        <h2 class="intro-title animate__animated animate__fadeInDown animate__delay-1s" data-aos="fade-down">
+        <h2 class="intro-title aos-init aos-animate animate__animated animate__fadeInDown animate__delay-1s"
+          data-aos="fade-down">
           Quiero participar</h2>
-        <p class="intro-description">Si estás interesado en participar en algunos de nuestros ensayos clínicos, podés
+        <p class="aos-init aos-animate animate__animated animate__fadeInUp animate__delay-1s" data-aos="fade-up">Si
+          estás interesado en
+          participar en algunos
+          de nuestros ensayos clínicos, podés
           dejarnos tus datos.</p>
-        <div class="margin-top-30 button zoomIn o4" onclick="ensayos()">
-          <a href="ensayos.html" title="Quiero participar" onclick="ensayos()">Participar
+        <div class="margin-top-30 button zoomIn o4">
+          <a href="ensayos.html" title="Quiero participar">Participar
           </a>
-          <i class="fa-solid fa-arrow-right" onclick="ensayos()"></i>
+          <i class="fa-solid fa-arrow-right"></i>
         </div>
       </div>
       <!-- End 'Participar' caption -->
@@ -692,26 +442,27 @@
 
       <!-- Begin 'ESSENTIA' caption -->
       <div class="intro-caption">
-        <h2 class="intro-title">
+        <h2 class="intro-title aos-init aos-animate animate__animated animate__fadeInUp animate__delay-1s"
+          data-aos="fade-up">
           <i>ESSENTIA</i>
         </h2>
-        <div class="column margin-top-20 large-description">
-          <div>
-            <p>
-              El espíritu de <i>ESSENTIA</i> es construir juntos tu mejor versión.
-            </p>
-            <p>
-              <i>ESSENTIA</i> es un grupo de profesionales, interdisciplinario, especializado en el
-              manejo del sobrepeso y la obesidad.
-            </p>
-            <p>
-              En <i>ESSENTIA</i> vos sos el protagonista del cambio y nosotros las herramientas que necesitás para
-              hacerlo posible.
-            </p>
-          </div>
-
+        <div class="column margin-top-20 aos-init aos-animate animate__animated animate__fadeInDown animate__delay-1s"
+          data-aos="fade-down">
+          <p>
+            El espíritu de <i>ESSENTIA</i> es construir juntos tu mejor versión.
+          </p>
+          <p>
+            <i>ESSENTIA</i> es un grupo de profesionales, interdisciplinario, especializado en el
+            manejo del sobrepeso y la obesidad.
+          </p>
+          <p>
+            En <i>ESSENTIA</i> vos sos el protagonista del cambio y nosotros las herramientas que necesitás para
+            hacerlo posible.
+          </p>
         </div>
-        <div class="containerBTN padding-top-10">
+        <div
+          class="containerBTN padding-top-10 aos-init aos-animate animate__animated animate__fadeInDown animate__delay-1s"
+          data-aos="fade-down">
           <div class="margin-top-30 button">
             <a href="metabolismo.html">Manejo de sobrepeso y obesidad</a>
             <i class="fa-solid fa-arrow-right"></i>
@@ -750,355 +501,27 @@
 
       <!-- Begin 'Consultorios externos' caption -->
       <div class="intro-caption">
-        <h2 class="intro-title animate__animated animate__fadeInDown animate__delay-1s" data-aos="fade-down">
+        <h2 class="intro-title aos-init aos-animate animate__animated animate__fadeInUp animate__delay-1s"
+          data-aos="fade-up">
           Consultorios externos</h2>
-        <p class="intro-description">Brindamos atención médica en consultorios externos a través de obras sociales y
+        <p class="aos-init aos-animate animate__animated animate__fadeInDown animate__delay-1s" data-aos="fade-down">
+          Brindamos atención
+          médica en consultorios
+          externos a través de obras sociales y
           consultas
           privadas.</p>
-        <ul class="link-list padding-top-30">
-          <li class="link-item" onclick="consultoriosOn()">
-            <a href="" class="disabled">Consultorios externos</a>
-            <i class="fa-solid fa-arrow-right" onclick="consultoriosOn()"></i>
+        <ul
+          class="link-list padding-top-30 aos-init aos-animate animate__animated animate__fadeInDown animate__delay-1s"
+          data-aos="fade-down">
+          <li class="link-item" onclick="consultorios()">
+            <a href="consultorios-externos.html" class="disabled">Consultorios externos</a>
+            <i class="fa-solid fa-arrow-right" onclick="consultorios()"></i>
           </li>
-          <li class="link-item" onclick="obrasSocialesOn()"></i>
-            <a href="" class="disabled">Obras Sociales</a>
-            <i class="fa-solid fa-arrow-right" onclick="obrasSocialesOn()"></i>
+          <li class="link-item" onclick="obrasSociales()"></i>
+            <a href="obras-sociales.html" class="disabled">Obras Sociales</a>
+            <i class="fa-solid fa-arrow-right" onclick="obrasSociales()"></i>
           </li>
         </ul>
-      </div>
-
-      <!-- /// OVERLAY /// -->
-
-      <div id="overlay-consultorios" class="full-cover overlayContainer overlay-caption">
-        <div class="close">
-          <label class="btn-close"><i class="fa-solid fa-xmark" onclick="consultoriosOff()"></i></label>
-        </div>
-        <div class="overlay">
-          <h2 class="overlay-title animate__animated animate__fadeInDown">Consultorios externos</h2>
-          <div class="line">
-            <div class="ov-container animate__animated animate__fadeInUp o2">
-              <li class="ov-item expand">
-                <a href="#" class="btnLi mnu_title">Cardiología</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                <ul class="smenu">
-                  <li>ETICA+</li>
-                  <li>MEDICALS</li>
-                  <li>OMINT</li>
-                  <li>OSPATRONES</li>
-                  <li>OSPJN</li>
-                  <li>OSPSIP</li>
-                  <li>OSRJA</li>
-                  <li>OSTECF</li>
-                  <li>PAMI</li>
-                </ul>
-              </li>
-              <li class="ov-item expand">
-                <a href="#" class="btnLi mnu_title">Endocrinología</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                <ul class="smenu">
-                  <li>OMINT</li>
-                </ul>
-              </li>
-              <li class="ov-item expand">
-                <a href="#" class="btnLi">Diabetología</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                <ul class="smenu">
-                  <li>APSOT</li>
-                  <li>ETICA+</li>
-                  <li>MEDICALS</li>
-                  <li>OMINT</li>
-                  <li>OSETYA</li>
-                  <li>OSFE</li>
-                  <li>OSPATRONES</li>
-                  <li>OSPJN</li>
-                  <li>OSPPRA</li>
-                  <li>OSPSIP</li>
-                  <li>OSRJA</li>
-                  <li>OSTECF</li>
-                  <li>PAMI</li>
-                </ul>
-              </li>
-              <!-- </div>
-            <div class="ov-container animate__animated animate__fadeInUp o3"> -->
-              <!-- <li class="ov-item expand">
-                <a href="#" class="btnLi">Hepatología</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                <ul class="smenu">
-                  <li>ETICA+</li>
-                  <li>MEDICALS</li>
-                  <li>OSETYA</li>
-                  <li>OSPATRONES</li>
-                  <li>OSTECF</li>
-                </ul>
-              </li> -->
-              <li class="ov-item expand">
-                <a href="#" class="btnLi">Neumonología</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                <ul class="smenu">
-                  <li>APSOT</li>
-                  <li>ETICA+</li>
-                  <li>MEDICALS</li>
-                  <li>OMINT</li>
-                  <li>OSPATRONES</li>
-                  <li>OSPJN</li>
-                  <li>OSPSIP</li>
-                  <li>OSRJA</li>
-                  <li>OSTECF</li>
-                  <li>PAMI</li>
-                </ul>
-              </li>
-              <li class="ov-item expand">
-                <a href="#" class="btnLi">Nutrición</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                <ul class="smenu">
-                  <li>APSOT</li>
-                  <li>ETICA+</li>
-                  <li>MEDICALS</li>
-                  <li>OMINT</li>
-                  <li>OSETYA</li>
-                  <li>OSFE</li>
-                  <li>OSPATRONES</li>
-                  <li>OSPJN</li>
-                  <li>OSPPRA</li>
-                  <li>OSPSIP</li>
-                  <li>OSRJA</li>
-                  <li>OSTECF</li>
-                  <li>PAMI</li>
-                </ul>
-              </li>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <div id="overlay-obrasSociales" class="full-cover overlayContainer overlay-caption">
-        <div class="close">
-          <label class="btn-close"><i class="fa-solid fa-xmark" onclick="obrasSocialesOff()"></i></label>
-        </div>
-        <div class="overlay">
-          <h2 class="overlay-title animate__animated animate__fadeInDown">Obras Sociales</h2>
-          <div class="line">
-            <div class="ov-container animate__animated animate__fadeInUp o2">
-              <li class="ov-item expand">
-                <a href="#" class="btnLi">PAMI</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                <ul class="smenu">
-                  <li>- Cardiología</li>
-                  <li>- Consulta Médica Diabetología</li>
-                  <li>- Neumonología</li>
-                  <li>- Nutrición</li>
-                  <li>- Recetas</li>
-                </ul>
-              </li>
-              <li class="ov-item expand">
-                <a href="#" class="btnLi mnu_title">APSOT</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                <ul class="smenu">
-                  <li>- Consulta Médica Diabetología</li>
-                  <li>- Espirometría</li>
-                  <li>- Neumonología</li>
-                  <li>- Nutrición</li>
-                  <li>- Recetas</li>
-                </ul>
-              </li>
-              <li class="ov-item expand">
-                <a href="#" class="btnLi">ETICA+</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                <ul class="smenu">
-                  <li>- Cardiología</li>
-                  <li>- Consulta Electrofisiológica</li>
-                  <li>- Consulta Médica Diabetología</li>
-                  <li>- Electrocardiograma</li>
-                  <li>- Ergometría</li>
-                  <li>- Espirometría</li>
-                  <li>- Estudios de Pie Diabético</li>
-                  <li>- Examen Neurológico Pie Diabético</li>
-                  <li>- Examen Vascular Pie Diabético</li>
-                  <li>- Holter</li>
-                  <li>- Impedanciometría</li>
-                  <li>- Medición HbA1C</li>
-                  <li>- Neumonología</li>
-                  <li>- Nutrición</li>
-                  <li>- Presurometría</li>
-                </ul>
-              </li>
-              <li class="ov-item expand">
-                <a href="#" class="btnLi">MEDICALS</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                <ul class="smenu">
-                  <li>- Cardiología</li>
-                  <li>- Consulta Electrofisiológica</li>
-                  <li>- Consulta Médica Diabetología</li>
-                  <li>- Electrocardiograma</li>
-                  <li>- Ergometría</li>
-                  <li>- Espirometría</li>
-                  <li>- Estudios de Pie Diabético</li>
-                  <li>- Examen Neurológico Pie Diabético</li>
-                  <li>- Examen Vascular Pie Diabético</li>
-                  <li>- Holter</li>
-                  <li>- Impedanciometría</li>
-                  <li>- Neumonología</li>
-                  <li>- Nutrición</li>
-                  <li>- Presurometría</li>
-                  <li>- Recetas</li>
-                </ul>
-              </li>
-            </div>
-            <div class="ov-container animate__animated animate__fadeInUp o3">
-              <li class="ov-item expand">
-                <a href="#" class="btnLi">OMINT</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                <ul class="smenu">
-                  <li>- Cardiología</li>
-                  <li>- Electrocardiograma</li>
-                  <li>- Ergometrías</li>
-                  <li>- Holter de Ritmo Cardíaco (electrocardiograma de 24 Hs)</li>
-                  <li>- Ecocardiograma</li>
-                  <li>- Ecodoppler Periférico</li>
-                  <li>- Endocrinología</li>
-                  <li>- Neumonología</li>
-                  <li>- Nutrición y Diabetes</li>
-                  <li>- Dietistas (Lic. en Nutrición)</li>
-                  <li>- Nutrición y Diabetes Infanto-Juvenil</li>
-                  <li>- Programas Preventivos</li>
-                  <li>- Diabetología</li>
-                </ul>
-              </li>
-              <li class="ov-item expand">
-                <a href="#" class="btnLi">OSETYA</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                <ul class="smenu">
-                  <li>- Consulta Médica Diabetología</li>
-                  <li>- Estudios de Pie Diabético</li>
-                  <li>- Examen Vascular Pie Diabético</li>
-                  <li>- Holter</li>
-                  <li>- Impedanciometría</li>
-                  <li>- Nutrición</li>
-                  <li>- Recetas</li>
-                </ul>
-              </li>
-              <li class="ov-item expand">
-                <a href="#" class="btnLi">OSFE</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                <ul class="smenu">
-                  <li>- Consulta Médica Diabetología</li>
-                  <li>- Impedanciometría</li>
-                  <li>- Nutrición</li>
-                </ul>
-              </li>
-              <li class="ov-item expand">
-                <a href="#" class="btnLi">OSPATRONES</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                <ul class="smenu">
-                  <li>- Cardiología</li>
-                  <li>- Consulta Electrofisiológica</li>
-                  <li>- Consulta Médica Diabetología</li>
-                  <li>- Electrocardiograma</li>
-                  <li>- Ergometría</li>
-                  <li>- Espirometría</li>
-                  <li>- Holter</li>
-                  <li>- Impedanciometría</li>
-                  <li>- Neumonología</li>
-                  <li>- Nutrición</li>
-                  <li>- Presurometría</li>
-                  <li>- Recetas</li>
-                </ul>
-              </li>
-              <li class="ov-item expand">
-                <a href="#" class="btnLi">OSPJN</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                <ul class="smenu">
-                  <li>- Cardiología</li>
-                  <li>- Holter</li>
-                  <li>- Nutrición</li>
-                  <li>- Consulta Médica Diabetología</li>
-                  <li>- Nutrición infanto juvenil</li>
-                  <li>- Diabetología infanto juvenil</li>
-                  <li>- Neumonología</li>
-                </ul>
-              </li>
-            </div>
-            <div class="ov-container animate__animated animate__fadeInUp o4">
-              <li class="ov-item expand">
-                <a href="#" class="btnLi">OSPPRA</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                <ul class="smenu">
-                  <li>- Consulta Médica Diabetología</li>
-                  <li>- Nutrición</li>
-                  <li>- Recetas</li>
-                </ul>
-              </li>
-              <li class="ov-item expand">
-                <a href="#" class="btnLi">OSPSIP</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                <ul class="smenu">
-                  <li>- Cardiología</li>
-                  <li>- Consulta Electrofisiológica</li>
-                  <li>- Electrocardiograma</li>
-                  <li>- Ergometría</li>
-                  <li>- Espirometría</li>
-                  <li>- Estudios de Pie Diabético</li>
-                  <li>- Examen Neurológico Pie Diabético</li>
-                  <li>- Examen Vascular Pie Diabético</li>
-                  <li>- Holter</li>
-                  <li>- Impedanciometría</li>
-                  <li>- Neumonología</li>
-                  <li>- Nutrición</li>
-                  <li>- Presurometría</li>
-                </ul>
-              </li>
-              <li class="ov-item expand">
-                <a href="#" class="btnLi">OSRJA</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                <ul class="smenu">
-                  <li>- Consulta Médica Diabetología</li>
-                  <li>- Consulta Pediátrica DBT</li>
-                  <li>- Consulta Médica Obesidad</li>
-                  <li>- Consulta Médica Endocrinología</li>
-                  <li>- Consulta Médica Cardiología</li>
-                  <li>- Consulta Médico Clínico</li>
-                  <li>- Consulta Psicológica</li>
-                  <li>- Consulta Médica Neumonología</li>
-                  <li>- Consulta Médica Neurología</li>
-                  <li>- Consulta Nutrición</li>
-                  <li>- Actividad Física</li>
-                  <li>- Electrocardiograma</li>
-                  <li>- Ergometría</li>
-                  <li>- Eco doppler cardíaco</li>
-                  <li>- Eco stress con ejercicio/farmacos</li>
-                  <li>- Espirometría</li>
-                  <li>- Estudios de Pie Diabético</li>
-                  <li>- Examen Vascular Pie Diabético</li>
-                  <li>- Holter</li>
-                  <li>- Impedanciometría</li>
-                  <li>- Presurometría</li>
-                  <li>- Recetas</li>
-                </ul>
-              </li>
-              <li class="ov-item expand">
-                <a href="#" class="btnLi">OSTECF</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                <ul class="smenu">
-                  <li>- Cardiología</li>
-                  <li>- Consulta Electrofisiológica</li>
-                  <li>- Consulta Médica Diabetología</li>
-                  <li>- Ergometría</li>
-                  <li>- Espirometría</li>
-                  <li>- Estudios de Pie Diabético</li>
-                  <li>- Examen Neurológico Pie Diabético</li>
-                  <li>- Examen Vascular Pie Diabético</li>
-                  <li>- Holter</li>
-                  <li>- Impedanciometría</li>
-                  <li>- Neumonología</li>
-                  <li>- Nutrición</li>
-                  <li>- Recetas</li>
-                </ul>
-              </li>
-
-            </div>
-          </div>
-        </div>
-
       </div>
       <!-- End 'Consultorios externos' caption -->
     </section>
@@ -1130,277 +553,28 @@
 
       <!-- Begin 'Estudios' caption -->
       <div class="intro-caption">
-        <h2 class="intro-title animate__animated animate__fadeInDown animate__delay-1s" data-aos="fade-down">Estudios
+        <h2 class="intro-title aos-init aos-animate animate__animated animate__fadeInUp animate__delay-1s"
+          data-aos="fade-up">Estudios
           médicos</h2>
-        <p class="intro-description">Realizamos estudios clínicos con coberturas de obras sociales o de modo privado.
+        <p class="aos-init aos-animate animate__animated animate__fadeInDown animate__delay-1s" data-aos="fade-down">
+          Realizamos estudios
+          clínicos con coberturas
+          de obras sociales o de modo privado.
         </p>
-        <ul class="link-list padding-top-30">
-          <li class="link-item" onclick="estudiosOn()">
-            <a href="" class="disabled">Estudios médicos</a>
-            <i class="fa-solid fa-arrow-right" onclick="estudiosOn()"></i>
+        <ul
+          class="link-list padding-top-30 aos-init aos-animate animate__animated animate__fadeInDown animate__delay-1s"
+          data-aos="fade-down">
+          <li class="link-item" onclick="estudios()">
+            <a href="estudios.html" class="disabled">Estudios médicos</a>
+            <i class="fa-solid fa-arrow-right" onclick="estudios()"></i>
           </li>
-          <li class="link-item" onclick="oossOn()"></i>
-            <a href="" class="disabled">Obras Sociales</a>
-            <i class="fa-solid fa-arrow-right" onclick="oossOn()"></i>
+          <li class="link-item" onclick="ooss()"></i>
+            <a href="ooss.html" class="disabled">Obras Sociales</a>
+            <i class="fa-solid fa-arrow-right" onclick="ooss()"></i>
           </li>
         </ul>
       </div>
 
-      <!-- /// OVERLAY /// -->
-      <div id="overlay-estudios" class="full-cover overlayContainer overlay-caption">
-        <div class="close">
-          <label class="btn-close"><i class="fa-solid fa-xmark" onclick="estudiosOff()"></i></label>
-        </div>
-        <div class="overlay">
-          <h2 class="overlay-title animate__animated animate__fadeInDown">Estudios médicos</h2>
-          <div class="line">
-            <div class="ov-container animate__animated animate__fadeInUp o2">
-              <li class="ov-item expand">
-                <a href="#" class="btnLi mnu_title">Cardiología</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                <ul class="smenu">
-                  <li>- Consulta Médica</li>
-                  <li>- Electrocardiograma</li>
-                  <li>- Test de ergometría digital</li>
-                  <li>- Holter 24 Hs.</li>
-                  <li>- 3 Canales</li>
-                  <li>- Presurometría</li>
-                </ul>
-              </li>
-              <li class="ov-item expand">
-                <a href="#" class="btnLi mnu_title">Diabetología</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                <ul class="smenu">
-                  <li>- Consulta Médica Nutricional</li>
-                  <li>- Práctica Dietoterápica</li>
-                  <li>- Impedanciometría</li>
-                  <li>- Medición HbA1C (Hemoglobina Glicosilada A1C)</li>
-                  <li>- Estudios de Pie Diabético</li>
-                  <li>- Examen Vascular de Pie Diabético</li>
-                  <li>- Examen Neurológico de Pie Diabético</li>
-                  <li>- Examen del Apoyo del Pie Diabético</li>
-                </ul>
-              </li>
-              <li class="ov-item expand">
-                <a href="#" class="btnLi mnu_title">Neumonología</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                <ul class="smenu">
-                  <li>- Consulta médica neumonológica</li>
-                  <li>- Espirometría computarizada</li>
-                  <li>- Curva de flujo Volumen</li>
-                  <li>- Capacidad vital lenta (SVC)</li>
-                  <li>- Oximetría de pulso</li>
-                  <li>- Test de marcha 6 minutos</li>
-                </ul>
-              </li>
-              <li class="ov-item expand">
-                <a href="#" class="btnLi mnu_title">Nutrición</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                <ul class="smenu">
-                  <li>- Consulta médica Nutricional</li>
-                </ul>
-              </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <div id="overlay-ooss" class="full-cover overlayContainer overlay-caption">
-        <div class="close">
-          <label class="btn-close"><i class="fa-solid fa-xmark" onclick="oossOff()"></i></label>
-        </div>
-        <div class="overlay">
-          <h2 class="overlay-title animate__animated animate__fadeInDown">Obras Sociales</h2>
-          <div class="line">
-            <div class="ov-container animate__animated animate__fadeInUp o2">
-              <li class="ov-item expand">
-                <a href="#" class="btnLi mnu_title">APSOT</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                <ul class="smenu">
-                  <li>- Consulta Médica Diabetología</li>
-                  <li>- Espirometría</li>
-                  <li>- Neumonología</li>
-                  <li>- Nutrición</li>
-                  <li>- Recetas</li>
-                </ul>
-              </li>
-              <li class="ov-item expand">
-                <a href="#" class="btnLi">ETICA+</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                <ul class="smenu">
-                  <li>- Cardiología</li>
-                  <li>- Consulta Electrofisiológica</li>
-                  <li>- Consulta Médica Diabetología</li>
-                  <li>- Electrocardiograma</li>
-                  <li>- Ergometría</li>
-                  <li>- Espirometría</li>
-                  <li>- Estudios de Pie Diabético</li>
-                  <li>- Examen Neurológico Pie Diabético</li>
-                  <li>- Examen Vascular Pie Diabético</li>
-                  <li>- Holter</li>
-                  <li>- Impedanciometría</li>
-                  <li>- Medición HbA1C</li>
-                  <li>- Neumonología</li>
-                  <li>- Nutrición</li>
-                  <li>- Presurometría</li>
-                </ul>
-              </li>
-              <li class="ov-item expand">
-                <a href="#" class="btnLi">MEDICALS</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                <ul class="smenu">
-                  <li>- Cardiología</li>
-                  <li>- Consulta Electrofisiológica</li>
-                  <li>- Consulta Médica Diabetología</li>
-                  <li>- Electrocardiograma</li>
-                  <li>- Ergometría</li>
-                  <li>- Espirometría</li>
-                  <li>- Estudios de Pie Diabético</li>
-                  <li>- Examen Neurológico Pie Diabético</li>
-                  <li>- Examen Vascular Pie Diabético</li>
-                  <li>- Holter</li>
-                  <li>- Impedanciometría</li>
-                  <li>- Neumonología</li>
-                  <li>- Nutrición</li>
-                  <li>- Presurometría</li>
-                  <li>- Recetas</li>
-                </ul>
-              </li>
-            </div>
-            <div class="ov-container animate__animated animate__fadeInUp o3">
-              <li class="ov-item expand">
-                <a href="#" class="btnLi">OMINT</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                <ul class="smenu">
-                  <li>- Monitoreo Ambulatorio de TA</li>
-                  <li>- Electrocardiograma en Consultorio</li>
-                  <li>- Exrgometría de 12 Derivaciones</li>
-                  <li>- E.C.G. Holter</li>
-                  <li>- Ecocardiograma de stress físico y/o farmacológico</li>
-                  <li>- Ecodoppler periférico color</li>
-                </ul>
-              </li>
-              <li class="ov-item expand">
-                <a href="#" class="btnLi">OSETYA</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                <ul class="smenu">
-                  <li>- Consulta Médica Diabetología</li>
-                  <li>- Estudios de Pie Diabético</li>
-                  <li>- Examen Vascular Pie Diabético</li>
-                  <li>- Holter</li>
-                  <li>- Impedanciometría</li>
-                  <li>- Nutrición</li>
-                  <li>- Recetas</li>
-                </ul>
-              </li>
-              <li class="ov-item expand">
-                <a href="#" class="btnLi">OSFE</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                <ul class="smenu">
-                  <li>- Consulta Médica Diabetología</li>
-                  <li>- Impedanciometría</li>
-                  <li>- Nutrición</li>
-                </ul>
-              </li>
-              <li class="ov-item expand">
-                <a href="#" class="btnLi">OSPATRONES</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                <ul class="smenu">
-                  <li>- Cardiología</li>
-                  <li>- Consulta Electrofisiológica</li>
-                  <li>- Consulta Médica Diabetología</li>
-                  <li>- Electrocardiograma</li>
-                  <li>- Ergometría</li>
-                  <li>- Espirometría</li>
-                  <li>- Holter</li>
-                  <li>- Impedanciometría</li>
-                  <li>- Neumonología</li>
-                  <li>- Nutrición</li>
-                  <li>- Presurometría</li>
-                  <li>- Recetas</li>
-                </ul>
-              </li>
-              <li class="ov-item expand">
-                <a href="#" class="btnLi">OSPJN</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                <ul class="smenu">
-                  <li>- Consulta Médica Diabetología</li>
-                  <li>- Holter</li>
-                  <li>- Ecocardiografía Doppler color</li>
-                  <li>- Eco Doppler color arterial perisférico</li>
-                  <li>- Eco Doppler color vascular</li>
-                  <li>- Ecografías</li>
-                  <li>- Nutrición</li>
-                  <li>- Recetas</li>
-                </ul>
-              </li>
-            </div>
-            <div class="ov-container animate__animated animate__fadeInUp o4">
-              <li class="ov-item expand">
-                <a href="#" class="btnLi">OSPPRA</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                <ul class="smenu">
-                  <li>- Consulta Médica Diabetología</li>
-                  <li>- Nutrición</li>
-                  <li>- Recetas</li>
-                </ul>
-              </li>
-              <li class="ov-item expand">
-                <a href="#" class="btnLi">OSPSIP</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                <ul class="smenu">
-                  <li>- Cardiología</li>
-                  <li>- Consulta Electrofisiológica</li>
-                  <li>- Electrocardiograma</li>
-                  <li>- Ergometría</li>
-                  <li>- Espirometría</li>
-                  <li>- Estudios de Pie Diabético</li>
-                  <li>- Examen Neurológico Pie Diabético</li>
-                  <li>- Examen Vascular Pie Diabético</li>
-                  <li>- Holter</li>
-                  <li>- Impedanciometría</li>
-                  <li>- Neumonología</li>
-                  <li>- Nutrición</li>
-                  <li>- Presurometría</li>
-                </ul>
-              </li>
-              <li class="ov-item expand">
-                <a href="#" class="btnLi">OSRJA</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                <ul class="smenu">
-                  <li>- Cardiología</li>
-                  <li>- Consulta Médica Diabetología</li>
-                  <li>- Estudios de Pie Diabético</li>
-                  <li>- Impedanciometría</li>
-                  <li>- Nutrición</li>
-                  <li>- Recetas</li>
-                </ul>
-              </li>
-              <li class="ov-item expand">
-                <a href="#" class="btnLi">OSTECF</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                <ul class="smenu">
-                  <li>- Cardiología</li>
-                  <li>- Consulta Electrofisiológica</li>
-                  <li>- Consulta Médica Diabetología</li>
-                  <li>- Ergometría</li>
-                  <li>- Espirometría</li>
-                  <li>- Estudios de Pie Diabético</li>
-                  <li>- Examen Neurológico Pie Diabético</li>
-                  <li>- Examen Vascular Pie Diabético</li>
-                  <li>- Holter</li>
-                  <li>- Impedanciometría</li>
-                  <li>- Neumonología</li>
-                  <li>- Nutrición</li>
-                  <li>- Recetas</li>
-                </ul>
-              </li>
-            </div>
-          </div>
-        </div>
-
-      </div>
       <!-- End 'Estudios' caption -->
     </section>
     <!-- ///// End 'Estudios' section ///// -->
@@ -1411,10 +585,12 @@
       <div class="cover bg-transparent-2-dark"></div>
       <!-- Begin 'Responsabilidad Social' caption -->
       <div class="intro-caption">
-        <h2 class="intro-title animate__animated animate__fadeInDown animate__delay-1s" data-aos="fade-down">
+        <h2 class="aos-init aos-animate intro-title animate__animated animate__fadeInUp animate__delay-1s"
+          data-aos="fade-up">
           Responsabilidad Social</h2>
-        <div class="margin-top-50 row">
-          <div class="accordionContent fadeInUp o4">
+        <div class="margin-top-20 row">
+          <div class="accordionContent aos-init aos-animate animate__animated animate__fadeInDown animate__delay-1s"
+            data-aos="fade-down">
             <div class="wrapperAcc">
               <!-- Alianzas solidarias -->
               <div class="parent-tab" id="accWhite">

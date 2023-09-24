@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap');
+/* ------------------------------------------------------------- *
+ *  Reset
+/* ------------------------------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------------------------------------------------- *
+   *  General
+  /* ------------------------------------------------------------- */
+html,
+body {
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px grey;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #cccccc;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 0.9rem;
+}
+
+body {
+  position: relative;
+  background-color: #1D71B8;
+  color: #FFF;
+  font-family: "Montserrat", sans-serif;
+}
+
+.surface {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 3rem;
+  height: 90vh;
+  justify-content: space-between;
+}
+
+.surface-title {
+  padding: 1rem;
+}
+
+.road {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+}
+
+/* ------------------------------------------------------------- *
+ *  surface links [srfc]
+/* ------------------------------------------------------------- */
+
+.srfc-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.srfc-container .srfc-item span {
+  list-style: none;
+  color: #FFF;
+  font-size: 1.1rem;
+  font-weight: bold;
+  line-height: 2.5;
+  text-align: left;
+}
+
+.srfc-item {
+  list-style: none;
+  width: 100%;
+  max-width: 18%;
+  padding-bottom: 2rem;
+}
+
+ul li {
+  display: block;
+  position: relative;
+  border-left: 1px solid #FFF;
+  height: 100%;
+  margin-left: -1.5rem;
+  padding: 0.3rem 0.5rem;
+}

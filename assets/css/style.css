@@ -18,6 +18,29 @@ body {
   overflow-y: auto;
 }
 
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px grey;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1D71B8;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #165992;
+}
+
 html {
   scroll-behavior: smooth;
   font-size: 0.9rem;
@@ -77,7 +100,7 @@ a:focus {
 
 .icon-menu {
   position: absolute;
-  right: 32px;
+  right: 30px;
   top: 0;
   color: #FFF;
   cursor: pointer;
@@ -90,8 +113,8 @@ a:focus {
 
 .icon-close {
   position: absolute;
-  right: 32px;
-  top: 32px;
+  right: 30px;
+  top: 30px;
   color: #FFF;
   cursor: pointer;
 }
@@ -108,7 +131,7 @@ a:focus {
   position: absolute;
   height: 100vh;
   width: 100%;
-  top: 32px;
+  top: 30px;
   right: 0;
   transition: all 500ms ease;
   opacity: 0;
@@ -235,24 +258,6 @@ section {
  *  Texts
 /* ------------------------------------------------------------- */
 
-/* Intro Main
-================= */
-.intro-main {
-  max-width: 75%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  color: #FFF;
-  z-index: 3;
-  flex-wrap: nowrap;
-  justify-content: flex-end;
-  align-items: flex-start;
-  left: 10%;
-  bottom: 10%;
-  overflow: hidden;
-}
-
 /* Intro caption
 ================= */
 .intro-caption {
@@ -266,8 +271,8 @@ section {
   flex-wrap: nowrap;
   justify-content: flex-end;
   align-items: flex-start;
-  left: 8%;
-  bottom: 5%;
+  left: 10%;
+  bottom: 10%;
   overflow: hidden;
 }
 
@@ -288,6 +293,7 @@ section {
   z-index: 900;
   cursor: pointer;
   padding: 4px 20px;
+  margin: 4px;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -454,6 +460,13 @@ section {
   margin-left: 10px;
 }
 
+.containerEssentia {
+  width: max-content;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+}
+
 .ess-name {
   color: #1D71B8;
   font-weight: bold;
@@ -468,56 +481,12 @@ section {
   margin: 0;
   padding: 0 0 1rem 0;
   margin-left: 20px;
+  text-align: left;
 }
 
 /* ------------------------------------------------------------- *
  *  overlay links [ov]
 /* ------------------------------------------------------------- */
-
-.ov-container {
-  width: 100%;
-  display: inline-block;
-  padding-left: 10px;
-}
-
-.ov-container .ov-item a {
-  list-style: none;
-  color: #FFF;
-  font-size: 1.35rem;
-  line-height: 2.5;
-  text-align: left;
-  text-decoration: none;
-  margin-bottom: -0.625rem;
-  padding: 0rem;
-  display: inline-block;
-}
-
-.ov-container .ov-item i {
-  color: #FFF;
-  transition: all 500ms ease-in-out;
-  opacity: 0;
-  margin-left: -1.25rem;
-}
-
-.ov-container .ov-item:hover i {
-  opacity: 1;
-  margin-left: 0.625rem;
-}
-
-.ov-item {
-  list-style: none;
-  overflow: hidden;
-}
-
-.btnLi {
-  display: block;
-  position: relative;
-}
-
-.btnLi::before {
-  content: "";
-  position: absolute;
-}
 
 .smenu {
   overflow: hidden;
@@ -526,14 +495,10 @@ section {
   max-height: 0;
 }
 
-.show {
-  max-height: 25em;
-}
-
 .smenu li {
   display: block;
   position: relative;
-  border-left: 1px solid #FFF;
+  border-left: 1px solid tomato;
   height: 100%;
   margin-left: .5rem;
   padding-left: 40px;
@@ -552,32 +517,32 @@ section {
   opacity: 1;
 }
 
+.srfc-item {
+  list-style: none;
+  overflow: hidden;
+}
+
+.show {
+  max-height: 25em;
+}
+
+
 .name {
   color: #FFF;
   padding: 0;
-  margin: 0;
+  margin: 0 0 0.1rem 0;
 }
 
 .charge {
   color: #FFF;
-  font-size: 0.8rem;
   text-transform: uppercase;
+  font-size: 0.8rem;
   font-weight: 200;
   margin: 0;
-  padding: 0 0 .5rem 0;
-}
-
-/** Overlays **/
-.overlayContainer {
-  display: none;
-  background-color: rgb(29, 113, 184);
-  z-index: 700;
-  cursor: pointer;
-  margin: 10px;
+  padding: 0 0 0.25rem 0;
 }
 
 .overlayVideoContainer {
-  display: none;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 700;
   cursor: pointer;
@@ -593,8 +558,6 @@ section {
 }
 
 #overlay-estudios {
-  display: none;
-  /* Hidden by default */
   background-color: rgb(29, 113, 184);
   /* Black background with opacity */
   z-index: 700;
@@ -605,8 +568,6 @@ section {
 }
 
 #overlay-ooss {
-  display: none;
-  /* Hidden by default */
   background-color: rgb(29, 113, 184);
   /* Black background with opacity */
   z-index: 700;
@@ -617,8 +578,6 @@ section {
 }
 
 #overlay-consultorios {
-  display: none;
-  /* Hidden by default */
   background-color: rgb(29, 113, 184);
   /* Black background with opacity */
   z-index: 700;
@@ -629,8 +588,6 @@ section {
 }
 
 #overlay-obrasSociales {
-  display: none;
-  /* Hidden by default */
   background-color: rgb(29, 113, 184);
   /* Black background with opacity */
   z-index: 700;
@@ -641,8 +598,6 @@ section {
 }
 
 #overlay-especialidades {
-  display: none;
-  /* Hidden by default */
   background-color: rgb(29, 113, 184);
   /* Black background with opacity */
   z-index: 700;
@@ -766,8 +721,9 @@ section {
 
 .btn-close {
   position: absolute;
-  right: 40px;
-  top: 40px;
+  position: fixed;
+  right: 30px;
+  top: 30px;
   cursor: pointer;
   z-index: 800;
   background: none;
@@ -823,9 +779,7 @@ section {
 }
 
 .overlay-caption {
-  position: absolute;
-  color: #FFF;
-  z-index: 3;
+  background-color: rgb(29, 113, 184);
 }
 
 .overlay-title {
@@ -908,12 +862,6 @@ section {
 #ensayos {
   background-image: url(../media/int_ensayos.jpg);
 }
-
-/* #headEspecialidades {
-  background-image: url(../media/int_banner.jpg);
-  top: 100px;
-  overflow: hidden;
-} */
 
 #sponsors {
   background-image: url(../media/int_sponsors.jpg);
@@ -1064,7 +1012,7 @@ section {
 }
 
 .line-title {
-  color: #1D71B8;
+  color: tomato;
   text-shadow: none;
   padding-right: 1rem;
   text-align: center;
@@ -1194,39 +1142,6 @@ footer p {
 #headsponsors {
   top: 60px;
 }
-
-/* .wrapperAcc {
-  padding: 0 14px;
-}
-
-.wrapperAcc .parent-tab {
-  margin-bottom: 6px;
-}
-
-.wrapperAcc .parent-tab label {
-  padding: 4px 14px;
-  font-size: 0.75rem;
-}
-
-.wrapperAcc label span {
-  font-size: 0.75rem;
-}
-
-.wrapperAcc label .icon {
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-}
-
-.wrapperAcc .parent-tab input:checked~label .icon i:before {
-  padding-left: 10px;
-  transition: padding-left translateX(10px);
-}
-
-.wrapperAcc .parent-tab .content p {
-  font-size: 0.75rem;
-  padding: 10px 10px 0px 10px;
-} */
 
 .internal-title {
   padding: 30px 0px;

@@ -72,50 +72,12 @@ function gbaCEIOff() {
 	document.getElementById("overlay-gbaCEI").style.display = "none";
 }
 
-//Blue Overlays
-function especialidadesOn() {
-	document.getElementById("overlay-especialidades").style.display = "block";
-}
-
-function especialidadesOff() {
-	document.getElementById("overlay-especialidades").style.display = "none";
-}
-
-function estudiosOn() {
-	document.getElementById("overlay-estudios").style.display = "block";
-}
-
-function estudiosOff() {
-	document.getElementById("overlay-estudios").style.display = "none";
-}
-
-function consultoriosOn() {
-	document.getElementById("overlay-consultorios").style.display = "block";
-}
-
-function consultoriosOff() {
-	document.getElementById("overlay-consultorios").style.display = "none";
-}
-
-function oossOn() {
-	document.getElementById("overlay-ooss").style.display = "block";
-}
-
-function oossOff() {
-	document.getElementById("overlay-ooss").style.display = "none";
-}
-
-function obrasSocialesOn() {
-	document.getElementById("overlay-obrasSociales").style.display = "block";
-}
-
-function obrasSocialesOff() {
-	document.getElementById("overlay-obrasSociales").style.display = "none";
-}
-
 // LINKS
 function nosotros() {
 	location.href = "nosotros.html";
+}
+function especialidades() {
+	location.href = "especialidades.html";
 }
 
 function calidad() {
@@ -128,6 +90,26 @@ function comite() {
 
 function ensayos() {
 	location.href = "ensayos.html";
+}
+
+function testimonio() {
+	location.href = "testimonio.html";
+}
+
+function consultorios() {
+	location.href = "consultorios-externos.html";
+}
+
+function obrasSociales() {
+	location.href = "obras-sociales.html";
+}
+
+function estudios() {
+	location.href = "estudios.html";
+}
+
+function ooss() {
+	location.href = "ooss.html";
 }
 
 (function ($) {
@@ -284,7 +266,7 @@ function ensayos() {
 	//////
 	// menu overlay
 
-	document.querySelectorAll('.ov-item.expand').forEach(el => {
+	document.querySelectorAll('.srfc-item.expand').forEach(el => {
 		const a = el.querySelector('a');
 		const ul = el.querySelector('ul');
 		console.log('trapped> ', el);
@@ -292,7 +274,7 @@ function ensayos() {
 			console.log('clicked> ', el);
 			evnt.preventDefault();
 
-			document.querySelectorAll('.ov-item.expand>ul.show').forEach(_ => {
+			document.querySelectorAll('.srfc-item.expand>ul.show').forEach(_ => {
 				_.classList.remove('show');
 			})
 			ul.classList.add('show');
