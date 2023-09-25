@@ -29,14 +29,28 @@ h5 {
 
 p {
     font-size: 0.9rem;
-    line-height: 1.5;
+    line-height: 1.2;
 }
 
 a {
     font-size: 0.80rem;
 }
 
+li {
+    font-size: 0.9rem;
+}
 
+ul li ul {
+    font-size: 0.9rem;
+}
+
+ul li ul li {
+    font-size: 0.85rem;
+}
+
+.row {
+    --bs-gutter-x: 1rem;
+}
 
 /* text aligns */
 .text-left {
@@ -338,17 +352,29 @@ a {
         font-size: 0.7rem;
     }
 
-    .full-height-vh.semi {
-        min-height: 50vh !important;
-        width: 100%;
-        top: 2rem;
-        transition: all 200ms ease-in-out;
+    li {
+        font-size: 0.75rem;
     }
 
+    ul li ul {
+        font-size: 0.75rem;
+    }
+
+    ul li ul li {
+        font-size: 0.70rem;
+    }
+
+    .row {
+        --bs-gutter-x: 0.85rem;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 567px and up) */
 @media screen and (min-width: 576px) and (max-width: 768px) {
+    html {
+        font-size: 0.8rem;
+    }
+
     h2 {
         font-size: 1.15rem;
     }
@@ -358,7 +384,7 @@ a {
     }
 
     h4 {
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
 
     h5 {
@@ -367,90 +393,57 @@ a {
 
     p {
         font-size: 0.8rem;
-    }
-
-    a {
-        font-size: 0.7rem;
-    }
-
-    .row {
-        --bs-gutter-x: 1rem;
-    }
-
-    .full-height-vh.semi {
-        min-height: 50vh !important;
-        width: 80%;
-        top: 5rem;
-        transition: all 200ms ease-in-out;
-    }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media screen and (min-width: 768px) and (max-width: 992px) {
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    h3 {
-        font-size: 1.3rem;
-    }
-
-    h4 {
-        font-size: 1.125rem;
-    }
-
-    h5 {
-        font-size: 0.9rem;
-    }
-
-    p {
-        font-size: 0.875rem;
     }
 
     a {
         font-size: 0.75rem;
     }
 
-    .row {
-        --bs-gutter-x: 0.875rem;
-    }
-
-    .full-height-vh.semi {
-        min-height: 50vh !important;
-        width: 80%;
-        top: 6rem;
-        transition: all 200ms ease-in-out;
-    }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-    h2 {
-        font-size: 1.6rem;
-    }
-
-    h3 {
-        font-size: 1.35rem;
-    }
-
-    h4 {
-        font-size: 1.2rem;
-    }
-
-    h5 {
-        font-size: 1rem;
-    }
-
-    p {
-        font-size: 0.9rem;
-    }
-
-    a {
+    li {
         font-size: 0.8rem;
     }
 
-    ul {
-        font-size: 0.9rem;
+    ul li ul {
+        font-size: 0.8rem;
+    }
+
+    ul li ul li {
+        font-size: 0.75rem;
+    }
+
+    .row {
+        --bs-gutter-x: 0.9rem;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    html {
+        font-size: 0.85rem;
+    }
+
+    h2 {
+        font-size: 1.20rem;
+    }
+
+    h3 {
+        font-size: 1.15rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    h5 {
+        font-size: 0.95rem;
+    }
+
+    p {
+        font-size: 0.85rem;
+    }
+
+    a {
+        font-size: 0.80rem;
     }
 
     li {
@@ -468,12 +461,52 @@ a {
     .row {
         --bs-gutter-x: 0.95rem;
     }
+}
 
-    .full-height-vh.semi {
-        min-height: 50vh !important;
-        width: 60%;
-        top: 7rem;
-        transition: all 200ms ease-in-out;
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    html {
+        font-size: 0.85rem;
+    }
+
+    h2 {
+        font-size: 1.225rem;
+    }
+
+    h3 {
+        font-size: 1.175rem;
+    }
+
+    h4 {
+        font-size: 1.1rem;
+    }
+
+    h5 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.85rem;
+    }
+
+    a {
+        font-size: 0.80rem;
+    }
+
+    li {
+        font-size: 0.85rem;
+    }
+
+    ul li ul {
+        font-size: 0.85rem;
+    }
+
+    ul li ul li {
+        font-size: 0.8rem;
+    }
+
+    .row {
+        --bs-gutter-x: 0.95rem;
     }
 
 }

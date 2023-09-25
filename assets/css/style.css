@@ -190,7 +190,7 @@ a:focus {
 
 .main-menu__item {
   list-style: none;
-  padding: 24px;
+  padding: 1.5rem;
 }
 
 .main-menu__link {
@@ -328,6 +328,13 @@ section {
   margin-left: 14px;
 }
 
+.btnGost {
+  display: block;
+  padding: 4px;
+  margin: 4px;
+  background-color: transparent;
+}
+
 .containerBTN {
   display: flex;
   flex-direction: column;
@@ -349,7 +356,7 @@ section {
   color: #FFF;
   text-align: left;
   text-decoration: none;
-  padding-bottom: 16px;
+  padding-bottom: 1rem;
   cursor: pointer;
 }
 
@@ -363,10 +370,6 @@ section {
 .link-item:hover i {
   opacity: 1;
   margin-left: 10px;
-}
-
-.swf {
-  margin: 0 10px 0 -30px;
 }
 
 .address i {
@@ -526,7 +529,6 @@ section {
   max-height: 25em;
 }
 
-
 .name {
   color: #FFF;
   padding: 0;
@@ -554,68 +556,6 @@ section {
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 700;
   cursor: pointer;
-  margin: 0.625rem;
-}
-
-#overlay-estudios {
-  background-color: rgb(29, 113, 184);
-  /* Black background with opacity */
-  z-index: 700;
-  /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer;
-  /* Add a pointer on hover */
-  margin: 0.625rem;
-}
-
-#overlay-ooss {
-  background-color: rgb(29, 113, 184);
-  /* Black background with opacity */
-  z-index: 700;
-  /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer;
-  /* Add a pointer on hover */
-  margin: 0.625rem;
-}
-
-#overlay-consultorios {
-  background-color: rgb(29, 113, 184);
-  /* Black background with opacity */
-  z-index: 700;
-  /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer;
-  /* Add a pointer on hover */
-  margin: 0.625rem;
-}
-
-#overlay-obrasSociales {
-  background-color: rgb(29, 113, 184);
-  /* Black background with opacity */
-  z-index: 700;
-  /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer;
-  /* Add a pointer on hover */
-  margin: 0.625rem;
-}
-
-#overlay-especialidades {
-  background-color: rgb(29, 113, 184);
-  /* Black background with opacity */
-  z-index: 700;
-  /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer;
-  /* Add a pointer on hover */
-  margin: 0.625rem;
-}
-
-#overlay-sponsors {
-  display: none;
-  /* Hidden by default */
-  background-color: rgb(29, 113, 184);
-  /* Black background with opacity */
-  z-index: 700;
-  /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer;
-  /* Add a pointer on hover */
   margin: 0.625rem;
 }
 
@@ -893,7 +833,7 @@ section {
 }
 
 .wrapperAcc {
-  max-width: 100%;
+  width: 100%;
   padding: 0px;
   overflow: hidden;
 }
@@ -907,7 +847,6 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 1.1rem;
   font-weight: 600;
   color: #1D71B8;
   position: relative;
@@ -951,7 +890,6 @@ section {
 }
 
 .wrapperAcc .parent-tab .content p {
-  font-size: 0.9rem;
   padding: 5px 5px 0px 5px;
   color: #58595B;
   text-align: left;
@@ -992,31 +930,10 @@ section {
   text-shadow: none;
 }
 
-.line {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  gap: 1rem;
-}
-
 .column {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-}
-
-.lineStart {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-}
-
-.line-title {
-  color: tomato;
-  text-shadow: none;
-  padding-right: 1rem;
-  text-align: center;
-  font-weight: 600;
 }
 
 .line-subtitle {
@@ -1115,11 +1032,6 @@ section {
   transform: translateX(-50%) rotate(45deg);
 }
 
-.swf {
-  margin: 0 10px 0 -30px;
-}
-
-
 footer {
   position: absolute;
   display: flex;
@@ -1145,24 +1057,6 @@ footer p {
 
 .internal-title {
   padding: 30px 0px;
-}
-
-.line {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  gap: 1rem;
-}
-
-.lineStart {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1rem;
-}
-
-.line-title {
-  padding-right: 0.75rem;
 }
 
 footer {
