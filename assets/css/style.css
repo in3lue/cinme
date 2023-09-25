@@ -127,6 +127,11 @@ a:focus {
   display: none;
 }
 
+#btn-menu:checked~.container-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
 .container-menu {
   position: absolute;
   height: 100vh;
@@ -138,11 +143,6 @@ a:focus {
   visibility: hidden;
   overflow: hidden;
   z-index: 30;
-}
-
-#btn-menu:checked~.container-menu {
-  opacity: 1;
-  visibility: visible;
 }
 
 .cont-menu {
@@ -194,6 +194,7 @@ a:focus {
 }
 
 .main-menu__link {
+  font-size: 0.9rem;
   color: #FFF;
   font-weight: normal;
   display: block;
@@ -435,7 +436,7 @@ section {
   color: #1D71B8;
   text-align: left;
   text-decoration: none;
-  padding-bottom: 16px;
+  padding-bottom: 1rem;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -443,6 +444,8 @@ section {
   width: 15%;
   margin: -10px auto 30px;
   align-items: center;
+  justify-content: center;
+
 }
 
 .network-item .fa-brands {

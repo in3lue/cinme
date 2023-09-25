@@ -367,6 +367,13 @@ ul li ul li {
     .row {
         --bs-gutter-x: 0.85rem;
     }
+
+    .full-height-vh.semi {
+        min-height: 50vh !important;
+        width: 80%;
+        top: 4rem;
+        transition: all 200ms ease-in-out;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 567px and up) */
@@ -413,6 +420,13 @@ ul li ul li {
 
     .row {
         --bs-gutter-x: 0.9rem;
+    }
+
+    .full-height-vh.semi {
+        min-height: 50vh !important;
+        width: 80%;
+        top: 4rem;
+        transition: all 200ms ease-in-out;
     }
 }
 
@@ -461,6 +475,13 @@ ul li ul li {
     .row {
         --bs-gutter-x: 0.95rem;
     }
+
+    .full-height-vh.semi {
+        min-height: 50vh !important;
+        width: 80%;
+        top: 6rem;
+        transition: all 200ms ease-in-out;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -507,6 +528,13 @@ ul li ul li {
 
     .row {
         --bs-gutter-x: 0.95rem;
+    }
+
+    .full-height-vh.semi {
+        min-height: 50vh !important;
+        width: 80%;
+        top: 7rem;
+        transition: all 200ms ease-in-out;
     }
 
 }
