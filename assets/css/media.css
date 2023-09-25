@@ -76,9 +76,7 @@
   }
 
   .intro-caption {
-    max-width: 90%;
-    left: 5%;
-    bottom: 5%;
+    max-width: 60%;
   }
 
   /* intro title */
@@ -99,16 +97,15 @@
 
   .link-item {
     font-size: 0.85rem;
-    padding-bottom: 0.625rem;
+    padding-bottom: 0.7rem;
   }
 
   .link-item i {
-    margin-left: -14px;
+    margin-left: -15px;
     display: none;
   }
 
   .link-item:hover i {
-    margin-left: 8px;
     display: none;
   }
 
@@ -133,19 +130,21 @@
   }
 
   .blue-item {
-    font-size: 0.625rem;
+    font-size: 0.7rem;
     padding-bottom: 10px;
   }
 
-  .blue-item i {
+  .blue-item .fa-brands {
+    margin-right: 4px;
+  }
+
+  .blue-item .fa-solid {
     margin-left: -14px;
   }
 
   .network-item {
-    font-size: 0.625rem;
-    padding-bottom: 0.625rem;
-    width: 31%;
-    margin: -10px auto 30px;
+    padding-bottom: 0.7rem;
+    margin: 2px auto;
   }
 
   .network-item .fa-brands {
@@ -153,22 +152,15 @@
   }
 
   .network-item .fa-solid {
-    opacity: 0;
-    margin-left: -20px;
+    margin-left: -10px;
   }
 
   .network-item:hover .fa-solid {
-    opacity: 1;
-    margin-left: 10px;
-  }
-
-  .ess-name {
-    font-size: 0.625rem;
+    display: none;
   }
 
   .ess-charge {
-    font-size: 0.625rem;
-    padding: 0 0 0.625rem 0;
+    padding: 0 0 0.7rem 0;
     margin-left: 2px;
   }
 
@@ -278,7 +270,7 @@
   }
 
   .internal-title {
-    padding: 30px 0;
+    padding: 50px 0 5px 10px;
   }
 
   footer {

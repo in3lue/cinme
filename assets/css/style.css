@@ -379,7 +379,7 @@ section {
 }
 
 /* ------------------------------------------------------------- *
- *  blue anchors
+ *  internal CSS
 /* ------------------------------------------------------------- */
 .blue-list {
   color: #1D71B8;
@@ -441,8 +441,8 @@ section {
   flex-direction: row;
   flex-wrap: nowrap;
   cursor: pointer;
-  width: 15%;
-  margin: -10px auto 30px;
+  width: max-content;
+  margin: 10px auto;
   align-items: center;
   justify-content: center;
 
@@ -468,7 +468,7 @@ section {
 
 .containerEssentia {
   width: max-content;
-  margin: 10px auto;
+  margin: 5px auto;
   display: flex;
   flex-direction: column;
 }
@@ -477,7 +477,6 @@ section {
   color: #1D71B8;
   font-weight: bold;
   margin-bottom: 0;
-  font-size: 0.875rem;
 }
 
 .ess-charge {
@@ -559,7 +558,7 @@ section {
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 700;
   cursor: pointer;
-  margin: 0.625rem;
+  margin: 0.7rem;
 }
 
 #overlay-historia {
@@ -916,9 +915,7 @@ section {
 .internal-caption {
   position: relative;
   color: #1D71B8;
-  z-index: 3;
   text-align: center;
-  overflow: hidden;
 }
 
 .internal-title {

@@ -28,8 +28,8 @@
 
 .mb_YTPlayer .loading {
     position: absolute;
-    top: 0.625rem;
-    right: 0.625rem;
+    top: 0.7rem;
+    right: 0.7rem;
     font-size: 0.75rem;
     color: #FFF;
     background: rgba(0, 0, 0, .51);
@@ -156,7 +156,7 @@
 .mb_YTPBar {
     transition: opacity .5s;
     display: block;
-    height: 0.625rem;
+    height: 0.7rem;
     background: #58595B;
     position: fixed;
     bottom: 0;
@@ -204,7 +204,7 @@
     width: auto;
     display: block;
     top: 6px;
-    right: 0.625rem;
+    right: 0.7rem;
     cursor: pointer
 }
 
@@ -232,7 +232,7 @@
 }
 
 .mb_YTPBar .mb_YTPProgress {
-    height: 0.625rem;
+    height: 0.7rem;
     width: 100%;
     background: #222;
     bottom: 0;
@@ -240,14 +240,14 @@
 }
 
 .mb_YTPBar .mb_YTPLoaded {
-    height: 0.625rem;
+    height: 0.7rem;
     width: 0;
     background: #444;
     left: 0
 }
 
 .mb_YTPBar .mb_YTPseekbar {
-    height: 0.625rem;
+    height: 0.7rem;
     width: 0;
     background: #bb110e;
     bottom: 0;
@@ -280,7 +280,7 @@
 .mb_YTPBar .simpleSlider {
     position: relative;
     width: 100px;
-    height: 0.625rem;
+    height: 0.7rem;
     border: 1px solid #FFF;
     overflow: hidden;
     box-sizing: border-box;
