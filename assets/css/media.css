@@ -32,6 +32,7 @@
 
   .icon-menu {
     right: 20px;
+    color: #FFF;
   }
 
   .icon-menu i {
@@ -61,6 +62,10 @@
   }
 
   #secondary {
+    color: #FFF;
+  }
+
+  #secondary .icon-menu {
     color: #FFF;
   }
 

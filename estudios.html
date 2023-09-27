@@ -67,57 +67,102 @@
   </div>
   <div class="close">
     <label class="btn-close"><a href="#" onclick="history.back();return false;">
-        <i class=" fa-solid fa-xmark"></i></a></label>
+        <i class="fa-solid fa-xmark"></i></a></label>
   </div>
   <div class="surface margin-top-50">
     <h2 class="surface-title animate__animated animate__fadeInDown">Estudios médicos</h2>
-    <div class="road">
-      <div class="srfc-container animate__animated animate__fadeInUp o2">
-        <li class="srfc-item">
-          <span>Cardiología</span>
-          <ul>
-            <li>Consulta Médica</li>
-            <li>Electrocardiograma</li>
-            <li>Test de ergometría digital</li>
-            <li>Holter 24 Hs.</li>
-            <li>3 Canales</li>
-            <li>Presurometría</li>
-          </ul>
-        </li>
-        <li class="srfc-item">
-          <span>Diabetología</span>
-          <ul>
-            <li>Consulta Médica Nutricional</li>
-            <li>Práctica Dietoterápica</li>
-            <li>Impedanciometría</li>
-            <li>Medición HbA1C (Hemoglobina Glicosilada A1C)</li>
-            <li>Estudios de Pie Diabético</li>
-            <li>Examen Vascular de Pie Diabético</li>
-            <li>Examen Neurológico de Pie Diabético</li>
-            <li>Examen del Apoyo del Pie Diabético</li>
-          </ul>
-        </li>
-        <li class="srfc-item">
-          <span>Neumonología</span>
-          <ul>
-            <li>Consulta médica neumonológica</li>
-            <li>Espirometría computarizada</li>
-            <li>Curva de flujo Volumen</li>
-            <li>Capacidad vital lenta (SVC)</li>
-            <li>Oximetría de pulso</li>
-            <li>Test de marcha 6 minutos</li>
-          </ul>
-        </li>
-        <li class="srfc-item">
-          <span>Nutrición</span>
-          <ul>
-            <li>Consulta médica Nutricional</li>
-          </ul>
-        </li>
-      </div>
+    <div class="gallery ov-container animate__animated animate__fadeInUp o2">
+      <li class="ov-item expand">
+        <a href="#" class="btnLi mnu_title">Cardiología</a>
+        <i class="fa-solid fa-arrow-right"></i>
+        <ul class="smenu show">
+          <li>Consulta Médica</li>
+          <li>Electrocardiograma</li>
+          <li>Test de ergometría digital</li>
+          <li>Holter 24 Hs.</li>
+          <li>3 Canales</li>
+          <li>Presurometría</li>
+        </ul>
+      </li>
+      <li class="ov-item expand">
+        <a href="#" class="btnLi mnu_title">Diabetología</a>
+        <i class="fa-solid fa-arrow-right"></i>
+        <ul class="smenu">
+          <li>Consulta Médica Nutricional</li>
+          <li>Práctica Dietoterápica</li>
+          <li>Impedanciometría</li>
+          <li>Medición HbA1C (Hemoglobina Glicosilada A1C)</li>
+          <li>Estudios de Pie Diabético</li>
+          <li>Examen Vascular de Pie Diabético</li>
+          <li>Examen Neurológico de Pie Diabético</li>
+          <li>Examen del Apoyo del Pie Diabético</li>
+        </ul>
+      </li>
+      <li class="ov-item expand">
+        <a href="#" class="btnLi mnu_title">Neumonología</a>
+        <i class="fa-solid fa-arrow-right"></i>
+        <ul class="smenu">
+          <li>Consulta médica neumonológica</li>
+          <li>Espirometría computarizada</li>
+          <li>Curva de flujo Volumen</li>
+          <li>Capacidad vital lenta (SVC)</li>
+          <li>Oximetría de pulso</li>
+          <li>Test de marcha 6 minutos</li>
+        </ul>
+      </li>
+      <li class="ov-item expand">
+        <a href="#" class="btnLi mnu_title">Nutrición</a>
+        <i class="fa-solid fa-arrow-right"></i>
+        <ul class="smenu">
+          <li>Consulta médica Nutricional</li>
+        </ul>
+      </li>
     </div>
   </div>
-  <script></script>
+  <!-- =====================
+		///// Scripts below /////
+		===================== -->
+
+  <!-- Core JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- jquery JS (https://jquery.com) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <!-- bootstrap JS (http://getbootstrap.com) -->
+
+  <!-- Libs and Plugins JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- AOS Library (https://michalsnik.github.io/aos/) -->
+  <script src="assets/plugins/animsition/js/animsition.min.js"></script>
+  <!-- Animsition JS (http://git.blivesta.com/animsition/) -->
+  <script src="assets/plugins/jquery.easing.min.js"></script>
+  <!-- Easing JS (http://gsgd.co.uk/sandbox/jquery/easing/) -->
+  <script src="assets/plugins/isotope.pkgd.min.js"></script>
+  <!-- Isotope JS (http://isotope.metafizzy.co) -->
+  <script src="assets/plugins/imagesloaded.pkgd.min.js"></script>
+  <!-- ImagesLoaded JS (https://github.com/desandro/imagesloaded) -->
+  <script src="assets/plugins/jquery.nicescroll.min.js"></script>
+  <!-- Nicescroll JS (http://areaaperta.com/nicescroll/) -->
+  <!-- <script src="assets/plugins/owl-carousel/js/owl.carousel.min.js"></script> -->
+  <!-- Owl Carousel JS (http://www.owlcarousel.owlgraphic.com) -->
+  <script src="assets/plugins/jquery.mousewheel.min.js"></script>
+  <!-- A jQuery plugin that adds cross browser mouse wheel support (https://github.com/jquery/jquery-mousewheel) -->
+  <script src="assets/plugins/ytplayer/js/jquery.mb.YTPlayer.min.js"></script>
+  <!-- YTPlayer JS (more info: https://github.com/pupunzi/jquery.mb.YTPlayer) -->
+
+  <script src="assets/plugins/lightgallery/js/lightgallery.min.js"></script>
+  <!-- lightGallery JS (http://sachinchoolur.github.io/lightGallery) -->
+  <script src="assets/plugins/lightgallery/js/lightgallery-plugins.js"></script>
+  <!-- lightGallery Plugins JS (http://sachinchoolur.github.io/lightGallery) -->
+
+
+  <!-- Theme master JS -->
+  <script src="assets/js/theme.js"></script>
 </body>
 
 </html>
