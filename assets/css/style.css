@@ -395,7 +395,7 @@ section {
   justify-content: flex-end;
   align-items: flex-start;
   padding-left: 10%;
-  bottom: 15%;
+  bottom: 10%;
   overflow: hidden;
 }
 
@@ -919,7 +919,7 @@ section {
   position: relative;
   color: #1D71B8;
   text-align: center;
-  bottom: 10%;
+  padding-bottom: 10%;
 }
 
 .internal-title {
