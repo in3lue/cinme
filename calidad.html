@@ -52,6 +52,7 @@
     <link rel="stylesheet" href="assets/plugins/cinmeIcons/style.css" />
     <link rel="stylesheet" href="assets/css/helper.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/media.css">
 
     <link rel="stylesheet" href="assets/css/animations.css" />
 
@@ -89,121 +90,107 @@
 
         <section>
             <!-- Begin 'Calidad' Caption -->
-            <div class="internal-caption padding-bottom-100">
-                <div class="container margin-top-100">
-                    <h2 class="internal-title fadeInDown o3">
-                        Gestión de Calidad
-                    </h2>
-                </div>
-
-                <!-- ///// End 'Calidad' section ///// -->
-
-                <!-- ///// Begin 'Calidad Content' section ///// -->
-
-
-                <!-- Begin 'Calidad' Caption -->
-                <div class="internal-caption fadeInUp o3">
-                    <div class="container padding-bottom-30">
-                        <div class="accordionContent fadeInUp o4 padding-bottom-100">
-                            <div class=" wrapperAcc">
-                                <!-- Normas ISO -->
-                                <div class="parent-tab">
-                                    <input type="radio" name="tab" id="tab-1">
-                                    <label for="tab-1">
-                                        <span>Normas ISO</span>
-                                        <div class="icon"><i class="fa-solid fa-angle-down"></i></div>
-                                    </label>
-                                    <div class="content">
-                                        <p>
-                                            CINME presenta un sistema de Gestión de Calidad certificado según la norma
-                                            internacional ISO 9001:2015 para los procesos de investigación clínica
-                                            farmacológica, lo que nos convierte en el
-                                            <b><em>segundo centro de investigación del país en lograrlo</em></b>.
-                                        </p>
-                                        <ul class="blue-list">
-                                            <li class="blue-item" onclick="certificadoOn()">
-                                                <a href="" target="_blank" class="blue-link disabled"
-                                                    title="Certificado de Calidad" onclick="certificadoOn()">Certificado
-                                                    de Calidad</a>
-                                                <i class="fa-solid fa-arrow-right" onclick="certificadoOn()"></i>
-                                            </li>
-                                            <li class="blue-item" onclick="politicaOn()">
-                                                <a href="" target="_blank" class="blue-link disabled"
-                                                    title="Políticas de Calidad" onclick="politicaOn()">
-                                                    Políticas de Calidad</a>
-                                                <i class="fa-solid fa-arrow-right" onclick="politicaOn()"></i>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <!-- Centro Inspire -->
-                                <div class="parent-tab">
-                                    <input type="radio" name="tab" id="tab-2">
-                                    <label for="tab-2">
-                                        <span>Centro Inspire</span>
-                                        <div class="icon"><i class="fa-solid fa-angle-down"></i></div>
-                                    </label>
-                                    <div class="content">
-                                        <p>
-                                            El laboratorio Pfizer recertificó a CINME como centro <i>Inspire</i> a nivel
-                                            mundial. Esta categorización, que se renueva cada año, certifica que CINME
-                                            es considerado
-                                            como centro modelo en investigación clínica, categoría que solo alcanzan 4
-                                            centros médicos del país y 215 centros de todo el mundo.
-                                        </p>
-                                        <ul class="blue-list">
-                                            <li class="blue-item" onclick="pfizerOn()">
-                                                <a href="" target="_blank" class="blue-link disabled"
-                                                    title="Certificado Pfizer · Inspire"
-                                                    onclick="pfizerOn()">Certificado Pfizer · Inspire</a>
-                                                <i class="fa-solid fa-arrow-right" onclick="pfizerOn()"></i>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
+            <div class="internal-caption margin-top-100 margin-bottom-50">
+                <h2 class="internal-title animate__animated animate__fadeInUp animate__delay-1s">
+                    Gestión de Calidad
+                </h2>
+                </h2>
+                <div class="margin-top-20 animate__animated animate__fadeInDown animate__delay-1s">
+                    <div id="acco-int">
+                        <div class="accGroup2">
+                            <label for="section1">Normas ISO
+                                <span><i class="fa-solid fa-angle-down"></i></span></label>
+                            <input type="radio" name="accordion" id="section1" checked>
+                            <div class="content line-internal">
+                                <p>
+                                    CINME presenta un sistema de Gestión de Calidad certificado según la norma
+                                    internacional ISO 9001:2015 para los procesos de investigación clínica
+                                    farmacológica, lo que nos convierte en el
+                                    <b><em>segundo centro de investigación del país en lograrlo</em></b>.
+                                </p>
+                                <ul class="blue-list">
+                                    <li class="blue-item" onclick="certificadoOn()">
+                                        <a href="" target="_blank" class="blue-link disabled"
+                                            title="Certificado de Calidad" onclick="certificadoOn()">Certificado
+                                            de Calidad</a>
+                                        <i class="fa-solid fa-arrow-right" onclick="certificadoOn()"></i>
+                                    </li>
+                                    <li class="blue-item" onclick="politicaOn()">
+                                        <a href="" target="_blank" class="blue-link disabled"
+                                            title="Políticas de Calidad" onclick="politicaOn()">
+                                            Políticas de Calidad</a>
+                                        <i class="fa-solid fa-arrow-right" onclick="politicaOn()"></i>
+                                    </li>
+                                </ul>
                             </div>
+                        </div>
+                        <div class="accGroup2">
+                            <label for="section2">Centro Inspire
+                                <span><i class="fa-solid fa-angle-down"></i></span></label>
+                            <input type="radio" name="accordion" id="section2">
+                            <div class="content line-internal">
+                                <p>
+                                    El laboratorio Pfizer recertificó a CINME como centro <i>Inspire</i> a nivel
+                                    mundial. Esta categorización, que se renueva cada año, certifica que CINME
+                                    es considerado
+                                    como centro modelo en investigación clínica, categoría que solo alcanzan 4
+                                    centros médicos del país y 215 centros de todo el mundo.
+                                </p>
+                                <ul class="blue-list">
+                                    <li class="blue-item" onclick="pfizerOn()">
+                                        <a href="" target="_blank" class="blue-link disabled"
+                                            title="Certificado Pfizer · Inspire" onclick="pfizerOn()">Certificado Pfizer
+                                            · Inspire</a>
+                                        <i class="fa-solid fa-arrow-right" onclick="pfizerOn()"></i>
+                                    </li>
+                                </ul>
+                            </div>
+
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- End 'Calidad' caption -->
-        </section>
 
-        <!-- Overlay Certificado de Calidad -->
-        <div id="overlay-certificado" class="overlayImgContainer full-cover">
-            <div class="close">
-                <label class="btn-close"><i class="fa-solid fa-xmark" onclick="certificadoOff()"></i></label>
             </div>
-            <div class="overlay-img imgInt" onclick="certificadoOff()">
-                <div class="animate__animated animate__fadeInUp animate__delay-0.5s">
-                    <img src="assets/media/doc.CINME9001.jpg" alt="Certificado de Calidad">
-                </div>
+    </div>
+    </div>
+    <!-- End 'Calidad' caption -->
+    </section>
+
+    <!-- Overlay Certificado de Calidad -->
+    <div id="overlay-certificado" class="overlayImgContainer full-cover">
+        <div class="close">
+            <label class="btn-close"><i class="fa-solid fa-xmark" onclick="certificadoOff()"></i></label>
+        </div>
+        <div class="overlay-img imgInt" onclick="certificadoOff()">
+            <div class="animate__animated animate__fadeInUp animate__delay-0.5s">
+                <img src="assets/media/doc.CINME9001.jpg" alt="Certificado de Calidad">
             </div>
         </div>
+    </div>
 
-        <!-- Overlay Políticas de Calidad -->
-        <div id="overlay-politica" class="overlayImgContainer full-cover">
-            <div class="close">
-                <label class="btn-close"><i class="fa-solid fa-xmark" onclick="politicaOff()"></i></label>
-            </div>
-            <div class="overlay-img imgInt" onclick="politicaOff()">
-                <div class="animate__animated animate__fadeInUp animate__delay-0.5s">
-                    <img src="assets/media/doc.politicaCalidad.jpg" alt="Políticas de Calidad">
-                </div>
+    <!-- Overlay Políticas de Calidad -->
+    <div id="overlay-politica" class="overlayImgContainer full-cover">
+        <div class="close">
+            <label class="btn-close"><i class="fa-solid fa-xmark" onclick="politicaOff()"></i></label>
+        </div>
+        <div class="overlay-img imgInt" onclick="politicaOff()">
+            <div class="animate__animated animate__fadeInUp animate__delay-0.5s">
+                <img src="assets/media/doc.politicaCalidad.jpg" alt="Políticas de Calidad">
             </div>
         </div>
+    </div>
 
-        <!-- Overlay Certificado Pfizer · Inspire -->
-        <div id="overlay-pfizer" class="overlayImgContainer full-cover">
-            <div class="close">
-                <label class="btn-close"><i class="fa-solid fa-xmark" onclick="pfizerOff()"></i></label>
-            </div>
-            <div class="overlay-img imgInt" onclick="pfizerOff()">
-                <div class="animate__animated animate__fadeInUp animate__delay-0.5s">
-                    <img src="assets/media/doc.inspirePfizer.jpg" alt="Certificado Pfizer · Inspire">
-                </div>
+    <!-- Overlay Certificado Pfizer · Inspire -->
+    <div id="overlay-pfizer" class="overlayImgContainer full-cover">
+        <div class="close">
+            <label class="btn-close"><i class="fa-solid fa-xmark" onclick="pfizerOff()"></i></label>
+        </div>
+        <div class="overlay-img imgInt" onclick="pfizerOff()">
+            <div class="animate__animated animate__fadeInUp animate__delay-0.5s">
+                <img src="assets/media/doc.inspirePfizer.jpg" alt="Certificado Pfizer · Inspire">
             </div>
         </div>
+    </div>
     </div>
     <!-- ///// End 'Calidad Content' section ///// -->
     <footer>

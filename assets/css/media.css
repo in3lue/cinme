@@ -9,13 +9,15 @@
    *  General
   /* ------------------------------------------------------------- */
 
+  html,
   body {
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
 
   /*-------HEADER-------*/
   .header__logo {
-    left: 14px;
+    left: 15px;
     top: 15px;
   }
 
@@ -68,7 +70,7 @@
   }
 
   .main-menu__item {
-    padding: 1.125rem;
+    padding: 1.25rem;
   }
 
   .main-menu__link {
@@ -76,8 +78,57 @@
   }
 
   .intro-caption {
-    max-width: 60%;
+    bottom: 10%;
+    max-width: 90%;
   }
+
+  .internal-caption {
+    bottom: 20%;
+    max-width: 90%;
+  }
+
+
+  /** accordion main**/
+
+  #accordion {
+    max-width: 100%;
+  }
+
+  #accordion .accGroup {
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 5px
+  }
+
+  #accordion .accGroup label {
+    font-size: 0.8rem;
+  }
+
+  #accordion .content {
+    margin: 3px 5px;
+  }
+
+  /** accordion internal**/
+
+  #acco-int {
+    max-width: 100%;
+  }
+
+  #acco-int .accGroup2 {
+    width: 100%;
+    margin-bottom: 1%;
+    padding: 1%
+  }
+
+  #acco-int .accGroup2 label {
+    padding: 3px;
+    font-size: 0.8rem;
+  }
+
+  #acco-int .content {
+    margin: 3px 5px;
+  }
+
 
   /* intro title */
   .intro-title {
@@ -238,8 +289,12 @@
 
   .accordionContent {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    width: 60%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
   }
 
   .wrapperAcc {

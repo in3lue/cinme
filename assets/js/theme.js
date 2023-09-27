@@ -250,37 +250,44 @@ function ooss() {
 	// const videoHistoria = document.querySelector("#videoHistoria");
 	// const videoTestimonios = document.querySelector("#videoTestimonios");
 
-	sMenuBtn.addEventListener('click', () => {
-		sMenuBtn.classList.add("off");
-		sMenuClose.classList.remove("off");
-	});
+	if (sMenuBtn) {
+		sMenuBtn.addEventListener('click', () => {
+			sMenuBtn.classList.add("off");
+			sMenuClose.classList.remove("off");
+		});
 
-	document.getElementById("equis").addEventListener('click', () => {
-		sMenuBtn.classList.remove("off");
-	});
+		document.getElementById("equis").addEventListener('click', () => {
+			sMenuBtn.classList.remove("off");
+		});
 
-	sMenuClose.classList.add("off");
-	sMenuBtn.classList.add("on");
-	sMenuOn.checked = false;
+		sMenuClose.classList.add("off");
+		sMenuBtn.classList.add("on");
+		sMenuOn.checked = false;
+	}
 
 	//////
 	// menu overlay
+	if (window.outerWidth < 1024) {
+		document.querySelectorAll('.ov-item.expand').forEach(el => {
+			const a = el.querySelector('a');
+			const ul = el.querySelector('ul');
+			console.log('trapped> ', el);
+			a.addEventListener('click', (evnt) => {
+				console.log('clicked> ', el);
+				evnt.preventDefault();
 
-	document.querySelectorAll('.srfc-item.expand').forEach(el => {
-		const a = el.querySelector('a');
-		const ul = el.querySelector('ul');
-		console.log('trapped> ', el);
-		a.addEventListener('click', (evnt) => {
-			console.log('clicked> ', el);
-			evnt.preventDefault();
-
-			document.querySelectorAll('.srfc-item.expand>ul.show').forEach(_ => {
-				_.classList.remove('show');
-			})
-			ul.classList.add('show');
-		});
-	})
-	document.getElementById("equis").addEventListener('click', () => { });
+				document.querySelectorAll('.ov-item.expand>ul.show').forEach(_ => {
+					_.classList.remove('show');
+				})
+				ul.classList.add('show');
+			});
+		})
+		document.getElementById("equis").addEventListener('click', () => { });
+	} else {
+		document.querySelectorAll('.ov-item.expand>ul').forEach(_ => {
+			_.classList.add('show');
+		})
+	}
 
 
 })(jQuery); 

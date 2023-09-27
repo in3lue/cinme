@@ -15,8 +15,8 @@ body {
 
 .surface {
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  flex-direction: row;
+  flex-wrap: wrap;
   padding: 3rem;
   height: 90vh;
   justify-content: space-between;
@@ -26,39 +26,115 @@ body {
   padding: 1rem;
 }
 
-.road {
-  display: flex;
-  flex-direction: row;
-  padding: 1rem;
+.gallery {
+  width: 100%;
+  display: grid !important;
+  gap: 1rem;
+  grid-auto-rows: auto;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
 }
 
 /* ------------------------------------------------------------- *
- *  surface links [srfc]
+ *  overlay links [ov]
 /* ------------------------------------------------------------- */
 
-.srfc-container {
+.ov-container {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 1rem;
+  display: inline-block;
+  padding-left: 10px;
 }
 
-.srfc-container .srfc-item span {
+.ov-item {
+  list-style: none;
+  overflow: hidden;
+}
+
+.ov-container .ov-item a {
   list-style: none;
   color: #FFF;
   font-size: 1.1rem;
-  font-weight: bold;
-  line-height: 2.5;
+  line-height: 3;
   text-align: left;
+  text-decoration: none;
+  padding: 0rem;
+  display: inline-block;
 }
 
-.srfc-item {
-  list-style: none;
-  width: 100%;
-  max-width: 18%;
-  padding-bottom: 2rem;
+.ov-container .ov-item i {
+  color: #FFF;
+  transition: all 500ms ease-in-out;
+  opacity: 0;
+  margin-left: -1.25rem;
 }
+
+.ov-container .ov-item:hover i {
+  opacity: 1;
+  margin-left: 0.625rem;
+}
+
+.btnLi {
+  display: block;
+  position: relative;
+  font-size: 1.2rem;
+}
+
+.btnLi::before {
+  content: "";
+  position: absolute;
+}
+
+.smenu {
+  overflow: hidden;
+  overflow-y: auto;
+  transition: max-height 0.3s;
+  max-height: 0;
+}
+
+.show {
+  max-height: fit-content;
+}
+
+.smenu li {
+  display: block;
+  position: relative;
+  border-left: 1px solid #FFF;
+  height: 100%;
+  margin-left: -20px;
+  padding-left: 5px;
+}
+
+.smenu li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.smenu li:hover::before {
+  opacity: 1;
+}
+
+.name {
+  color: #FFF;
+  padding: 0;
+  margin: 0;
+}
+
+.charge {
+  color: #FFF;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 200;
+  margin: 0;
+  padding: 0 0 .5rem 0;
+}
+
+.smenu li:hover::before {
+  opacity: 1;
+}
+
 
 ul li {
   display: block;

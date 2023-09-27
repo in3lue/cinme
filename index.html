@@ -28,11 +28,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet" />
 
   <!-- Bootstrap CSS (http://getbootstrap.com) -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
   <!-- Font Awesome & Styles -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
@@ -112,23 +109,21 @@
 
       <!-- Begin 'Inicio' Caption -->
       <div class="intro-caption">
-        <h3 class="aos-init aos-animate animate__animated animate__fadeInDown animate__delay-1s" data-aos="fade-down">16
+        <h3 class="animate__animated animate__fadeInDown animate__delay-1s">16
           años de experiencia
         </h3>
-        <h2 class="intro-title aos-init aos-animate animate__animated animate__fadeInDown animate__delay-1s"
-          data-aos="fade-down">CINME.
+        <h2 class="intro-title animate__animated animate__fadeInDown animate__delay-1s">CINME.
           Centro de Investigaciones
           Metabólicas
         </h2>
-        <div class="aos-init aos-animate animate__animated animate__fadeInUp animate__delay-2s margin-top-20"
-          data-aos="fade-up">
+        <div class="animate__animated animate__fadeInUp animate__delay-1s margin-top-20">
           <p><b>Certificamos en calidad en normas ISO 9001:2015 en investigación clínica</b><br>
             Fundado en 2007 por el Dr. Federico Pérez Manghi, un médico que confió en el país y sabía que en la
             investigación médica había esperanza.<br>16 años después inaugura un edificio de 11 pisos, 48 consultorios y
             2700 metros cuadrados.</p>
         </div>
 
-        <div class="margin-top-20 button zoomIn o2" onclick="historiaOn()">
+        <div class="margin-top-20 button animate__animated animate__zoomIn animate__delay-2s" onclick="historiaOn()">
           <a href="" target="_blank" class="disabled" title="Edificio">¿Querés conocerlo?
           </a>
           <i class="fa-solid fa-arrow-right"></i>
@@ -207,7 +202,7 @@
           <label class="btn-close"><i class="fa-solid fa-xmark" onclick="historiaOff()"></i></label>
         </div>
         <div class="overlay-video" onclick="historiaOff()">
-          <div class="animate__animated animate__fadeInUp animate__delay-0.5s videoContainer">
+          <div class="animate__animated animate__fadeInUp animate__delay-1s videoContainer">
             <video muted autoplay controls class="ytVideo" id="videoHistoria">
               <source src="/assets/media/cinmehorizontal.mp4" type="video/mp4">
               <code>Tu navegador no soporta la reproducción de video.</code>
@@ -246,10 +241,9 @@
 
       <!-- Begin 'Nosotros' caption -->
       <div class="intro-caption">
-        <h2 class="intro-title aos-init aos-animate animate__animated animate__fadeInDown animate__delay-1s"
-          data-aos="fade-down">Nosotros
+        <h2 class="intro-title animate__animated animate__fadeInDown animate__delay-1s">Nosotros
         </h2>
-        <p class="aos-init aos-animate animate__animated animate__fadeInUp animate__delay-1.5s" data-aos="fade-up">
+        <p class="animate__animated animate__fadeInUp animate__delay-1.5s">
           CINME nació con la misión de mejorar la calidad de vida de las
           personas a través de la investigación y la atención médica
           asistencial, humana e integral. Hoy es un centro de referencia que
@@ -257,7 +251,8 @@
           de gestión de calidad certificado según la norma internacional ISO
           9001:2015.
         </p>
-        <div class="margin-top-30 button zoomIn o4" onclick="nosotros()">
+
+        <div class="margin-top-20 button animate__animated animate__zoomIn animate__delay-2s" onclick="nosotros()">
           <a href="nosotros.html" title="CINME Abstract" onclick="nosotros()">Ver Más
           </a>
           <i class="fa-solid fa-arrow-right" onclick="nosotros()"></i>
@@ -274,116 +269,103 @@
 
       <!-- Begin 'Ensayos' caption -->
       <div class="intro-caption">
-        <h2 class="intro-title aos-init aos-animate animate__animated animate__fadeInUp animate__delay-1s"
-          data-aos="fade-up">Ensayos
+        <h2 class="intro-title animate__animated animate__fadeInUp animate__delay-1s">Ensayos
           clínicos</h2>
-        <p class="aos-init aos-animate animate__animated animate__fadeInDown animate__delay-1s" data-aos="fade-down">
+        <p class="animate__animated animate__fadeInDown animate__delay-1s">
           Humanizando la salud persona a persona
         </p>
-        <div class="margin-top-20 row">
-          <div class="accordionContent aos-init aos-animate animate__animated animate__fadeInUp animate__delay-2s"
-            data-aos="fade-up">
-            <div class="wrapperAcc">
-              <!-- Especialidades -->
-              <div class="parent-tab" id="accWhite">
-                <input type="radio" name="tab" id="tab-1">
-                <label for="tab-1" id="accWhite">
-                  <span>Especialidades</span>
-                  <div class="icon" id="accWhite"><i class="fa-solid fa-angle-down"></i></div>
-                </label>
-                <div class="content">
-                  <p id="accWhite">Trabajamos con ensayos clínicos en múltiples especialidades. Nuestro personal médico
-                    está formado tanto en el campo académico como en el ético, de modo de asegurar los mejores y más
-                    avanzados tratamientos. </p>
-                  <div class="text-right">
-                    <div class="button" onclick="especialidades()">
-                      <a href="" class="disabled" title="CINME Abstract">Ver Especialiidades</a>
-                      <i class="fa-solid fa-arrow-right"></i>
-                    </div>
+        <div class="margin-top-30 animate__animated animate__fadeInDown animate__delay-1s">
+          <div id="accordion">
+            <div class="accGroup">
+              <label for="section1">Especialidades
+                <span><i class="fa-solid fa-angle-down"></i></span></label>
+              <input type="radio" name="accordion" id="section1" checked>
+              <div class="content">
+                <p id="accWhite">Trabajamos con ensayos clínicos en múltiples especialidades. Nuestro personal médico
+                  está formado tanto en el campo académico como en el ético, de modo de asegurar los mejores y más
+                  avanzados tratamientos. </p>
+                <div class="text-right">
+                  <div class="button" onclick="especialidades()">
+                    <a href="" class="disabled" title="CINME Abstract">Ver Especialiidades</a>
+                    <i class="fa-solid fa-arrow-right"></i>
                   </div>
                 </div>
               </div>
-              <!-- Alpha Clinical Research -->
-              <div class="parent-tab" id="accWhite">
-                <input type="radio" name="tab" id="tab-2">
-                <label for="tab-2" id="accWhite">
-                  <span>Alpha Clinical Research</span>
-                  <div class="icon" id="accWhite"><i class="fa-solid fa-angle-down"></i></div>
-                </label>
-                <div class="content">
-                  <p id="accWhite" class="padding-bottom-30">Somos el primer centro médico del país en implementar una
-                    Historia Clínica
-                    Electrónica para
-                    investigación clínica desarrollada por la empresa de biotecnología Ichtys. Esto nos permite
-                    centralizar
-                    la información de nuestros pacientes, tener un acceso remoto y reducir el tiempo de evolución de
-                    las
-                    historias clínicas.</p>
-                </div>
-              </div>
-              <!-- Calidad -->
-              <div class="parent-tab" id="accWhite">
-                <input type="radio" name="tab" id="tab-3">
-                <label for="tab-3" id="accWhite">
-                  <span>Calidad</span>
-                  <div class="icon" id="accWhite"><i class="fa-solid fa-angle-down"></i></div>
-                </label>
-                <div class="content">
-                  <p id="accWhite">Desarrollamos nuestros propios procedimientos operativos estándar y en 2019
-                    certificamos
-                    para las normas
-                    ISO 9001:2015 en los procesos de investigación clínica farmacológica, lo que nos
-                    convierte
-                    en el segundo
-                    centro de investigación nacional en lograrlo.</p>
-                  <div class="text-right">
-                    <div class="button" onclick="calidad()">
-                      <a href="" class="disabled" title="Gestión de Calidad">Ver</a>
-                      <i class="fa-solid fa-arrow-right"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Comité de Ética -->
-              <div class="parent-tab" id="accWhite">
-                <input type="radio" name="tab" id="tab-4">
-                <label for="tab-4" id="accWhite">
-                  <span>Comité de Ética</span>
-                  <div class="icon" id="accWhite"><i class="fa-solid fa-angle-down"></i></div>
-                </label>
-                <div class="content">
-                  <p id="accWhite">Contamos con un Comité de Ética Independiente que cumple con las Buenas Prácticas
-                    Clínicas
-                    (GCP) y actúa
-                    en cumplimiento de la legislación local e internacional.
-                  </p>
-                  <div class="text-right">
-                    <div class="button" onclick="comite()">
-                      <a href="" class="disabled" title="CINME Abstract">Ver</a>
-                      <i class="fa-solid fa-arrow-right"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Testimonio -->
-              <div class="parent-tab" id="accWhite">
-                <input type="radio" name="tab" id="tab-9">
-                <label for="tab-9" id="accWhite">
-                  <span>Testimonio en primera persona</span>
-                  <div class="icon" id="accWhite"><i class="fa-solid fa-angle-down"></i></div>
-                </label>
-                <div class="content">
-                  <p id="accWhite">Nuestros pacientes nos cuentan sobre su experiencia en la Clínica CINME
-                  </p>
-                  <div class="text-right">
-                    <div class="button" onclick="testimoniosOn()">
-                      <a href="" class="disabled" title="testimonio">Ver</a>
-                      <i class="fa-solid fa-arrow-right"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
+
             </div>
+            <div class="accGroup">
+              <label for="section2">Alpha Clinical Research
+                <span><i class="fa-solid fa-angle-down"></i></span></label>
+              <input type="radio" name="accordion" id="section2">
+              <div class="content">
+                <p id="accWhite" class="padding-bottom-20">Somos el primer centro médico del país en implementar una
+                  Historia Clínica
+                  Electrónica para
+                  investigación clínica desarrollada por la empresa de biotecnología Ichtys. Esto nos permite
+                  centralizar
+                  la información de nuestros pacientes, tener un acceso remoto y reducir el tiempo de evolución de
+                  las
+                  historias clínicas.</p>
+              </div>
+
+            </div>
+            <div class="accGroup">
+              <label for="section3">Calidad
+                <span><i class="fa-solid fa-angle-down"></i></span></label>
+              <input type="radio" name="accordion" id="section3">
+              <div class="content">
+                <p id="accWhite">Desarrollamos nuestros propios procedimientos operativos estándar y en 2019
+                  certificamos
+                  para las normas
+                  ISO 9001:2015 en los procesos de investigación clínica farmacológica, lo que nos
+                  convierte
+                  en el segundo
+                  centro de investigación nacional en lograrlo.</p>
+                <div class="text-right">
+                  <div class="button" onclick="calidad()">
+                    <a href="" class="disabled" title="Gestión de Calidad">Ver</a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="accGroup">
+              <label for="section4">Comité de Ética
+                <span><i class="fa-solid fa-angle-down"></i></span></label>
+              <input type="radio" name="accordion" id="section4">
+              <div class="content">
+                <p id="accWhite">Contamos con un Comité de Ética Independiente que cumple con las Buenas Prácticas
+                  Clínicas
+                  (GCP) y actúa
+                  en cumplimiento de la legislación local e internacional.
+                </p>
+                <div class="text-right">
+                  <div class="button" onclick="comite()">
+                    <a href="" class="disabled" title="CINME Abstract">Ver</a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="accGroup">
+              <label for="section5">Testimonio en primera persona
+                <span><i class="fa-solid fa-angle-down"></i></span></label>
+              <input type="radio" name="accordion" id="section5">
+              <div class="content">
+                <p id="accWhite">Nuestros pacientes nos cuentan sobre su experiencia en la Clínica CINME
+                </p>
+                <div class="text-right">
+                  <div class="button" onclick="testimonio()">
+                    <a href="" class="disabled" title="testimonio">Ver</a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
           </div>
         </div>
       </div>
@@ -398,15 +380,14 @@
 
       <!-- Begin 'Participar' caption -->
       <div class="intro-caption">
-        <h2 class="intro-title aos-init aos-animate animate__animated animate__fadeInDown animate__delay-1s"
-          data-aos="fade-down">
+        <h2 class="intro-title animate__animated animate__fadeInDown animate__delay-1s">
           Quiero participar</h2>
-        <p class="aos-init aos-animate animate__animated animate__fadeInUp animate__delay-1s" data-aos="fade-up">Si
+        <p class="animate__animated animate__fadeInUp animate__delay-1s">Si
           estás interesado en
           participar en algunos
           de nuestros ensayos clínicos, podés
           dejarnos tus datos.</p>
-        <div class="margin-top-30 button zoomIn o4" onclick="ensayos()">
+        <div class="margin-top-20 button animate__animated animate__zoomIn animate__delay-2s" onclick="ensayos()">
           <a href="" class="disabled" title="Quiero participar">Participar
           </a>
           <i class="fa-solid fa-arrow-right"></i>
@@ -442,12 +423,10 @@
 
       <!-- Begin 'ESSENTIA' caption -->
       <div class="intro-caption">
-        <h2 class="intro-title aos-init aos-animate animate__animated animate__fadeInUp animate__delay-1s"
-          data-aos="fade-up">
+        <h2 class="intro-title animate__animated animate__fadeInUp animate__delay-1s">
           <i>ESSENTIA</i>
         </h2>
-        <div class="column margin-top-20 aos-init aos-animate animate__animated animate__fadeInDown animate__delay-1s"
-          data-aos="fade-down">
+        <div class="column margin-top-20 animate__animated animate__fadeInDown animate__delay-1s">
           <p>
             El espíritu de <i>ESSENTIA</i> es construir juntos tu mejor versión.
           </p>
@@ -460,9 +439,7 @@
             hacerlo posible.
           </p>
         </div>
-        <div
-          class="containerBTN padding-top-10 aos-init aos-animate animate__animated animate__fadeInDown animate__delay-1s"
-          data-aos="fade-down">
+        <div class="containerBTN padding-top-10 animate__animated animate__fadeInDown animate__delay-1s">
           <div class="margin-top-30 button">
             <a href="metabolismo.html">Manejo de sobrepeso y obesidad</a>
             <i class="fa-solid fa-arrow-right"></i>
@@ -482,7 +459,7 @@
           <label class="btn-close"><i class="fa-solid fa-xmark" onclick="testimoniosOff()"></i></label>
         </div>
         <div class="overlay-video" onclick="testimoniosOff()">
-          <div class="animate__animated animate__fadeInUp animate__delay-0.5s videoContainer">
+          <div class="animate__animated animate__fadeInUp animate__delay-1s videoContainer">
             <video muted autoplay controls class="videoInt" id="videoTestimonios">
               <source src="/assets/media/cinmeTestimonials.mp4" type="video/mp4">
               <code>Tu navegador no soporta la reproducción de video.</code>
@@ -501,18 +478,15 @@
 
       <!-- Begin 'Consultorios externos' caption -->
       <div class="intro-caption">
-        <h2 class="intro-title aos-init aos-animate animate__animated animate__fadeInUp animate__delay-1s"
-          data-aos="fade-up">
+        <h2 class="intro-title animate__animated animate__fadeInUp animate__delay-1s">
           Consultorios externos</h2>
-        <p class="aos-init aos-animate animate__animated animate__fadeInDown animate__delay-1s" data-aos="fade-down">
+        <p class="animate__animated animate__fadeInDown animate__delay-1s">
           Brindamos atención
           médica en consultorios
           externos a través de obras sociales y
           consultas
           privadas.</p>
-        <ul
-          class="link-list padding-top-30 aos-init aos-animate animate__animated animate__fadeInDown animate__delay-1s"
-          data-aos="fade-down">
+        <ul class="link-list padding-top-30 animate__animated animate__fadeInDown animate__delay-1s">
           <div class="link-item btnGost" onclick="consultorios()">
             <li><a href="" class="disabled">Consultorios externos</a>
               <i class="fa-solid fa-arrow-right"></i>
@@ -555,17 +529,14 @@
 
       <!-- Begin 'Estudios' caption -->
       <div class="intro-caption">
-        <h2 class="intro-title aos-init aos-animate animate__animated animate__fadeInUp animate__delay-1s"
-          data-aos="fade-up">Estudios
+        <h2 class="intro-title animate__animated animate__fadeInUp animate__delay-1s">Estudios
           médicos</h2>
-        <p class="aos-init aos-animate animate__animated animate__fadeInDown animate__delay-1s" data-aos="fade-down">
+        <p class="animate__animated animate__fadeInDown animate__delay-1s">
           Realizamos estudios
           clínicos con coberturas
           de obras sociales o de modo privado.
         </p>
-        <ul
-          class="link-list padding-top-30 aos-init aos-animate animate__animated animate__fadeInDown animate__delay-1s"
-          data-aos="fade-down">
+        <ul class="link-list padding-top-30 animate__animated animate__fadeInDown animate__delay-1s">
           <div class="link-item btnGost" onclick="estudios()">
             <li><a href="" class="disabled">Estudios médicos</a>
               <i class="fa-solid fa-arrow-right"></i>
@@ -589,69 +560,59 @@
       <div class="cover bg-transparent-2-dark"></div>
       <!-- Begin 'Responsabilidad Social' caption -->
       <div class="intro-caption">
-        <h2 class="aos-init aos-animate intro-title animate__animated animate__fadeInUp animate__delay-1s"
-          data-aos="fade-up">
+        <h2 class="intro-title animate__animated animate__fadeInUp animate__delay-1s">
           Responsabilidad Social</h2>
-        <div class="margin-top-20 row">
-          <div class="accordionContent aos-init aos-animate animate__animated animate__fadeInDown animate__delay-1s"
-            data-aos="fade-down">
-            <div class="wrapperAcc">
-              <!-- Alianzas solidarias -->
-              <div class="parent-tab" id="accWhite">
-                <input type="radio" name="tab" id="tab-5">
-                <label for="tab-5" id="accWhite">
-                  <span>Alianzas solidarias</span>
-                  <div class="icon" id="accWhite"><i class="fa-solid fa-angle-down"></i></div>
-                </label>
-                <div class="content">
-                  <p id="accWhite">CINME apoya y financia proyectos de ONGs que, al igual que nosotros,
-                    trabajan por un mundo mejor.<br>Estos son algunos de los testimonios de los líderes de las entidades
-                    que
-                    apoyamos </p>
-                  <div class="text-right">
-                    <div class="button" onclick="alianzasOn()">
-                      <a href="#" class="disabled" title="Alianzas solidarias">Ver Testimonios</a>
-                      <i class="fa-solid fa-arrow-right"></i>
-                    </div>
+        <div class="margin-top-30 animate__animated animate__fadeInDown animate__delay-1s">
+          <div id="accordion">
+            <div class="accGroup">
+              <label for="first">Alianzas solidarias
+                <span><i class="fa-solid fa-angle-down"></i></span></label>
+              <input type="radio" name="rse" id="first" checked>
+              <div class="content">
+                <p id="accWhite">CINME apoya y financia proyectos de ONGs que, al igual que nosotros,
+                  trabajan por un mundo mejor.<br>Estos son algunos de los testimonios de los líderes de las entidades
+                  que
+                  apoyamos </p>
+                <div class="text-right">
+                  <div class="button" onclick="alianzasOn()">
+                    <a href="#" class="disabled" title="Alianzas solidarias">Ver Testimonios</a>
+                    <i class="fa-solid fa-arrow-right"></i>
                   </div>
                 </div>
               </div>
-              <!-- Educación a la Comunidad -->
-              <div class="parent-tab" id="accWhite">
-                <input type="radio" name="tab" id="tab-6">
-                <label for="tab-6" id="accWhite">
-                  <span>Educación a la comunidad</span>
-                  <div class="icon" id="accWhite"><i class="fa-solid fa-angle-down"></i></div>
-                </label>
-                <div class="content">
-                  <p id="accWhite" class="padding-bottom-50">CINME ofrece recursos y espacios educativos para una mejor
-                    comprensión de las
-                    enfermedades y sus tratamientos. Si querés conocer más seguinos en nuestras redes.</p>
-                </div>
+
+            </div>
+            <div class="accGroup">
+              <label for="second">Educación a la comunidad
+                <span><i class="fa-solid fa-angle-down"></i></span></label>
+              <input type="radio" name="rse" id="second">
+              <div class="content">
+                <p id="accWhite" class="padding-bottom-50">CINME ofrece recursos y espacios educativos para una mejor
+                  comprensión de las
+                  enfermedades y sus tratamientos. Si querés conocer más seguinos en nuestras redes.</p>
               </div>
-              <!-- +QueDiabetes -->
-              <div class="parent-tab" id="accWhite">
-                <input type="radio" name="tab" id="tab-7">
-                <label for="tab-7" id="accWhite">
-                  <span>+QueDiabetes</span>
-                  <div class="icon" id="accWhite"><i class="fa-solid fa-angle-down"></i></div>
-                </label>
-                <div class="content">
-                  <p id="accWhite">+QueDiabetes es un proyecto de CINME para fortalecer la educación en diabetes a
-                    través
-                    de nuestras plataformas digitales. <br> Para escuchar VIVOS con especialistas en esta patología, ver
-                    <i>reels</i> y otros recursos podés seguirnos en Instagram
-                  </p>
-                  <div class="text-right">
-                    <div class="button">
-                      <a href="https://www.instagram.com/stories/highlights/17952750421829473/" target="_blank"
-                        title="+QueDiabetes">Ver
-                        Instagram</a>
-                      <i class="fa-solid fa-arrow-right"></i>
-                    </div>
+
+            </div>
+            <div class="accGroup">
+              <label for="thirst">+QueDiabetes
+                <span><i class="fa-solid fa-angle-down"></i></span></label>
+              <input type="radio" name="rse" id="thirst">
+              <div class="content">
+                <p id="accWhite">+QueDiabetes es un proyecto de CINME para fortalecer la educación en diabetes a
+                  través
+                  de nuestras plataformas digitales. <br> Para escuchar VIVOS con especialistas en esta patología, ver
+                  <i>reels</i> y otros recursos podés seguirnos en Instagram
+                </p>
+                <div class="text-right">
+                  <div class="button">
+                    <a href="https://www.instagram.com/reel/CoOJ4WXgg07/" target="_blank" title="+QueDiabetes">Ver
+                      Instagram</a>
+                    <i class="fa-solid fa-arrow-right"></i>
                   </div>
                 </div>
+
               </div>
+
             </div>
           </div>
         </div>
@@ -662,7 +623,7 @@
           <label class="btn-close"><i class="fa-solid fa-xmark" onclick="alianzasOff()"></i></label>
         </div>
         <div class="overlay-video" onclick="alianzasOff()">
-          <div class="animate__animated animate__fadeInUp animate__delay-0.5s videoContainer">
+          <div class="animate__animated animate__fadeInUp animate__delay-1s videoContainer">
             <video muted autoplay controls class="igVideo" id="videoAlianzas">
               <source src="/assets/media/cinmeAlianzas.mp4" type="video/mp4">
               <code>Tu navegador no soporta la reproducción de video.</code>
@@ -685,8 +646,7 @@
       <!-- Begin 'Contacto' caption -->
       <div class="intro-caption">
         <div class="margin-top-30 addressContainer">
-          <div class="aos-init aos-animate fadeInDown" data-aos="fade-up-right" data-aos-easing="linear"
-            data-aos-duration="500">
+          <div class="animate__animated animate__fadeInDown animate__delay-1s">
             <h4>CINME S.A.</h4>
             <div class="address">
               <p><i class="fa-solid fa-location-dot"></i>Viamonte 2213, C1056 ABJ, Buenos Aires</p>
@@ -695,8 +655,7 @@
               <p><i class="fa-solid fa-envelope-open"></i>Nuestro email: info@cinme.com.ar</p>
             </div>
           </div>
-          <div class="aos-init aos-animate padding-bottom-100 fadeInUp" data-aos="fade-up" data-aos-easing="linear"
-            data-aos-duration="500">
+          <div class="animate__animated animate__fadeInUp animate__delay-1s">
             <h4>Nuestras Redes Sociales</h4>
             <div class="social">
               <div class="icon linkedin">
@@ -740,7 +699,7 @@
     <!-- *************************************
 		*********** Begin 'Footer' content *********** 
 		************************************** -->
-    <footer>
+    <footer class="animate__animated animate__fadeInUp animate__delay-1s">
       <p>©2022 ·
         <b>CINME S.A.</b>
         Todos los derechos reservados.
@@ -801,12 +760,8 @@
   <!-- Core JS -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <!-- jquery JS (https://jquery.com) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-    crossorigin="anonymous"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
   <!-- bootstrap JS (http://getbootstrap.com) -->
 
@@ -838,10 +793,6 @@
 
   <!-- Theme master JS -->
   <script src="assets/js/theme.js"></script>
-
-  <script>
-    AOS.init();
-  </script>
 </body>
 
 </html>
