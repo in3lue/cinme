@@ -98,61 +98,59 @@
 
     <section>
       <!-- Begin 'Ensayos' Caption -->
-      <div class="internal-caption">
-        <div class="margin-top-100">
-          <h2 class="internal-title fadeInDown o3">
-            Quiero participar
-          </h2>
-        </div>
-        <!-- ///// End 'Ensayos' section ///// -->
+      <div class="internal-caption margin-top-100">
+        <h2 class="internal-title fadeInDown o3">
+          Quiero participar
+        </h2>
+      </div>
+      <!-- ///// End 'Ensayos' section ///// -->
 
-        <!-- ///// Begin 'Ensayos Content' section ///// -->
+      <!-- ///// Begin 'Ensayos Content' section ///// -->
 
 
-        <!-- Begin 'Ensayos' Caption -->
-        <div class="internal-caption fadeInUp o3">
-          <div class="container padding-bottom-30">
-            <form class="form__wrapper">
-              <fieldset class="form__fieldset">
-                <legend class="form__legend">
-                  Buscá los nuevos tratamientos que se utilizan para tu enfermedad.
-                </legend>
-                <div id="pathology-list" style="width: 100%; display: grid;grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+      <!-- Begin 'Ensayos' Caption -->
+      <div class="internal-caption fadeInUp o3">
+        <div class="container padding-bottom-30">
+          <form class="form__wrapper">
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">
+                Buscá los nuevos tratamientos que se utilizan para tu enfermedad.
+              </legend>
+              <div id="pathology-list" style="width: 100%; display: grid;grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
                 color: #58595B;">
-                </div>
-                <br />
-                <label class="form-label" for="form1">Buscá otra patologia</label>
-                <div class="input-group">
-                  <input type="search" id="form1" class="form-control patologiainput" style="margin-bottom: 0.5rem;" />
-                  <button type="button" class="btn btn-primary" style="height: fit-content;">
-                    <i class="fas fa-search"></i>
-                  </button>
-                </div>
-                <select name="patologiasearch" class="patologiasearch form-select" disabled></select>
-                <label class="form-label" id="loading" for="form1"></label>
-              </fieldset>
-              <fieldset class="form__fieldset margin-top-50">
-                <legend class="form__legend">
-                  Por favor, ingresá tus datos y nos contactaremos con vos
-                </legend>
-                <div class="form__div">Nombre: <input required type="text" name="nombre" class="form__input"></div>
-                <div class="form__div">Apellido: <input required type="text" name="apellido" class="form__input"></div>
-                <div class="form__div">DNI: (sólo números) <input required type="number" inputmode="numeric"
-                    pattern="\d*" name="dni" class="form__input"></div>
-                <div class="form__div">Fecha de nacimiento: (dd/mm/aaaa) <input required type="date" min="1923-12-31"
-                    max="2023-12-31" name="fecha-nacimiento" id="fecha-nacimiento" class="form__input"></div>
-                <div class="form__div">Teléfono: (sólo números) <input required type="text" name="telefono"
-                    id="telephone" class="form__input">
-                </div>
-                <div class="form__div">Email: <input required type="email" name="email" class="form__input"></div>
-              </fieldset>
-              <button type="submit" onclick="submitForm(event);" class="formButton">
-                Enviar
-                <i class="fa-solid fa-arrow-right"></i>
-              </button>
-              <div id="status-message"></div>
-            </form>
-          </div>
+              </div>
+              <br />
+              <label class="form-label" for="form1">Buscá otra patologia</label>
+              <div class="input-group">
+                <input type="search" id="form1" class="form-control patologiainput" style="margin-bottom: 0.5rem;" />
+                <button type="button" class="btn btn-primary" style="height: fit-content;">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+              <select name="patologiasearch" class="patologiasearch form-select" disabled></select>
+              <label class="form-label" id="loading" for="form1"></label>
+            </fieldset>
+            <fieldset class="form__fieldset margin-top-50">
+              <legend class="form__legend">
+                Por favor, ingresá tus datos y nos contactaremos con vos
+              </legend>
+              <div class="form__div">Nombre: <input required type="text" name="nombre" class="form__input"></div>
+              <div class="form__div">Apellido: <input required type="text" name="apellido" class="form__input"></div>
+              <div class="form__div">DNI: (sólo números) <input required type="number" inputmode="numeric" pattern="\d*"
+                  name="dni" class="form__input"></div>
+              <div class="form__div">Fecha de nacimiento: (dd/mm/aaaa) <input required type="date" min="1923-12-31"
+                  max="2023-12-31" name="fecha-nacimiento" id="fecha-nacimiento" class="form__input"></div>
+              <div class="form__div">Teléfono: (sólo números) <input required type="text" name="telefono" id="telephone"
+                  class="form__input">
+              </div>
+              <div class="form__div">Email: <input required type="email" name="email" class="form__input"></div>
+            </fieldset>
+            <button type="submit" onclick="submitForm(event);" class="formButton">
+              Enviar
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <div id="status-message"></div>
+          </form>
         </div>
       </div>
       <!-- End 'Ensayos' caption -->
